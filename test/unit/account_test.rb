@@ -50,4 +50,16 @@ class AccountTest < ActiveSupport::TestCase
       n.value
     }.sort
   end
+
+  def test_imports_nicks
+    assert_difference('Nick.count', 3) do
+      File.open(@yml, 'rb') { |f| Account.import f }
+    end
+
+    account = Account.find_by_username('H_Konishi')
+    assert_equal [], account.nicks
+
+    account = Account.find_by_username('aamine')
+    assert_equal ['青木さん'], account.nicks.map { |x| x.value }
+  end
 end

@@ -17,6 +17,10 @@ class Account < ActiveRecord::Base
       record['name'].each do |name|
         account.names.create!(:value => name)
       end
+
+      (record['nick'] || []).each do |name|
+        account.nicks.create!(:value => name)
+      end
     end
   end
 end
