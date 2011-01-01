@@ -5,7 +5,7 @@
       <td><%= account.username %></td>
     </tr>
 
-    <% if account.names.length > 0 %>
+    <% unless account.names.empty? %>
       <tr>
         <td>Names:</td>
         <td>
@@ -16,7 +16,7 @@
       </tr>
     <% end %>
 
-    <% if account.nicks.length > 0 %>
+    <% unless account.nicks.empty? %>
       <tr>
         <td>Nicknames:</td>
         <td>
@@ -27,7 +27,7 @@
       </tr>
     <% end %>
 
-    <% if account.sites.length > 0 %>
+    <% unless account.sites.empty? %>
       <tr>
         <td>Sites:</td>
         <td>
@@ -38,7 +38,7 @@
       </tr>
     <% end %>
 
-    <% if account.services.length > 0 %>
+    <% unless account.services.empty? %>
       <tr>
         <td>Services:</td>
         <td>
@@ -49,7 +49,7 @@
       </tr>
     <% end %>
 
-    <% if account.portraits.length > 0 %>
+    <% unless account.portraits.empty? %>
       <tr>
         <td>Portraits:</td>
         <td>
@@ -62,7 +62,7 @@
 
     <!-- FIXME: unsure how to link to ISBN. :-( -->
     <!--
-    <% if account.books.length > 0 %>
+    <% unless account.books.empty? %>
       <tr>
         <td>Books:</td>
         <td>
