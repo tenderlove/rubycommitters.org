@@ -1,0 +1,23 @@
+= rubycommitters.org
+
+This is the source code for the rubycommitters.org website.
+
+== Hacking
+
+Ruby 1.9.2 is required!!!!
+
+First clone the repo:
+
+    $ git clone git://github.com/tenderlove/rubycommitters.org.git
+    $ cd rubycommitters.org
+
+Then import committer data
+
+    $ bundle install
+    $ rake import
+
+Start your server
+
+    $ ruby script/rails server
+
+Have fun hacking!
