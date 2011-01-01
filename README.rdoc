@@ -4,8 +4,6 @@ This is the source code for the rubycommitters.org website.
 
 == Hacking
 
-Ruby 1.9.2 is required!!!!
-
 First clone the repo:
 
     $ git clone git://github.com/tenderlove/rubycommitters.org.git

@@ -10,9 +10,15 @@ class Account < ActiveRecord::Base
   # Import +io+ object that contains a YAML representation of the
   # ruby-committers
   def self.import io
-    require 'psych'
+    begin
+      require 'psych'
+      yamler = Psych
+    rescue LoadError
+      require 'yaml'
+      yamler = YAML
+    end
 
-    doc = Psych.load io
+    doc = yamler.load io
     doc.each do |record|
       account = Account.create!(:username => record['account'])
       (record['name'] || []).each do |name|
