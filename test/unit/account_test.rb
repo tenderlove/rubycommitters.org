@@ -81,4 +81,13 @@ class AccountTest < ActiveSupport::TestCase
     assert_equal 'ja', site.lang
     assert_equal 'http://i.loveruby.net/d/index.rdf', site.feed
   end
+
+  def test_imports_portraits
+    assert_difference('Portrait.count', 2) do
+      File.open(@yml, 'rb') { |f| Account.import f }
+    end
+
+    account = Account.find_by_username 'aamine'
+    assert_equal 'http://jp.rubyist.net/magazine/?c=plugin;plugin=attach_download;p=0017-Hotlinks;file_name=aoki1.jpg', account.portraits.first.url
+  end
 end

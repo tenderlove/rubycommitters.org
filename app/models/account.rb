@@ -31,6 +31,10 @@ class Account < ActiveRecord::Base
           :feed  => site['feed']
         )
       end
+
+      (record['portraits'] || []).each do |portrait|
+        account.portraits.create!(:url => portrait)
+      end
     end
   end
 end
