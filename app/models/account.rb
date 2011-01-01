@@ -35,6 +35,10 @@ class Account < ActiveRecord::Base
       (record['portraits'] || []).each do |portrait|
         account.portraits.create!(:url => portrait)
       end
+
+      (record['services'] || []).each do |name, key|
+        account.services.create!(:name => name, :key => key)
+      end
     end
   end
 end

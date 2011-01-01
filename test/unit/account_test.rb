@@ -90,4 +90,20 @@ class AccountTest < ActiveSupport::TestCase
     account = Account.find_by_username 'aamine'
     assert_equal 'http://jp.rubyist.net/magazine/?c=plugin;plugin=attach_download;p=0017-Hotlinks;file_name=aoki1.jpg', account.portraits.first.url
   end
+
+  def test_imports_services
+    assert_difference('Service.count', 4) do
+      File.open(@yml, 'rb') { |f| Account.import f }
+    end
+
+    account = Account.find_by_username 'akira'
+    assert_equal 4, account.services.count
+
+    assert_equal [
+      ['twitter', 'arika'],
+      ['friendfeed', 'arika'],
+      ['iddy', 'arika'],
+      ['mixi', '1549'],
+    ].sort, account.services.map { |x| [x.name, x.key] }.sort
+  end
 end
