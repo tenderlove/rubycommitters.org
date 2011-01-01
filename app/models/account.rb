@@ -11,6 +11,7 @@ class Account < ActiveRecord::Base
   # ruby-committers
   def self.import io
     require 'psych'
+
     doc = Psych.load io
     doc.each do |record|
       account = Account.create!(:username => record['account'])
@@ -20,6 +21,15 @@ class Account < ActiveRecord::Base
 
       (record['nick'] || []).each do |name|
         account.nicks.create!(:value => name)
+      end
+
+      (record['sites'] || []).each do |site|
+        account.sites.create!(
+          :title => site['title'],
+          :url   => site['url'],
+          :lang  => site['lang'],
+          :feed  => site['feed']
+        )
       end
     end
   end

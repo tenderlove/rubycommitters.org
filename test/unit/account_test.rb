@@ -62,4 +62,23 @@ class AccountTest < ActiveSupport::TestCase
     account = Account.find_by_username('aamine')
     assert_equal ['青木さん'], account.nicks.map { |x| x.value }
   end
+
+  def test_imports_sites
+    assert_difference('Site.count', 5) do
+      File.open(@yml, 'rb') { |f| Account.import f }
+    end
+
+    account = Account.find_by_username('aamine')
+    assert_equal 2, account.sites.length
+
+    site = account.sites.find_by_title('LoveRubyNet')
+    assert_nil site.lang
+    assert_nil site.feed
+    assert_equal 'http://i.loveruby.net/', site.url
+
+    site = account.sites.find_by_title('青木日記')
+    assert_equal 'http://i.loveruby.net/d/', site.url
+    assert_equal 'ja', site.lang
+    assert_equal 'http://i.loveruby.net/d/index.rdf', site.feed
+  end
 end
