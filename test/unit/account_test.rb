@@ -1,3 +1,5 @@
+# coding: utf-8
+
 require 'test_helper'
 
 class AccountTest < ActiveSupport::TestCase
@@ -36,5 +38,16 @@ class AccountTest < ActiveSupport::TestCase
     assert_difference('Account.count', 3) do
       File.open(@yml, 'rb') { |f| Account.import f }
     end
+  end
+
+  def test_imports_names
+    assert_difference('Name.count', 6) do
+      File.open(@yml, 'rb') { |f| Account.import f }
+    end
+
+    account = Account.find_by_username('H_Konishi')
+    assert_equal ['小西弘将', 'KONISHI Hiromasa'].sort, account.names.map { |n|
+      n.value
+    }.sort
   end
 end
