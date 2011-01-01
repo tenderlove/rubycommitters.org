@@ -5,6 +5,7 @@ class AccountTest < ActiveSupport::TestCase
 
   def setup
     @matz = accounts :matz
+    @yml = File.join(File.expand_path(File.dirname(__FILE__)), 'ruby-committers.yml')
   end
 
   def test_has_many_names
@@ -29,5 +30,11 @@ class AccountTest < ActiveSupport::TestCase
 
   def test_has_many_books
     assert_operator 5, :<=, @matz.books.length
+  end
+
+  def test_import_accounts
+    assert_difference('Account.count', 3) do
+      File.open(@yml, 'rb') { |f| Account.import f }
+    end
   end
 end

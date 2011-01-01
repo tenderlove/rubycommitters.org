@@ -1,0 +1,15 @@
+<li>
+Account: <%= account.username %>
+Names:
+  <ul>
+    <% account.names.each do |name| %>
+      <li><%= name %></li>
+    <% end %>
+  </ul>
+Nicknames:
+  <ul>
+    <% account.nicks.each do |name| %>
+      <li><%= name %></li>
+    <% end %>
+  </ul>
+</li>
