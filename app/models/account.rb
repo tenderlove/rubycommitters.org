@@ -39,6 +39,10 @@ class Account < ActiveRecord::Base
       (record['services'] || []).each do |name, key|
         account.services.create!(:name => name, :key => key)
       end
+
+      (record['ruby-books'] || []).each do |key|
+        account.books.create!(:key => key)
+      end
     end
   end
 end

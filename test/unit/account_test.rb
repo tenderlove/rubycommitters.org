@@ -106,4 +106,19 @@ class AccountTest < ActiveSupport::TestCase
       ['mixi', '1549'],
     ].sort, account.services.map { |x| [x.name, x.key] }.sort
   end
+
+  def test_imports_books
+    assert_difference('Book.count', 7) do
+      File.open(@yml, 'rb') { |f| Account.import f }
+    end
+
+    account = Account.find_by_username 'aamine'
+    assert_equal %w{
+      9784844317210
+      9784797340044
+      9784756137098
+      9784797324297
+      9784839923204
+    }.sort, account.books.map { |x| x.key }.sort
+  end
 end
