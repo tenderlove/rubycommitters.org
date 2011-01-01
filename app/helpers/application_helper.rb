@@ -1,7 +1,7 @@
 module ApplicationHelper
   def analytics_tag
     if Rails.env.production?
-      <<-eojs
+      (<<-eojs).html_safe
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
