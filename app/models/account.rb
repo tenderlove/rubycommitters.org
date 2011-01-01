@@ -15,7 +15,7 @@ class Account < ActiveRecord::Base
     doc = Psych.load io
     doc.each do |record|
       account = Account.create!(:username => record['account'])
-      record['name'].each do |name|
+      (record['name'] || []).each do |name|
         account.names.create!(:value => name)
       end
 

@@ -1,15 +1,79 @@
 <li>
-Account: <%= account.username %>
-Names:
-  <ul>
-    <% account.names.each do |name| %>
-      <li><%= name %></li>
+  <table>
+    <tr>
+      <td>Account:</td>
+      <td><%= account.username %></td>
+    </tr>
+
+    <% if account.names.length > 0 %>
+      <tr>
+        <td>Names:</td>
+        <td>
+          <ul>
+            <%= render :partial => 'name', :collection => account.names %>
+          </ul>
+        </td>
+      </tr>
     <% end %>
-  </ul>
-Nicknames:
-  <ul>
-    <% account.nicks.each do |name| %>
-      <li><%= name %></li>
+
+    <% if account.nicks.length > 0 %>
+      <tr>
+        <td>Nicknames:</td>
+        <td>
+          <ul>
+            <%= render :partial => 'name', :collection => account.nicks %>
+          </ul>
+        </td>
+      </tr>
     <% end %>
-  </ul>
+
+    <% if account.sites.length > 0 %>
+      <tr>
+        <td>Sites:</td>
+        <td>
+          <ul>
+            <%= render :partial => 'site', :collection => account.sites %>
+          </ul>
+        </td>
+      </tr>
+    <% end %>
+
+    <% if account.services.length > 0 %>
+      <tr>
+        <td>Services:</td>
+        <td>
+          <ul>
+            <%= render :partial => 'service', :collection => account.services %>
+          </ul>
+        </td>
+      </tr>
+    <% end %>
+
+    <% if account.portraits.length > 0 %>
+      <tr>
+        <td>Portraits:</td>
+        <td>
+          <ul>
+            <%= render :partial => 'portrait', :collection => account.portraits %>
+          </ul>
+        </td>
+      </tr>
+    <% end %>
+
+    <!-- FIXME: unsure how to link to ISBN. :-( -->
+    <!--
+    <% if account.books.length > 0 %>
+      <tr>
+        <td>Books:</td>
+        <td>
+          <ul>
+            <% account.books.each do |book| %>
+              <li><%= book.key %></li>
+            <% end %>
+          </ul>
+        </td>
+      </tr>
+    <% end %>
+    -->
+  </table>
 </li>
