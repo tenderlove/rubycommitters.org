@@ -1,6 +1,6 @@
-class CreateNames < ActiveRecord::Migration
+class CreateNicks < ActiveRecord::Migration
   def self.up
-    create_table :names do |t|
+    create_table :nicks do |t|
       t.string :value
       t.references :account
 
@@ -9,6 +9,6 @@ class CreateNames < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :names
+    drop_table :nicks
   end
 end

@@ -1,7 +1,19 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
 one:
-  key: MyString
+  key: '9780596516178'
+  account: matz
 
 two:
-  key: MyString
+  key: '9780596002145'
+  account: matz
+
+three:
+  key: '9784756132543'
+  account: matz
+
+four:
+  key: '9784274064616'
+  account: matz
+
+five:
+  key: '9784873110233'
+  account: matz

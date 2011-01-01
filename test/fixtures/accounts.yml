@@ -1,7 +1,3 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+matz:
+  username: matz
 
-one:
-  username: MyString
-
-two:
-  username: MyString

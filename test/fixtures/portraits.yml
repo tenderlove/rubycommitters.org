@@ -1,7 +1,3 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  url: MyString
-
-two:
-  url: MyString
+matz:
+  url: 'http://upload.wikimedia.org/wikipedia/commons/7/76/Yukihiro_Matsumoto.JPG'
+  account: matz

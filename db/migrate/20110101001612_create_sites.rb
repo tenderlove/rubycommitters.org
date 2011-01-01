@@ -5,6 +5,7 @@ class CreateSites < ActiveRecord::Migration
       t.string :url
       t.string :feed
       t.string :lang
+      t.references :account
 
       t.timestamps
     end

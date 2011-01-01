@@ -1,13 +1,6 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  title: MyString
-  url: MyString
-  feed: MyString
-  lang: MyString
-
-two:
-  title: MyString
-  url: MyString
-  feed: MyString
-  lang: MyString
+matz_nikki:
+  title: Matzにっき
+  url: http://www.rubyist.net/~matz/
+  feed: http://www.rubyist.net/~matz/comments.rdf
+  lang: ja
+  account: matz

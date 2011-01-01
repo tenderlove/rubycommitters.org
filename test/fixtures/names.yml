@@ -1,9 +1,11 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+matz_kanji:
+  value: 松本行弘
+  account: matz
 
-one:
-  value: MyString
-  type: MyString
+matz_hiragana:
+  value: まつもとゆきひろ
+  account: matz
 
-two:
-  value: MyString
-  type: MyString
+matz_romaji:
+  value: Yukihiro Matsumoto
+  account: matz

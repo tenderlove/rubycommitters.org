@@ -2,8 +2,8 @@ class CreateServices < ActiveRecord::Migration
   def self.up
     create_table :services do |t|
       t.string :name
-      t.string :type
       t.string :key
+      t.references :account
 
       t.timestamps
     end

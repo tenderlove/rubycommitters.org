@@ -1,11 +1,24 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+twitter:
+  name: twitter
+  key: yukihiro_matz
+  account: matz
 
-one:
-  name: MyString
-  type: MyString
-  key: MyString
+friendfeed:
+  name: friendfeed
+  key: matz
+  account: matz
 
-two:
-  name: MyString
-  type: MyString
-  key: MyString
+facebook:
+  name: facebook
+  key: 650036336
+  account: matz
+
+mixi:
+  name: mixi
+  key: 1653
+  account: matz
+
+github:
+  name: github
+  key: matz
+  account: matz
