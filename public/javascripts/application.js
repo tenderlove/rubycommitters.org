@@ -1,2 +1,35 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+$(function () {
+    $('ul.portraits').each(function () {
+        var lis = $(this).find('li.image-wrapper');
+
+        if (lis.length > 1) {
+            var firstLi = lis.first(), lastLi, curLi;
+
+            lis.each(function () {
+                curLi = $(this);
+
+                if (lastLi != null) {
+                    lastLi.data('next', curLi);
+                }
+
+                lastLi = curLi;
+            });
+
+            lastLi.data('next', firstLi);
+
+            curLi = firstLi;
+
+            var nextPortrait = function () {
+                curLi.fadeTo(600, 0.0);
+                curLi.data('next').fadeTo(600, 1.0);
+
+                curLi = curLi.data('next');
+
+                setTimeout(nextPortrait, 3000);
+            }
+
+            setTimeout(nextPortrait, 3000);
+        }
+
+    });
+});

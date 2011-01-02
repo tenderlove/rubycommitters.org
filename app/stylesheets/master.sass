@@ -59,7 +59,11 @@ table.commiters
     position: absolute
 
   .image-wrapper
+    @include opacity(0.0)
     width: 70px
+
+    &:first-child
+      @include opacity(1.0)
 
   img
     width: 100%
