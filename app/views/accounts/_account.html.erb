@@ -1,11 +1,20 @@
 <td class="commiter">
   <div class="commiter-wrapper">
+
+    <% if account.portraits.length > 0 %>
+      <ul class="portraits">
+        <%= render :partial => 'portrait', :collection => account.portraits %>
+      </ul>
+    <% end %>
+
     <h2><%= account.username %></h2>
+
     <% if account.names.length > 0 %>
       <h3>
         Other accouts: <%= account.names.map(&:value).join(', ') %>
       </h3>
     <% end %>
+
     <table>
       <% if account.nicks.length > 0 %>
         <tr>
@@ -35,17 +44,6 @@
           <td>
             <ul>
               <%= render :partial => 'service', :collection => account.services %>
-            </ul>
-          </td>
-        </tr>
-      <% end %>
-
-      <% if account.portraits.length > 0 %>
-        <tr>
-          <td>Portraits:</td>
-          <td>
-            <ul>
-              <%= render :partial => 'portrait', :collection => account.portraits %>
             </ul>
           </td>
         </tr>
