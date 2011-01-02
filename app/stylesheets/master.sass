@@ -3,6 +3,7 @@
 
 body
   background: url(/images/ruby_pattern.png)
+  font-family: Sans
 
 h1, h2, h3
   font-family: Cuprum, Sans
@@ -26,7 +27,12 @@ h3
   color: #8f7375
   font-size: 16px
   line-height: 20px
-  padding-bottom: 15px
+
+a
+  color: #54272a
+  &:hover
+    color: #dda9ad
+    text-decoration: none
 
 table.commiters
   width: 100%
@@ -46,6 +52,11 @@ table.commiters
   float: left
   margin-right: 30px
   width: 1px
+  position: relative
+
+  li
+    top: 0
+    position: absolute
 
   .image-wrapper
     width: 70px
@@ -59,5 +70,27 @@ table.commiters
 .commiter-data
   padding-left: 95px
 
+.commiter-data-extra
+  margin-top: 15px
+
 dl
-  margin-bottom: 10px
+  margin-bottom: 8px
+
+  &.nicknames
+    dt, dd
+      display: inline-block
+
+  &.sites
+
+  &.services
+
+  dt
+    color: #A3A099
+    margin-bottom: 2px
+
+  ul
+    margin-left: 10px
+    padding: 4px 0
+
+    li
+      margin-bottom: 5px
