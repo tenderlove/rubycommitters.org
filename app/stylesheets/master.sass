@@ -13,8 +13,9 @@ h1, h2
 h1
   font-size: 60px
   text-align: center
-  padding: 50px 0
+  padding: 50px 0 30px
   color: #a00
+  @include text-shadow(#3e0f10, -1px, 1px, 1px)
 
 .image-wrapper
   height: 100px
@@ -33,18 +34,18 @@ h3
   line-height: 20px
   padding-bottom: 15px
 
-ul
-  display: inline-block
+table.commiters
   width: 100%
-  margin-bottom: 20px
+  border-spacing: 20px
 
-  li.commiter
+  tr.commiters
+
+  td.commiter
     @include border-radius(10px)
-    width: 30%
-    margin-left: 2.5%
-    float: left
-    border: 5px solid #fbd0dc
+    vertical-align: top
+    width: 33.333%
+    border: 3px solid #fbd0dc
     background: #fefefe
 
     .commiter-wrapper
-      padding: 10px 20px
+      padding: 15px 20px
