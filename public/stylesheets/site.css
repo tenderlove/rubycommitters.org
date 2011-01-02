@@ -1,6 +1,7 @@
 body{
 	font-family: Arial;
 	margin: 0;
+	background: #e5e5e5;
 }
 
 .image-wrapper {
@@ -34,23 +35,18 @@ body{
 	height: 150px;
 }
 
-.account{
-	width: 800px;
-	clear: both;
-}
-
 .portrait{
-	float: left;
-	width: 100px;
+	vertical-align: top;
+	width: 150px;
 }
 
 .names{
-	float: left;
+	vertical-align: top;
 	width: 350px;	
 }
 
 .connect{
-	float: left;
+	vertical-align: top;
 	width: 350px;	
 }
 
@@ -58,4 +54,36 @@ body{
 	font-family: Arial;
 	font-size: 14px;
 	float: right;
+}
+
+a {
+	color: #999999;
+}
+
+a:hover{
+	color: #000000;	
+}
+
+#logo{
+	position: relative;
+	top: 17px;
+	background-image:url('../images/logo.jpg');
+	height: 28px;
+	width: 230px;
+}
+
+ul {
+	display: inline;
+}
+
+li {
+	list-style: none;
+	padding-left: 15px;
+}
+
+table {
+	background-color: #f6f6f6;
+	padding: 3px;
+	border: 1px solid #CCCCCC;
+	margin-bottom: 10px;
 }

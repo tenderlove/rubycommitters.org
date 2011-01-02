@@ -1,29 +1,29 @@
-<div class="account">
-	<div class="portrait">
-		<% unless account.portraits.empty? %>
-	 		<%= render :partial => 'portrait', :collection => account.portraits %>
-		<% end %>
-	</div>
-	<div class="names">
-		<%= account.username %>
-		
-		<% unless account.names.empty? %>
-			Names: <%= render :partial => 'name', :collection => account.names %>
-		<% end %>
-		
-		<% unless account.nicks.empty? %>
-			Nicknames: <%= render :partial => 'name', :collection => account.nicks %>
-		<% end %>
-	</div>
-	<div class="connect">
-		<% unless account.sites.empty? %>
-		  Websites:</br></br><%= render :partial => 'site', :collection => account.sites %>
-		<% end %>
-		
-		<% unless account.services.empty? %>
-		  Connect <%= render :partial => 'service', :collection => account.services %>
-		<% end %>
-	</div>
+<table>
+	<tr class="committer">
+		<td class="portrait">
+			<% unless account.portraits.empty? %>
+ 				<%= render :partial => 'portrait', :collection => account.portraits %>
+			<% end %>
+		</td>
+		<td class="names">
+			<%= account.username %><br/><br/>		
+			<% unless account.names.empty? %>
+				Names: <%= render :partial => 'name', :collection => account.names %>
+			<% end %>
+			<br/>
+			<% unless account.nicks.empty? %>
+				Nicknames: <%= render :partial => 'name', :collection => account.nicks %>
+			<% end %>
+		</td>
+		<td class="connect">
+			<% unless account.sites.empty? %>
+			  Websites:</br></br><%= render :partial => 'site', :collection => account.sites %>
+			<% end %>
+			<br/>
+			<% unless account.services.empty? %>
+			  Connect: <%= render :partial => 'service', :collection => account.services %>
+			<% end %>
+		</td>
 	<!-- FIXME: unsure how to link to ISBN. :-( -->
 	<!--
 	<% unless account.books.empty? %>
@@ -39,4 +39,5 @@
 	  </tr>
 	<% end %>
 	-->
-</div>
+	</tr>
+</table>

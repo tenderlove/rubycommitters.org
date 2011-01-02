@@ -1,10 +1,15 @@
 <div id="header"> 
 	<div id="topbar"></div>
-	<div id="header_content"></div>
+	<div id="header_content">
+		<div id="logo"></div>
+	</div>
 </div>
 <div id="body_content">
 <div class="fork">
 	<%= image_tag 'fork.jpg' %><%= link_to 'Fork me on github', 'http://github.com/tenderlove/rubycommitters.org' %>
 </div>
+<br/><br/>
+<table class="committers">
 <%= render :partial => 'account', :collection => @accounts %>
+</table>
 </div>
