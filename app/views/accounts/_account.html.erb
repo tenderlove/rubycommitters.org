@@ -10,6 +10,7 @@
     </ul>
 
     <div class="commiter-data">
+
       <h2><%= account.username %></h2>
 
       <% if account.names.length > 0 %>
@@ -18,56 +19,51 @@
         </h3>
       <% end %>
 
-      <table>
-        <% if account.nicks.length > 0 %>
-          <tr>
-            <td>Nicknames:</td>
-            <td>
-              <ul>
-                <%= render :partial => 'name', :collection => account.nicks %>
-              </ul>
-            </td>
-          </tr>
-        <% end %>
+      <% if account.nicks.length > 0 %>
+        <dl class="nicknames">
+          <dt>Nicknames:</dt>
+          <dl><%= account.nicks.map(&:value).join(', ') %></dl>
+        </dl>
+      <% end %>
 
-        <% if account.sites.length > 0 %>
-          <tr>
-            <td>Sites:</td>
-            <td>
-              <ul>
-                <%= render :partial => 'site', :collection => account.sites %>
-              </ul>
-            </td>
-          </tr>
-        <% end %>
+      <% if account.sites.length > 0 %>
+        <dl class="sites">
+          <dt>Sites:</dt>
+          <dl>
+            <ul>
+              <%= render :partial => 'site', :collection => account.sites %>
+            </ul>
+          </dl>
+        </dl>
+      <% end %>
 
-        <% if account.services.length > 0 %>
-          <tr>
-            <td>Services:</td>
-            <td>
-              <ul>
-                <%= render :partial => 'service', :collection => account.services %>
-              </ul>
-            </td>
-          </tr>
-        <% end %>
+      <% if account.services.length > 0 %>
+        <dl class="services">
+          <dt>Services:</dt>
+          <dl>
+            <ul>
+              <%= render :partial => 'service', :collection => account.services %>
+            </ul>
+          </dl>
+        </dl>
+      <% end %>
 
-        <!-- FIXME: unsure how to link to ISBN. :-( -->
-        <!--
-        <% if account.books.length > 0 %>
-          <tr>
-            <td>Books:</td>
-            <td>
-              <ul>
-                <% account.books.each do |book| %>
-                  <li><%= book.key %></li>
-                <% end %>
-              </ul>
-            </td>
-          </tr>
-        <% end %>
-        -->
-      </table>
+      <!-- FIXME: unsure how to link to ISBN. :-( -->
+      <!--
+      <% if account.books.length > 0 %>
+        <tr>
+          <td>Books:</td>
+          <td>
+            <ul>
+              <% account.books.each do |book| %>
+                <li><%= book.key %></li>
+              <% end %>
+            </ul>
+          </td>
+        </tr>
+      <% end %>
+      -->
+
     </div>
   </div>
 </td>
