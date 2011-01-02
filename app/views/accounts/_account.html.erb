@@ -1,11 +1,13 @@
 <td class="commiter">
   <div class="commiter-wrapper">
 
-    <% if account.portraits.length > 0 %>
-      <ul class="portraits">
+    <ul class="portraits">
+      <% if account.portraits.length > 0 %>
         <%= render :partial => 'portrait', :collection => account.portraits %>
-      </ul>
-    <% end %>
+      <% else %>
+        <li><div class="image-wrapper"><%= image_tag 'no_portrait.png' %></div></li>
+      <% end %>
+    </ul>
 
     <h2><%= account.username %></h2>
 

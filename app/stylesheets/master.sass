@@ -17,12 +17,6 @@ h1
   color: #a00
   @include text-shadow(#3e0f10, -1px, 1px, 1px)
 
-.image-wrapper
-  height: 100px
-
-  img
-    height: 100%
-
 h2
   font-size: 30px
   padding-bottom: 3px
@@ -50,4 +44,13 @@ table.commiters
 
 .portraits
   float: left
-  margin-right: 10px
+  margin-right: 30px
+
+  .image-wrapper
+    width: 70px
+
+  img
+    width: 100%
+    padding: 5px
+    border: 1px solid #bbb
+    @include box-shadow(#999, 0, 0, 6px)
