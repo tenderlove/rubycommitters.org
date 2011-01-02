@@ -1,4 +1,6 @@
 <h1>Ruby Committers</h1>
-<ul>
-<%= render :partial => 'account', :collection => @accounts %>
-</ul>
+<% @accounts.each_slice(3) do |account_slice| %>
+  <ul>
+    <%= render :partial => 'account', :collection => account_slice %>
+  </ul>
+<% end %>

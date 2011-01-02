@@ -1,12 +1,20 @@
 @import "compass/reset"
+@import "compass/css3"
 
 body
   background: url(/images/ruby_pattern.png)
 
+h1, h2, h3
+  font-family: Cuprum, Sans
+
+h1, h2
+  font-weight: bold
+
 h1
   font-size: 60px
   text-align: center
-  padding: 40px 0
+  padding: 50px 0
+  color: #a00
 
 .image-wrapper
   height: 100px
@@ -14,10 +22,29 @@ h1
   img
     height: 100%
 
+h2
+  font-size: 30px
+  padding-bottom: 3px
+  color: #7f3129
+
+h3
+  color: #8f7375
+  font-size: 16px
+  line-height: 20px
+  padding-bottom: 15px
+
 ul
-  li
+  display: inline-block
+  width: 100%
+  margin-bottom: 20px
+
+  li.commiter
+    @include border-radius(10px)
     width: 30%
     margin-left: 2.5%
     float: left
-    border: 1px solid #efc7d2
+    border: 5px solid #fbd0dc
     background: #fefefe
+
+    .commiter-wrapper
+      padding: 10px 20px

@@ -1,79 +1,71 @@
-<li>
-  <table>
-    <tr>
-      <td>Account:</td>
-      <td><%= account.username %></td>
-    </tr>
-
+<li class="commiter">
+  <div class="commiter-wrapper">
+    <h2><%= account.username %></h2>
     <% if account.names.length > 0 %>
-      <tr>
-        <td>Names:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.names %>
-          </ul>
-        </td>
-      </tr>
+      <h3>
+        Other accouts: <%= account.names.map(&:value).join(', ') %>
+      </h3>
     <% end %>
+    <table>
+      <% if account.nicks.length > 0 %>
+        <tr>
+          <td>Nicknames:</td>
+          <td>
+            <ul>
+              <%= render :partial => 'name', :collection => account.nicks %>
+            </ul>
+          </td>
+        </tr>
+      <% end %>
 
-    <% if account.nicks.length > 0 %>
-      <tr>
-        <td>Nicknames:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.nicks %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
+      <% if account.sites.length > 0 %>
+        <tr>
+          <td>Sites:</td>
+          <td>
+            <ul>
+              <%= render :partial => 'site', :collection => account.sites %>
+            </ul>
+          </td>
+        </tr>
+      <% end %>
 
-    <% if account.sites.length > 0 %>
-      <tr>
-        <td>Sites:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'site', :collection => account.sites %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
+      <% if account.services.length > 0 %>
+        <tr>
+          <td>Services:</td>
+          <td>
+            <ul>
+              <%= render :partial => 'service', :collection => account.services %>
+            </ul>
+          </td>
+        </tr>
+      <% end %>
 
-    <% if account.services.length > 0 %>
-      <tr>
-        <td>Services:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'service', :collection => account.services %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
+      <% if account.portraits.length > 0 %>
+        <tr>
+          <td>Portraits:</td>
+          <td>
+            <ul>
+              <%= render :partial => 'portrait', :collection => account.portraits %>
+            </ul>
+          </td>
+        </tr>
+      <% end %>
 
-    <% if account.portraits.length > 0 %>
-      <tr>
-        <td>Portraits:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'portrait', :collection => account.portraits %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <!-- FIXME: unsure how to link to ISBN. :-( -->
-    <!--
-    <% if account.books.length > 0 %>
-      <tr>
-        <td>Books:</td>
-        <td>
-          <ul>
-            <% account.books.each do |book| %>
-              <li><%= book.key %></li>
-            <% end %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-    -->
-  </table>
+      <!-- FIXME: unsure how to link to ISBN. :-( -->
+      <!--
+      <% if account.books.length > 0 %>
+        <tr>
+          <td>Books:</td>
+          <td>
+            <ul>
+              <% account.books.each do |book| %>
+                <li><%= book.key %></li>
+              <% end %>
+            </ul>
+          </td>
+        </tr>
+      <% end %>
+      -->
+    </table>
+  </div>
 </li>
