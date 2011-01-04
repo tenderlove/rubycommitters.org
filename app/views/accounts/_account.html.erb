@@ -1,63 +1,23 @@
-<li>
-  <table>
-    <tr>
-      <td>Account:</td>
-      <td><%= account.username %></td>
-    </tr>
+<li class="account">
+    <% unless account.portraits.empty? %>
+      <%= render :partial => 'portrait', :collection => account.portraits %>
+    <% end %>
+    <h2><%= account.username %></h2>
 
     <% unless account.names.empty? %>
-      <tr>
-        <td>Names:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.names %>
-          </ul>
-        </td>
-      </tr>
+      <p><%= render :partial => 'name', :collection => account.names %></p>
     <% end %>
 
     <% unless account.nicks.empty? %>
-      <tr>
-        <td>Nicknames:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.nicks %>
-          </ul>
-        </td>
-      </tr>
+      <p>AKA: <%= render :partial => 'name', :collection => account.nicks %></p>
     <% end %>
 
     <% unless account.sites.empty? %>
-      <tr>
-        <td>Sites:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'site', :collection => account.sites %>
-          </ul>
-        </td>
-      </tr>
+      <p>Sites: <%= render :partial => 'site', :collection => account.sites %></p>
     <% end %>
 
     <% unless account.services.empty? %>
-      <tr>
-        <td>Services:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'service', :collection => account.services %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.portraits.empty? %>
-      <tr>
-        <td>Portraits:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'portrait', :collection => account.portraits %>
-          </ul>
-        </td>
-      </tr>
+      <p>Services: <%= render :partial => 'service', :collection => account.services %></p>
     <% end %>
 
     <!-- FIXME: unsure how to link to ISBN. :-( -->
@@ -75,5 +35,4 @@
       </tr>
     <% end %>
     -->
-  </table>
 </li>
