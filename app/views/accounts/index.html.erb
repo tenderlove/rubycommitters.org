@@ -1,10 +1,13 @@
-<section id="gutter">
+<header>
   <h1>Ruby Committers</h1>
-</section>
+</header>
 
-<section id="wrapper" class="container_12">
-  <%= link_to 'fork me on github', 'http://github.com/tenderlove/rubycommitters.org' %>
-  <ul>
-  <%= render :partial => 'account', :collection => @accounts %>
+<section class="wrapper">
+  <ul class="cards">
+    <%= render :partial => 'account', :collection => @accounts %>
   </ul>
 </section>
+
+<footer>
+  <h1><%= link_to 'fork me on github', 'http://github.com/tenderlove/rubycommitters.org' %></h1>
+</footer>
