@@ -7,12 +7,11 @@ body {
 	color:#111;
 }
 
-
 #wrap {
+	background:url(../images/ruby.png) no-repeat 120px right;
 	width:770px;
 	padding-left:30px;
 	margin:0 auto;
-	background:url(../images/ruby.png) no-repeat 120px right;
 }
 
 h1 {
@@ -20,6 +19,16 @@ h1 {
 	font-weight:400;
 	letter-spacing:-0.07em;
 	margin:0;
+}
+
+h2 {
+	font-size:48px;
+	font-weight:400;
+}
+
+h3 {
+	font-size:30px;
+	font-weight:400;
 }
 
 a {
@@ -34,27 +43,14 @@ a:hover {
 	border:0;
 }
 
-.byline {
-	margin:-0.6em 0 60px 0;
-	font-size:22px;
-	font-weight:300;
+#header {
+	margin-bottom:5em;
 }
 
-.ruby {
-	float:right;
-}
-
-.account {
-	float:right;
-	margin:-20px 0 0 0;
-	background:#f6f3f0;
-	opacity:0.5;
-	text-transform:uppercase;
-}
 
 #header h2 {
 	background:#be0000;
-	padding:10px 15px 10px 40px;
+	padding:15px 15px 5px 40px;
 	color:#fff;
 	width:220px;
 	font-size:24px;
@@ -63,14 +59,10 @@ a:hover {
 	margin-left:-40px;
 }
 
-#header {
-	margin-bottom:5em;
-}
-
 #header p {
 	font-size:18px;
 	font-weight:300;
-	padding:18px 60px 0 30px;
+	padding:23px 60px 0 30px;
 	float:left;
 }
 
@@ -100,6 +92,7 @@ a:hover {
 	text-transform:uppercase;
 	font-weight:300;
 	margin:0 0 0 0;
+	font-size:14px;
 }
 
 ul.collapsed li {
@@ -118,12 +111,22 @@ ul.collapsed li {
 	-webkit-box-shadow:0 2px 3px rgba(0,0,0, 0.2);
 }
 
-.portrait img {
-	display:none;
+.byline {
+	margin:-0.6em 0 60px 0;
+	font-size:22px;
+	font-weight:300;
 }
 
-.portrait img:first-child {
-	display:block;
+.ruby {
+	float:right;
+}
+
+.account {
+	float:right;
+	margin:-20px 0 0 0;
+	background:#f6f3f0;
+	opacity:0.5;
+	text-transform:uppercase;
 }
 
 .info {
