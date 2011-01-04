@@ -1,11 +1,12 @@
 <li class="clearfix person">
 
-   <div class="account"><a id="<%= account.username %>" href="#<%= account.username %>">→ <%= account.username %></a></div>
+   <div class="account">
+     <a id="<%= account.username %>" href="#<%= account.username %>">→ <%= account.username %></a>
+   </div>
+   
    <div class="portrait">
      <% if account.portraits.any? %>
         <%= render "portrait", :portrait => account.portraits.first %>
-      <% else %>
-
       <% end %>
    </div>
    
