@@ -8,8 +8,19 @@
   <%= analytics_tag %>
 </head>
 <body>
+<div id="wrap"> 
+  
+  <div id="header" class="clearfix">
+    <h2>RubyCommitters.org</h2>
+    <p>Ruby, programmer's best friend.
+  </div>
 
-<%= yield %>
-
+  <%= yield %>
+  
+  <p id="footer">
+    <a href="#top">↑ BACK TO TOP</a> <br />
+    2011 - RubyCommitters.org
+  </p>
+</div>
 </body>
 </html>

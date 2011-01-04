@@ -1,3 +1,9 @@
+= Design Credits
+  
+  * Design by Karri Saarinen <http://karrisaarinen.com>
+  * Ruby illustration by Linda Liukas <http://lindaliukas.fi>
+  * Rails help by Joao Cardoso <http://joao.fi>
+
 = rubycommitters.org
 
 This is the source code for the rubycommitters.org website.
