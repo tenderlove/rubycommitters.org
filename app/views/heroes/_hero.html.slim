@@ -1,0 +1,10 @@
+li
+  hr
+  h2= hero.username
+  table
+    - @attrs.each do |attr|
+      - unless hero.send(attr).empty?
+        tr
+          th= attr.capitalize
+          td
+            ul== partial "heroes/#{attr.chop}", :collection => hero.send(attr)

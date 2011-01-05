@@ -1,6 +1,5 @@
-require 'open-uri'
-
 desc "import the list of ruby committers"
-task :import => 'db:migrate' do
-  Account.import open('http://svn.coderepos.org/share/lang/ruby/ruby-committers/ruby-committers.yml')
+task :import => ['ar:drop', 'ar:migrate'] do
+  require 'open-uri'
+  Hero.import open('http://svn.coderepos.org/share/lang/ruby/ruby-committers/ruby-committers.yml')
 end

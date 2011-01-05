@@ -1,3 +1,3 @@
 class Service < ActiveRecord::Base
-  belongs_to :account
+  belongs_to :hero
 end

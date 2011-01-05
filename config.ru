@@ -1,4 +1,2 @@
-# This file is used by Rack-based servers to start the application.
-
-require ::File.expand_path('../config/environment',  __FILE__)
-run Rubycommitters::Application
+require ::File.dirname(__FILE__) + '/config/boot.rb'
+run Padrino.application

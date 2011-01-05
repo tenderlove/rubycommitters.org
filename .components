@@ -1,0 +1,8 @@
+--- 
+:stylesheet: none
+:test: none 
+:renderer: slim
+:script: jquery
+:mock: none
+:orm: activerecord
+

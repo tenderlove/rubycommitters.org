@@ -10,38 +10,38 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110101002342) do
+ActiveRecord::Schema.define(:version => 7) do
 
-  create_table "accounts", :force => true do |t|
-    t.string   "username"
+  create_table "books", :force => true do |t|
+    t.string   "isbn"
+    t.integer  "hero_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "books", :force => true do |t|
-    t.string   "key"
-    t.integer  "account_id"
+  create_table "heros", :force => true do |t|
+    t.string   "username"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "names", :force => true do |t|
     t.string   "value"
-    t.integer  "account_id"
+    t.integer  "hero_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "nicks", :force => true do |t|
     t.string   "value"
-    t.integer  "account_id"
+    t.integer  "hero_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "portraits", :force => true do |t|
     t.string   "url"
-    t.integer  "account_id"
+    t.integer  "hero_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(:version => 20110101002342) do
   create_table "services", :force => true do |t|
     t.string   "name"
     t.string   "key"
-    t.integer  "account_id"
+    t.integer  "hero_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(:version => 20110101002342) do
     t.string   "url"
     t.string   "feed"
     t.string   "lang"
-    t.integer  "account_id"
+    t.integer  "hero_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
