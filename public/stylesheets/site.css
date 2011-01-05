@@ -196,6 +196,7 @@ p{
 }
 #account .image-wrapper img {
   width: 100%;
+  display:block;
 }
 #account h2 {
   font-family: Museo;
