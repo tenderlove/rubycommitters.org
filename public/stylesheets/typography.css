@@ -36,8 +36,8 @@ body {
 h1,h2,h3,h4,h5,h6 { font-family: Helvetica, arial, sans-serif; color: #181818; font-weight: normal; }
 
 h1 { font-size: 3em; line-height: 1; margin: .2em 0 0.5em; }
-h2 { font-size: 1.4em; margin-bottom: 10px;}
-h3 { font-size: 1.75em; line-height: 1.25em; margin: 0 0 6px; }
+h2 { font-size: 1.8em; margin-bottom: 10px;}
+h3 { font-size: .9em; line-height: 1.25em; margin: 0 0 3px; text-transform: uppercase;font-weight:bold;}
 h4 { font-size: 1.4em; line-height: 1.25; margin: 0 0 6px; }
 h5 { font-size: 1em; margin: 0 0 6px; }
 h6 { font-size: 1em; }

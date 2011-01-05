@@ -8,19 +8,19 @@
     - unless account.names.empty?
       .names 
         %h3 Names
-        .item= render :partial => 'name', :collection => account.names
+        .meta= render :partial => 'name', :collection => account.names
       - unless account.nicks.empty?
         .nicknames 
           %h3 Nicknames
-          .item= render :partial => 'name', :collection => account.nicks
+          .meta= render :partial => 'name', :collection => account.nicks
       - unless account.sites.empty?
         .sites
           %h3 Sites
-          .item= render :partial => 'site', :collection => account.sites
+          .meta= render :partial => 'site', :collection => account.sites
       - unless account.services.empty?
         .services
           %h3 Services
-          .item= render :partial => 'service', :collection => account.services
+          .meta= render :partial => 'service', :collection => account.services
   :erb
     <!-- FIXME: unsure how to link to ISBN. :-( -->
     <!--

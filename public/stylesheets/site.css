@@ -2,11 +2,24 @@
 
 /* Member Cards */
 .member	{float: left;width: 300px;padding:10px;border:1px solid #aaa;margin: 0 10px 10px 0;}
+
+.member h2, .member h3 {float:left;width:100%;}
 .column {float: left;}
 .column.left {width:105px;}
 .column.right {width:190px;}
-
+.column .meta	{float:left;width:100%;margin-bottom:10px;}
+.column .meta .item	{float:left;width:100%;margin-bottom:5px;}
 
 
 .portrait	{width: 90px;height: 100px;overflow: hidden;}
 .portrait img	{width: 90px;}
+
+.icon a {text-indent: -9000px;display:block;width:28px;height:28px;background: url(/images/social_icons.png) no-repeat;float:left;margin-right:3px;}
+
+.icon a.github		{background-position: 0 0;}
+.icon a.friendfeed	{background-position: -30px -0;}
+.icon a.twitter		{background-position: -59px 0;}
+.icon a.linkedin	{background-position: -89px 0;}
+.icon a.facebook	{background-position: -119px 0;}
+.icon a.iddy		{background-position: -149px 0;}
+.icon a.mixi		{background-position: -178px 0;}
