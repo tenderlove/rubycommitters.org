@@ -239,6 +239,13 @@ p{
   padding-left: 20px;
   margin: .3em;
 }
+#account .col h3#title-books{
+  background:url(/images/books.png) no-repeat left;
+} 
+#account .col h3#title-sites{
+  background:url(/images/screen.png) no-repeat left;
+}
+
 #account .my_services {
   position: absolute;
   right: -60px;
