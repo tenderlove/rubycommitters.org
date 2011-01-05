@@ -181,7 +181,7 @@ p{
 --------------------------*/
 #account {
   width:540px;
-  margin:0 auto;
+  margin: 20px auto;
   position:relative;
 }
 #account .account a:hover {
