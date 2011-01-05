@@ -1,22 +1,24 @@
 module AccountsHelper
   def link_to_service name, service
-    case service.name
+    link = case service.name
     when 'twitter'
-      link_to name, 'http://twitter.com/' + service.key
+      'http://twitter.com/' + service.key
     when 'friendfeed'
-      link_to name, 'http://friendfeed.com/' + service.key
+      'http://friendfeed.com/' + service.key
     when 'mixi'
-      link_to name, 'http://mixi.jp/show_friend.pl?id=' + service.key
+      'http://mixi.jp/show_friend.pl?id=' + service.key
     when 'github'
-      link_to name, 'http://github.com/' + service.key
+      'http://github.com/' + service.key
     when 'facebook'
       if service.key =~ /^\sd+$/
-        link_to name, 'http://www.facebook.com/profile.php?id=' + service.key
+        'http://www.facebook.com/profile.php?id=' + service.key
       else
-        link_to name, 'http://www.facebook.com/' + service.key
+        'http://www.facebook.com/' + service.key
       end
     when 'iddy'
-      link_to name, 'http://iddy.jp/profile/' + service.key
+      'http://iddy.jp/profile/' + service.key
     end
+
+    link_to "#{image_tag("#{name}.ico")} <span>#{name.capitalize}</span>".html_safe, link
   end
 end
