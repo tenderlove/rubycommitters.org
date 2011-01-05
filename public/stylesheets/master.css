@@ -1,0 +1,242 @@
+/* line 14, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 4, ../../app/stylesheets/master.sass */
+body {
+  background: url(/images/ruby_pattern.png);
+  font-family: Sans;
+}
+
+/* line 8, ../../app/stylesheets/master.sass */
+h1, h2, h3 {
+  font-family: Cuprum, Sans;
+}
+
+/* line 11, ../../app/stylesheets/master.sass */
+h1, h2 {
+  font-weight: bold;
+}
+
+/* line 14, ../../app/stylesheets/master.sass */
+h1 {
+  font-size: 60px;
+  text-align: center;
+  padding: 50px 0 30px;
+  color: #aa0000;
+  margin-left: -90px;
+  text-shadow: #3e0f10 -1px 1px 1px;
+}
+/* line 22, ../../app/stylesheets/master.sass */
+h1 a {
+  text-decoration: none;
+  color: #aa0000;
+}
+/* line 26, ../../app/stylesheets/master.sass */
+h1 a img {
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+/* line 29, ../../app/stylesheets/master.sass */
+h1 a:hover {
+  color: #880000;
+}
+/* line 31, ../../app/stylesheets/master.sass */
+h1 a:hover img {
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+
+/* line 34, ../../app/stylesheets/master.sass */
+h2 {
+  font-size: 30px;
+  padding-bottom: 3px;
+  color: #7f3129;
+}
+
+/* line 39, ../../app/stylesheets/master.sass */
+h3 {
+  color: #8f7375;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* line 44, ../../app/stylesheets/master.sass */
+a {
+  color: #54272a;
+}
+/* line 46, ../../app/stylesheets/master.sass */
+a:hover {
+  color: #dda9ad;
+  text-decoration: none;
+}
+
+/* line 50, ../../app/stylesheets/master.sass */
+table.commiters {
+  width: 100%;
+  border-spacing: 20px;
+}
+/* line 54, ../../app/stylesheets/master.sass */
+table.commiters td.commiter {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  vertical-align: top;
+  width: 33.333%;
+  border: 3px solid #fbd0dc;
+  background: #fefefe;
+}
+/* line 61, ../../app/stylesheets/master.sass */
+table.commiters td.commiter .commiter-wrapper {
+  padding: 15px 20px;
+}
+
+/* line 64, ../../app/stylesheets/master.sass */
+.portraits {
+  float: left;
+  margin-right: 30px;
+  width: 1px;
+  position: relative;
+}
+/* line 70, ../../app/stylesheets/master.sass */
+.portraits li {
+  top: 0;
+  position: absolute;
+}
+/* line 74, ../../app/stylesheets/master.sass */
+.portraits .image-wrapper {
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  width: 70px;
+}
+/* line 78, ../../app/stylesheets/master.sass */
+.portraits .image-wrapper:first-child {
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+/* line 81, ../../app/stylesheets/master.sass */
+.portraits img {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #dddddd;
+  -moz-box-shadow: #c2c2c2 0 0 5px 0;
+  -webkit-box-shadow: #c2c2c2 0 0 5px 0;
+  -o-box-shadow: #c2c2c2 0 0 5px 0;
+  box-shadow: #c2c2c2 0 0 5px 0;
+}
+
+/* line 87, ../../app/stylesheets/master.sass */
+.commiter-data {
+  padding-left: 95px;
+}
+
+/* line 90, ../../app/stylesheets/master.sass */
+.commiter-data-extra {
+  margin-top: 15px;
+}
+
+/* line 93, ../../app/stylesheets/master.sass */
+dl {
+  margin-bottom: 8px;
+}
+/* line 97, ../../app/stylesheets/master.sass */
+dl.nicknames dt, dl.nicknames dd {
+  display: inline-block;
+}
+/* line 103, ../../app/stylesheets/master.sass */
+dl dt {
+  color: #a3a099;
+  margin-bottom: 2px;
+}
+/* line 107, ../../app/stylesheets/master.sass */
+dl ul {
+  margin-left: 10px;
+  padding: 4px 0;
+}
+/* line 111, ../../app/stylesheets/master.sass */
+dl ul li {
+  margin-bottom: 5px;
+}
+
+/* line 114, ../../app/stylesheets/master.sass */
+ul.services {
+  margin-bottom: 15px;
+  border-top: 1px dotted #fbd0dc;
+  padding-top: 10px;
+}
+/* line 119, ../../app/stylesheets/master.sass */
+ul.services li {
+  float: left;
+  margin-right: 8px;
+}
+
+/* line 123, ../../app/stylesheets/master.sass */
+.ruby-powered {
+  text-align: center;
+  padding: 80px 0;
+  font-family: Cuprum, Sans;
+  color: #94072a;
+}
