@@ -28,4 +28,10 @@ $(document).ready(function(){
 	  $('#account .account').height(s_height);
 	}
 	
+	// accont popout
+	$('#accounts .account').hover(function() {
+	 $(this).addClass('account_hover');
+	}, function() {
+	 $(this).removeClass('account_hover');
+	});
 });

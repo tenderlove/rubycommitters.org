@@ -71,12 +71,20 @@ body{
 a {
   color: #0072bc;
 }
+a:hover {
+  background-color: #0072bc;
+  color: white;
+  text-decoration: none;
+}
+
 .image-wrapper {
   max-width: 100px;
 	float:left;
-	margin:0 10px 10px 0;
+	margin:0 10px 0px 0;
 }
-
+.image-wrapper a:hover {
+  background: none;
+}
 .image-wrapper img {
   width: 100%;
 }
@@ -118,6 +126,10 @@ a {
 	width:960px;
 	padding:10px;
 }
+.clear {
+  height: 0;
+  clear: both;
+}
 
 #site-header{
 	
@@ -135,6 +147,7 @@ a {
 }
 #logo a:hover{
   color:#999;
+  background: none;
 }
 
 p{
@@ -163,9 +176,8 @@ p{
   border-color: #0072bc;
 }
 
-#accounts{
+#accounts {
   clear: both;
-	overflow:hidden;
 	position: relative;
 	z-index: 2;
 	background: white;
@@ -180,13 +192,31 @@ p{
   float:left;
   padding:0 10px 10px 0;
   margin:0 0 10px 0;
-  border-bottom:1px solid #ccc;
 }
 #accounts .account h2{
   font-size:16px;
   margin:0 0 5px;
+  font-family: "Museo-500", Museo, Helvetica, Arial, sans-serif;
 }
-
+#accounts .account p {
+  color: gray;
+}
+/*#accounts .account_hover {
+  position: relative;
+}
+#accounts .account_hover header {
+  position: absolute;
+  -moz-border-radius: 4px;
+  -moz-box-shadow: 0px 0px 6px #aba;
+  -webkit-box-shadow: 0px 0px 6px #aba;
+  padding: 25px;
+  width: 290px;
+  background: white;
+  z-index: 10;
+  left: -25px;
+  top: -25px;
+}
+*/
 .hide{
   display:none;
 }
@@ -210,11 +240,6 @@ p{
   width:540px;
   margin: 20px auto;
   position:relative;
-}
-#account .account a:hover {
-  background-color: #0072bc;
-  color: white;
-  text-decoration: none;
 }
 #account .account {
   background: #fff;
@@ -252,11 +277,10 @@ p{
   width: 100%;
   display:block;
 }
-#account h2 {
-  font-family: "Museo-500", Museo;
+#account .account h2 {
+  font-family: "Museo-500", Museo, Helvetica, Arial, sans-serif;
   font-size: 46px;
   line-height: 50px;
-  font-weight: bold;
 }
 #account a.primary_site {
   text-decoration: none;
@@ -306,7 +330,7 @@ p{
 #account .my_services {
   position: absolute;
   right: -60px;
-  background: #ccc;
+  background: #ddd;
   top: 20px;
   z-index: 1;
   border-radius: 4px;
