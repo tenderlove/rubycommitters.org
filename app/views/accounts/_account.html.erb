@@ -6,10 +6,10 @@
           <%= image_tag portrait.url %>
         <% end %>
       <% end %>
+
     </div>
 
     <% unless account.names.empty? %>
-      <h1>Name</h1>
       <ul class="names">
         <% account.names.each do |name|  %>
           <li><%= name.value %></li>

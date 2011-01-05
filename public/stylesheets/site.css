@@ -1,7 +1,204 @@
-.image-wrapper {
-  height: 100px;
+@font-face {
+  font-family: 'LeagueGothicRegular';
+  src: url('fonts/League_Gothic-webfont.eot');
+  src: local('☺'), url('fonts/League_Gothic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.image-wrapper img {
-  height: 100%;
+html {
+  background: #3F5EA6;
+  background: #3F5EA6 -moz-linear-gradient(#DDE7FF, #3F5EA6);
+  background: #3F5EA6 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#DDE7FF), to(#3F5EA6));
+}
+
+body {
+  width: 700px;
+  margin: 10px auto 0;
+  position: relative;
+  font-size: 16px/22px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #ccc;
+  background: transparent;
+}
+
+a {
+  -moz-transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+}
+
+img {
+  max-width: 100%;
+}
+
+.box {
+  padding: 40px;
+  margin-bottom: 40px;
+  background: #000;
+  color: #fff;
+  position: relative;
+  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, .5), 5px 5px 15px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, .5), 5px 5px 15px rgba(0, 0, 0, .5);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .5), 5px 5px 15px rgba(0, 0, 0, .5);
+}
+
+header[role="banner"] {
+  height: 150px;
+  padding-top: 540px;
+  background: url(/images/box-art.png) center 40px no-repeat, url(/images/space.gif) -45px top repeat;
+}
+
+header[role="banner"] h1, header[role="banner"] h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  -moz-transform: rotate(-10.4deg) skew(-10deg);
+  -webkit-transform: rotate(-10.4deg) skew(-10deg);
+  transform: rotate(-10.4deg) skew(-10deg);
+}
+
+header[role="banner"] h1 {
+  top: 480px;
+  left: 30px;
+  color: #009bec;
+}
+
+.no-fontface header[role="banner"] h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 4em;
+}
+
+.fontface header[role="banner"] h1 {
+  font-family: 'LeagueGothicRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 7.7em;
+}
+
+header[role="banner"] h2 {
+  color: #eccd00;
+  font-size: 1.5em;
+  top: 555px;
+  right: 40px;
+}
+
+.fork-me {
+  width: 80px;
+  height: 60px;
+  padding: 40px 10px 0;
+  font-weight: bold;
+  color: #fff;
+  color: rgba(255, 255, 255, .6);
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  background: transparent url(/images/seal.png) center center no-repeat;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  -moz-transition: color .2s ease;
+  -webkit-transition: color .2s ease;
+}
+
+.fork-me:hover {
+  color: #fff;
+}
+
+.team-list header {
+  font-weight: bold;
+  font-style: italic;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.team-list header h1 {
+  font-size: 3em;
+}
+
+.profile {
+  width: 100%;
+}
+
+.profile section {
+  overflow: hidden;
+  padding: 40px 0 0;
+  border-top: 1px solid #888;
+  margin-top: 40px;
+  line-height: 1.5;
+}
+
+.portrait {
+  width: 240px;
+  float: right;
+  margin-left: 10px;
+}
+
+.portrait img {
+  border: 5px solid #fff;
+  float: right;
+  width: 230px;
+  margin-top: 10px;
+}
+
+.portrait img:first-child {
+  margin-top: 0;
+}
+
+.profile h1 {
+  margin-top: 1em;
+  font-size: .875em;
+  line-height: 1;
+  font-weight: bold;
+  font-style: italic;
+  color: #d27345;
+}
+
+.profile a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.profile a:hover {
+  border-bottom-color: #fff;
+}
+
+.names {
+  font-weight: bold;
+  font-size: 1.3125em;
+}
+
+.services li {
+  display: inline;
+}
+
+.services li a {
+  padding-left:.2em;
+  margin-right: .5em;
+}
+
+.services li:first-child a {
+  padding-left: 0;
+}
+
+.services li:after {
+  content: '/';
+}
+
+.services li:last-child:after {
+  content: '';
+}
+
+footer[role="contentinfo"] {
+  background: #000;
+  padding: 20px 40px 40px;
+}
+
+footer[role="contentinfo"] a {
+  color: #eccd00;
+  opacity: .8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer[role="contentinfo"] a:hover {
+  opacity: 1;
 }

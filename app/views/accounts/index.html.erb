@@ -1,13 +1,16 @@
-<header role="banner">
-  <h1>Ruby Committers</h1>
+<header role="banner" class="box">
+  <hgroup>
+    <h1>Ruby Committers</h1>
+    <h2>Ruby Core Team</h2>
+  </hgroup>
+
+  <%= link_to 'fork me', 'http://github.com/tenderlove/rubycommitters.org', :title => 'Fork me on GitHub', :class => 'fork-me' %>
 </header>
 
-<%= link_to 'fork me on github', 'http://github.com/tenderlove/rubycommitters.org', :class => 'fork-me' %>
-
-<article class="team-list">
-  <!-- <header>
-    <h1>Meet the Ruby Core Team</h1>
-  </header> -->
+<article class="team-list box">
+  <header>
+    <h1>Meet the Team!</h1>
+  </header>
 
   <ul>
     <%= render :partial => 'account', :collection => @accounts %>
