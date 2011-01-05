@@ -43,12 +43,11 @@
         <% end %>
       <% end -%>
     </div>
-    
-    <% if full -%>
-    <footer class="my_services">
-      <ul>
-        <%= render :partial => 'service', :collection => account.services %>
-      </ul>
-    </footer>
-    <% end -%>
 </article>
+<% if full -%>
+  <footer class="my_services">
+    <ul>
+      <%= render :partial => 'service', :collection => account.services %>
+    </ul>
+  </footer>
+<% end -%>
