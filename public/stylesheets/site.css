@@ -179,7 +179,7 @@ p{
 
 /* ACCOUNT
 --------------------------*/
-#account{
+#account {
   width:540px;
   margin:0 auto;
   position:relative;
@@ -197,9 +197,12 @@ p{
   -moz-border-radius: 4px;
   -moz-box-shadow: 10px 10px 5px #aba;
   -webkit-box-shadow: 0px 0px 6px #aba;
-  min-height: 285px;
   position:relative;
   z-index:200;
+  min-height: 130px;
+}
+#account .meta {
+  overflow: auto;
 }
 #account header {
   margin-bottom: 10px;
@@ -247,7 +250,7 @@ p{
   padding-left: 20px;
   margin: .3em;
 }
-#account .col h3#title-books{
+#account .col h3#title-books {
   background:url(/images/books.png) no-repeat left;
 } 
 #account .col h3#title-sites{
