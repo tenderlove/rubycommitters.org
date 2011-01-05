@@ -128,6 +128,15 @@ body{
   margin:0 0 25px;
 }
 
+p{
+  margin:0 0 10px;
+}
+#filter_by_username{
+  padding:5px;
+  width:200px;
+  border:1px solid #333;
+}
+
 #accounts{
 	overflow:hidden;
 }
@@ -141,6 +150,9 @@ body{
 .account h2{
   font-size:16px;
   margin:0 0 5px;
+}
+.hide{
+  display:none;
 }
 
 #footer-padding {

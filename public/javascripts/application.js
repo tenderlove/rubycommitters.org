@@ -11,8 +11,14 @@ $(document).ready(function(){
 	})
 	
 	//bind the filter input on the INDEX list
-	$('#filter_by_username').change(function(){
-
+	$('#filter_by_username').keyup(function(){
+	  $('#accounts .account').addClass('hide');
+	  regexp = new RegExp($(this).val().toLowerCase());    
+	  for(var i=0; i<usernames.length; i++) {
+	    if(usernames[i].toLowerCase().match(regexp)){
+	      $('#accounts .account').find('h2:contains('+usernames[i]+')').parent().removeClass('hide');
+	    }
+    }
 	})
 	
 });
