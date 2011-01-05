@@ -184,6 +184,10 @@ p{
   margin:0 auto;
   position:relative;
 }
+#account .account a:hover {
+  background-color: #0072bc;
+  color: white;
+}
 #account .account {
   background: #fff;
   padding: 20px;
@@ -257,11 +261,6 @@ p{
 #account .col li a {
   padding: 1px;
 }
-#account a:hover {
-  background: #0072bc;
-  color: white;
-}
-
 
 #account .my_services {
   position: absolute;
@@ -275,7 +274,7 @@ p{
   -moz-box-shadow: 10px 10px 5px #aba;
   -webkit-box-shadow: 0px 0px 6px #aba;
 }
-.my_services a{
+.my_services a {
   display:block;
   text-indent:-9999px;
   outline:0;
@@ -292,16 +291,16 @@ p{
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.my_services a:hover{
+.my_services a:hover {
   opacity: 1.0;
   -moz-opacity: 1.0;
   filter:alpha(opacity=100);
 }
-.my_services li:last-child a{
+.my_services li:last-child a {
   margin:0;
 }
 a.twitter{
-  background:url(/images/twitter_32.png) no-repeat 0 0;
+  background:url(/images/twitter_32.png) no-repeat 0 0 #fff;
 }
 a.facebook{
   background:url(/images/facebook_32.png) no-repeat 0 0;
