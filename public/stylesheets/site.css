@@ -222,8 +222,26 @@ p{
 #account .primary_site + p {
   margin-top: 10px;
 }
+#account .col {
+  float: left;
+  margin-right: 20px;
+  width: 235px;
+}
+#account .col.last {
+  margin: 0;
+}
+#account .col h3 {
+  font-size: 16px;
+  padding-left: 20px;
+  margin: .3em;
+}
 #account .my_services {
-  
+  position: absolute;
+  right: -80px;
+  background: white;
+  padding: 20px;
+  top: 20px;
+  z-index: -1;
 }
 
 
