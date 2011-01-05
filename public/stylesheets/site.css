@@ -64,7 +64,9 @@ body{
 	font:normal 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background: #ececec;
 }
-
+a {
+  color: #0072bc;
+}
 .image-wrapper {
   max-width: 100px;
 	float:left;
@@ -186,6 +188,13 @@ p{
   min-height: 200px;
   position: relative;
 }
+#account header {
+  margin-bottom: 10px;
+}
+#account header p {
+  color: gray;
+  margin: 0;
+}
 #account .image-wrapper {
   position: absolute;
   background: white;
@@ -202,10 +211,17 @@ p{
 #account h2 {
   font-family: Museo;
   font-size: 46px;
-  margin-top: 0;
   line-height: 40px;
 }
-
+#account a.primary_site {
+  text-decoration: none;
+}
+#account a.primary_site:hover {
+  text-decoration: underline;
+}
+#account .primary_site + p {
+  margin-top: 10px;
+}
 
 
 
