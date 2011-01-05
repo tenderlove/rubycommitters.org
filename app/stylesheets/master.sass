@@ -16,7 +16,20 @@ h1
   text-align: center
   padding: 50px 0 30px
   color: #a00
+  margin-left: -90px
   @include text-shadow(#3e0f10, -1px, 1px, 1px)
+
+  a
+    text-decoration: none
+    color: #a00
+
+    img
+      @include opacity(0.0)
+
+    &:hover
+      color: #800
+      img
+        @include opacity(1.0)
 
 h2
   font-size: 30px
@@ -114,3 +127,9 @@ dl
 
     li
       margin-bottom: 5px
+
+.ruby-powered
+  text-align: center
+  padding: 80px 0
+  font-family: Cuprum, Sans
+  color: #94072A
