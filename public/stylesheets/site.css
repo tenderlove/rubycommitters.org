@@ -1,7 +1,12 @@
-.image-wrapper {
-  height: 100px;
-}
+.team	{width: 1100px;float:left;}
 
-.image-wrapper img {
-  height: 100%;
-}
+/* Member Cards */
+.member	{float: left;width: 300px;padding:10px;border:1px solid #aaa;margin: 0 10px 10px 0;}
+.column {float: left;}
+.column.left {width:105px;}
+.column.right {width:190px;}
+
+
+
+.portrait	{width: 90px;height: 100px;overflow: hidden;}
+.portrait img	{width: 90px;}

@@ -1,0 +1,45 @@
+/* --------------------------------------------------------------
+
+   typography.css
+   * Sets up some sensible default typography.
+
+   Based on work by:
+   * Nathan Borror     [playgroundblues.com]
+   * Jeff Croft        [jeffcroft.com]
+   * Christian Metts   [mintchaos.com]
+   * Wilson Miner      [wilsonminer.com]
+   * Richard Rutter    [clagnut.com]
+
+   Read more about using a baseline here:
+   * alistapart.com/articles/settingtypeontheweb
+
+-------------------------------------------------------------- */
+
+/* This is where you set your desired font size. The line-heights
+   and vertical margins are automatically calculated from this.
+   The percentage is of 16px (0.75 * 16px = 12px). */
+
+body {
+  font-size: .85em;
+  color: #181818;
+  font-family: Helvetica, arial, sans-serif;
+}
+
+:focus {
+  outline: none;
+  -moz-outline-style: none;
+}
+
+/* Headings
+-------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 { font-family: Helvetica, arial, sans-serif; color: #181818; font-weight: normal; }
+
+h1 { font-size: 3em; line-height: 1; margin: .2em 0 0.5em; }
+h2 { font-size: 1.4em; margin-bottom: 10px;}
+h3 { font-size: 1.75em; line-height: 1.25em; margin: 0 0 6px; }
+h4 { font-size: 1.4em; line-height: 1.25; margin: 0 0 6px; }
+h5 { font-size: 1em; margin: 0 0 6px; }
+h6 { font-size: 1em; }
+
+h1:first-child, h2:first-child { margin-top: 0; }
