@@ -4,22 +4,12 @@
     <% unless full -%><h2 id="username_<%= account.id %>"><%= link_to account.username, account %></h2><% end -%>
 
     <% unless account.names.empty? %>
-      <p><%= render :partial => 'name', :collection => account.names %></p>
+      <p><%= account.names.collect {|n| n.value }.to_sentence %></p>
     <% end %>
 
     <% unless account.nicks.empty? %>
-      <p><strong>AKA:</strong><br><%= render :partial => 'name', :collection => account.nicks %></p>
+      <p><strong>AKA:</strong><br><%= account.nicks.collect {|n| n.value }.to_sentence %></p>
     <% end %>
-
-<% if false %>
-    <% unless account.sites.empty? %>
-      <p>Sites: <%= render :partial => 'site', :collection => account.sites %></p>
-    <% end %>
-
-    <% unless account.services.empty? %>
-      <p>Services: <%= render :partial => 'service', :collection => account.services %></p>
-    <% end %>
-<% end -%>
 
     <% unless account.books.empty? %>
       <p><%= render :partial => 'book', :collection => account.books %></p>
