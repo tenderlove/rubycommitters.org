@@ -31,6 +31,7 @@ GEM
     arel (2.0.6)
     babosa (0.2.0)
     builder (2.1.2)
+    crack (0.1.8)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     friendly_id (3.1.8)
@@ -72,6 +73,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  crack
   friendly_id
   rails (= 3.0.3)
   sqlite3-ruby
