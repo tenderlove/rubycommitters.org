@@ -1,3 +1,4 @@
+<% url = portrait.present? ? portrait.url : '/images/missing.gif' -%>
 <div class='image-wrapper'>
-  <%= image_tag portrait.url %>
+  <%= image_tag url %>
 </div>

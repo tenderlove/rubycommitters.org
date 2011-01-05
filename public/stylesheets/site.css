@@ -115,21 +115,21 @@ body{
 #logo{
 	font-size:48px;
 	font-weight:bold;
+	margin:25px 0;
 }
 
 #accounts{
 	overflow:hidden;
 }
 #accounts li.account{
-	width:190px;
+	width:290px;
 	float:left;
 	margin:0 10px 10px 0;
 	padding:5px;
-	border:1px solid #ccc;
-	border-radius:5px;
-	-moz-border-radius:5px;
-	-o-border-radius:5px;
-	-khtml-border-radius:5px;
+}
+#accounts li.account h2{
+  font-size:16px;
+  margin:0 0 5px;
 }
 
 #footer-padding {

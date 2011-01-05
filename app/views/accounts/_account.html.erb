@@ -1,7 +1,5 @@
 <li class="account">
-    <% unless account.portraits.empty? %>
-      <%= render :partial => 'portrait', :collection => account.portraits %>
-    <% end %>
+    <%= render :partial => 'portrait', :locals => { :portrait => account.portraits.first } %>
     <h2><%= account.username %></h2>
 
     <% unless account.names.empty? %>
@@ -9,9 +7,10 @@
     <% end %>
 
     <% unless account.nicks.empty? %>
-      <p>AKA: <%= render :partial => 'name', :collection => account.nicks %></p>
+      <p><strong>AKA:</strong><br><%= render :partial => 'name', :collection => account.nicks %></p>
     <% end %>
 
+<% if false %>
     <% unless account.sites.empty? %>
       <p>Sites: <%= render :partial => 'site', :collection => account.sites %></p>
     <% end %>
@@ -19,7 +18,7 @@
     <% unless account.services.empty? %>
       <p>Services: <%= render :partial => 'service', :collection => account.services %></p>
     <% end %>
-
+<% end -%>
     <!-- FIXME: unsure how to link to ISBN. :-( -->
     <!--
     <% unless account.books.empty? %>

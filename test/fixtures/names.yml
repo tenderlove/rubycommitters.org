@@ -9,3 +9,15 @@ matz_hiragana:
 matz_romaji:
   value: Yukihiro Matsumoto
   account: matz
+
+# == Schema Information
+#
+# Table name: names
+#
+#  id         :integer         not null, primary key
+#  value      :string(255)
+#  account_id :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
