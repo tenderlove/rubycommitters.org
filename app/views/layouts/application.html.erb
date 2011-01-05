@@ -4,8 +4,10 @@
   <title>Ruby Committers</title>
   <%= stylesheet_link_tag 'master' %>
   <link href='http://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
+  <link href="/javascripts/fancybox/jquery.fancybox-1.3.4.css"  rel="stylesheet" type="text/css" media="screen" />
+
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag 'fancybox/jquery.fancybox-1.3.4.pack.js', 'application' %>
   <%= csrf_meta_tag %>
   <%= analytics_tag %>
 </head>

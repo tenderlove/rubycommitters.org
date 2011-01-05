@@ -32,4 +32,12 @@ $(function () {
         }
 
     });
+
+    $('ul.portraits a').fancybox({
+        'transitionIn':  'elastic',
+        'transitionOut': 'elastic',
+        'speedIn':       300,
+        'speedOut':      200,
+        'overlayShow':   false
+    });
 });
