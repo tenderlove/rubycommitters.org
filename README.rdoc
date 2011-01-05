@@ -13,6 +13,7 @@ Then import committer data
 
     $ bundle install
     $ rake import
+    $ rake book_titles
 
 Start your server
 
