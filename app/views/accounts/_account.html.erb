@@ -1,6 +1,7 @@
-<li class="account">
-    <%= render :partial => 'portrait', :locals => { :portrait => account.portraits.first } %>
-    <h2><%= account.username %></h2>
+<% full ||= false -%>
+<article class="account">
+    <%= render :partial => 'portrait', :locals => { :account => account, :full => full } %>
+    <% unless full -%><h2><%= link_to account.username, account %></h2><% end -%>
 
     <% unless account.names.empty? %>
       <p><%= render :partial => 'name', :collection => account.names %></p>
@@ -34,4 +35,4 @@
       </tr>
     <% end %>
     -->
-</li>
+</article>

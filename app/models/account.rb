@@ -6,7 +6,7 @@ class Account < ActiveRecord::Base
   has_many :portraits
   has_many :books
   
-  
+  has_friendly_id :username, :use_slug => true
   ###
   # Import +io+ object that contains a YAML representation of the
   # ruby-committers

@@ -1,0 +1,2 @@
+<%= render :partial => 'account', :locals => { :account => @account, :full => true } %>
+<% content_for :title, "<h2 id='subtitle'>#{@account.username}</h2>".html_safe -%>

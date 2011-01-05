@@ -51,6 +51,10 @@ table {
 	border-spacing: 0;
 }
 
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
 
 html, body {
   height: 100%;
@@ -115,19 +119,26 @@ body{
 #logo{
 	font-size:48px;
 	font-weight:bold;
-	margin:25px 0;
+	margin:25px 0 5px;
+}
+#subtitle{
+  font-size:40px;
+  color:#999;
+  font-weight:bold;
+  margin:0 0 25px;
 }
 
 #accounts{
 	overflow:hidden;
 }
-#accounts li.account{
+.account{
 	width:290px;
 	float:left;
-	margin:0 10px 10px 0;
-	padding:5px;
+	padding:0 10px 10px 0;
+	margin:0 0 10px 0;
+	border-bottom:1px solid #ccc;
 }
-#accounts li.account h2{
+.account h2{
   font-size:16px;
   margin:0 0 5px;
 }

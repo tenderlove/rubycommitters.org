@@ -1,4 +1,9 @@
-<% url = portrait.present? ? portrait.url : '/images/missing.gif' -%>
+<% url = (portrait = account.portraits.first).present? ? portrait.url : '/images/missing.gif' -%>
+<% image = image_tag(url, :alt => account.username) -%>
 <div class='image-wrapper'>
-  <%= image_tag url %>
+  <% if full -%>
+    <%= image %>
+  <% else -%>
+    <%= link_to image, account %>
+  <% end -%>
 </div>
