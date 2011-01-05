@@ -1,4 +1,8 @@
 /* v1.0 | 20080212 */
+@font-face {
+  font-family: "Museo-500";
+  src: url(/fonts/Museo500-Regular.otf);
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -194,6 +198,7 @@ p{
 #account header p {
   color: gray;
   margin: 0;
+  font-size: 18px;
 }
 #account .image-wrapper {
   position: absolute;
@@ -209,9 +214,10 @@ p{
   display:block;
 }
 #account h2 {
-  font-family: Museo;
+  font-family: "Museo-500", Museo;
   font-size: 46px;
   line-height: 40px;
+  font-weight: bold;
 }
 #account a.primary_site {
   text-decoration: none;
