@@ -6,6 +6,10 @@ html
     == javascript_include_tag :jquery, :application
 
   body
+    p
+      == "This fork is running on #{link_to 'Padrino', 'http://www.padrinorb.com/'} and #{link_to 'Slim', 'https://github.com/stonean/slim'}. "
+      == "You may check out the #{link_to 'source code here', 'https://github.com/fredwu/rubycommitters.org'}."
+
     == yield
 
     - if Padrino.env == :production
