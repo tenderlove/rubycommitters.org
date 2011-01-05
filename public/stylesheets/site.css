@@ -242,7 +242,7 @@ p{
 --------------------------*/
 #account {
   width:540px;
-  margin: 20px auto;
+  margin: 50px auto;
   position:relative;
 }
 #account .account {
@@ -363,7 +363,7 @@ p{
  	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 .my_services a:hover {
   opacity: 1.0;
@@ -381,7 +381,7 @@ p{
   padding: 3px 8px;
 }
 a.twitter{
-  background:url(/images/twitter_32.png) no-repeat 0 0 #fff;
+  background:url(/images/twitter_32.png) no-repeat 0 0;
 }
 a.facebook{
   background:url(/images/facebook_32.png) no-repeat 0 0;
