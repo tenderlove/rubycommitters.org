@@ -21,30 +21,26 @@
         <p><strong>aka:</strong> <%= account.nicks.collect {|n| n.value }.to_sentence %></p>
       <% end %>
     </header>  
-    
-    <div class="col">
-      <% if full -%>
-        <% unless account.books.empty? %>
+    <% if full -%>
+      <% unless account.books.empty? %>
+        <div class="col">
           <h3 id="title-books">Books</h3>
           <ul>
             <%= render :partial => 'book', :collection => account.books %>
           </ul>
-        <% end %>
+        </div>
       <% end -%>
-    </div>
-    
-    <div class="col last">
-      <% if full -%>
-        <% unless account.sites.empty? %>
+      <% unless account.sites.empty? %>
+        <div class="col last">    
           <h3 id="title-sites">Sites</h3>
           <ul>
             <%= render :partial => 'site', :collection => account.sites %>
           </ul>
-        <% end %>
-      <% end -%>
-    </div>
+        </div>
+      <% end %>
+    <% end -%>  
 </article>
-<% if full -%>
+<% if full and account.services.any? -%>
   <footer class="my_services">
     <ul>
       <%= render :partial => 'service', :collection => account.services %>
