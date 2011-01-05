@@ -22,9 +22,33 @@
       <% end %>
     </header>  
     
+    <div class="col">
+      <% if full -%>
+        <% unless account.books.empty? %>
+          <h3>Books</h3>
+          <ul>
+            <%= render :partial => 'book', :collection => account.books %>
+          </ul>
+        <% end %>
+      <% end -%>
+    </div>
+    
+    <div class="col">
+      <% if full -%>
+        <% unless account.sites.empty? %>
+          <h3>Sites</h3>
+          <ul>
+            <%= render :partial => 'site', :collection => account.sites %>
+          </ul>
+        <% end %>
+      <% end -%>
+    </div>
+    
     <% if full -%>
-      <% unless account.books.empty? %>
-        <p><%= render :partial => 'book', :collection => account.books %></p>
-      <% end %>
+    <footer class="my_services">
+      <ul>
+        <li></li>
+      </ul>
+    </footer>
     <% end -%>
 </article>
