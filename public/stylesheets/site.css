@@ -220,7 +220,7 @@ p{
 #account h2 {
   font-family: "Museo-500", Museo;
   font-size: 46px;
-  line-height: 40px;
+  line-height: 50px;
   font-weight: bold;
 }
 #account a.primary_site {
@@ -251,6 +251,17 @@ p{
 #account .col h3#title-sites{
   background:url(/images/screen.png) no-repeat left;
 }
+#account .col li {
+  padding: 4px 0;
+}
+#account .col li a {
+  padding: 1px;
+}
+#account a:hover {
+  background: #0072bc;
+  color: white;
+}
+
 
 #account .my_services {
   position: absolute;
@@ -264,7 +275,6 @@ p{
   -moz-box-shadow: 10px 10px 5px #aba;
   -webkit-box-shadow: 0px 0px 6px #aba;
 }
-
 .my_services a{
   display:block;
   text-indent:-9999px;
