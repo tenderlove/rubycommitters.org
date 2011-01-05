@@ -122,11 +122,12 @@ body{
 	font-weight:bold;
 	margin:25px 0 5px;
 }
-#subtitle{
-  font-size:40px;
+#logo a{
+  color:#333;
+  text-decoration:none;
+}
+#logo a:hover{
   color:#999;
-  font-weight:bold;
-  margin:0 0 25px;
 }
 
 p{

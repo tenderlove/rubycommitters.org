@@ -16,8 +16,7 @@
 
   <div id="container">
     <header id="site-header">
-      <h1 id="logo">Ruby Committers</h1>
-      <%= yield :title %>
+      <h1 id="logo"><%= link_to "Ruby Committers", root_url %></h1>
     </header>
     <section id="content">
       <%= yield %>
