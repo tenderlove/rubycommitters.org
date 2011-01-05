@@ -1,8 +1,6 @@
-.member
+.item
   .column.left
-    - unless account.portraits.empty?
-      .portraits
-        = render :partial => 'portrait', :collection => account.portraits
+    = render :partial => 'portrait', :collection => account.portraits
   .column.right 
     %h2= account.username
     - unless account.names.empty?

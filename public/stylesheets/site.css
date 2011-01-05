@@ -1,20 +1,22 @@
-.team	{width: 1100px;float:left;}
+body	{background: #333 url(/images/dark_noise.png);}
+.fork a	{position: absolute;top:0;left: 0;width:149px;height: 149px;display:block;text-indent: -9000px;background: url(/images/fork_me_ruby_red.png) no-repeat;}
+.header {width:600px; margin: 30px auto 0;height:115px;}
 
+.header h1 {text-indent: -9000px;background: url(/images/logo_inset.png) no-repeat;width:600px;height:80px;margin: 0 0 0 0;}
 /* Member Cards */
-.member	{float: left;width: 300px;padding:10px;border:1px solid #aaa;margin: 0 10px 10px 0;}
+.item	{float: left;width: 300px !important;height:280px;padding:15px 5px 5px 15px;margin: 0 10px 10px 0;background: transparent url(/images/user_card.png) no-repeat;}
 
-.member h2, .member h3 {float:left;width:100%;}
-.column {float: left;}
+.item h2, .item h3 {float:left;width:100%;}
+.column {}
 .column.left {width:105px;}
-.column.right {width:190px;}
+.column.right {width:190px;float:right;}
 .column .meta	{float:left;width:100%;margin-bottom:10px;}
 .column .meta .item	{float:left;width:100%;margin-bottom:5px;}
-
 
 .portrait	{width: 90px;height: 100px;overflow: hidden;}
 .portrait img	{width: 90px;}
 
-.icon a {text-indent: -9000px;display:block;width:28px;height:28px;background: url(/images/social_icons.png) no-repeat;float:left;margin-right:3px;}
+.icon a {text-indent: -99999px;display:block;width:28px;height:28px;background: url(/images/social_icons.png) no-repeat;float:left;margin-right:3px;}
 
 .icon a.github		{background-position: 0 0;}
 .icon a.friendfeed	{background-position: -30px -0;}

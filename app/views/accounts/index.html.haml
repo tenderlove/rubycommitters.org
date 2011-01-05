@@ -1,4 +1,11 @@
-%h1 Ruby Committers
 .fork= link_to 'fork me on github', 'http://github.com/tenderlove/rubycommitters.org'
-.team
-  = render :partial => 'account', :collection => @accounts
+.header
+  %h1 Ruby Committers
+.scrollcontainer
+  .scrollcenter
+    %a.prev.browse.left
+    .scrollable.vertical
+      .items
+        - @accounts.each_slice(6) do |account|
+          %div= render :partial => 'account', :collection => account
+    %a.next.browse.right
