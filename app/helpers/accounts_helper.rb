@@ -10,7 +10,7 @@ module AccountsHelper
     when 'github'
       link_to name, 'http://github.com/' + service.key, options
     when 'facebook'
-      if service.key =~ /^\sd+$/
+      if service.key =~ /^\s*\d+$/
         link_to name, 'http://www.facebook.com/profile.php?id=' + service.key, options
       else
         link_to name, 'http://www.facebook.com/' + service.key, options
