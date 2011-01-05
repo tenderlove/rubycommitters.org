@@ -39,14 +39,9 @@
         <% end %>
 
         <% unless account.services.empty? %>
-          <dl class="services">
-            <dt>Services:</dt>
-            <dd>
-              <ul>
-                <%= render :partial => 'service', :collection => account.services %>
-              </ul>
-            </dd>
-          </dl>
+          <ul class="services">
+            <%= render :partial => 'service', :collection => account.services %>
+          </ul>
         <% end %>
 
         <!-- FIXME: unsure how to link to ISBN. :-( -->

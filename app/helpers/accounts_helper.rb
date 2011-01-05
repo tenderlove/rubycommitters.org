@@ -19,6 +19,6 @@ module AccountsHelper
       'http://iddy.jp/profile/' + service.key
     end
 
-    link_to "#{image_tag("#{name}.ico")} <span>#{name.capitalize}</span>".html_safe, link
+    link_to image_tag("#{name}.ico"), link
   end
 end
