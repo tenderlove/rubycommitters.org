@@ -18,7 +18,7 @@
       <% end %>
 
       <% unless account.nicks.empty? %>
-        <p><strong>AKA:</strong> <%= account.nicks.collect {|n| n.value }.to_sentence %></p>
+        <p><strong>aka:</strong> <%= account.nicks.collect {|n| n.value }.to_sentence %></p>
       <% end %>
     </header>  
     
