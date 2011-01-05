@@ -20,7 +20,9 @@
       <p><strong>AKA:</strong> <%= account.nicks.collect {|n| n.value }.to_sentence %></p>
     <% end %>
 
-    <% unless account.books.empty? %>
-      <p><%= render :partial => 'book', :collection => account.books %></p>
-    <% end %>
+    <% if full -%>
+      <% unless account.books.empty? %>
+        <p><%= render :partial => 'book', :collection => account.books %></p>
+      <% end %>
+    <% end -%>
 </article>
