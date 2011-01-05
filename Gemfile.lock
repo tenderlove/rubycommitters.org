@@ -28,7 +28,6 @@ GEM
       activemodel (= 3.0.3)
       activesupport (= 3.0.3)
     activesupport (3.0.3)
-    annotate (2.4.0)
     arel (2.0.6)
     builder (2.1.2)
     erubis (2.6.6)
@@ -70,6 +69,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  annotate
   rails (= 3.0.3)
   sqlite3-ruby
