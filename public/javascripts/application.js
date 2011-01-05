@@ -16,7 +16,7 @@ $(document).ready(function(){
 	  regexp = new RegExp($(this).val().toLowerCase());    
 	  for(var i=0; i<usernames.length; i++) {
 	    if(usernames[i].toLowerCase().match(regexp)){
-	      $('#accounts .account').find('h2:contains('+usernames[i]+')').parent().removeClass('hide');
+	      $('#accounts .account').find('h2:contains('+usernames[i]+')').closest('.account').removeClass('hide');
 	    }
     }
 	})
