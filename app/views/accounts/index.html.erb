@@ -1,5 +1,19 @@
-<h1>Ruby Committers</h1>
-<%= link_to 'fork me on github', 'http://github.com/tenderlove/rubycommitters.org' %>
-<ul>
-<%= render :partial => 'account', :collection => @accounts %>
-</ul>
+<header role="banner">
+  <h1>Ruby Committers</h1>
+</header>
+
+<%= link_to 'fork me on github', 'http://github.com/tenderlove/rubycommitters.org', :class => 'fork-me' %>
+
+<article class="team-list">
+  <!-- <header>
+    <h1>Meet the Ruby Core Team</h1>
+  </header> -->
+
+  <ul>
+    <%= render :partial => 'account', :collection => @accounts %>
+  </ul>
+</article>
+
+<footer role="contentinfo">
+  <p>Site design by <a href="http://www.ccrissman.com">Chad Crissman</a></p>
+</footer>
