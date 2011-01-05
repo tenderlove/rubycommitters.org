@@ -10,7 +10,7 @@ module AccountsHelper
     when 'github'
       'http://github.com/' + service.key
     when 'facebook'
-      if service.key =~ /^\sd+$/
+      if service.key =~ /^\s*\d+$/
         'http://www.facebook.com/profile.php?id=' + service.key
       else
         'http://www.facebook.com/' + service.key
