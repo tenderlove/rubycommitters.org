@@ -53,6 +53,8 @@ GEM
       padrino-core (= 0.9.19)
     polyglot (0.3.1)
     rack (1.2.1)
+    rack-cache (1.0)
+      rack (>= 0.4)
     rack-flash (0.1.1)
       rack
     rack-test (0.5.7)
@@ -84,6 +86,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord (~> 3.0.3)
   padrino (= 0.9.19)
+  rack-cache (~> 1.0)
   rack-flash
   rack-test
   rake

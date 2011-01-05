@@ -21,11 +21,13 @@ class RubyCommitters < Padrino::Application
   ##
   # You can configure for a specified environment like:
   #
-  #   configure :development do
-  #     set :foo, :bar
-  #     disable :asset_stamp # no asset timestamping for dev
-  #   end
-  #
+  configure :production do
+    use Rack::Cache do
+      set :verbose, true
+      set :metastore,   "file:cache/meta"
+      set :entitystore, "file:cache/body"
+    end
+  end
 
   ##
   # You can manage errors like:
