@@ -20,19 +20,8 @@
       <p>Services: <%= render :partial => 'service', :collection => account.services %></p>
     <% end %>
 <% end -%>
-    <!-- FIXME: unsure how to link to ISBN. :-( -->
-    <!--
+
     <% unless account.books.empty? %>
-      <tr>
-        <td>Books:</td>
-        <td>
-          <ul>
-            <% account.books.each do |book| %>
-              <li><%= book.key %></li>
-            <% end %>
-          </ul>
-        </td>
-      </tr>
+      <p><%= render :partial => 'book', :collection => account.books %></p>
     <% end %>
-    -->
 </article>
