@@ -187,6 +187,7 @@ p{
 #account .account a:hover {
   background-color: #0072bc;
   color: white;
+  text-decoration: none;
 }
 #account .account {
   background: #fff;
@@ -229,9 +230,6 @@ p{
 }
 #account a.primary_site {
   text-decoration: none;
-}
-#account a.primary_site:hover {
-  text-decoration: underline;
 }
 #account .primary_site + p {
   margin-top: 10px;
