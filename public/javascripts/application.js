@@ -24,8 +24,8 @@ $(document).ready(function(){
 	// Set the card height relative to the services height
 	s_height = $('.my_services').height();
 	a_height = $('#account .account').height();
-	if (s_height > a_height) {
-	  $('#account .account').height(s_height + 30+"px")
+	if (s_height >= a_height) {
+	  $('#account .account').height(s_height);
 	}
 	
 });
