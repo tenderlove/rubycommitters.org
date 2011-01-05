@@ -10,7 +10,7 @@ header, section, footer, aside, nav, article, figure { display: block; }
 
 /* =FLOATS */
 
-.card:after {
+.card article:after {
   clear: both;
   content: ' ';
   display: block;
@@ -27,6 +27,15 @@ body {
   background: #eee;
   font: normal 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+.wrapper {
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 50px 0 30px 0;
+}
+
+/* =HEADER & =FOOTER */
 
 header, footer {
   background-image:
@@ -54,20 +63,6 @@ footer {
   bottom: 0;
 }
 
-.wrapper {
-  bottom: 0;
-  left: 0;
-  margin: 0 auto;
-  padding: 60px 0 40px 0;
-}
-
-.cards {
-  margin: 0 auto;
-  width: 320px;
-}
-
-/* =TYPOGRAPHY */
-
 h1 {
   display: inline-block;
   font-size: 20px;
@@ -77,26 +72,46 @@ h1 {
 
 /* =CARDS */
 
-li { margin-bottom: 20px; }
+.cards {
+  margin: 0 auto;
+  width: 960px;
+}
 
 .card {
   background: #fff;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  display: block;
+  float: left;
+  margin: 10px;
+  min-height: 200px;
+  padding-bottom: 30px;
   position: relative;
+  -webkit-transition: -webkit-box-shadow .25s linear;
+  width: 300px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .6);
+}
+
+h2 {
+  font-size: 15px;
 }
 
 .photo {
-  float: left;
-  position: relative;
-  max-width: 100px;
-  height: 100px;
+/*  display: none;*/
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
 }
 
-.photo img {
-    width: 100%;
-    height: auto;
+img {
+  display: block;
+/*  min-height: 100%;*/
+  width: 100%;
 }
-
+/*
 .photo:after {
     content: " "; 
     display: block;
@@ -113,9 +128,18 @@ li { margin-bottom: 20px; }
     -webkit-background-origin: border-box;
     -moz-background-origin: border;
     background-origin: border-box;
-}
+}*/
 
 .info {
+/*  display: none;*/
+/*  float: left;*/
+/*  width: 220px;*/
+}
+
+.services li {
+  background: #aaa;
+  display: block;
   float: left;
-  width: 220px;
+  height: 30px;
+  width: 30px;
 }
