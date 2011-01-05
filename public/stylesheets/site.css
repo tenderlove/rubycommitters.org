@@ -191,12 +191,16 @@ p{
   width:290px;
   float:left;
   padding:0 10px 10px 0;
-  margin:0 0 10px 0;
+  margin:0 0 20px 0;
 }
 #accounts .account h2{
   font-size:16px;
   margin:0 0 5px;
   font-family: "Museo-500", Museo, Helvetica, Arial, sans-serif;
+}
+#accounts .image-wrapper {
+  height: 100px;
+	overflow: hidden;
 }
 #accounts .account p {
   color: gray;
