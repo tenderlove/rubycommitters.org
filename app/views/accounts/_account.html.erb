@@ -47,7 +47,7 @@
     <% if full -%>
     <footer class="my_services">
       <ul>
-        <li></li>
+        <%= render :partial => 'service', :collection => account.services %>
       </ul>
     </footer>
     <% end -%>
