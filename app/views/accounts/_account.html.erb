@@ -1,14 +1,23 @@
 <% full ||= false -%>
 <article class="account">
     <%= render :partial => 'portrait', :locals => { :account => account, :full => full } %>
-    <% unless full -%><h2 id="username_<%= account.id %>"><%= link_to account.username, account %></h2><% end -%>
-
+    <h2 class="username">  
+    <% if full -%>
+      <%= account.username %>
+    <% else %>
+      <%= link_to account.username, account %>
+    <% end -%>
+    </h2>
+    <% if full and (primary_site = account.sites.first) -%>
+      <%= link_to primary_site.url, primary_site.url, :class => "primary_site" %>
+    <% end -%>
+    
     <% unless account.names.empty? %>
-      <p><%= account.names.collect {|n| n.value }.to_sentence %></p>
+      <p><%= account.names.collect {|n| n.value }.reverse.to_sentence %></p>
     <% end %>
 
     <% unless account.nicks.empty? %>
-      <p><strong>AKA:</strong><br><%= account.nicks.collect {|n| n.value }.to_sentence %></p>
+      <p><strong>AKA:</strong> <%= account.nicks.collect {|n| n.value }.to_sentence %></p>
     <% end %>
 
     <% unless account.books.empty? %>

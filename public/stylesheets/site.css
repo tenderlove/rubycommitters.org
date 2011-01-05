@@ -62,16 +62,17 @@ html, body {
 
 body{
 	font:normal 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #ececec;
 }
 
 .image-wrapper {
-  height: 100px;
+  max-width: 100px;
 	float:left;
 	margin:0 10px 10px 0;
 }
 
 .image-wrapper img {
-  height: 100%;
+  width: 100%;
 }
 
 .ribbon {
@@ -140,17 +141,18 @@ p{
 #accounts{
 	overflow:hidden;
 }
-.account{
-	width:290px;
-	float:left;
-	padding:0 10px 10px 0;
-	margin:0 0 10px 0;
-	border-bottom:1px solid #ccc;
+#accounts .account{
+  width:290px;
+  float:left;
+  padding:0 10px 10px 0;
+  margin:0 0 10px 0;
+  border-bottom:1px solid #ccc;
 }
-.account h2{
+#accounts .account h2{
   font-size:16px;
   margin:0 0 5px;
 }
+
 .hide{
   display:none;
 }
@@ -167,4 +169,42 @@ p{
 	color:#fff;
 	padding:10px;
 }
+
+/* ACCOUNT
+--------------------------*/
+#account .account {
+  background: #fff;
+  padding: 20px;
+  padding-left: 110px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -moz-box-shadow: 10px 10px 5px #aba;
+  -webkit-box-shadow: 0px 0px 6px #aba;
+  margin: 0 auto;
+  width: 500px;
+  min-height: 200px;
+  position: relative;
+}
+#account .image-wrapper {
+  position: absolute;
+  background: white;
+  padding: 10px;
+  left: -30px;
+  -moz-box-shadow: 10px 10px 5px #aba;
+  -webkit-box-shadow: 0px 0px 6px #aba;
+  max-width: 100px;
+}
+#account .image-wrapper img {
+  width: 100%;
+}
+#account h2 {
+  font-family: Museo;
+  font-size: 46px;
+  margin-top: 0;
+  line-height: 40px;
+}
+
+
+
+
 
