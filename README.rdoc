@@ -1,8 +1,8 @@
 = Design Credits
   
-  * Design by Karri Saarinen <http://karrisaarinen.com>
-  * Ruby illustration by Linda Liukas <http://lindaliukas.fi>
-  * Rails help by Joao Cardoso <http://joao.fi>
+* Design by Karri Saarinen <http://karrisaarinen.com>
+* Ruby illustration by Linda Liukas <http://lindaliukas.fi>
+* Rails help by Joao Carlos <http://joao.fi>
 
 = rubycommitters.org
 
