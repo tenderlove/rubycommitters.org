@@ -1,8 +1,9 @@
 <li>
+  <hr class="clear">
   <article class="account group clear">
 
     <section class="account-name">
-      <label>Username &mdash;</label>
+      <label>Username &ndash;</label>
       <h3><%= account.username %></h3>
     </section>
 
@@ -14,56 +15,62 @@
         </ul>
       </section>
       <% else %>
-        <p class="no-portrait">Portrait not available</p>
+        <p class="no-info">Portrait not available</p>
       <% end %>
     </div>
 
     <div class="info">
       
-      <% unless account.names.empty? %>
-        <section>
-          <label>Name</label>
-          <div class="description">
-            <ul>
-              <%= render :partial => 'name', :collection => account.names %>
-            </ul>
-          </div>
-        </section>
-      <% end %>
-  
-      <% unless account.nicks.empty? %>
-        <section>
-          <label>Nicknames</label>
-          <div class="description">
-            <ul>
-              <%= render :partial => 'name', :collection => account.nicks %>
-            </ul>
-          </div>
-        </section>
-      <% end %>
-  
-      <div class="group clear">
-        <% unless account.sites.empty? %>
-          <section class="sites">
-            <label>Websites</label>
+      <div class="col two group clear">
+        <% unless account.names.empty? %>
+          <section>
+            <label>Name</label>
             <div class="description">
               <ul>
-                <%= render :partial => 'site', :collection => account.sites %>
+                <%= render :partial => 'name', :collection => account.names %>
               </ul>
             </div>
           </section>
         <% end %>
     
-        <% unless account.services.empty? %>
-          <section class="services">
-            <label>Services</label>
+        <% unless account.nicks.empty? %>
+          <section>
+            <label>Nicknames</label>
             <div class="description">
               <ul>
-                <%= render :partial => 'service', :collection => account.services %>
+                <%= render :partial => 'name', :collection => account.nicks %>
               </ul>
             </div>
           </section>
         <% end %>
+      </div>
+      
+      <div class="one sidebar group clear">
+          <section class="sites">
+            <label>Websites</label>
+            <div class="description">
+            <% unless account.sites.empty? %>
+              <ul>
+                <%= render :partial => 'site', :collection => account.sites %>
+              </ul>
+            <% else %>
+              <p class="no-info">Information not available.</p>
+            <% end %>
+            </div>
+          </section>
+    
+          <section class="services">
+            <label>Services</label>
+            <div class="description">
+            <% unless account.services.empty? %>
+              <ul>
+                <%= render :partial => 'service', :collection => account.services %>
+              </ul>
+            <% else %>
+              <p class="no-info">Information not available.</p>
+            <% end %>
+            </div>
+          </section>
         
         <!-- FIXME: unsure how to link to ISBN. :-( -->
         <!--
@@ -84,5 +91,4 @@
       </div>
     </div>
   </article>
-  <hr class="clear">
 </li>

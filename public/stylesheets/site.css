@@ -57,6 +57,7 @@ body
 {
   background: #fff;
   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 14px;
   color: #000;
   margin: 0px;
   padding: 0px;
@@ -107,13 +108,12 @@ h3
 hr
 {
   border: 0;
-  height: 2px;
+  height: 1px;
   background: #ccc;
 }
 
 a
 {
-  display: inline-block;
   color: #00f;
   text-decoration: none;
 }
@@ -156,6 +156,11 @@ a:hover
   text-align: left;
 }
 
+#content-wrapper>ul>li
+{
+  display: block;
+}
+
 .description
 {
   font-size: 1.5em;
@@ -164,25 +169,34 @@ a:hover
 .sites, .services
 {
   float: left;
-  display: inline-block;
-  width: 200px;
-}
-
-.group
-{
-  display: inline-block;
+  display: block;
+  width: 100%;
 }
 
 .sites ul>li, .services ul>li
 {
-  display: inline;
-  margin-right: 10px;
   line-height: 150%;
+  word-wrap: break-word;
 }
 
 .sites .description, .services .description
 {
-  font-size: 1em;
+  font-size: 0.857em;
+}
+
+.one
+{
+  width: 150px;
+}
+
+.two
+{
+  width: 300px;
+}
+
+.col
+{
+  float: left;
 }
 
 .clear
@@ -203,36 +217,47 @@ a:hover
 .account
 {
   margin-bottom: 50px;
+  width: 100%;
 }
 
 .account-name
 {
   width: 100%;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px dotted #ccc;
 }
 
 .portrait
 {
   float: left;
-  display: inline-block;
+  display: block;
   text-align: center;
   width: 260px;
 }
 
-.no-portrait
+.no-info
 {
   color: #c0c0c0;
-  line-height: inherit;
+  line-height: 150%;
 }
 
 .info
 {
-  margin-left: 260px;
+  float: left;
+  display: block;
   padding-left: 20px;
   border-left: 1px dotted #ccc;
+  width: 480px;
 }
 
-.image-wrapper {
+.sidebar
+{
+  float: right;
+  padding: 10px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
 .image-wrapper img {
