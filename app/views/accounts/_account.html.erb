@@ -37,18 +37,12 @@
     <!-- FIXME: unsure how to link to ISBN. :-( -->
     <!--
     <% unless account.books.empty? %>
-      <tr>
-        <td>Books:</td>
-        <td>
-          <ul>
-            <% account.books.each do |book| %>
-              <li><%= book.key %></li>
-            <% end %>
-          </ul>
-        </td>
-      </tr>
+      <ul class="books">
+        <% account.books.each do |book| %>
+          <li><%= book.key %></li>
+        <% end %>
+      </ul>
     <% end %>
     -->
-  </table>
   </section>
 </li>
