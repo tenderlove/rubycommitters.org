@@ -12,23 +12,20 @@
   </div>
   <section>
     <h2><%= account.username %></h2>
-    <ul class="info">
-      <% unless account.names.empty? %>
-        <%= render :partial => 'name', :collection => account.names, :locals => {:class_name => 'name'} %>
-      <% end %>
-      <% unless account.nicks.empty? %>
-        <%= render :partial => 'name', :collection => account.nicks, :locals => {:class_name => 'nicks'} %>
-      <% end %>
-
+    <% unless account.names.empty? && account.nicks.empty? %>
+      <ul class="info">
+        <% unless account.names.empty? %>
+          <%= render :partial => 'name', :collection => account.names, :locals => {:class_name => 'name'} %>
+        <% end %>
+        <% unless account.nicks.empty? %>
+          <%= render :partial => 'name', :collection => account.nicks, :locals => {:class_name => 'nicks'} %>
+        <% end %>
+      </ul>
+    <% end %>
     <% unless account.sites.empty? %>
-      <tr>
-        <td>Sites:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'site', :collection => account.sites %>
-          </ul>
-        </td>
-      </tr>
+      <ul class="sites">
+        <%= render :partial => 'site', :collection => account.sites %>
+      </ul>
     <% end %>
 
     <% unless account.services.empty? %>

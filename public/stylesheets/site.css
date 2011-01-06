@@ -26,7 +26,7 @@ header, section, footer, aside, nav, article, figure { display: block; }
 body {
   background: #eee;
   color: rgba(0, 0 ,0, .6);
-  font: normal 14px/30px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: normal 13px/30px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .wrapper {
@@ -174,19 +174,26 @@ h2 {
   padding: 25px 0 25px 40px;
 }
 
-.info { background: url('/images/user-24x24.png') 3px 3px no-repeat; }
+.info { background: url('/images/edit-16x16.png') 7px 7px no-repeat; }
+.sites { background: url('/images/globe-16x16.png') 7px 7px no-repeat; }
 
 .card li {
   border-bottom: 1px solid rgba(173, 192, 204, .2);
   padding-left: 40px;
 }
 
-.nicks {
-  color: rgba(0, 0, 0, .3);
-  font-size: 13px;
-}
-
+.names { font-size: 14px; }
+.nicks { color: rgba(0, 0, 0, .3); }
 .nicks:before, .nicks:after { content: '"'; }
+
+.sites a {
+  display: block;
+  margin-right: 10px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 .services li {
   background: #aaa;
