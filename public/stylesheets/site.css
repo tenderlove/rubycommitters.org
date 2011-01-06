@@ -142,7 +142,8 @@ a:hover {
   font-size: 38px;
   text-shadow: 0 1px 1px #fff;
   color: #444;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 #stats {
   float: left;
