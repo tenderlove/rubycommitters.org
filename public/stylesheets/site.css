@@ -137,17 +137,17 @@ a:hover {
 #logo a {
   background: #C31E2A;
   border-bottom: 5px solid #8b030b;
-  padding: 40px 20px 5px 20px;
+  padding: 50px 20px 5px 20px;
   display: block;
   color: #fff;
   text-decoration:none;
-  text-shadow: 0 1px 1px white;
+/*text-shadow: 0 -1px 1px #8b030b;
   
   -webkit-transition:background 0.5s;
- 	-moz-transition-duration:       0.5s;
-	-o-transition-duration:         0.5s;
-	-webkit-transition:background 0.5s;
-	transition-duration:            0.5s;
+  -moz-transition-duration:       0.5s;
+  -o-transition-duration:         0.5s;
+  -webkit-transition:background 0.5s;
+  transition-duration:            0.5s;*/
 }
 #logo a:hover{
   background: #b41c27;
