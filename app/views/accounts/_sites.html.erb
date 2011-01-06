@@ -1,0 +1,15 @@
+<% unless sites.empty? -%>
+  <fieldset>
+    <legend><%= pluralize( sites.count, 'site' )%></legend>
+    <ul>
+      <% sites.each do |n| -%>
+        <li>
+          <%= link_to n.title, n.url, :title => "web site", :target => '#' -%>
+          <% unless n.feed.blank? -%>
+            <%= link_to image_tag( 'rss.png', :border => 0 ), n.feed, :title => "rss feed", :target => '#' -%>
+          <% end -%>
+        </li>
+      <% end -%>
+    </ul>
+  </fieldset>
+<% end -%>

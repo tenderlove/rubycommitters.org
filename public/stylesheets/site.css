@@ -1,7 +1,176 @@
+body {
+  background: #fff url(../images/bg.png) no-repeat top left;
+  margin:      0;
+  padding:     0;
+  line-height: normal;
+  font-size:   .9em;
+}
+
+div#layout {
+}
+
+div#committers {
+  width:       900px;
+  margin:      0px auto;
+  padding-top: 250px;
+}
+
 .image-wrapper {
   height: 100px;
 }
 
 .image-wrapper img {
   height: 100%;
+}
+
+div#title {
+  float:     right;
+  width:     450px;
+  height:    100px;
+  background: transparent url(../images/title.png) no-repeat top center;
+}
+
+ul {
+  list-style:  none;
+  text-indent: 0em;
+  margin:      0;
+  padding:     0;
+}
+
+fieldset {
+  border: none;
+}
+fieldset legend {
+  font-size:   1em;
+  font-weight: bold;
+  color:       #c3c3c3;
+  margin-left: -3px;
+}
+
+a {
+  text-decoration: none;
+  color:           #a43280;
+}
+
+a img {
+  vertical-align: middle;
+  width:          10px;
+  height:         10px;
+}
+
+div.sidebar {
+  background:            #000;
+  height:                200px;
+  width:                 35px;
+  float:                 left;
+  -moz-border-radius:    8px 0px 0 8px;
+  -webkit-border-radius: 8px 0px 0px 8px;
+}
+span.handle {
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform:    rotate(-90deg);	  
+  filter:            progid:DXImageTransform.Microsoft.BasicImage(rotation=3);  
+  font-size:         2em;
+  font-weight:       bold;
+  color:             #d7007c;
+  position:          relative;
+  left:              0px;
+  bottom:            -162px;
+  display:           block;
+  max-width:         30px;
+}
+
+div.title {
+  border-bottom: 1px #000 solid;
+  height:        45px;
+  overflow:      hidden;
+}
+p.names {
+  margin-left:  10px;
+  font-size:    1.2em;    
+  font-weight:  bold;
+  float:        left;
+}
+span.name {
+  width: 200px;
+}
+
+div#members {
+  clear:       both;
+  margin-left: 50px;
+}
+div.member {
+  float:                 left;
+  border:                1px #000 solid;
+  -moz-border-radius:    10px 0px 10px 10px;
+  -webkit-border-radius: 10px;
+  overflow:              hidden;
+  width:                 400px;
+  max-height:            200px;
+  margin:                5px;
+}
+
+label {
+  border: 1px green solid;  
+}
+
+div.content {
+  clear:       right;
+  margin:      10px 5px 0 40px;
+  font-size:   0.9em;
+  height:      114px;
+}
+
+div.avatars {
+  margin-right: 10px;
+  float:        right;
+}
+
+div.avatars img {
+  border:                2px #ccc solid;
+  -moz-border-radius:    5px;
+  -webkit-border-radius: 5px;  
+  height:                100px;
+  width:                 90px;
+  padding:               5px;
+}
+
+p.aliases {
+  color: gray;
+}
+span.alias {
+  font-style: italic;
+}
+
+ul.socials {
+  margin: 10px 10px 0 0;
+}
+ul.socials li {
+  display: inline;
+}
+
+div.source {
+  float:      right;
+  margin:     0 0 0 5px;
+  width:      24px;
+  height:     24px;
+  background: transparent url("../images/sources.png" ) no-repeat top left;  
+}
+div.facebook {
+  background-position: 0 0;
+}
+div.twitter {
+  background-position: -24px 0;
+}
+div.github {
+  background-position: -48px 0;
+}
+div.friendfeed {
+  background-position: -72px 0;
+}
+div.iddy {
+  background-position: -96px 0;
+}
+div.mixi {
+  background-position: -120px 0;
 }

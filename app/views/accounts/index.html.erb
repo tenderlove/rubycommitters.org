@@ -1,5 +1,13 @@
-<h1>Ruby Committers</h1>
-<%= link_to 'fork me on github', 'http://github.com/tenderlove/rubycommitters.org' %>
-<ul>
-<%= render :partial => 'account', :collection => @accounts %>
-</ul>
+<div id="layout">
+  <div id="committers">
+    <div id="title"></div>
+    <div id="members">
+      <%= render :partial => 'account', :collection => @accounts -%>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('.avatars').cycle( { fx: 'zoom' } );
+  $('.names').cycle( { fx: 'fade' } );
+</script>

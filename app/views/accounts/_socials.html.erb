@@ -1,0 +1,7 @@
+<ul class="socials">
+  <% socials.sort{ |a,b| b.name <=> a.name }.each do |s| -%>
+    <li>
+      <%=link_to content_tag(:div, nil, :class => "source #{s.name}"), url_to_service( s ), :title => s.key, :target => '#' -%>
+    </li>
+  <% end -%>
+</ul>    

@@ -1,0 +1,9 @@
+<p class="names">
+  <% unless account.names.empty? -%>
+    <% account.names.each do |n| -%>
+      <%= content_tag :span, n.value.gsub( /\s/, ' '), :class => 'name' -%>
+    <% end -%>
+  <% else -%>
+    <%= content_tag :span, account.username, :class => 'name' -%>
+  <% end -%>
+</p>

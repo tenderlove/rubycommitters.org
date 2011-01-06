@@ -1,0 +1,10 @@
+<% unless nicks.empty? -%>
+  <fieldset>
+    <legend><%= pluralize( nicks.count, 'alias' )%></legend>
+    <ul>
+      <% nicks.each do |n| -%>
+        <li><%=n.value%></li>
+      <% end -%>
+    </ul>
+  </fieldset>
+<% end -%>
