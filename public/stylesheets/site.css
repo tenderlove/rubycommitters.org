@@ -26,7 +26,7 @@ header, section, footer, aside, nav, article, figure { display: block; }
 body {
   background: #eee;
   color: rgba(0, 0 ,0, .8);
-  font: normal 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: normal 14px/30px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .wrapper {
@@ -79,7 +79,8 @@ h1 {
 }
 
 .card {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(.5, #f6f6f6), color-stop(.501, #eee), to(#fff));
+  background: #fff;
+/*  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(.5, #f6f6f6), color-stop(.501, #eee), to(#fff));*/
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   display: block;
   float: left;
@@ -90,12 +91,25 @@ h1 {
   width: 290px;
 }
 
+.card:after {
+  border-right: 3px double rgba(217, 163, 192, .3);
+  bottom: 0;
+  content: " "; 
+  display: block;
+  left: 0;
+  position: absolute;
+  top: -1px;
+  width: 30px;
+}
+
 .card:hover {
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
 }
 
 h2 {
+  border-bottom: 1px solid rgba(173, 192, 204, .3);
   font-size: 15px;
+  padding: 25px 0 25px 50px;
 }
 
 .portrait {
@@ -107,7 +121,7 @@ h2 {
 
 .frame {
   background: #fff;
-  -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .2);
+  -webkit-box-shadow: -1px 0 2px 1px rgba(0, 0, 0, .2);
   padding: 5px;
 }
 
@@ -155,13 +169,8 @@ img {
 .right:after { right: 34px; }
 
 .info {
-/*  display: none;*/
-/*  float: left;*/
-/*  width: 220px;*/
-}
-
-.info li {
-  border-bottom: 1px solid #dde2e6;
+  background: url('/images/user-24x24.png') 3px 3px no-repeat;
+  padding-left: 40px;
 }
 
 .services li {

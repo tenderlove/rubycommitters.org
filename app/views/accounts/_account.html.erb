@@ -3,23 +3,19 @@
     <div class="frame">
       <div class="photo">
         <% if account.portraits.empty? %>
-          <img src="http://placehold.it/300" />
+          <img src="http://placehold.it/100" />
         <% else %>
           <%= render :partial => 'portrait', :collection => account.portraits %></div>
         <% end %>
       </div>
     </div>
   </div>
-  <section class="info">
+  <section>
     <h2><%= account.username %></h2>
-    <ul>
-      <li>
-    <% unless account.names.empty? %>
-      Names:
-      <ul>
+    <ul class="info">
+      <% unless account.names.empty? %>
         <%= render :partial => 'name', :collection => account.names %>
-      </ul>
-    <% end %>
+      <% end %>
 
     <% unless account.nicks.empty? %>
       <tr>
