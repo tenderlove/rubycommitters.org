@@ -111,6 +111,7 @@ a:hover {
   margin:0 auto -70px;
 	width:960px;
 	padding:10px 10px 0;
+
 }
 .clear {
   height: 0;
@@ -118,18 +119,27 @@ a:hover {
 }
 
 #site-header{
-	
+	overflow: auto;
+}
+#site-header h1 {
+  float: left;
+  margin: 0;
+  font-family: 'Lato', arial, serif;
 }
 
 #logo{
-	font-size:48px;
+	font-size: 20px;
 	font-weight:bold;
 	margin:25px 0 5px;
 	text-align:center;
 	
 }
-#logo a{
-  color:#333;
+#logo a {
+  background: #C31E2A;
+  border-bottom: 5px solid #8b030b;
+  padding: 40px 20px 5px 20px;
+  display: block;
+  color: #fff;
   text-decoration:none;
   text-shadow: 0 1px 1px white;
   
@@ -142,12 +152,40 @@ a:hover {
 .lights_down #logo a{
   color:#555;
   text-shadow:none;
+  margin-bottom: 20px;
 }
 #logo a:hover{
-  color:#999;
-  background: none;
+  background: #b41c27;
 }
-
+#tagline {
+  float: left;
+  margin: 8px 20px;
+  text-shadow: 0 1px 1px #fff;
+  color: #444;
+  font-size: 16px;
+  line-height: 23px;
+}
+#tagline .byline {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: normal;
+  color: #888;
+}
+#intro {
+  float: left;
+  font-size: 38px;
+  text-shadow: 0 1px 1px #fff;
+  color: #444;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+#stats {
+  float: left;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+  text-shadow: 0 1px 1px white;
+}
 p{
   margin:0 0 10px;
 }
@@ -161,6 +199,9 @@ p{
   text-shadow: 0 1px 1px #fff;
   color: #444;
   font-weight: bold;
+}
+input::-webkit-input-placeholder {
+    color: #666;
 }
 #filter_by_username {
   width: 200px;
