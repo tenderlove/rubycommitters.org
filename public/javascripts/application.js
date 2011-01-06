@@ -10,7 +10,7 @@ $(document).ready(function(){
 	$('#accounts .account').equalHeights();
 	
 	var
-    speed = 1000,  // animation speed
+    speed = 500,  // animation speed
     $wall = $('#accounts')
   ;
 

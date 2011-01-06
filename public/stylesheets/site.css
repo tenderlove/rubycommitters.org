@@ -286,6 +286,7 @@ body.lights_down #account .account{
   clear: both;
   position: relative;
   height: 50px;
+  margin-top: 40px;
 	background:#333;
 	color:#fff;
 	padding:10px;
