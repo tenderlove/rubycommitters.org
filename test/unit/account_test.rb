@@ -10,6 +10,21 @@ class AccountTest < ActiveSupport::TestCase
     @yml = File.join(File.expand_path(File.dirname(__FILE__)), 'ruby-committers.yml')
   end
 
+  def test_name_with_a_name
+    assert_equal @matz.names.last.value.titleize, @matz.name
+  end
+
+  def test_name_without_name_but_with_nick
+    @matz.names.delete_all
+    assert_equal @matz.nicks.first.value, @matz.name
+  end
+
+  def test_name_without_name_or_nick_but_with_username
+    @matz.names.delete_all
+    @matz.nicks.delete_all
+    assert_equal @matz.username, @matz.name
+  end
+
   def test_has_many_names
     assert_operator 3, :<=, @matz.names.length
   end

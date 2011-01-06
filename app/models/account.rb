@@ -13,6 +13,16 @@ class Account < ActiveRecord::Base
     end
   end
 
+  def name
+    if names.any?
+      names.last.value.titleize
+    elsif nicks.any?
+      nicks.first.value
+    else
+      username
+    end
+  end
+
   ###
   # Import +io+ object that contains a YAML representation of the
   # ruby-committers
