@@ -14,11 +14,15 @@
       <% end -%>
     
       <% unless account.names.empty? %>
-        <p><%= account.names.collect {|n| n.value }.reverse.to_sentence %></p>
+        <ul class="my_names">
+          <% account.names.reverse.each do |n| %>
+              <li><%= n.value %></li>
+          <% end %>
+        </ul>
       <% end %>
-
+      
       <% unless account.nicks.empty? %>
-        <p><strong>aka:</strong> <%= account.nicks.collect {|n| n.value }.to_sentence %></p>
+        <p class="nicks"><strong>aka:</strong> <%= account.nicks.collect {|n| n.value }.to_sentence %></p>
       <% end %>
     </header>  
     <% if full -%>

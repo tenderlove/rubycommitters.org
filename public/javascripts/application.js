@@ -1,3 +1,9 @@
+/*
+Authors:
+Joe Sak     joe@joesak.com
+Nic Haynes  nic@nicinabox.com
+*/
+
 $(document).ready(function(){
 	//equalize the height of each account in the INDEX list
 	// #accounts is the scope that indicates the INDEX view
@@ -20,20 +26,11 @@ $(document).ready(function(){
 	    }
     }
     var count = $('.account').not('.hide').length;
-    switch (count) {
-      case 1:
-        results = count+" result";
-        break;
-      default:
-        results = count+" results";
-        break;
-    }
     if ($(this).val() != '') {
-      $('#filter .results').html(results);
+      $('#filter .results').html(count == 1 ? count+" result" : count+" results");
     } else {
       $('#filter .results').empty();
     }
-    
 	})
 	
 	// Set the card height relative to the services height

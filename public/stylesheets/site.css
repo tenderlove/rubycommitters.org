@@ -185,6 +185,9 @@ p{
   height: 100px;
 	overflow: hidden;
 }
+#accounts .my_names {
+  font-size: 14px;
+}
 #accounts .account p {
   color: gray;
 }
@@ -245,11 +248,21 @@ p{
 }
 #account header {
   margin-bottom: 10px;
+  overflow: auto;
 }
-#account header p {
+#account .my_names {
+  font-family: 'Lato', arial, serif;
+  color: #444;
+  font-size: 20px;
+  margin-top: 10px;
+}
+#account .nicks {
+  margin-top: 10px;
+  font-size: 16px;
   color: gray;
-  margin: 0;
-  font-size: 18px;
+}
+#account header p strong {
+  color: gray;
 }
 #account .image-wrapper {
   position: absolute;
@@ -278,7 +291,7 @@ p{
 #account .col {
   float: left;
   margin-right: 20px;
-  width: 195px;
+  width: 185px;
 }
 #account .col.last {
   margin: 0;
