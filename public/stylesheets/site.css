@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Arvo);
 
+p,
 h1,
 h2,
 ul,
@@ -54,6 +55,31 @@ header h2 {
   background: inherit;
   color: #666;
   font: normal 14px "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+footer {
+  margin: 48px 0 0 0;
+}
+
+footer a,
+footer p {
+  color: #555;
+  border-color: #555;
+}
+
+footer p:first-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+footer p:first-child a {
+  border: 0
+}
+
+footer p:last-child {
+  font-size: 11px;
+  text-align: center;
 }
 
 table {
