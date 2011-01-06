@@ -322,6 +322,15 @@ p{
   z-index: 1;
   border-radius: 4px;
   -moz-border-radius: 4px;
+  
+  -webkit-transition-duration: 0.5s;
+ 	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+#account .my_services:hover{
+  
 }
 #account .my_services ul {
   border: 1px solid #f7f7f7;  
