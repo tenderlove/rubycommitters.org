@@ -1,10 +1,12 @@
 <li class="card">
-  <div class="photo">
-    <% if account.portraits.empty? %>
-      <img src="http://placehold.it/300" />
-    <% else %>
-      <%= render :partial => 'portrait', :collection => account.portraits %></div>
-    <% end %>
+  <div class="frame">
+    <div class="photo">
+      <% if account.portraits.empty? %>
+        <img src="http://placehold.it/300" />
+      <% else %>
+        <%= render :partial => 'portrait', :collection => account.portraits %></div>
+      <% end %>
+    </div>
   </div>
   <section class="info">
     <h2><%= account.username %></h2>
