@@ -137,6 +137,12 @@ a:hover {
   font-size: 16px;
   line-height: 23px;
 }
+#tagline .byline {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: normal;
+  color: #888;
+}
 #intro {
   float: left;
   font-size: 38px;
