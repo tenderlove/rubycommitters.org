@@ -106,7 +106,7 @@ header[role="banner"] h2 {
   font-size: .75em;
 }
 
-.fork-me:hover {
+.fork-me:hover, .fork-me:active {
   opacity: 1;
 }
 
@@ -165,7 +165,7 @@ header[role="banner"] h2 {
   border-bottom: 1px solid transparent;
 }
 
-.profile a:hover {
+.profile a:hover, .profile a:active {
   color: #eccd00;
 }
 
@@ -209,6 +209,41 @@ footer[role="contentinfo"] a {
   font-weight: bold;
 }
 
-footer[role="contentinfo"] a:hover {
+footer[role="contentinfo"] a:hover, footer[role="contentinfo"] a:active {
   color: #000;
 }
+
+@media all and (max-device-width: 480px) {
+  html {
+    background: transparent;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    width: 100%;
+    margin: 0;
+  }
+
+  header[role="banner"] {
+
+  }
+
+  .box {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .profile section {
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media all and (max-device-width: 480px) and (orientation: portrait) {
+  .portrait img {
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+}
+
