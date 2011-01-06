@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(:version => 7) do
 
   create_table "portraits", :force => true do |t|
     t.string   "url"
+    t.text     "file"
     t.integer  "hero_id"
     t.datetime "created_at"
     t.datetime "updated_at"

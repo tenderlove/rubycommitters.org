@@ -8,6 +8,7 @@ class Hero < ActiveRecord::Base
 
   def self.import(io)
     require 'yaml'
+    require 'open-uri'
 
     entries = YAML.load(io)
     entries.each do |entry|
@@ -30,8 +31,20 @@ class Hero < ActiveRecord::Base
         )
       end
 
-      (entry['portraits'] || []).each do |portrait|
-        hero.portraits.create!(:url => portrait)
+      if entry['portraits']
+        entry['portraits'].each do |url|
+          portrait = hero.portraits.create!(:url => url)
+          begin
+            portrait.remote_file_url = URI.unescape(url) # caters for utf-8 strings
+            portrait.save!
+          rescue OpenURI::HTTPError => e
+            puts e.message
+            puts "Error retrieving #{url}"
+          end
+        end
+      else
+        # creates a dummy portrait entry so that Carrierwave could fallback
+        hero.portraits.create!(:url => "")
       end
 
       (entry['services'] || []).each do |name, key|

@@ -13,6 +13,8 @@ GEM
     activesupport (3.0.3)
     arel (2.0.6)
     builder (2.1.2)
+    carrierwave (0.5.1)
+      activesupport (~> 3.0)
     daemons (1.1.0)
     eventmachine (0.12.10)
     git (1.2.5)
@@ -26,6 +28,8 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    mini_magick (3.1)
+      subexec (~> 0.0.4)
     padrino (0.9.19)
       padrino-admin (= 0.9.19)
       padrino-core (= 0.9.19)
@@ -67,6 +71,7 @@ GEM
       temple (~> 0.1.6)
       tilt (~> 1.1)
     sqlite3-ruby (1.3.2)
+    subexec (0.0.4)
     temple (0.1.6)
     thin (1.2.7)
       daemons (>= 1.0.9)
@@ -85,6 +90,8 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord (~> 3.0.3)
+  carrierwave
+  mini_magick
   padrino (= 0.9.19)
   rack-cache (~> 1.0)
   rack-flash
