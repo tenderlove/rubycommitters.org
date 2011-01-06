@@ -1,11 +1,13 @@
 <li class="card">
-  <div class="frame">
-    <div class="photo">
-      <% if account.portraits.empty? %>
-        <img src="http://placehold.it/300" />
-      <% else %>
-        <%= render :partial => 'portrait', :collection => account.portraits %></div>
-      <% end %>
+  <div class="portrait">
+    <div class="frame <%= cycle('tl5', 'tr5', 'tl3', 'tr3') %>">
+      <div class="photo">
+        <% if account.portraits.empty? %>
+          <img src="http://placehold.it/300" />
+        <% else %>
+          <%= render :partial => 'portrait', :collection => account.portraits %></div>
+        <% end %>
+      </div>
     </div>
   </div>
   <section class="info">
