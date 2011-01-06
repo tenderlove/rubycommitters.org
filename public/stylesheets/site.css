@@ -28,8 +28,8 @@ body {
 }
 
 a {
-  -moz-transition: all .2s ease;
-  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
 }
 
 img {
@@ -40,7 +40,6 @@ img {
   padding: 40px;
   margin-bottom: 40px;
   background: #000;
-  color: #fff;
   position: relative;
   -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, .5), 5px 5px 15px rgba(0, 0, 0, .5);
   -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, .5), 5px 5px 15px rgba(0, 0, 0, .5);
@@ -87,8 +86,8 @@ header[role="banner"] h2 {
 
 .fork-me {
   width: 80px;
-  height: 60px;
-  padding: 40px 10px 0;
+  height: 65px;
+  padding: 35px 10px 0;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
@@ -98,9 +97,13 @@ header[role="banner"] h2 {
   position: absolute;
   right: 40px;
   bottom: 40px;
-  -moz-transition: all .3s ease;
-  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
   opacity: .7;
+}
+
+.fork-me span {
+  font-size: .75em;
 }
 
 .fork-me:hover {
@@ -163,7 +166,7 @@ header[role="banner"] h2 {
 }
 
 .profile a:hover {
-  border-bottom-color: #fff;
+  color: #eccd00;
 }
 
 .names {
@@ -193,17 +196,19 @@ header[role="banner"] h2 {
 }
 
 footer[role="contentinfo"] {
-  background: #000;
+  background: #C4C4C9;
+  border: 1px solid #333;
+  border-bottom: none;
   padding: 20px 40px 40px;
+  color: #333;
 }
 
 footer[role="contentinfo"] a {
-  color: #eccd00;
-  opacity: .8;
+  color: #333;
   text-decoration: none;
   font-weight: bold;
 }
 
 footer[role="contentinfo"] a:hover {
-  opacity: 1;
+  color: #000;
 }
