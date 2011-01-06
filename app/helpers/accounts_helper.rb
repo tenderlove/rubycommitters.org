@@ -20,6 +20,16 @@ module AccountsHelper
     link_to favicon_for(service), url
   end
 
+  def name_for(account)
+    if name = account.names.last
+      link_to name.value.titleize
+    elsif nickname = account.nicks.first
+      link_to nickname.value
+    else
+      link_to account.username
+    end
+  end
+
   private
 
   def service_url_for(service)

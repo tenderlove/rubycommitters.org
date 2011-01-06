@@ -8,8 +8,9 @@
       <% end %>
     </div>
   </td>
-  <td><%= link_to account.username %></td>
-  <td><%= account.nicks.first.value if account.nicks.any? %></td>
+  <td>
+    <%= link_to name_for(account) %>
+  </td>
   <td>
     <% if site = account.sites.first %>
       <%= link_to site.title, site.url %>
