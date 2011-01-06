@@ -1,7 +1,247 @@
+/* A minimal html reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* Default/top-level styles */
+body
+{
+  background: #fff;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  color: #000;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+label
+{
+  display: inline-block;
+  padding-bottom: 10px;
+  font-size: 1em;
+  color: #999;
+}
+
+ul
+{
+  list-style-type: none;
+}
+
+ul>li
+{
+  padding-bottom: 5px;
+}
+
+section
+{
+  margin-bottom: 1em;
+}
+
+h1
+{
+  font-size: 200%;
+}
+
+h2
+{
+  font-size: 1em;
+  font-weight: normal;
+  padding-bottom: 1em;
+}
+
+h3
+{
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+hr
+{
+  border: 0;
+  height: 2px;
+  background: #ccc;
+}
+
+a
+{
+  display: inline-block;
+  color: #00f;
+  text-decoration: none;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+
+#main-header
+{
+  display: inline-block;
+  margin: 0 auto 20px;
+  padding-bottom: 5px;
+  width: 766px;
+  border-bottom: 2px solid #c00;
+  text-align: left;
+}
+
+#main-header img
+{
+  float: left;
+  padding: 5px;
+}
+
+#main-header h1
+{
+  display: inline-block;
+  float: left;
+  padding-left: 10px;
+  font-family: Georgia, Palatino, "Times New Roman", Times, serif;
+  font-size: 2em;
+  color: #900;
+  line-height: 115px;
+}
+
+#content-wrapper {
+  width: 766px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.description
+{
+  font-size: 1.5em;
+}
+
+.sites, .services
+{
+  float: left;
+  display: inline-block;
+  width: 200px;
+}
+
+.group
+{
+  display: block;
+}
+
+.sites ul>li, .services ul>li
+{
+  display: inline;
+  margin-right: 10px;
+  line-height: 150%;
+}
+
+.sites .description, .services .description
+{
+  font-size: 1em;
+}
+
+.clear
+{
+  zoom: 1;
+}
+
+.clear::after
+{
+  clear: both;
+  display: block;
+  content: '';
+  font-size: 0;
+  visibility: hidden;
+  height: 0;
+}
+
+.account
+{
+  margin-bottom: 50px;
+}
+
+.account-name
+{
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.portrait
+{
+  float: left;
+  display: inline-block;
+  text-align: center;
+  width: 260px;
+}
+
+.no-portrait
+{
+  color: #c0c0c0;
+  line-height: inherit;
+}
+
+.info
+{
+  margin-left: 260px;
+  padding-left: 20px;
+  border-left: 1px dotted #ccc;
+}
+
 .image-wrapper {
-  height: 100px;
 }
 
 .image-wrapper img {
-  height: 100%;
+  max-height: 200px;
+  max-width: 200px;
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 1px solid #c0c0c0;
+  box-shadow: 2px 2px 2px #ccc;
+  -moz-box-shadow: 2px 2px 2px #ccc;
+  -webkit-box-shadow: 2px 2px 2px #ccc;
 }

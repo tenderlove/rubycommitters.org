@@ -1,5 +1,11 @@
-<h1>Ruby Committers</h1>
-<%= link_to 'fork me on github', 'http://github.com/tenderlove/rubycommitters.org' %>
-<ul>
-<%= render :partial => 'account', :collection => @accounts %>
-</ul>
+<!doctype html>
+<header id="main-header">
+  <%= image_tag 'ruby.png' %>
+  <h1>Ruby Committers</h1>
+</header>
+<div id="content-wrapper">
+  <h2>These people (are) committed (to) Ruby.</h2>
+  <ul>
+  <%= render :partial => 'account', :collection => @accounts %>
+  </ul>
+</div>
