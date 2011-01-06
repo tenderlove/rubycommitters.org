@@ -67,9 +67,23 @@ html, body {
 body{
 	font:normal 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background: #ececec;
+	
+	-webkit-transition:background 0.5s;
+ 	-moz-transition-duration:       0.5s;
+	-o-transition-duration:         0.5s;
+	-webkit-transition:background 0.5s;
+	transition-duration:            0.5s;
+}
+body.lights_down{
+  background:rgba(0,0,0,0.9);
 }
 a {
   color: #0072bc;
+  -webkit-transition-duration:  0.2s;
+ 	-moz-transition-duration:     0.2s;
+	-o-transition-duration:       0.2s;
+	-webkit-transition-duration:  0.2s;
+	transition-duration:          0.2s;
 }
 a:hover {
   background-color: #0072bc;
@@ -94,10 +108,9 @@ a:hover {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin-bottom: -160px;
-	margin:0 auto;
+  margin:0 auto -70px;
 	width:960px;
-	padding:10px;
+	padding:10px 10px 0;
 }
 .clear {
   height: 0;
@@ -112,11 +125,23 @@ a:hover {
 	font-size:48px;
 	font-weight:bold;
 	margin:25px 0 5px;
+	text-align:center;
+	
 }
 #logo a{
   color:#333;
   text-decoration:none;
   text-shadow: 0 1px 1px white;
+  
+  -webkit-transition:background 0.5s;
+ 	-moz-transition-duration:       0.5s;
+	-o-transition-duration:         0.5s;
+	-webkit-transition:background 0.5s;
+	transition-duration:            0.5s;
+}
+.lights_down #logo a{
+  color:#555;
+  text-shadow:none;
 }
 #logo a:hover{
   color:#999;
@@ -148,11 +173,11 @@ p{
   -webkit-box-shadow:inset 0 0 5px #888;
   -moz-box-shadow:inset 0 0 5px #888;
   
-  -webkit-transition: all 0.2s ease-in-out;
- 	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	-webkit-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
+  -webkit-transition:background 0.2s;
+ 	-moz-transition-duration:       0.2s;
+	-o-transition-duration:         0.2s;
+	-webkit-transition:background 0.2s;
+	transition-duration:            0.2s;
 }
 #filter_by_username:focus {
   background: white;
@@ -174,6 +199,10 @@ p{
   float:left;
   padding:0 10px 10px 0;
   margin:0 0 20px 0;
+}
+body.lights_down #account .account{
+  -moz-box-shadow: 0 0 30px #aaa;
+  -webkit-box-shadow: 0 0 30px #666;
 }
 #accounts .account h2{
   font-size:16px;
@@ -207,9 +236,7 @@ p{
   top: -25px;
 }
 */
-.hide{
-  display:none;
-}
+
 
 #footer-padding {
   height: 70px;
@@ -219,7 +246,7 @@ p{
   clear: both;
   position: relative;
   height: 50px;
-	background:#000;
+	background:#333;
 	color:#fff;
 	padding:10px;
 }
@@ -316,21 +343,22 @@ p{
 
 #account .my_services {
   position: absolute;
-  right: -60px;
-  background: #ddd;
+  right: -40px;
+  background: #ccc;
   top: 20px;
   z-index: 1;
   border-radius: 4px;
   -moz-border-radius: 4px;
   
-  -webkit-transition-duration: 0.5s;
- 	-moz-transition-duration: 0.5s;
-	-o-transition-duration: 0.5s;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
+  -webkit-transition:all 0.5s;
+ 	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	transition:all 0.5s;
 }
 #account .my_services:hover{
-  
+  right:-60px;
+  background:#eee;
 }
 #account .my_services ul {
   border: 1px solid #f7f7f7;  
@@ -352,11 +380,11 @@ p{
   -moz-opacity: 0.7;
   filter:alpha(opacity=70);
   
-  -webkit-transition: all 0.2s ease-in-out;
- 	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	-webkit-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
+  -webkit-transition:background 0.2s;
+ 	-moz-transition-duration:       0.2s;
+	-o-transition-duration:         0.2s;
+	-webkit-transition:background 0.2s;
+	transition-duration:            0.2s;
 }
 .my_services a:hover {
   opacity: 1.0;
@@ -392,3 +420,9 @@ a.friendfeed{
   background:url(/images/friendfeed_32.png) no-repeat 0 0;
 }
 
+#stats{
+  display:block;
+  text-align:center;
+  margin:10px 0;
+  clear:both;
+}

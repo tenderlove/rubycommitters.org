@@ -9,6 +9,22 @@ $(document).ready(function(){
 	// #accounts is the scope that indicates the INDEX view
 	$('#accounts .account').equalHeights();
 	
+	var
+    speed = 1000,  // animation speed
+    $wall = $('#accounts')
+  ;
+
+  $wall.masonry({
+    columnWidth: 300, 
+    // only apply masonry layout to visible elements
+    itemSelector: '.account:not(.invis)',
+    animate: true,
+    animationOptions: {
+      duration: speed,
+      queue: false
+    }
+  });
+	
 	
 	//gather the user names of each account in the INDEX list
 	var usernames = new Array();
@@ -18,14 +34,21 @@ $(document).ready(function(){
 	
 	//bind the filter input on the INDEX list
 	$('#filter_by_username').keyup(function(){
-	  $('#accounts .account').addClass('hide');
+	  var count = 0;
+	  $('.stay_alive').removeClass('stay_alive');
 	  regexp = new RegExp($(this).val().toLowerCase());
 	  for(var i=0; i<usernames.length; i++) {
 	    if(usernames[i].toLowerCase().match(regexp)){
-	      $('#accounts .account').find('h2:contains('+usernames[i]+')').closest('.account').removeClass('hide');
+	      count++;
+	      $('#accounts .account').find('h2:contains('+usernames[i]+')').closest('.account').addClass('stay_alive');
 	    }
     }
-    var count = $('.account').not('.hide').length;
+    
+    $('.stay_alive').removeClass('invis').fadeIn(speed);
+    $('.account').not('.stay_alive').addClass('invis').fadeOut(speed);
+
+    $wall.masonry();
+    
     if ($(this).val() != '') {
       $('#filter .results').html(count == 1 ? count+" result" : count+" results");
     } else {
@@ -46,4 +69,13 @@ $(document).ready(function(){
 	}, function() {
 	 $(this).removeClass('account_hover');
 	});
+	
+	var lit_elements = '#account .account, .my_services'
+	$(lit_elements).hover(function(){
+	    $('body').addClass('lights_down')
+	  },
+	  function(){
+	    $('.lights_down').removeClass('lights_down')
+	  })
+	  
 });

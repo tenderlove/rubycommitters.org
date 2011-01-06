@@ -1,11 +1,11 @@
+<div id="stats">
+  There are <%= @accounts.count %> core contributors.
+</div><!-- #stats -->
 <div id="filter">
   <span class="results"></span>
   <input id="filter_by_username" type="text" placeholder="Search by username">
 </div><!-- #filter -->
-<div id="stats">
-  There are <%= @accounts.count %> core contributors.
-</div><!-- #stats -->
-<section id="accounts">
+<section id="accounts" class="hidden">
   <%= render :partial => 'account', :collection => @accounts %>
   <div class="clear"></div>
 </section>
