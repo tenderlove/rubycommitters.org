@@ -1,5 +1,5 @@
-<li class="card">
-  <div class="portrait<%= transformed_classes %>">
+<li class="card<%= randomized_styles %>">
+  <div class="portrait">
     <div class="frame">
       <div class="photo">
         <% if account.portraits.empty? %>
@@ -14,19 +14,11 @@
     <h2><%= account.username %></h2>
     <ul class="info">
       <% unless account.names.empty? %>
-        <%= render :partial => 'name', :collection => account.names %>
+        <%= render :partial => 'name', :collection => account.names, :locals => {:class_name => 'name'} %>
       <% end %>
-
-    <% unless account.nicks.empty? %>
-      <tr>
-        <td>Nicknames:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.nicks %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
+      <% unless account.nicks.empty? %>
+        <%= render :partial => 'name', :collection => account.nicks, :locals => {:class_name => 'nicks'} %>
+      <% end %>
 
     <% unless account.sites.empty? %>
       <tr>

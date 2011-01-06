@@ -21,7 +21,7 @@ module ApplicationHelper
     end
   end
   
-  def transformed_classes
-    " #{['left','right'].sample} #{['three','four','five','six'].sample}"
+  def randomized_styles
+    " #{['left','right'].sample} #{['three','four','five','six'].sample} #{['','','','creased'].sample}"
   end
 end
