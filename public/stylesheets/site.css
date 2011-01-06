@@ -68,6 +68,7 @@ label
 {
   display: inline-block;
   padding-bottom: 10px;
+  line-height: 150%;
   font-size: 1em;
   color: #808080;
 }
@@ -114,7 +115,7 @@ hr
 
 a
 {
-  color: #00f;
+  color: #21759b;
   text-decoration: none;
 }
 
@@ -159,6 +160,11 @@ a:hover
 #content-wrapper>ul>li
 {
   display: block;
+}
+
+.group
+{
+  display: inline-block;
 }
 
 .description
@@ -253,7 +259,7 @@ a:hover
 {
   float: right;
   padding: 10px;
-  background: #f0f0f0;
+  background: #f6f6f6;
   border: 1px solid #ccc;
   border-radius: 5px;
   -moz-border-radius: 5px;
