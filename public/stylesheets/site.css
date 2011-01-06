@@ -6,10 +6,15 @@
   font-style: normal;
 }
 
+/*
+  light gray #C4C4C9
+  dark gray #676975
+*/
+
 html {
-  background: #3F5EA6;
-  background: #3F5EA6 -moz-linear-gradient(#DDE7FF, #3F5EA6);
-  background: #3F5EA6 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#DDE7FF), to(#3F5EA6));
+  background: #676975;
+  background: #676975 -moz-linear-gradient(#C4C4C9, #676975);
+  background: #676975 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#C4C4C9), to(#676975));
 }
 
 body {
@@ -86,7 +91,6 @@ header[role="banner"] h2 {
   padding: 40px 10px 0;
   font-weight: bold;
   color: #fff;
-  color: rgba(255, 255, 255, .6);
   text-decoration: none;
   text-align: center;
   text-transform: capitalize;
@@ -94,12 +98,13 @@ header[role="banner"] h2 {
   position: absolute;
   right: 40px;
   bottom: 40px;
-  -moz-transition: color .2s ease;
-  -webkit-transition: color .2s ease;
+  -moz-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  opacity: .7;
 }
 
 .fork-me:hover {
-  color: #fff;
+  opacity: 1;
 }
 
 .team-list header {
