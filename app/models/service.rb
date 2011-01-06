@@ -13,16 +13,6 @@ class Service < ActiveRecord::Base
     end
   end
 
-  def icon
-    base_url.tap do |url|
-      if name == 'iddy'
-        url << "image/favicon.png"
-      else
-        url << "favicon.ico"
-      end
-    end
-  end
-
   def url
     base_url.tap do |url|
       case name

@@ -29,15 +29,6 @@ class ServiceTest < ActiveSupport::TestCase
     assert_equal "http://friendfeed.com/", @friendfeed.base_url
   end
 
-  def test_icon
-    assert_equal "http://iddy.jp/image/favicon.png", @iddy.icon
-    assert_equal "http://mixi.jp/favicon.ico", @mixi.icon
-    assert_equal "http://github.com/favicon.ico", @github.icon
-    assert_equal "http://twitter.com/favicon.ico", @twitter.icon
-    assert_equal "http://facebook.com/favicon.ico", @facebook.icon
-    assert_equal "http://friendfeed.com/favicon.ico", @friendfeed.icon
-  end
-
   def test_url
     assert_equal "http://iddy.jp/profile/#{@iddy.key}", @iddy.url
     assert_equal "http://mixi.jp/show_friend.pl?id=#{@mixi.key}", @mixi.url

@@ -118,6 +118,14 @@ table tbody td.service {
   width: 16px;
 }
 
+table tbody td.service img {
+  opacity: 0.25;
+}
+
+table tbody td.service a img {
+  opacity: 1;
+}
+
 table tbody td.service li,
 table tbody td.service a {
   width: 16px;
