@@ -82,6 +82,10 @@ footer p:last-child {
   text-align: center;
 }
 
+img {
+  border: 0;
+}
+
 table {
   width: 100%;
   border-spacing: 0;
