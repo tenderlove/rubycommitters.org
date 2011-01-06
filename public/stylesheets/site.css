@@ -33,7 +33,7 @@ body {
   bottom: 0;
   left: 0;
   margin: 0 auto;
-  padding: 50px 0 30px 0;
+  padding: 50px 0;
 }
 
 /* =HEADER & =FOOTER */
@@ -79,7 +79,7 @@ h1 {
 }
 
 .card {
-  background: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(.5, #f6f6f6), color-stop(.501, #eee), to(#fff));
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   display: block;
   float: left;
@@ -111,10 +111,14 @@ h2 {
   padding: 5px;
 }
 
-.tl5 { -webkit-transform: rotate(5deg); }
-.tr5 { -webkit-transform: rotate(-5deg); }
-.tl3 { -webkit-transform: rotate(3deg); }
-.tr3 { -webkit-transform: rotate(-3deg); }
+.left.three .frame { -webkit-transform: rotate(3deg); }
+.left.four .frame { -webkit-transform: rotate(4deg); }
+.left.five .frame { -webkit-transform: rotate(5deg); }
+.left.six .frame { -webkit-transform: rotate(6deg); }
+.right.three .frame { -webkit-transform: rotate(-3deg); }
+.right.four .frame { -webkit-transform: rotate(-4deg); }
+.right.five .frame { -webkit-transform: rotate(-5deg); }
+.right.six .frame { -webkit-transform: rotate(-6deg); }
 
 .photo { position: relative; }
 
@@ -142,15 +146,22 @@ img {
   display: block;
   height: 32px;
   position: absolute;
-  right: 26px;
   top: -6px;
+  right: 32px;
   width: 32px;
 }
+
+.left:after { right: 24px; }
+.right:after { right: 34px; }
 
 .info {
 /*  display: none;*/
 /*  float: left;*/
 /*  width: 220px;*/
+}
+
+.info li {
+  border-bottom: 1px solid #dde2e6;
 }
 
 .services li {

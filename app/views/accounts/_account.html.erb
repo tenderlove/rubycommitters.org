@@ -1,6 +1,6 @@
 <li class="card">
-  <div class="portrait">
-    <div class="frame <%= cycle('tl5', 'tr5', 'tl3', 'tr3') %>">
+  <div class="portrait<%= transformed_classes %>">
+    <div class="frame">
       <div class="photo">
         <% if account.portraits.empty? %>
           <img src="http://placehold.it/300" />
@@ -12,6 +12,8 @@
   </div>
   <section class="info">
     <h2><%= account.username %></h2>
+    <ul>
+      <li>
     <% unless account.names.empty? %>
       Names:
       <ul>
