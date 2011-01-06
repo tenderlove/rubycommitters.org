@@ -13,6 +13,11 @@ facebook:
   key: 650036336
   account: matz
 
+facebook_username:
+  name: facebook
+  key: matz
+  account: matz
+
 mixi:
   name: mixi
   key: 1653
@@ -20,5 +25,10 @@ mixi:
 
 github:
   name: github
+  key: matz
+  account: matz
+
+iddy:
+  name: iddy
   key: matz
   account: matz

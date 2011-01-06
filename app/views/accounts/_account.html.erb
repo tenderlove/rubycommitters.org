@@ -2,9 +2,9 @@
   <td>
     <div class="image">
       <% if portrait = account.portraits.first %>
-        <%= image_tag(portrait.url) %>
+        <%= image_tag(portrait.url, :alt => nil) %>
       <% else %>
-        <%= image_tag('missing-avatar.png') %>
+        <%= image_tag('missing-avatar.png', :alt => nil) %>
       <% end %>
     </div>
   </td>
@@ -18,8 +18,8 @@
   </td>
   <% Account::SERVICES.each do |service| %>
     <td class="service">
-      <% if record = account.__send__(service) %>
-        <%= link_to_service record.name, record %>
+      <% if service = account.services.find_by_name(service) %>
+        <%= link_to image_tag(service.icon), service.url %>
       <% end %>
     </td>
   <% end %>

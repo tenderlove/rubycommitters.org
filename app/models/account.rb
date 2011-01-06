@@ -1,17 +1,12 @@
 class Account < ActiveRecord::Base
+  SERVICES = %w(facebook friendfeed github iddy mixi twitter).freeze
+
   has_many :names
   has_many :nicks
   has_many :sites
   has_many :services
   has_many :portraits
   has_many :books
-
-  SERVICES = %w(facebook friendfeed github iddy mixi twitter).freeze
-  SERVICES.each do |service|
-    define_method(service) do
-      services.find_by_name(service)
-    end
-  end
 
   def name
     if names.any?
