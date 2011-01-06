@@ -6,10 +6,17 @@ class Account < ActiveRecord::Base
   has_many :portraits
   has_many :books
 
+  SERVICES = %w(facebook friendfeed github iddy mixi twitter).freeze
+  SERVICES.each do |service|
+    define_method(service) do
+      services.find_by_name(service)
+    end
+  end
+
   ###
   # Import +io+ object that contains a YAML representation of the
   # ruby-committers
-  def self.import io
+  def self.import(io)
     begin
       require 'psych'
       yamler = Psych

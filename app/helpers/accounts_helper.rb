@@ -1,22 +1,48 @@
 module AccountsHelper
-  def link_to_service name, service
+  def link_to_service(name, service)
+    url = service_url_for(service)
+
     case service.name
-    when 'twitter'
-      link_to name, 'http://twitter.com/' + service.key
-    when 'friendfeed'
-      link_to name, 'http://friendfeed.com/' + service.key
-    when 'mixi'
-      link_to name, 'http://mixi.jp/show_friend.pl?id=' + service.key
-    when 'github'
-      link_to name, 'http://github.com/' + service.key
     when 'facebook'
       if service.key =~ /^\s*\d+$/
-        link_to name, 'http://www.facebook.com/profile.php?id=' + service.key
+        url << "profile.php?id=#{service.key}"
       else
-        link_to name, 'http://www.facebook.com/' + service.key
+        url << service.key
       end
+    when 'friendfeed', 'github', 'twitter'
+      url << service.key
     when 'iddy'
-      link_to name, 'http://iddy.jp/profile/' + service.key
+      url << "profile/#{service.key}"
+    when 'mixi'
+      url << "show_friend.pl?id=#{service.key}"
     end
+
+    link_to favicon_for(service), url
+  end
+
+  private
+
+  def service_url_for(service)
+    "http://#{service.name}.".tap do |url|
+      if %(iddy mixi).include?(service.name)
+        url << 'jp'
+      else
+        url << 'com'
+      end
+
+      url << '/'
+    end
+  end
+
+  def favicon_for(service)
+    url = service_url_for(service)
+
+    if service.name == 'iddy'
+      url << "image/favicon.png"
+    else
+      url << "favicon.ico"
+    end
+
+    image_tag(url)
   end
 end

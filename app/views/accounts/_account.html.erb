@@ -1,79 +1,25 @@
-<li>
-  <table>
-    <tr>
-      <td>Account:</td>
-      <td><%= account.username %></td>
-    </tr>
-
-    <% unless account.names.empty? %>
-      <tr>
-        <td>Names:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.names %>
-          </ul>
-        </td>
-      </tr>
+<tr<%== cycle(' class="odd"', '') %>>
+  <td>
+    <div class="image">
+      <% if portrait = account.portraits.first %>
+        <%= image_tag(portrait.url) %>
+      <% else %>
+        <%= image_tag('missing-avatar.png') %>
+      <% end %>
+    </div>
+  </td>
+  <td><%= link_to account.username %></td>
+  <td><%= account.nicks.first.value if account.nicks.any? %></td>
+  <td>
+    <% if site = account.sites.first %>
+      <%= link_to site.title, site.url %>
     <% end %>
-
-    <% unless account.nicks.empty? %>
-      <tr>
-        <td>Nicknames:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.nicks %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.sites.empty? %>
-      <tr>
-        <td>Sites:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'site', :collection => account.sites %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.services.empty? %>
-      <tr>
-        <td>Services:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'service', :collection => account.services %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.portraits.empty? %>
-      <tr>
-        <td>Portraits:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'portrait', :collection => account.portraits %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <!-- FIXME: unsure how to link to ISBN. :-( -->
-    <!--
-    <% unless account.books.empty? %>
-      <tr>
-        <td>Books:</td>
-        <td>
-          <ul>
-            <% account.books.each do |book| %>
-              <li><%= book.key %></li>
-            <% end %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-    -->
-  </table>
-</li>
+  </td>
+  <% Account::SERVICES.each do |service| %>
+    <td class="service">
+      <% if record = account.__send__(service) %>
+        <%= link_to_service record.name, record %>
+      <% end %>
+    </td>
+  <% end %>
+</tr>

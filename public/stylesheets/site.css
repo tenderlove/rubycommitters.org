@@ -1,7 +1,102 @@
-.image-wrapper {
-  height: 100px;
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+
+h1,
+h2,
+ul,
+li,
+tr,
+td,
+img,
+body,
+table {
+  margin: 0;
+  padding: 0;
 }
 
-.image-wrapper img {
-  height: 100%;
+ul {
+  list-style: none;
+}
+
+body {
+  background: #FFF;
+  color: #333;
+  width: 896px;
+  margin: 0 auto;
+  padding: 32px;
+  font: 14px/1 "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+a {
+  color: #3256B6;
+  text-decoration: none;
+  border-bottom: 1px solid #3256B6;
+}
+
+a:hover,
+a:focus {
+  color: #C61A3B;
+  border-color: #C61A3B;
+}
+
+header {
+  margin: 0 0 48px 0;
+}
+
+header h1 {
+  font: bold 48px Arvo, serif;
+  letter-spacing: -3px;
+}
+
+header h2 {
+  position: relative;
+  top: -8px;
+  left: 116px;
+  background: inherit;
+  color: #666;
+  font: normal 14px "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+table thead th {
+  padding: 8px;
+  border-bottom: 2px solid #EEE;
+  text-align: left;
+}
+
+table tbody tr.odd td {
+  background: #FFFFEF;
+}
+
+table tbody td {
+  padding: 8px;
+}
+
+table tbody td.service {
+  width: 16px;
+}
+
+table tbody td.service li,
+table tbody td.service a {
+  width: 16px;
+  height: 16px;
+  border: 0;
+  display: inline-block;
+}
+
+table tbody tr td:last-child {
+  text-align: right;
+}
+
+.image {
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+}
+
+.image img {
+  width: 32px;
 }
