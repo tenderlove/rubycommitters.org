@@ -3,25 +3,37 @@ body	{background: #333 url(/images/dark_noise.png);}
 .header {width:600px; margin: 30px auto 0;height:115px;}
 
 .header h1 {text-indent: -9000px;background: url(/images/logo_inset.png) no-repeat;width:600px;height:80px;margin: 0 0 0 0;}
-/* Member Cards */
-.item	{float: left;width: 300px !important;height:280px;padding:15px 5px 5px 15px;margin: 0 10px 10px 0;background: transparent url(/images/user_card.png) no-repeat;}
 
-.item h2, .item h3 {float:left;width:100%;}
+/* Member Cards */
+.item	{float: left;width: 300px !important;height:250px;padding:15px 5px 5px 15px;margin: 0 10px 10px 0;background: transparent url(/images/user_card.png) no-repeat;}
+
+
 .column {}
 .column.left {width:105px;}
 .column.right {width:190px;float:right;}
+.column.right h2, .column.right h3 {float:left;width:100%;}
 .column .meta	{float:left;width:100%;margin-bottom:10px;}
-.column .meta .item	{float:left;width:100%;margin-bottom:5px;}
 
-.portrait	{width: 90px;height: 100px;overflow: hidden;}
+.column .sites,
+.column .services,
+.column .names,
+.column .nicknames,
+.column .books,
+.column .meta .name,
+.column .meta .site,
+.column .meta .name,
+.column .meta .book	{float:left;width:100%;margin-bottom:2px;}
+
+.portrait	{width: 90px;height: 100px;overflow: hidden;margin-bottom:10px}
 .portrait img	{width: 90px;}
+.portrait.blank {width: 90px;height: 90px;background: url(/images/user_blank.png);}
 
-.icon a {text-indent: -99999px;display:block;width:28px;height:28px;background: url(/images/social_icons.png) no-repeat;float:left;margin-right:3px;}
+.icon a {text-indent: -99999px;display:block;width:15px;height:15px;background: url(/images/social_icons.png) no-repeat;float:left;margin-right:2px;}
 
 .icon a.github		{background-position: 0 0;}
-.icon a.friendfeed	{background-position: -30px -0;}
-.icon a.twitter		{background-position: -59px 0;}
-.icon a.linkedin	{background-position: -89px 0;}
-.icon a.facebook	{background-position: -119px 0;}
-.icon a.iddy		{background-position: -149px 0;}
-.icon a.mixi		{background-position: -178px 0;}
+.icon a.friendfeed	{background-position: -15px -0;}
+.icon a.twitter		{background-position: -31px 0;}
+.icon a.linkedin	{background-position: -46px 0;}
+.icon a.facebook	{background-position: -61px 0;}
+.icon a.iddy		{background-position: -77px 0;}
+.icon a.mixi		{background-position: -92px 0;}

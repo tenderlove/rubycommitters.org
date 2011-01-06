@@ -1,6 +1,12 @@
 .item
   .column.left
-    = render :partial => 'portrait', :collection => account.portraits
+    = render :partial => 'portrait', :locals => {:portrait => account.portraits.first} unless account.portraits.blank?
+    - if account.portraits.blank?
+      .portrait.blank 
+    - unless account.services.empty?
+      .services
+        %h3 Services
+        .meta= render :partial => 'service', :collection => account.services
   .column.right 
     %h2= account.username
     - unless account.names.empty?
@@ -15,22 +21,11 @@
         .sites
           %h3 Sites
           .meta= render :partial => 'site', :collection => account.sites
-      - unless account.services.empty?
-        .services
-          %h3 Services
-          .meta= render :partial => 'service', :collection => account.services
-  :erb
-    <!-- FIXME: unsure how to link to ISBN. :-( -->
-    <!--
-    <% unless account.books.empty? %>
-    <tr>
-    <td>Books:</td>
-    <td>
-    <ul>
-    <% account.books.each do |book| %>
-    <li><%= book.key %></li>
-    <% end %>
-    </ul>
-    </td>
-    </tr>
-    <% end %> -->
+          
+      // Book search works* but is flaky - seems like some of these ISBN numbers are wrong...
+      / - unless account.books.empty?
+      /   .books
+      /     %h3 Books
+      /     .meta
+      /       - account.books.each do |book|
+      /         .book= link_to book.title, 'http://www.amazon.com/s?url=field-keywords=' + book.key
