@@ -110,7 +110,7 @@ a:hover {
   height: 100%;
   margin:0 auto -70px;
 	width:960px;
-	padding:10px 10px 0;
+	padding:0 10px;
 
 }
 .clear {
@@ -130,7 +130,7 @@ a:hover {
 #logo{
 	font-size: 20px;
 	font-weight:bold;
-	margin:25px 0 5px;
+	margin:0 0 20px;
 	text-align:center;
 	
 }
@@ -149,11 +149,6 @@ a:hover {
 	-webkit-transition:background 0.5s;
 	transition-duration:            0.5s;
 }
-.lights_down #logo a{
-  color:#555;
-  text-shadow:none;
-  margin-bottom: 20px;
-}
 #logo a:hover{
   background: #b41c27;
 }
@@ -170,6 +165,10 @@ a:hover {
   font-style: italic;
   font-weight: normal;
   color: #888;
+}
+.lights_down #tagline{
+  color:#666;
+  text-shadow:none;
 }
 #intro {
   float: left;
