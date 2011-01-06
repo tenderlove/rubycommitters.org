@@ -69,13 +69,4 @@ $(document).ready(function(){
 	}, function() {
 	 $(this).removeClass('account_hover');
 	});
-	
-	var lit_elements = '#account .account, .my_services'
-	$(lit_elements).hover(function(){
-	    $('body').addClass('lights_down')
-	  },
-	  function(){
-	    $('.lights_down').removeClass('lights_down')
-	  })
-	  
 });
