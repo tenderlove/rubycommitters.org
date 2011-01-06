@@ -6,6 +6,7 @@
   <title>Ruby Committers</title>
 
   <%= stylesheet_link_tag 'site', :cache => false %>
+  <%= javascript_include_tag 'application' %>
   <%= analytics_tag %>
 </head>
 <body>
@@ -15,7 +16,9 @@
   <h2>The people behind a programmer's best friend.</h2>
 </header>
 
-<%= yield %>
+<section>
+  <%= yield %>
+</section>
 
 <footer>
   <p><a href="http://github.com/tenderlove/rubycommitters.org"><img src="https://assets0.github.com/img/71eeaab9d563c2b3c590319b398dd35683265e85?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_gray_6d6d6d.png&path=" alt="Fork me on GitHub"></a></p>
