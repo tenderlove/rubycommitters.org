@@ -13,17 +13,32 @@ $(document).ready(function(){
 	//bind the filter input on the INDEX list
 	$('#filter_by_username').keyup(function(){
 	  $('#accounts .account').addClass('hide');
-	  regexp = new RegExp($(this).val().toLowerCase());    
+	  regexp = new RegExp($(this).val().toLowerCase());
 	  for(var i=0; i<usernames.length; i++) {
 	    if(usernames[i].toLowerCase().match(regexp)){
 	      $('#accounts .account').find('h2:contains('+usernames[i]+')').closest('.account').removeClass('hide');
 	    }
     }
+    var count = $('.account').not('.hide').length;
+    switch (count) {
+      case 1:
+        results = count+" result";
+        break;
+      default:
+        results = count+" results";
+        break;
+    }
+    if ($(this).val() != '') {
+      $('#filter .results').html(results);
+    } else {
+      $('#filter .results').empty();
+    }
+    
 	})
 	
 	// Set the card height relative to the services height
-	s_height = $('.my_services').height();
-	a_height = $('#account .account').height();
+	s_height = $('.my_services').height();      // services
+	a_height = $('#account .account').height(); // account
 	if (s_height >= a_height) {
 	  $('#account .account').height(s_height);
 	}
