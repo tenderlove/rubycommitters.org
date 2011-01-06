@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110101002342) do
+ActiveRecord::Schema.define(:version => 20110106191812) do
 
   create_table "accounts", :force => true do |t|
     t.string   "username"
@@ -25,12 +25,16 @@ ActiveRecord::Schema.define(:version => 20110101002342) do
     t.datetime "updated_at"
   end
 
+  add_index "books", ["account_id"], :name => "index_books_on_account_id"
+
   create_table "names", :force => true do |t|
     t.string   "value"
     t.integer  "account_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "names", ["account_id"], :name => "index_names_on_account_id"
 
   create_table "nicks", :force => true do |t|
     t.string   "value"
@@ -39,12 +43,16 @@ ActiveRecord::Schema.define(:version => 20110101002342) do
     t.datetime "updated_at"
   end
 
+  add_index "nicks", ["account_id"], :name => "index_nicks_on_account_id"
+
   create_table "portraits", :force => true do |t|
     t.string   "url"
     t.integer  "account_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "portraits", ["account_id"], :name => "index_portraits_on_account_id"
 
   create_table "services", :force => true do |t|
     t.string   "name"
@@ -53,6 +61,8 @@ ActiveRecord::Schema.define(:version => 20110101002342) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "services", ["account_id"], :name => "index_services_on_account_id"
 
   create_table "sites", :force => true do |t|
     t.string   "title"
@@ -63,5 +73,7 @@ ActiveRecord::Schema.define(:version => 20110101002342) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "sites", ["account_id"], :name => "index_sites_on_account_id"
 
 end
