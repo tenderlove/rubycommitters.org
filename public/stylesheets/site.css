@@ -138,7 +138,7 @@ div.avatars img {
   border:                2px #ccc solid;
   -moz-border-radius:    5px;
   -webkit-border-radius: 5px;  
-  max-height:            90px;
+  height:                90px;
   width:                 auto;
   min-width:             90px;
   min-height:            90px;
