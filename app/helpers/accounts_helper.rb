@@ -2,7 +2,7 @@ module AccountsHelper
   def link_to_service name, service
     case service.name
     when 'twitter'
-      link_to name, 'http://twitter.com/' + service.key, :title => 'Twitter'
+      link_to name, 'http://twitter.com/' + service.key, :title => 'Twitter', :class => 'tool_tip'
     when 'friendfeed'
       link_to name, 'http://friendfeed.com/' + service.key, :title => 'FriendFeed'
     when 'mixi'

@@ -54,6 +54,7 @@ header {
   background-color: #c33;
   border-top: 1px solid #d77;
   border-bottom: 1px solid #6d1b1b;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .6);
   top: 0;
 }
 
