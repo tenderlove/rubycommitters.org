@@ -1,13 +1,12 @@
 <% full ||= false -%>
 <article class="account">
+  <% unless full -%>
+    <a class="big_link" href="<%= account_path account %>">
+  <% end -%>
     <header>
       <%= render :partial => 'portrait', :locals => { :account => account, :full => full } %>
       <h2 class="username">  
-      <% if full -%>
         <%= account.username %>
-      <% else %>
-        <%= link_to account.username, account %>
-      <% end -%>
       </h2>
       <% if full and (primary_site = account.sites.first) -%>
         <%= link_to primary_site.url, primary_site.url, :class => "primary_site" %>
@@ -44,7 +43,10 @@
         </div>
       <% end %>
       </section>
-    <% end -%>  
+    <% end -%> 
+    <% unless full -%>
+      </a>
+    <% end -%> 
 </article>
 <% if full and account.services.any? -%>
   <footer class="my_services">
