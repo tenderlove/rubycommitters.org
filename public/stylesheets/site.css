@@ -79,11 +79,18 @@ body.lights_down{
 }
 a {
   color: #0072bc;
-  -webkit-transition-duration:  0.2s;
- 	-moz-transition-duration:     0.2s;
-	-o-transition-duration:       0.2s;
-	-webkit-transition-duration:  0.2s;
-	transition-duration:          0.2s;
+  -webkit-transition:    background 0.2s;
+  -moz-transition:       background 0.2s;
+  -o-transition:         background 0.2s;
+  transition:            background 0.2s;
+}
+a.big_link{
+  display:block;
+  text-decoration:none;
+  height:105px;
+  padding:5px 5px 0;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
 }
 a:hover {
   background-color: #0072bc;
@@ -213,11 +220,10 @@ input::-webkit-input-placeholder {
   -webkit-box-shadow:inset 0 0 5px #888;
   -moz-box-shadow:inset 0 0 5px #888;
   
-  -webkit-transition:background 0.2s;
- 	-moz-transition-duration:       0.2s;
-	-o-transition-duration:         0.2s;
-	-webkit-transition:background 0.2s;
-	transition-duration:            0.2s;
+  -webkit-transition:    background 0.2s;
+  -moz-transition:       background 0.2s;
+  -o-transition:         background 0.2s;
+  transition:            background 0.2s;
 }
 #filter_by_username:focus {
   background: white;
@@ -237,7 +243,6 @@ input::-webkit-input-placeholder {
 #accounts .account{
   width:290px;
   float:left;
-  padding:0 10px 10px 0;
   margin:0 0 20px 0;
 }
 body.lights_down #account .account{
@@ -253,12 +258,25 @@ body.lights_down #account .account{
   width: 100px;
   height: 100px;
 	overflow: hidden;
+	
+	border-radius:5px;
+	-moz-border-radius:5px;
+}
+#accounts .image-wrapper img{	
+	border-radius:5px;
+	-moz-border-radius:5px;
 }
 #accounts .my_names {
   font-size: 14px;
+  color: gray;
 }
 #accounts .account p {
   color: gray;
+  
+  -webkit-transition:    background 0.2s;
+  -moz-transition:       background 0.2s;
+  -o-transition:         background 0.2s;
+  transition:            background 0.2s;
 }
 /*#accounts .account_hover {
   position: relative;
@@ -328,6 +346,9 @@ body.lights_down #account .account{
   margin-top: 10px;
   font-size: 16px;
   color: gray;
+}
+#accounts .account a.big_link:hover p, #accounts .account a.big_link:hover .my_names{
+  color:#fff;
 }
 #account header p strong {
   color: gray;
