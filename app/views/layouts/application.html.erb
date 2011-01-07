@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="<%= I18n.locale %>">
 <head>
   <meta charset="utf-8">
 
-  <title>Ruby Committers</title>
+  <title>Ruby <%= t('Committers') %></title>
 
   <%= stylesheet_link_tag 'site', :cache => false %>
   <%= javascript_include_tag 'application' %>
 
   <% if Rails.env.production? %>
     <script type="text/javascript">
-
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-1260604-9']);
       _gaq.push(['_trackPageview']);
@@ -20,15 +19,22 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-
     </script>
   <% end %>
 </head>
 <body>
 
 <header>
-  <h1>Ruby Committers</h1>
-  <h2>The people behind a programmer's best friend.</h2>
+  <h1>Ruby <%= t('Committers') %></h1>
+  <h2><%= t('Slogan') %></h2>
+
+  <p>
+    <% if I18n.locale == :en %>
+      <%= t('English') %> | <a href="?locale=ja"><%= t('Japanese') %></a></p>
+    <% else %>
+      <a href="/"><%= t('English') %></a> | <%= t('Japanese') %>
+    <% end %>
+  </p>
 </header>
 
 <section>
@@ -38,7 +44,13 @@
 <footer>
   <p><a href="http://github.com/tenderlove/rubycommitters.org"><img src="https://assets0.github.com/img/71eeaab9d563c2b3c590319b398dd35683265e85?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_gray_6d6d6d.png&path=" alt="Fork me on GitHub"></a></p>
 
-  <p>Created by <a href="http://tenderlovemaking.com/">Aaron Patterson</a>. Design by <a href="http://tristandunn.com">Tristan Dunn</a> for the <a href="http://tenderlovemaking.com/2011/01/04/rubycommitters-org-design-contest/">Ruby Committers Design Contest</a>.</p>
+  <p>
+    <% if I18n.locale == :en %>
+      Created by <a href="http://tenderlovemaking.com/">Aaron Patterson</a>. Design by <a href="http://tristandunn.com">Tristan Dunn</a> for the <a href="http://tenderlovemaking.com/2011/01/04/rubycommitters-org-design-contest/">Ruby Committers Design Contest</a>.
+    <% else %>
+      によって作成さ<a href="http://tenderlovemaking.com/">Aaron Patterson</a>。によるデザイン<a href="http://tristandunn.com">Tristan Dunn</a>のために<a href="http://tenderlovemaking.com/2011/01/04/rubycommitters-org-design-contest/">Ruby Committers Design Contest</a>。<br>(恩赦私のGoogle翻訳。)
+    <% end %>
+  </p>
 </footer>
 
 </body>

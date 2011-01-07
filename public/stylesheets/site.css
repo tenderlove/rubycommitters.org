@@ -46,8 +46,8 @@ a:focus {
 }
 
 header {
+  position: relative;
   background: url(/images/ruby.jpg) no-repeat;
-  width: 389px;
   height: 100px;
   margin: 0 0 48px 0;
   padding: 12px 0 0 128px;
@@ -66,6 +66,13 @@ header h2 {
   font: normal 14px "Helvetica Neue", Helvetica, Arial, Sans-serif;
 }
 
+header p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 11px;
+}
+
 footer {
   margin: 48px 0 0 0;
 }
@@ -74,6 +81,7 @@ footer a,
 footer p {
   color: #555;
   border-color: #555;
+  line-height: 1.8;
 }
 
 footer p:first-child {
@@ -114,12 +122,17 @@ table tbody td {
   padding: 8px;
 }
 
+table tbody td.avatar {
+  width: 32px;
+  padding: 8px 16px;
+}
+
 table tbody td.service {
   width: 16px;
 }
 
 table tbody td.service img {
-  opacity: 0.25;
+  opacity: 0.15;
 }
 
 table tbody td.service a img {
@@ -132,10 +145,6 @@ table tbody td.service a {
   height: 16px;
   border: 0;
   display: inline-block;
-}
-
-table tbody tr td:last-child {
-  text-align: right;
 }
 
 .image {

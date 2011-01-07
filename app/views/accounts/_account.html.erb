@@ -1,25 +1,14 @@
-<tr<%== cycle(' class="odd"', '') %>>
-  <td>
+<tr id="<%= dom_id(account) %>"<%== cycle(' class="odd"', '') %>>
+  <td class="avatar">
     <div class="image">
-      <% if portrait = account.portraits.first %>
-        <%= image_tag(portrait.url, :alt => nil) %>
-      <% else %>
-        <%= image_tag('missing-avatar.png', :alt => nil) %>
-      <% end %>
+      <%= image_tag(avatar_url(account.avatar), :alt => nil) %>
     </div>
   </td>
-  <td>
-    <%= link_to account.name, account %>
-  </td>
-  <td>
-    <% if site = account.sites.first %>
-      <%= link_to site.title, site.url %>
-    <% end %>
-  </td>
+  <td class="name"><%= link_to account.name %></td>
   <% Account::SERVICES.each do |service_name| %>
-    <td class="service">
-      <% if service = account.services.find_by_name(service_name) %>
-        <%= link_to image_tag("icons/#{service_name}.png"), service.url %>
+    <td class="service <%= service_name %><%= ' active' if account.has_service?(service_name) %>">
+      <% if account.has_service?(service_name) %>
+        <%= link_to image_tag("icons/#{service_name}.png") %>
       <% else %>
         <%= image_tag("icons/#{service_name}.png", :alt => nil) %>
       <% end %>

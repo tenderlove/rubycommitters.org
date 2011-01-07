@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'rubygems' unless ENV['NO_RUBYGEMS']
+require 'cucumber'
+
+load Cucumber::BINARY

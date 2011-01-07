@@ -1,0 +1,2 @@
+wip: --tags @wip:3 --wip --color -r features
+default: --format progress --strict --tags ~@wip --color -r features
