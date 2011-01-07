@@ -1,79 +1,66 @@
-<li>
-  <table>
-    <tr>
-      <td>Account:</td>
-      <td><%= account.username %></td>
-    </tr>
+<li class="committer">
+	<div class="header">
+		<h2 class="clearfix"><span class="caption">Account</span><span class="account"><%= account.username %></span></h2>
+		 <% unless account.names.empty? %>
+			<div class="names">
+				<h3 class="caption">Names</h3>
+				<ul>
+					<%= render :partial => 'name', :collection => account.names %>
+				</ul>
+			</div>
+		<% end %>
+	</div>
+	<div class="body">
+		<div class="inner">
+	
+			<div class="portraits section">
+				<h3 class="caption">Portraits</h3>
+				<ul>
+					<% unless account.portraits.empty? %>
+					<%= render :partial => 'portrait', :collection => account.portraits %>
+					<% else %>
+						<li class="empty">empty</li>
+					<% end %>	
+				</ul>	
+			</div>
 
-    <% unless account.names.empty? %>
-      <tr>
-        <td>Names:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.names %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
+			<div class="sites section">
+				<h3 class="caption">Nicknames</h3>
+				<% unless account.nicks.empty? %>
+					<ul>
+						<%= render :partial => 'name', :collection => account.nicks %>
+					</ul>
+				<% end %>
+			</div>
 
-    <% unless account.nicks.empty? %>
-      <tr>
-        <td>Nicknames:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.nicks %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
+			<div class="sites section">
+				<h3 class="caption">Sites</h3>
+				<% unless account.sites.empty? %>
+					<ul>
+						<%= render :partial => 'site', :collection => account.sites %>
+					</ul>
+				<% end %>
+			</div>
 
-    <% unless account.sites.empty? %>
-      <tr>
-        <td>Sites:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'site', :collection => account.sites %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
+			<div class="services section">
+				<h3 class="caption">Services</h3>
+				<% unless account.services.empty? %>
+					<ul>
+						<%= render :partial => 'service', :collection => account.services %>
+					</ul>
+				<% end %>
+			</div>
 
-    <% unless account.services.empty? %>
-      <tr>
-        <td>Services:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'service', :collection => account.services %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.portraits.empty? %>
-      <tr>
-        <td>Portraits:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'portrait', :collection => account.portraits %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <!-- FIXME: unsure how to link to ISBN. :-( -->
-    <!--
-    <% unless account.books.empty? %>
-      <tr>
-        <td>Books:</td>
-        <td>
-          <ul>
-            <% account.books.each do |book| %>
-              <li><%= book.key %></li>
-            <% end %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-    -->
-  </table>
+			<div class="books section">
+				<h3 class="caption">Books</h3>
+				<% unless account.books.empty? %>
+ 					<ul>
+						<% account.books.each do |book| %>
+							<li><%= book.key %></li>
+						<% end %>
+					</ul>
+				<% end %>
+			</div>
+		</div>
+	</div>
 </li>

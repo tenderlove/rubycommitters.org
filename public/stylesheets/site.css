@@ -1,7 +1,320 @@
-.image-wrapper {
-  height: 100px;
+@charset "UTF-8";
+/* CSS Document */
+
+/* ===================================================================
+reset.css
+=================================================================== */
+html {
+	font-size: 12px;
+	background-image:url(../images/html.gif);
+	letter-spacing: 0.1ex;
+	line-height: 1;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+	font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','Meiryo','メイリオ','ＭＳ Ｐゴシック','ＭＳ ゴシック',Osaka,Osaka-等幅,sans-serif;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+a:link {
+	color: #3439ff;
+}
+a:visited {
+	color: #0d21e2;
+}
+a:hover {
+	color: #CF2E2A;
+}
+a:active {
+	color: #B41409;
 }
 
-.image-wrapper img {
-  height: 100%;
+.button a
+ {
+	background-repeat: no-repeat;
+	display: block;
+	font-weight: bold;
 }
+
+.button a:link,
+.button a:visited
+ {
+	background-position: left top;
+}
+.button a:hover,
+.button a:active
+ {
+	background-position: left bottom;
+}
+a { overflow: hidden }
+
+/* ===================================================================
+clearfix
+=================================================================== */
+.clearfix:after,
+div:after,
+ul:after,
+dl:after,
+form:after,
+blockquote:after {
+content: ".";
+display: block;
+height: 0px;
+clear: both;
+visibility: hidden;
+}
+
+.clearfix,
+div,
+ul,
+dl,
+form,
+blockquote {
+  min-height: 1px;
+  display: block;  /* ブロックレベル要素に */
+}
+
+
+/* ===================================================================
+design
+=================================================================== */
+body {
+	background-image:url(../images/body.gif);
+	width: 861px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 19px;
+	padding-left: 20px;
+	color: #f3f3f3;
+}
+li.committer {
+	display: block;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #585858;
+	border-bottom-color: #585858;
+	margin-bottom: 20px;
+	clear: both;
+}
+li.committer .header {
+	display: block;
+	background-image: url(../images/committer_header.gif);
+	background-repeat: repeat-x;
+	height: 55px;
+	clear: both;
+}
+li.committer .header h2 {
+	display: block;
+	float: left;
+	background-image: url(../images/committer_header_h2.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left: 25px;
+	padding-right: 35px;
+}
+li.committer .header h2 span.account {
+	display: block;
+	float: left;
+	font-size: 28px;
+	font-family: 'Neuton', arial, serif;
+	height: 40px;
+	padding-bottom: 15px;
+	line-height: 40px;
+	text-shadow:#000 1px 1px 2px;
+	letter-spacing: 0.1em;
+}
+li.committer .header .caption {
+	padding-right: 15px;
+}
+li.committer .header .caption {
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-top: 20px;
+	line-height: 20px;
+	height: 20px;
+	float: left;
+	display: block;
+}
+li.committer .header .names {
+	display: block;
+	float: left;
+}
+li.committer .header .names ul {
+	float: left;
+	padding-bottom: 15px;
+	padding-top: 18px;
+	line-height: 20px;
+	height: 22px;
+}
+li.committer .header .names li {
+	display: inline;
+	white-space: nowrap;
+	margin-right: 10px;
+	font-size: 18px;
+}
+
+
+
+
+
+
+li.committer .header .names h3 {
+	display: block;
+}
+li.committer .body {
+	background-color: #343434;
+	clear: both;
+	background-image: url(../images/commiter_body.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+li.committer .body .inner {
+	background-image: url(../images/commiter_body_inner.gif);
+	background-repeat: repeat-y;
+	background-position: left bottom;
+	padding-left: 24px;
+	padding-bottom: 25px;
+}
+li.committer .body div.section {
+	width: 151px;
+	float: left;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+li.committer .body div.section ul {
+	padding-left: 13px;
+	line-height:1.5;
+}
+li.committer .body div.section ul li {
+	display:block;
+	margin-bottom:8px;
+}
+li.committer .body div.portraits ul {
+	padding-left: 0px;
+}
+li.committer .body .caption {
+	display: block;
+	background-color: #222;
+	margin-bottom: 12px;
+	font-size: 10px;
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	box-shadow: inset 1px 1px 1px #111;
+	-webkit-box-shadow: inset 1px 1px 1px #111;
+	-moz-box-shadow: inset 1px 1px 1px #111;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	text-shadow:#000 1px 1px 1px;
+}
+li.committer .body div.portraits {
+	width: 92px;
+	padding-right: 19px;
+	padding-left: 0px;
+	overflow: hidden;
+	float: left;
+	}
+
+li.committer .body .portraits ul {
+	text-align: center;
+}
+li.committer .body .portraits ul li {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #222;
+	border-right-color: #4c4c4c;
+	border-bottom-color: #4c4c4c;
+	border-left-color: #222;
+	max-height: 105px;
+	overflow: hidden;
+	float: left;
+}
+li.committer .body .portraits img {
+	width:90px;
+	float:left;
+}
+li.committer .body .portraits li.empty {
+	width:90px;
+	float:left;
+	display: block;
+	height: 90px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #222;
+	border-right-color: #4c4c4c;
+	border-bottom-color: #4c4c4c;
+	border-left-color: #222;
+	text-align: left;
+	text-indent: -9999px;
+	background-image: url(../images/empty.gif);
+}
+h1 {
+	float: left;
+	display:block;
+	padding-top: 25px;
+
+	}
+p.github {
+	float: right;
+	}
+p.github a {
+	width: 120px;
+	height:70px;
+	background-image: url(../images/github_a.png);
+	text-indent: -9999px;
+	display: block;
+	}
+ul.committers {
+	padding-top: 15px;
+	clear: both;
+}
+#footer {
+	padding: 30px;
+	clear: both;
+	}
+#footer p.copy {
+	text-align: center;
+	display: block;
+	text-shadow:#000 1px 1px 1px;
+	}
