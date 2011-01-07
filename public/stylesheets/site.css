@@ -302,7 +302,7 @@ body.lights_down #account .account{
 #account .account {
   background: #fff;
   padding: 20px;
-  padding-left: 110px;
+  padding-left: 130px;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -moz-box-shadow: 0px 0px 6px #aba;
@@ -339,7 +339,7 @@ body.lights_down #account .account{
   left: -30px;
   -moz-box-shadow: 0px 0px 6px #aba;
   -webkit-box-shadow: 0px 0px 6px #aba;
-  max-width: 100px;
+  max-width: 125px;
 }
 #account .image-wrapper img {
   width: 100%;
@@ -459,11 +459,4 @@ a.iddy{
 }
 a.friendfeed{
   background:url(/images/friendfeed_32.png) no-repeat 0 0;
-}
-
-#stats{
-  display:block;
-  text-align:center;
-  margin:10px 0;
-  clear:both;
 }
