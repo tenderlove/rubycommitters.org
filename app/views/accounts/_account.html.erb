@@ -6,7 +6,7 @@
   </td>
   <td class="name"><%= link_to account.name %></td>
   <% Account::SERVICES.each do |service_name| %>
-    <% service = account.services.where(:name => service_name).first %>
+    <% service = account.services.by_name(service_name) %>
 
     <td class="service <%= service_name %><%= ' active' if service.present? %>">
       <% if service.present? %>

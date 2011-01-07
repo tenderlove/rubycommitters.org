@@ -66,3 +66,17 @@ describe Account, '#name, without names' do
     subject.name.should == subject.username
   end
 end
+
+describe Account, '#services.by_name' do
+  subject { Factory(:account) }
+
+  let!(:service) { Factory(:service, :account => subject, :name => 'twitter') }
+
+  it 'returns service if it exists' do
+    subject.services.by_name('twitter').should == service
+  end
+
+  it 'returns nil if it does not exist' do
+    subject.services.by_name('facebook').should be_nil
+  end
+end
