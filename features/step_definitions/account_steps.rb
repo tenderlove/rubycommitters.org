@@ -17,7 +17,9 @@ Then /^I should see the following services of (.+):$/ do |account, table|
 
     within("tr#account_#{account.id}") do
       if service_active
-        page.should have_css("td.service.#{service_name}.active a img[src^='/images/icons/#{service_name}.png']")
+        service = account.services.where(:name => service_name).first
+
+        page.should have_css("td.service.#{service_name}.active a[href='#{service.url}'] img[src^='/images/icons/#{service_name}.png']")
       else
         page.should have_css("td.service.#{service_name} img[src^='/images/icons/#{service_name}.png']")
       end

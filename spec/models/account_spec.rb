@@ -26,20 +26,6 @@ describe Account, '#avatar_url' do
   end
 end
 
-describe Account, '#has_service?' do
-  subject { Factory(:account) }
-
-  let!(:service) { Factory(:service, :account => subject, :name => 'twitter') }
-
-  it 'returns true if the account has the service' do
-    subject.has_service?('twitter').should == true
-  end
-
-  it 'return false if the account does not have the service' do
-    subject.has_service?('facebook').should == false
-  end
-end
-
 describe Account, '#name, with names' do
   subject { Factory(:account) }
 

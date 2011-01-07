@@ -9,10 +9,6 @@ class Account < ActiveRecord::Base
     portraits.first
   end
 
-  def has_service?(name)
-    services.where(:name => name).count > 0
-  end
-
   def name
     name   = names.in_japanese.first unless I18n.locale == :en
     name ||= names.in_english.first
