@@ -5,6 +5,11 @@
     </div>
   </td>
   <td class="name"><%= link_to account.name %></td>
+  <td class="website">
+    <% if account.website.present? %>
+      <%= link_to account.website.title, account.website.url %>
+    <% end %>
+  </td>
   <% Account::SERVICES.each do |service_name| %>
     <% service = account.services.by_name(service_name) %>
 

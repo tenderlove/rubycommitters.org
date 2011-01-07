@@ -5,6 +5,7 @@ describe Account do
   it { should have_many(:names) }
   it { should have_many(:portraits) }
   it { should have_many(:services) }
+  it { should have_many(:sites) }
 end
 
 describe Account, '#avatar_url' do
@@ -78,5 +79,24 @@ describe Account, '#services.by_name' do
 
   it 'returns nil if it does not exist' do
     subject.services.by_name('facebook').should be_nil
+  end
+end
+
+describe Account, '#website' do
+  subject { Factory(:account) }
+
+  context "with sites" do
+    let!(:site_1) { Factory(:site, :account => subject) }
+    let!(:site_2) { Factory(:site, :account => subject) }
+
+    it "returns the first site" do
+      subject.website.should == site_1
+    end
+  end
+
+  context "without sites" do
+    it "returns nil" do
+      subject.website.should be_nil
+    end
   end
 end

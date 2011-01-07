@@ -12,3 +12,7 @@ end
 Factory.define :service do |service|
   service.association(:account)
 end
+
+Factory.define :site do |site|
+  site.association(:account)
+end

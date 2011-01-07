@@ -10,6 +10,16 @@ Then /^I should see the default avatar for (.+)$/ do |account|
   page.should have_css("tr#account_#{account.id} td.avatar img[src^='/images/missing-avatar.png']")
 end
 
+Then /^I should see the "([^"]*)" website for (.+)$/ do |title, account|
+  site = Site.find_by_title!(title)
+
+  page.should have_css("tr#account_#{account.id} td.website a[href='#{site.url}']:contains('#{title}')")
+end
+
+Then /^I should not see a website for (.+)$/ do |account|
+  find("tr#account_#{account.id} td.website").text.strip.should be_empty
+end
+
 Then /^I should see the following services of (.+):$/ do |account, table|
   table.hashes.each do |hash|
     service_name   = hash['name']

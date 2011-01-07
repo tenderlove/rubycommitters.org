@@ -16,11 +16,15 @@ Feature: Account listing
       | account        | name       | key  |
       | username: matz | friendfeed | matz |
       | username: matz | github     | matz |
+    And the following sites exist:
+      | account        | title      | url                           |
+      | username: matz | Matzにっき | http://www.rubyist.net/~matz/ |
 
   Scenario: Viewing account listing
     When I go to the homepage
-    Then I should see "Yukihiro Matsumoto" as the name of the "matz" account
-    And I should see the avatar of the "matz" account
+    Then I should see the avatar of the "matz" account
+    And I should see "Yukihiro Matsumoto" as the name of the "matz" account
+    And I should see the "Matzにっき" website for the "matz" account
     And I should see the following services of the "matz" account:
       | name       | active |
       | facebook   | false  |
@@ -29,8 +33,9 @@ Feature: Account listing
       | iddy       | false  |
       | mixi       | false  |
       | twitter    | false  |
-    And I should see "tristandunn" as the name of the "tristandunn" account
     And I should see the default avatar for the "tristandunn" account
+    And I should see "tristandunn" as the name of the "tristandunn" account
+    And I should not see a website for the "tristandunn" account
     And I should see the following services of the "tristandunn" account:
       | name       | active |
       | facebook   | false  |

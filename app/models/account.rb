@@ -16,6 +16,7 @@ class Account < ActiveRecord::Base
       select { |record| record.name == name }.first
     end
   end
+  has_many :sites
 
   def avatar
     portraits.first
@@ -30,5 +31,9 @@ class Account < ActiveRecord::Base
     else
       username
     end
+  end
+
+  def website
+    sites.first
   end
 end
