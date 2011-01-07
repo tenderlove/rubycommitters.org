@@ -10,20 +10,23 @@ $(document).ready(function(){
 	$('#accounts .account').equalHeights();
 	
 	var
-    speed = 500,  // animation speed
+	  count = 0;
+    speed = 1200,  // animation speed
     $wall = $('#accounts')
-  ;
-
-  $wall.masonry({
-    columnWidth: 300, 
-    // only apply masonry layout to visible elements
-    itemSelector: '.account:not(.invis)',
-    animate: true,
-    animationOptions: {
-      duration: speed,
-      queue: false
+    options = {
+      columnWidth: 300, 
+      // only apply masonry layout to visible elements
+      itemSelector: '.account:not(.kill)',
+      animate: true,
+      animationOptions: {
+        duration: speed,
+        queue: false
+      }
     }
-  });
+  ;
+  
+
+  $wall.masonry(options);
 	
 	
 	//gather the user names of each account in the INDEX list
@@ -34,9 +37,11 @@ $(document).ready(function(){
 	
 	//bind the filter input on the INDEX list
 	$('#filter_by_username').keyup(function(){
-	  var count = 0;
 	  $('.stay_alive').removeClass('stay_alive');
+	  count = 0;
+	  
 	  regexp = new RegExp($(this).val().toLowerCase());
+	  
 	  for(var i=0; i<usernames.length; i++) {
 	    if(usernames[i].toLowerCase().match(regexp)){
 	      count++;
@@ -44,15 +49,19 @@ $(document).ready(function(){
 	    }
     }
     
-    $('.stay_alive').removeClass('invis').fadeIn(speed);
-    $('.account').not('.stay_alive').addClass('invis').fadeOut(speed);
-
-    $wall.masonry();
+    $('.stay_alive').removeClass('kill').fadeIn(speed);
+    $('.account').not('.stay_alive').addClass('kill').fadeOut(speed);
     
-    if ($(this).val() != '') {
+    $wall.masonry(options);
+    
+    if ($('#filter_by_username').val() != '') {
       $('#filter .results').html(count == 1 ? count+" result" : count+" results");
     } else {
       $('#filter .results').empty();
+
+      setTimeout(function(){
+        $('.stay_alive').removeClass('stay_alive');
+      }, 700);
     }
 	})
 	
