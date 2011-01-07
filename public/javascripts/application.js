@@ -58,11 +58,11 @@ $(document).ready(function(){
       $('#filter .results').html(count == 1 ? count+" result" : count+" results");
     } else {
       $('#filter .results').empty();
-
-      setTimeout(function(){
-        $('.stay_alive').removeClass('stay_alive');
-      }, 700);
     }
+	})
+	
+	$('a.big_link').hover(function(){
+	  $('.stay_alive').removeClass('stay_alive');
 	})
 	
 	// Set the card height relative to the services height

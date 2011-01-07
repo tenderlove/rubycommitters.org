@@ -106,7 +106,7 @@ a.big_link {
   background:rgba(152,251,152,0.3) url(/images/check.png) no-repeat 105% -20px;
 }
 .account.kill a.big_link{
-  background:rgba(250,128,114,0.3) url(/images/reject.png) no-repeat 105% -20px;
+  background:rgba(152,251,152,0.3) url(/images/reject.png) no-repeat 105% -20px;
 }
 .image-wrapper {
   max-width: 100px;
