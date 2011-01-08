@@ -24,7 +24,7 @@ header, section, footer, aside, nav, article, figure { display: block; }
 /* =LAYOUT */
 
 body {
-  background: #eee;
+  background: #ececec url('/images/bg.jpg');
   color: rgba(0, 0 ,0, .6);
   font: normal 13px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
