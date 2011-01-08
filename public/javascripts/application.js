@@ -33,7 +33,7 @@ $(document).ready(function(){
       $('.stay_alive').removeClass('stay_alive');
   	  $.get('/accounts/filter/'+$(this).val().toLowerCase(), function(data){
   	    $.each(data, function(i) {	      
-  	     $('#accounts .account#account_'+data[i].account.id).addClass('stay_alive');             
+  	     $('#accounts .account#account_'+data[i].account.id).addClass('stay_alive');
         });
       
         $('.stay_alive').removeClass('kill').fadeIn(speed);
