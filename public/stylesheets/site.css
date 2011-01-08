@@ -337,7 +337,7 @@ body.lights_down #account .account{
   -webkit-box-shadow: 0px 0px 6px #aba;
   position:relative;
   z-index:200;
-  min-height: 130px;
+  min-height: 160px;
 }
 #account .meta {
   overflow: auto;
