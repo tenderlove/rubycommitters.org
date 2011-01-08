@@ -214,15 +214,12 @@ h2 {
 
 .services a {
   background-repeat: no-repeat;
+  background-image: url('/images/sprite_services.png');
   display: block;
   height: 24px;
   margin: 3px 0;
-  width: 24px;
-}
-
-.twitter a, .facebook a, .github a, .friendfeed a, .mixi a, .iddy a {
-  background-image: url('/images/sprite_services.png');
   text-indent: -9999px;
+  width: 24px;
 }
 
 .twitter a { background-position: 0 0; }
