@@ -9,8 +9,6 @@ class AccountsController < ApplicationController
   
   def filter
     accounts = Account.select('id, username').where ['username like ?', '%'+params[:query]+'%']
-    if request.xhr? 
-      render :json => accounts.to_json
-    end
+    render :json => accounts
   end
 end
