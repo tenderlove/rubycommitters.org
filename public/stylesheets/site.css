@@ -97,18 +97,18 @@ a.big_link {
   color: white;
   text-decoration: none;
 }
-.account a.big_link:hover, .account.stay_alive a.big_link { 
+.account a.big_link:hover { 
   background-color: #f7f7f7;
   -webkit-box-shadow:inset 0 0 5px #888;
   -moz-box-shadow:inset 0 0 5px #888;
 }
-.account.stay_alive a.big_link{
+/*.account.stay_alive a.big_link{
   background:rgba(152,251,152,0.3) url(/images/check.png) no-repeat 105% -20px;
 }
 .account.kill a.big_link{
   background:rgba(152,251,152,0.3) url(/images/reject.png) no-repeat 105% -20px;
 }
-.image-wrapper {
+*/.image-wrapper {
   max-width: 100px;
 	float:left;
 	margin:0 10px 0px 0;
