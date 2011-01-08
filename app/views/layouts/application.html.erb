@@ -17,6 +17,24 @@
       itemSelector: '.card'
     });
     
+    $.fn.qtip.styles.rc = {
+      background: '#222',
+      border: {
+        color: '#222',
+        radius: 3
+      },
+      color: 'rgba(255, 255, 255, .9)',
+      fontWeight: 'bold',
+      textShadow: '0 -1px #000',
+      tip: {
+        color: '#222',
+        size: {
+          x: 10,
+          y: 5
+        }
+      }
+    };
+    
     $('.services a').qtip({
       position: {
         corner: {
@@ -28,20 +46,31 @@
         }
       },
       style: {
-        background: '#222',
-        border: {
-          color: '#222',
-          radius: 3
-        },
-        color: '#fff',
-        font: 'italic 13px/14px Cambria, Georgia, Times, serif',
+        name: 'rc',
+        fontSize: '14px',
+        lineHeight: '14px',
         tip: {
-          corner: 'topMiddle',
-          color: '#222',
-          size: {
-            x: 10,
-            y: 5
-          }
+          corner: 'topMiddle'
+        }
+      }
+    });
+    
+    $('footer a').qtip({
+      position: {
+        corner: {
+          target: 'topMiddle',
+          tooltip: 'bottomMiddle'
+        },
+        adjust: {
+          y: -10
+        }
+      },
+      style: {
+        name: 'rc',
+        fontSize: '16px',
+        lineHeight: '20px',
+        tip: {
+          corner: 'bottomMiddle'
         }
       }
     });

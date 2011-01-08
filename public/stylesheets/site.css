@@ -59,7 +59,7 @@ header {
 }
 
 footer {
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, .9);
   border-top: 1px solid #444;
   border-bottom: 1px solid #000;
   bottom: 0;
@@ -70,6 +70,28 @@ h1 {
   font-size: 20px;
   line-height: 38px;
   text-shadow: 0 -1px rgba(0, 0, 0, .4);
+}
+
+footer h1 a {
+  background-image: url("/images/forking-32x32.png");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+  -webkit-border-radius: 3px;
+  display: block;
+  height: 32px;
+  margin: 2px 0;
+  text-indent: -9999px;
+  width: 52px;
+}
+
+footer h1 a:hover {
+  background-color: rgba(255, 255, 255, .1);
+  background-position: 50% -32px;
+  border-top: 1px solid rgba(0, 0, 0, .8);
+  border-right: 1px solid rgba(0, 0, 0, .4);
+  border-bottom: 1px solid rgba(0, 0, 0, .8);
+  border-left: 1px solid rgba(0, 0, 0, .4);
 }
 
 /* =CARDS */
