@@ -17,18 +17,24 @@
       itemSelector: '.card'
     });
     
-    $('a.tool_tip').qtip({
+    $('.services a').qtip({
       position: {
         corner: {
           target: 'bottomMiddle',
           tooltip: 'topMiddle'
+        },
+        adjust: {
+          y: 5
         }
       },
       style: {
+        background: '#222',
         border: {
           color: '#222',
           radius: 3
         },
+        color: '#fff',
+        font: 'italic 13px/14px Cambria, Georgia, Times, serif',
         tip: {
           corner: 'topMiddle',
           color: '#222',
