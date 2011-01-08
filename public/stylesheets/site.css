@@ -126,11 +126,9 @@ h1 {
 .left.three .frame { -webkit-transform: rotate(3deg); }
 .left.four .frame { -webkit-transform: rotate(4deg); }
 .left.five .frame { -webkit-transform: rotate(5deg); }
-.left.six .frame { -webkit-transform: rotate(6deg); }
 .right.three .frame { -webkit-transform: rotate(-3deg); }
 .right.four .frame { -webkit-transform: rotate(-4deg); }
 .right.five .frame { -webkit-transform: rotate(-5deg); }
-.right.six .frame { -webkit-transform: rotate(-6deg); }
 
 .photo { position: relative; }
 
@@ -222,7 +220,7 @@ h2 {
   width: 24px;
 }
 
-.twitter a, .facebook a, .github a, .friendfeed a, .mixi a {
+.twitter a, .facebook a, .github a, .friendfeed a, .mixi a, .iddy a {
   background-image: url('/images/sprite_services.png');
   text-indent: -9999px;
 }
@@ -237,3 +235,5 @@ h2 {
 .friendfeed a:hover { background-position: -72px -24px; }
 .mixi a { background-position: -96px 0; }
 .mixi a:hover { background-position: -96px -24px; }
+.iddy a { background-position: -120px 0; }
+.iddy a:hover { background-position: -120px -24px; }
