@@ -22,6 +22,6 @@ module ApplicationHelper
   end
   
   def randomized_styles
-    " #{['left','right'].sample} #{['three','four','five'].sample} #{['','','','creased'].sample}"
+    " #{['left','right'].sample} #{['three','four','five'].sample}#{['','','',' creased'].sample}"
   end
 end
