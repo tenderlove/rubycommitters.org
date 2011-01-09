@@ -3,7 +3,7 @@
     <div class="frame">
       <div class="photo">
         <% if account.portraits.empty? %>
-          <img src="http://placehold.it/100" />
+          <%= image_tag 'user-128x128.png' %>
         <% else %>
           <%= render :partial => 'portrait', :collection => account.portraits %></div>
         <% end %>
