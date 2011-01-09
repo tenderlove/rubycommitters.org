@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Ruby Committers</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js', 'jquery.masonry.min', 'jquery.qtip-1.0.0-rc3.min' %>
   <%= csrf_meta_tag %>
@@ -11,7 +12,7 @@
 
 <%= yield %>
 
-<script type="text/javascript" charset="utf-8">
+<script type="text/javascript">
   $(document).ready(function(){
     $('.cards').masonry({
       itemSelector: '.card'
