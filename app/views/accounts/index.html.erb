@@ -14,4 +14,13 @@
 <script>
   $('.avatars').cycle( { fx: 'zoom' } );
   $('.names').cycle( { fx: 'fade' } );
+  
+  $('.member').hover( function() {
+    $( this ).find( '.sidebar span' ).addClass( "selected" );
+    $( this ).addClass( "selected" );
+  },
+  function() {
+    $(this).find( '.sidebar > span' ).removeClass( "selected" );
+    $( this ).removeClass( "selected" );    
+  });
 </script>

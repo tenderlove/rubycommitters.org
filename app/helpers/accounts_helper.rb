@@ -5,8 +5,9 @@ module AccountsHelper
     return image_tag( 'missing_person.png' ) if account.portraits.empty?
     
     buff = []    
+    css_class = account.portraits.count > 1 ? :multi : ''
     account.portraits.each do |p|
-      buff << image_tag( p.url )
+      buff << image_tag( p.url, :class => css_class )
     end
     raw( buff.join( "\n" ) )
   end
