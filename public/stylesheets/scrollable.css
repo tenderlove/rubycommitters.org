@@ -1,6 +1,6 @@
-.scrollcontainer	{width: 100%;background: url(/images/scroll_bg.png);position: relative;height: 591px;}
+.scrollcontainer	{width: 100%;background: url(/images/scroll_bg.png);position: relative;height: 613px;}
 .scrollcenter		{width: 1100px;margin: 0 auto;position: relative;}
-.scrollable			{position: absolute;overflow: hidden;width: 990px;height: 530px;padding: 10px 0;border: none;left: 68px;top: 15px}
+.scrollable			{position: absolute;overflow: hidden;width: 990px;height: 565px;padding: 10px 0;border: none;left: 68px;top: 12px;}
 
 .scrollable .items 	{height: 20000em;position: absolute;clear: both;}
 .items div			{float: left;}
