@@ -55,6 +55,12 @@ header, footer {
   background-image:
     -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, .4))),
     -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .1)), color-stop(.5, rgba(255, 255, 255, .1)), color-stop(.501, transparent), to(transparent));
+  background-image:
+    -moz-linear-gradient(top, transparent, rgba(0, 0, 0, .4)),
+    -moz-linear-gradient(top, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 50%, transparent 50%, transparent);
+  background-image:
+    linear-gradient(top, transparent, rgba(0, 0, 0, .4)),
+    linear-gradient(top, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 50%, transparent 50%, transparent);
   color: #fff;
   left: 0;
   position: fixed;
@@ -67,7 +73,9 @@ header {
   background-color: #c33;
   border-top: 1px solid #d77;
   border-bottom: 1px solid #6d1b1b;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .6);
+  -webkit-box-shadow: 0 1px rgba(0, 0, 0, .6);
+  -moz-box-shadow: 0 1px rgba(0, 0, 0, .6);
+  box-shadow: 0 1px rgba(0, 0, 0, .6);
   top: 0;
 }
 
@@ -91,6 +99,8 @@ footer h1 a {
   background-repeat: no-repeat;
   border: 1px solid transparent;
   -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   display: block;
   height: 32px;
   margin: 2px 0;
@@ -116,7 +126,11 @@ footer h1 a:hover {
 
 .card {
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f6f6f6));
+  background: -moz-linear-gradient(top, #fff, #f6f6f6);
+  background: linear-gradient(top, #fff, #f6f6f6);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   display: block;
   float: left;
   margin: 15px;
@@ -124,10 +138,16 @@ footer h1 a:hover {
   position: relative;
   text-shadow: 0 1px rgba(255, 255, 255, .8);
   -webkit-transition: -webkit-box-shadow .175s linear;
+  -moz-transition: -moz-box-shadow .175s linear;
+  transition: box-shadow .175s linear;
   width: 290px;
 }
 
-.creased { background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(.5, #f6f6f6), color-stop(.501, #eee), to(#fff)); }
+.creased {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(.5, #f6f6f6), color-stop(.501, #eee), to(#fff));
+  background: -moz-linear-gradient(top, #fff, #f6f6f6 50%, #eee 50%, #fff);
+  background: linear-gradient(top, #fff, #f6f6f6 50%, #eee 50%, #fff);
+}
 
 .card:after {
   border-right: 3px double rgba(217, 163, 192, .3);
@@ -142,6 +162,8 @@ footer h1 a:hover {
 
 .card:hover {
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
 }
 
 /* =PORTRAITS */
@@ -156,15 +178,46 @@ footer h1 a:hover {
 .frame {
   background: #fff;
   -webkit-box-shadow: -1px 0 2px 1px rgba(0, 0, 0, .2);
+  -moz-box-shadow: -1px 0 2px 1px rgba(0, 0, 0, .2);
+  box-shadow: -1px 0 2px 1px rgba(0, 0, 0, .2);
   padding: 5px;
 }
 
-.left.three .frame { -webkit-transform: rotate(3deg); }
-.left.four .frame { -webkit-transform: rotate(4deg); }
-.left.five .frame { -webkit-transform: rotate(5deg); }
-.right.three .frame { -webkit-transform: rotate(-3deg); }
-.right.four .frame { -webkit-transform: rotate(-4deg); }
-.right.five .frame { -webkit-transform: rotate(-5deg); }
+.left.three .frame {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+.left.four .frame {
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+.left.five .frame {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+.right.three .frame {
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.right.four .frame {
+  -webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+}
+
+.right.five .frame {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
 
 .photo { position: relative; }
 
@@ -234,7 +287,6 @@ h2 {
   display: block;
   margin-right: 10px;
   overflow: hidden;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
