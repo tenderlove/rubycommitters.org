@@ -16,7 +16,7 @@ $(document).ready(function(){
     options = {
       columnWidth: 300, 
       // only apply masonry layout to visible elements
-      itemSelector: '.account:not(.kill)',
+      itemSelector: '.account:not(.kill), .no_results',
       animate: true,
       animationOptions: {
         duration: speed,
@@ -38,17 +38,22 @@ $(document).ready(function(){
       
         $('.stay_alive').removeClass('kill').fadeIn(speed);
         $('.account').not('.stay_alive').addClass('kill').fadeOut(speed);
-      
-        $wall.masonry(options);
         
         if ($('#filter .results').is(':empty')) {
           $('#filter .results').hide(); 
         }
         $('#filter .results').html(data.length == 1 ? data.length+" result" : data.length+" results").fadeIn('fast'); 
+        if (data.length == 0) {
+          $('.no_results').fadeIn('fast');
+        } else {
+          $('.no_results').fadeOut('fast');
+        }
+        $wall.masonry(options);
       });
     } else {
      $('#filter .results').fadeOut('fast', function(){$(this).empty()});
      $('.account').removeClass('kill').fadeIn(speed);
+     $('.no_results').fadeOut('fast');
      $wall.masonry(options);
     }   
 	});

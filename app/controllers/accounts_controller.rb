@@ -8,7 +8,7 @@ class AccountsController < ApplicationController
   end
   
   def filter
-    accounts = Account.select('id, username').where ['username like ?', '%'+params[:query]+'%']
+    accounts = Account.select('id, username').where ["username LIKE ?", "%#{params[:query]}%"]
     render :json => accounts
   end
 end

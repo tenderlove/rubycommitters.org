@@ -250,6 +250,10 @@ input::-webkit-input-placeholder {
   -moz-box-shadow: 0px 0px 6px #aba;
   -webkit-box-shadow: 0px 0px 6px #aba;
 }
+#accounts .no_results {
+  display: none;
+  font-size: 20px;
+}
 #accounts .account{
   width:290px;
   float:left;
@@ -313,11 +317,33 @@ body.lights_down #account .account{
 #site-footer {
   clear: both;
   position: relative;
-  height: 50px;
+  height: 80px;
   margin-top: 40px;
+  border-top: 3px solid #666;
 	background:#333;
-	color:#fff;
+	color: #aaa;
 	padding:10px;
+}
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+span.amp {
+   font-family:Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif;
+   font-size:110%;
+   font-style:italic;
+}
+#site-footer .amp {
+  color: #ddd;
+}
+#site-footer a {
+  color: white;
+}
+#site-footer .copyright {
+  float: left;
+}
+#site-footer .credits {
+  float: right;
 }
 
 /* =SINGLE ACCOUNT
