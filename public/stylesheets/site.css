@@ -66,8 +66,8 @@ html, body {
 
 body{
 	font:normal 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
-	background: #ececec;
-	
+//	background: #ececec;
+  background: url(/images/noise.png) repeat;
 	-webkit-transition:background 0.5s;
  	-moz-transition-duration:       0.5s;
 	-o-transition-duration:         0.5s;
@@ -197,7 +197,7 @@ a.big_link {
 }
 #stats {
   float: left;
-  margin-top: 15px;
+  margin-bottom:-5px;
   font-weight: bold;
   color: #444;
   text-shadow: 0 1px 1px white;
