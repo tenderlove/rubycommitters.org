@@ -48,7 +48,7 @@ class PortraitUploader < CarrierWave::Uploader::Base
   ##
   # Process files as they are uploaded.
   #
-  process :resize_to_fit => [100, 100]
+  process :resize_to_fill => [100, 100]
   # version :thumb do
   #   process :resize_to_fill => [100, 100]
   # end
