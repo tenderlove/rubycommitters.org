@@ -5,3 +5,25 @@
 .image-wrapper img {
   height: 100%;
 }
+
+ul.committers {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+ul.committers li{
+  margin-bottom: 5px;
+}
+
+ul.committers li table{
+  padding: 2px;
+  border-collapse: separate;
+  width: 500px;
+}
+
+ul.committers li th{
+  background-color: #EEE;
+  text-align: left;
+  padding: 3px;
+  width: 80px;
+}
