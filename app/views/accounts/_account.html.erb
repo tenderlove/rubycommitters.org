@@ -60,20 +60,17 @@
       </tr>
     <% end %>
 
-    <!-- FIXME: unsure how to link to ISBN. :-( -->
-    <!--
     <% unless account.books.empty? %>
       <tr>
         <td>Books:</td>
         <td>
           <ul>
             <% account.books.each do |book| %>
-              <li><%= book.key %></li>
+              <li><a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= book.key %></a></li>
             <% end %>
           </ul>
         </td>
       </tr>
     <% end %>
-    -->
   </table>
 </li>
