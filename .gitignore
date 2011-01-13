@@ -2,3 +2,5 @@
 db/*.sqlite3
 log/*.log
 tmp/**/*
+.*.sw*
+.DS_Store

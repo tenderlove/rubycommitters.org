@@ -1,0 +1,2 @@
+ruby image with portrait inside. mouseover reveals picture.
+big picture of ruby formed with contributers as facets.

@@ -1,7 +1,137 @@
-.image-wrapper {
-  height: 100px;
+/*reset*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+*:focus {
+  outline: 10; }
+
+body {
+  line-height: 1;
+  color: black;
+  background: white; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+/*end reset*/
+
+a {
+  color: #BEBEBE;
+  text-decoration: none;
+  -webkit-transition: color 500ms ease;
 }
 
-.image-wrapper img {
-  height: 100%;
+a:hover {
+  color: #EE190A;
+}
+
+body {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('../images/ruby_logo.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: Arial;
+}
+
+#banner {
+  font-size: 25pt;
+  text-align: center;
+  background: #A71106;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+#main {
+  padding-top: 70px;
+}
+
+#accounts li.account {
+  display: inline-block;
+  width: 270px;
+  margin: 12px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  vertical-align: top;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  -webkit-transition: background 500ms ease;
+}
+
+#accounts li.account:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.account .name {
+  padding: 5px;
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.4)));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.account .details {
+  padding: 15px;
+}
+
+img.portrait {
+  width: 80px;
+  float: left;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#accounts .info {
+  font-size: 10pt;
+  padding-left: 100px;
+}
+
+#accounts .info li {
+  margin-left: 10px;
+  color: #BEBEBE;
+}
+
+.services li {
+  display: inline-block;
+}
+
+.services img {
+  height: 32px;
+  width: 32px;
+  opacity: 0.3;
+  -webkit-transition: opacity 500ms ease
+}
+
+.services img:hover{
+  opacity: 1.0;
 }

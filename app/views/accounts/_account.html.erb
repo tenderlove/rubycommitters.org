@@ -1,76 +1,63 @@
-<li>
-  <table>
-    <tr>
-      <td>Account:</td>
-      <td><%= account.username %></td>
-    </tr>
-
-    <% unless account.names.empty? %>
-      <tr>
-        <td>Names:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.names %>
-          </ul>
-        </td>
-      </tr>
+<li class="account">
+  <div class="name">
+    <%= account.username %>
+  </div>
+  <div class="details">
+    <% if account.portraits.any? %>
+      <%= image_tag account.portraits.first.url, class: 'portrait' %>
+    <% else %>
+      <%= image_tag 'missing.png' %>
     <% end %>
-
-    <% unless account.nicks.empty? %>
-      <tr>
-        <td>Nicknames:</td>
-        <td>
+    <div class="info">
+      <% if account.sites.any? %>
+        <div class="sites">
+          <h2>sites</h2>
           <ul>
-            <%= render :partial => 'name', :collection => account.nicks %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.sites.empty? %>
-      <tr>
-        <td>Sites:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'site', :collection => account.sites %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.services.empty? %>
-      <tr>
-        <td>Services:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'service', :collection => account.services %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.portraits.empty? %>
-      <tr>
-        <td>Portraits:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'portrait', :collection => account.portraits %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.books.empty? %>
-      <tr>
-        <td>Books:</td>
-        <td>
-          <ul>
-            <% account.books.each do |book| %>
-              <li><a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= book.key %></a></li>
+            <% account.sites.each do |site| %>
+              <li><%= link_to_site site %></li>
             <% end %>
           </ul>
-        </td>
-      </tr>
-    <% end %>
-  </table>
+        </div>
+      <% end %>
+      <div class="books">
+        <% if account.books.any? %>
+          <h2>books</h2>
+          <ul>
+            <% account.books.each do |book| %>
+              <li><%= link_to_book book %></li>
+            <% end %>
+          </ul>
+        <% end %>
+      </div>
+      <div class="names">
+        <% if account.names.any? %>
+          <h2>names</h2>
+          <ul>
+            <% account.names.each do |name| %>
+              <li><%= name.value %></li>
+            <% end %>
+          </ul>
+        <% end %>
+      </div>
+      <div class="nicknames">
+        <% if account.nicks.any? %>
+          <h2>nicknames</h2>
+          <ul>
+            <% account.nicks.each do |nickname| %>
+              <li><%= nickname.value %></li>
+            <% end %>
+          </ul>
+        <% end %>
+      </div>
+    </div>
+    <div class="services">
+      <% if account.nicks.any? %>
+        <ul>
+          <% account.services.each do |service| %>
+            <li><%= link_to_service service %></li>
+          <% end %>
+        </ul>
+      <% end %>
+    </div>
+  </div>
 </li>
