@@ -1,5 +1,5 @@
 <h1>Ruby Committers</h1>
-<%= link_to 'fork me on github', 'http://github.com/tenderlove/rubycommitters.org' %>
-<ul>
-<%= render :partial => 'account', :collection => @accounts %>
+<%= link_to 'Fork me on Github', 'http://github.com/tenderlove/rubycommitters.org' , :id => 'fork_me' %>
+<ul id = "committers">
+  <%= render :partial => 'account', :collection => @accounts %>
 </ul>

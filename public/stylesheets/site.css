@@ -1,7 +1,182 @@
-.image-wrapper {
-  height: 100px;
+body {
+  padding:          0;
+  margin:           0;
+  position:         relative;
+  background:       url("/images/red-paisley-small.png");
+  background-color: #881320;
 }
 
-.image-wrapper img {
-  height: 100%;
+label {
+  left:     0;
+  bottom:   0;
+  position: absolute;
+}
+
+#fork_me {
+  top:               30px;
+  right:             -110px;
+  font:              15px 'CartoGothicStdBold', Arial, sans-serif;
+  color:             black;
+  width:             300px;
+  border:            3px #DAA130 solid;
+  padding:           10px;
+  position:          fixed;
+  text-align:        center;
+  text-decoration:   none;
+  background-color:  #FAC925;
+  -moz-transform:    rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -webkit-box-shadow: 1px 1px 10px black;
+}
+
+#committers {
+  width:      710px;
+  margin:     auto;
+  padding:    0;
+  list-style: none;
+}
+
+.committer {
+  margin:           15px;
+  width:            320px;
+  height:           320px;
+  display:          inline-block;
+  position:         relative;
+  background-color: #FEF5E4;
+}
+
+.username {
+  top:        20px;
+  left:       125px;
+  font:       20px 'CartoGothicStdBold', Arial, sans-serif;
+  width:      100px;
+  position:   absolute;
+  text-align: left;
+}
+
+.names {
+  top:        45px;
+  left:       125px;
+  width:      150px;
+  padding:    0;
+  position:   absolute;
+  list-style: none;
+  text-align: left;
+}
+
+.names li {
+  text-align: left;
+}
+
+.aka {
+  color: #881320;
+}
+
+.nicknames {
+  padding:    0;
+  left:       0;
+  bottom:     0;
+  display:    inline;
+  list-style: none;
+}
+
+.real_names {
+  padding:    0;
+  left:       0;
+  bottom:     0;
+  display:    inline;
+  list-style: none;
+}
+
+.nicknames li {
+  display:  inline;
+}
+
+.sites {
+  left:       19px;
+  width:      150px;
+  height:     100px;
+  bottom:     25px;
+  padding:    0 5px;
+  position:   absolute;
+  list-style: none;
+}
+
+.sites a {
+  font:            16px 'CartoGothicStdBook', Arial, sans-serif;
+  color:           black;
+  text-decoration: none;
+}
+
+.sites_label {
+  left:         0;
+  font:         17px 'saxMonoRegular', Arial, sans-serif;
+  color:        #881320;
+  bottom:       25px;
+  height:       90px;
+  padding:      5px;
+  position:     absolute;
+  list-style:   none;
+  border-right: 2px solid #4B4E64;
+}
+
+.services {
+  left:             0;
+  bottom:           0;
+  height:           15px;
+  padding:          3px 0 7px 0;
+  width:            320px;
+  position:         absolute;
+  list-style:       none;
+  text-align:       center;
+  background-color: #FF2E2E;
+}
+
+.services li {
+  margin:  0 2px;
+  display: inline;
+}
+
+.services li a {
+  font:            12px 'CartoGothicStdBook', Arial, sans-serif;
+  color:           white;
+  text-decoration: none;
+}
+
+.portrait {
+  top:      20px;
+  left:     20px;
+  width:    100px;
+  height:   auto;
+  position: absolute;
+}
+
+.books {
+  right:      0;
+  width:      110px;
+  height:     100px;
+  margin:     0;
+  bottom:     25px;
+  padding:    0 5px;
+  position:   absolute;
+  list-style: none;
+}
+
+.books a {
+  font:            14px 'CartoGothicStdBook', Arial, sans-serif;
+  color:           black;
+  text-decoration: none;
+}
+
+.books_label {
+  color:        #881320;
+  font:         17px 'saxMonoRegular', Arial, sans-serif;
+  right:        120px;
+  height:       90px;
+  bottom:       25px;
+  padding:      5px;
+  position:     absolute;
+  list-style:   none;
+  border-right: 2px solid #4B4E64;
+  border-left:  2px solid #4B4E64;
 }
