@@ -34,4 +34,8 @@ module AccountsHelper
     "#{service_name}.png"
   end
 
+  def link_to_tab(label)
+    link_to label, nil, class: 'info-tab', 'tab-section' => label
+  end
+
 end

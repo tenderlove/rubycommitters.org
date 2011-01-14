@@ -46,6 +46,7 @@ a {
 
 a:hover {
   color: #EE190A;
+  cursor: pointer;
 }
 
 body {
@@ -78,16 +79,17 @@ body {
   display: inline-block;
   width: 270px;
   margin: 12px;
+  padding-bottom: 10px;
   border: 3px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   vertical-align: top;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   color: white;
   -webkit-transition: background 500ms ease;
 }
 
 #accounts li.account:hover {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .account .name {
@@ -104,7 +106,7 @@ body {
   padding: 15px;
 }
 
-img.portrait {
+.portrait {
   width: 80px;
   float: left;
   border: 8px solid rgba(0, 0, 0, 0.1);
@@ -113,12 +115,18 @@ img.portrait {
 
 #accounts .info {
   font-size: 10pt;
-  padding-left: 100px;
+  padding-left: 110px;
 }
 
 #accounts .info li {
   margin-left: 10px;
   color: #BEBEBE;
+}
+
+.services {
+  text-align: center;
+  margin-top: 10px;
+  clear: both;
 }
 
 .services li {

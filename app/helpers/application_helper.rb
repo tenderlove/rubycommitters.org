@@ -20,4 +20,13 @@ module ApplicationHelper
       ''
     end
   end
+
+  def jquery_include_tag
+    if Rails.env == 'production'
+      javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'
+    else
+      javascript_include_tag 'jquery-1.4.4.min.js'
+    end
+  end
+
 end

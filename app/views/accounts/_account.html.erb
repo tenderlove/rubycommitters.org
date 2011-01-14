@@ -1,55 +1,57 @@
 <li class="account">
+
   <div class="name">
     <%= account.username %>
   </div>
+
   <div class="details">
+
     <% if account.portraits.any? %>
       <%= image_tag account.portraits.first.url, class: 'portrait' %>
     <% else %>
-      <%= image_tag 'missing.png' %>
+      <div class="portrait" style="height: 80px"></div>
     <% end %>
+
     <div class="info">
+
       <% if account.sites.any? %>
-        <div class="sites">
-          <h2>sites</h2>
-          <ul>
-            <% account.sites.each do |site| %>
-              <li><%= link_to_site site %></li>
-            <% end %>
-          </ul>
-        </div>
+        <%= link_to_tab 'Sites' %>
+        <ul class="Sites">
+          <% account.sites.each do |site| %>
+            <li><%= link_to_site site %></li>
+          <% end %>
+        </ul>
       <% end %>
-      <div class="books">
-        <% if account.books.any? %>
-          <h2>books</h2>
-          <ul>
-            <% account.books.each do |book| %>
-              <li><%= link_to_book book %></li>
-            <% end %>
-          </ul>
-        <% end %>
-      </div>
-      <div class="names">
-        <% if account.names.any? %>
-          <h2>names</h2>
-          <ul>
-            <% account.names.each do |name| %>
-              <li><%= name.value %></li>
-            <% end %>
-          </ul>
-        <% end %>
-      </div>
-      <div class="nicknames">
-        <% if account.nicks.any? %>
-          <h2>nicknames</h2>
-          <ul>
-            <% account.nicks.each do |nickname| %>
-              <li><%= nickname.value %></li>
-            <% end %>
-          </ul>
-        <% end %>
-      </div>
+
+      <% if account.books.any? %>
+        <%= link_to_tab 'Books' %>
+        <ul>
+          <% account.books.each do |book| %>
+            <li><%= link_to_book book %></li>
+          <% end %>
+        </ul>
+      <% end %>
+
+      <% if account.names.any? %>
+        <%= link_to_tab 'Names' %>
+        <ul class="Names">
+          <% account.names.each do |name| %>
+            <li><%= name.value %></li>
+          <% end %>
+        </ul>
+      <% end %>
+
+      <% if account.nicks.any? %>
+        <%= link_to_tab 'Nicknames' %>
+        <ul>
+          <% account.nicks.each do |nickname| %>
+            <li><%= nickname.value %></li>
+          <% end %>
+        </ul>
+      <% end %>
+
     </div>
+
     <div class="services">
       <% if account.nicks.any? %>
         <ul>
@@ -59,5 +61,7 @@
         </ul>
       <% end %>
     </div>
+
   </div>
+
 </li>
