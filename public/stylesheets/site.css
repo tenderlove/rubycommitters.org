@@ -126,6 +126,7 @@ label {
   position:     absolute;
   list-style:   none;
   border-right: 2px solid #4B4E64;
+  overflow:     hidden;
 }
 
 .site-name {
