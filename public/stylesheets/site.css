@@ -129,6 +129,12 @@ label {
   overflow:     hidden;
 }
 
+.sites-label li {
+  height:  18px;
+  margin:  0;
+  padding: 0;
+}
+
 .site-name {
   background-color: #FEF5E4;
 }
