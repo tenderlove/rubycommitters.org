@@ -20,7 +20,7 @@ label {
   color:              black;
   width:              300px;
   border:             3px #DAA130 solid;
-  padding:            10px;
+  padding:            15px 10px 10px 10px;
   position:           fixed;
   text-align:         center;
   text-decoration:    none;
