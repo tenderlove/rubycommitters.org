@@ -47,6 +47,7 @@ label {
   display:            inline-block;
   position:           relative;
   background-color:   #FEF5E4;
+  -moz-box-shadow:    2px 2px 10px black;
   -webkit-box-shadow: 2px 2px 10px black;
 }
 
