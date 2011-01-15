@@ -39,20 +39,24 @@ blockquote, q {
 /*end reset*/
 
 a {
-  color: #BEBEBE;
+  color: #999999;
   text-decoration: none;
   -webkit-transition: color 500ms ease;
 }
 
 a:hover {
-  color: #EE190A;
+  color: white;
   cursor: pointer;
 }
 
+.button {
+  -webkit-box-shadow: 0px 1px white;
+}
+.etched {
+  -webkit-box-shadow: inset 0px 1px rgba(0, 0, 0, 0.1), 0px 1px rgba(255, 255, 255, 0.2);
+}
+
 body {
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
   background-image: url('../images/ruby_logo.png');
   background-repeat: no-repeat;
   background-position: center center;
@@ -61,23 +65,27 @@ body {
 }
 
 #banner {
+  width: 100%;
   font-size: 25pt;
   text-align: center;
-  background: #A71106;
+  background: -webkit-gradient(linear, left top, left bottom, from(#CE0002), to(#730C05), color-stop(0.5, #E9190C));
   color: white;
   padding: 10px;
   position: fixed;
-  width: 100%;
   z-index: 1;
+  text-shadow: 0px -1px 1px black;
 }
 
 #main {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 70px;
 }
 
 #accounts li.account {
   display: inline-block;
-  width: 270px;
+  width: 300px;
   margin: 12px;
   padding-bottom: 10px;
   border: 3px solid rgba(0, 0, 0, 0.1);
@@ -94,39 +102,71 @@ body {
 
 .account .name {
   padding: 5px;
-  font-size: 12pt;
-  font-weight: bold;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.4)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.0)), to(rgba(0, 0, 0, 0.6)), color-stop(0.3, rgba(0, 0, 0, 0.0)));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
 
+.account .username {
+  font-size: 14pt;
+  font-weight: bold;
+  text-shadow: 0px -2px 0px rgba(0, 0, 0, 0.8);
+}
+
+.account .other-names li, .account .nicknames li {
+  font-weight: normal;
+  font-size: 11px;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #AAAAAA;
+}
+
 .account .details {
   padding: 15px;
+  display: inline-block;
+  font-size: 10pt;
 }
 
 .portrait {
   width: 80px;
   float: left;
-  border: 8px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
 
-#accounts .info {
-  font-size: 10pt;
+img.portrait {
+  padding: 8px;
+}
+
+#accounts .tabs {
   padding-left: 110px;
 }
 
-#accounts .info li {
-  margin-left: 10px;
-  color: #BEBEBE;
+#accounts .tabs .links {
+  margin-bottom: 20px;
+}
+
+#accounts .tab {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-transition: color 500ms ease;
+  border-radius: 4px;
+}
+
+#accounts .tab.active, #accounts .tab:hover {
+  color: white;
+}
+
+#accounts .tabs ul {
+  display: none;
 }
 
 .services {
   text-align: center;
-  margin-top: 10px;
-  clear: both;
 }
 
 .services li {

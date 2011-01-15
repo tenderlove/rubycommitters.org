@@ -2,24 +2,7 @@ module AccountsHelper
 
   def link_to_service service
     image = image_tag "#{service.name}.png", class: 'service'
-    case service.name
-    when 'twitter'
-      link_to image, 'http://twitter.com/' + service.key
-    when 'friendfeed'
-      link_to image, 'http://friendfeed.com/' + service.key
-    when 'mixi'
-      link_to image, 'http://mixi.jp/show_friend.pl?id=' + service.key
-    when 'github'
-      link_to image, 'http://github.com/' + service.key
-    when 'facebook'
-      if service.key =~ /^\s*\d+$/
-        link_to image, 'http://www.facebook.com/profile.php?id=' + service.key
-      else
-        link_to image, 'http://www.facebook.com/' + service.key
-      end
-    when 'iddy'
-      link_to image, 'http://iddy.jp/profile/' + service.key
-    end
+    link_to image, service.url
   end
 
   def link_to_site(site)
@@ -34,8 +17,17 @@ module AccountsHelper
     "#{service_name}.png"
   end
 
-  def link_to_tab(label)
-    link_to label, nil, class: 'info-tab', 'tab-section' => label
+  def tab_link_to(label)
+    link_to label, nil, class: 'tab etched', 'tab-section' => label
+  end
+
+  def image_tag_for_portrait(portrait)
+    image_name = portrait ? portrait.url : 'missing.png'
+    image_tag image_name, class: 'portrait etched'
+  end
+
+  def tab_content_id(account)
+    "tab_#{account.id}"
   end
 
 end

@@ -63,4 +63,8 @@ class Account < ActiveRecord::Base
       end
     end
   end
+
+  def nicknames
+    nicks.map(&:value).reject { |name| name.downcase == username.downcase }
+  end
 end
