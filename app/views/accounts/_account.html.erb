@@ -29,7 +29,6 @@
       <li>E</li>
       <li>S</li>
     </ol>
-    <div class = "sites-fillbar"></div>
     <ul class = "sites">
       <%= render :partial => 'site', :collection => account.sites %>
     </ul>
@@ -49,7 +48,6 @@
       <li>K</li>
       <li>S</li>
     </ol>
-    <div class = "books-fillbar"></div>
     <ul class = "books">
       <% account.books.each do |book| %>
         <li class = "book-name"><a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= truncate book.key , :length => 13 %></a></li>
