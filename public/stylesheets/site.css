@@ -1,4 +1,5 @@
 body {
+  font:             15px 'CartoGothicStdBook', Arial, sans-serif;
   padding:          0;
   margin:           0;
   position:         relative;
@@ -12,37 +13,69 @@ label {
   position: absolute;
 }
 
+#ruby_logo {
+  top:              0px;
+  left:             0px;
+  font:             40px 'MolotRegular', Arial, sans-serif;
+  color:            white;
+  height:           480px;
+  margin:           0;
+  padding:          20px 10px 20px 30px;
+  position:         fixed;
+  list-style:       none;
+  border-bottom:    3px solid white;
+  background-color: #B31C16;
+}
+
+#committers_logo {
+  top:              0;
+  left:             60px;
+  font:             40px 'MolotRegular', Arial, sans-serif;
+  color:            white;
+  height:           480px;
+  margin:           0;
+  padding:          20px 30px 20px 20px;
+  position:         fixed;
+  list-style:       none;
+  border-right:     3px solid white;
+  border-bottom:    3px solid white;
+  background-color: #B31C16;
+}
+
 #fork_me {
-  top:               30px;
-  right:             -110px;
-  font:              15px 'CartoGothicStdBold', Arial, sans-serif;
-  color:             black;
-  width:             300px;
-  border:            3px #DAA130 solid;
-  padding:           10px;
-  position:          fixed;
-  text-align:        center;
-  text-decoration:   none;
-  background-color:  #FAC925;
-  -moz-transform:    rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  top:                30px;
+  right:              -110px;
+  font:               15px 'CartoGothicStdBold', Arial, sans-serif;
+  color:              black;
+  width:              300px;
+  border:             3px #DAA130 solid;
+  padding:            10px;
+  position:           fixed;
+  text-align:         center;
+  text-decoration:    none;
+  background-color:   #FAC925;
+  -moz-transform:     rotate(45deg);
+  -webkit-transform:  rotate(45deg);
+  -moz-box-shadow:    1px 1px 10px black;
   -webkit-box-shadow: 1px 1px 10px black;
 }
 
 #committers {
-  width:      710px;
+  width:      720px;
   margin:     auto;
+  position:   relative;
   padding:    0;
   list-style: none;
 }
 
 .committer {
-  margin:           15px;
-  width:            320px;
-  height:           320px;
-  display:          inline-block;
-  position:         relative;
-  background-color: #FEF5E4;
+  font:               15px 'CartoGothicStdBold', Arial, sans-serif;
+  width:              320px;
+  margin:             15px;
+  height:             320px;
+  display:            inline-block;
+  position:           relative;
+  background-color:   #FEF5E4;
 }
 
 .username {
