@@ -9,7 +9,7 @@
   
   <% unless account.names.empty? %>
     <ul class = "names">
-      <ul class = "real_names">
+      <ul class = "real-names">
         <%= render :partial => 'name', :collection => account.names %>
       </ul>
       <% unless account.nicks.empty? %>
@@ -22,13 +22,14 @@
   <% end %>
 
   <% unless account.sites.empty? %>
-    <ol class = "sites_label">
+    <ol class = "sites-label">
       <li>S</li>
       <li>I</li>
       <li>T</li>
       <li>E</li>
       <li>S</li>
     </ol>
+    <div class = "sites-fillbar"></div>
     <ul class = "sites">
       <%= render :partial => 'site', :collection => account.sites %>
     </ul>
@@ -41,16 +42,17 @@
   </ul>
 
   <% unless account.books.empty? %>
-    <ol class = "books_label">
+    <ol class = "books-label">
       <li>B</li>
       <li>O</li>
       <li>O</li>
       <li>K</li>
       <li>S</li>
     </ol>
+    <div class = "books-fillbar"></div>
     <ul class = "books">
       <% account.books.each do |book| %>
-        <li><a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= truncate book.key , :length => 13 %></a></li>
+        <li class = "book-name"><a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= truncate book.key , :length => 13 %></a></li>
       <% end %>
     </ul>
   <% end %>

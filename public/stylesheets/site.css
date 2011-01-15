@@ -3,7 +3,7 @@ body {
   padding:          0;
   margin:           0;
   position:         relative;
-  background:       url("/images/red-paisley-small.png");
+  background:       url("/images/paisley-tile.png");
   background-color: #881320;
 }
 
@@ -13,36 +13,7 @@ label {
   position: absolute;
 }
 
-#ruby_logo {
-  top:              0px;
-  left:             0px;
-  font:             40px 'MolotRegular', Arial, sans-serif;
-  color:            white;
-  height:           480px;
-  margin:           0;
-  padding:          20px 10px 20px 30px;
-  position:         fixed;
-  list-style:       none;
-  border-bottom:    3px solid white;
-  background-color: #B31C16;
-}
-
-#committers_logo {
-  top:              0;
-  left:             60px;
-  font:             40px 'MolotRegular', Arial, sans-serif;
-  color:            white;
-  height:           480px;
-  margin:           0;
-  padding:          20px 30px 20px 20px;
-  position:         fixed;
-  list-style:       none;
-  border-right:     3px solid white;
-  border-bottom:    3px solid white;
-  background-color: #B31C16;
-}
-
-#fork_me {
+#fork-me {
   top:                30px;
   right:              -110px;
   font:               15px 'CartoGothicStdBold', Arial, sans-serif;
@@ -113,7 +84,7 @@ label {
   list-style: none;
 }
 
-.real_names {
+.real-names {
   padding:    0;
   left:       0;
   bottom:     0;
@@ -126,13 +97,14 @@ label {
 }
 
 .sites {
-  left:       19px;
-  width:      150px;
-  height:     100px;
-  bottom:     25px;
-  padding:    0 5px;
-  position:   absolute;
-  list-style: none;
+  left:             19px;
+  width:            150px;
+  height:           100px;
+  bottom:           25px;
+  z-index:          2;
+  padding:          0 5px;
+  position:         absolute;
+  list-style:       none;
 }
 
 .sites a {
@@ -141,16 +113,31 @@ label {
   text-decoration: none;
 }
 
-.sites_label {
+.sites-label {
   left:         0;
   font:         17px 'saxMonoRegular', Arial, sans-serif;
   color:        #881320;
   bottom:       25px;
   height:       90px;
+  z-index:      3;
   padding:      5px;
   position:     absolute;
   list-style:   none;
   border-right: 2px solid #4B4E64;
+}
+
+.site-name {
+  background-color: #FEF5E4;
+}
+
+.sites-fillbar {
+  left:         23px;
+  width:        40px;
+  height:       100px;
+  bottom:       25px;
+  z-index:      1;
+  position:     absolute;
+  border-right: 1px dotted #4B4E64;
 }
 
 .services {
@@ -190,6 +177,7 @@ label {
   height:     100px;
   margin:     0;
   bottom:     25px;
+  z-index:    2;
   padding:    0 5px;
   position:   absolute;
   list-style: none;
@@ -201,7 +189,7 @@ label {
   text-decoration: none;
 }
 
-.books_label {
+.books-label {
   color:        #881320;
   font:         17px 'saxMonoRegular', Arial, sans-serif;
   right:        120px;
@@ -213,3 +201,56 @@ label {
   border-right: 2px solid #4B4E64;
   border-left:  2px solid #4B4E64;
 }
+
+.book-name {
+  background-color: #FEF5E4;
+}
+
+.books-fillbar {
+  right:        80px;
+  width:        40px;
+  height:       100px;
+  bottom:       25px;
+  z-index:      1;
+  position:     absolute;
+  border-right: 1px dotted #4B4E64;
+}
+
+/* Stuff for styling the logos on the upper left reside beyond this point.*/
+#ruby-logo {
+  top:              0px;
+  left:             0px;
+  font:             40px 'MolotRegular', Arial, sans-serif;
+  color:            white;
+  height:           480px;
+  margin:           0;
+  padding:          20px 10px 20px 30px;
+  position:         fixed;
+  list-style:       none;
+  border-bottom:    3px solid white;
+  background-color: #B31C16;
+}
+
+#committers-logo {
+  top:              0;
+  left:             60px;
+  font:             40px 'MolotRegular', Arial, sans-serif;
+  color:            white;
+  height:           480px;
+  margin:           0;
+  padding:          20px 30px 20px 20px;
+  position:         fixed;
+  list-style:       none;
+  border-right:     3px solid white;
+  border-bottom:    3px solid white;
+  background-color: #B31C16;
+}
+
+#c  { left: 5px; position: relative; }
+#o  { left: 4px; position: relative; }
+#i  { left: 9px; position: relative; }
+#t1 { left: 5px; position: relative; }
+#t2 { left: 5px; position: relative; }
+#e  { left: 5px; position: relative; }
+#r2 { left: 5px; position: relative; }
+#s  { left: 5px; position: relative; }
