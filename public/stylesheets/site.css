@@ -206,6 +206,11 @@ label {
   overflow:     hidden;
 }
 
+.books-label li {
+  margin:  0;
+  padding: 0;
+}
+
 .book-name {
   background-color: #FEF5E4;
 }
