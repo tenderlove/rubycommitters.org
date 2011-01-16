@@ -11,7 +11,7 @@ GEM
       arel (~> 2.0.2)
       tzinfo (~> 0.3.23)
     activesupport (3.0.3)
-    arel (2.0.6)
+    arel (2.0.7)
     builder (2.1.2)
     carrierwave (0.5.1)
       activesupport (~> 3.0)
@@ -28,7 +28,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
-    mini_magick (3.1)
+    mini_magick (3.2)
       subexec (~> 0.0.4)
     padrino (0.9.19)
       padrino-admin (= 0.9.19)
@@ -81,7 +81,7 @@ GEM
     tilt (1.2.1)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
-    tzinfo (0.3.23)
+    tzinfo (0.3.24)
     url_mount (0.2.1)
       rack
 
