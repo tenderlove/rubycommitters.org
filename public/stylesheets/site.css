@@ -3,6 +3,10 @@
   font-family: "Museo-500";
   src: url(/fonts/Museo500-Regular.otf);
 }
+@font-face {
+  font-family: "DistrictThin";
+  src: url(/fonts/DistrictThin.otf);
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -141,6 +145,7 @@ a.big_link {
   float: left;
   margin: 0;
   font-family: 'Lato', arial, serif;
+  font-weight: normal;
 }
 
 #logo{
