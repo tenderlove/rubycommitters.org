@@ -10,7 +10,7 @@ module AccountsHelper
   end
 
   def link_to_book(book)
-    link_to book.isbn, book.key
+    link_to book.title, book.url
   end
 
   def service_image(service_name)

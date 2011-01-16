@@ -32,11 +32,11 @@
           <% end %>
         <% end %>
 
-        <% if account.books.any? %>
+        <% if account.books.with_titles.any? %>
           <%= tab_link_to 'Books' %>
           <% content_for tab_content_id(account) do %>
             <ul class="info-pane Books">
-              <% account.books.each do |book| %>
+              <% account.books.with_titles.each do |book| %>
                 <li><%= link_to_book book %></li>
               <% end %>
             </ul>

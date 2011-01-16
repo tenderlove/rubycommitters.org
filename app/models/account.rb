@@ -47,19 +47,7 @@ class Account < ActiveRecord::Base
       end
 
       (record['ruby-books'] || []).each do |key|
-        isbn10 = key[3..11]
-        check_digit = 0
-        isbn10.split(//).each_with_index do |c, i|
-          check_digit += c.to_i * (10 - i)
-        end
-        check_digit = 11 - (check_digit % 11)
-        check_digit = case check_digit
-                      when 10; "X"
-                      when 11; 0
-                      else;    check_digit
-                      end
-        isbn10 = "#{isbn10}#{check_digit}"
-        account.books.create!(:key => key, :isbn => isbn10)
+        account.books.create!(:key => key)
       end
     end
   end

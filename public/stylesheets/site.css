@@ -61,12 +61,13 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  font-family: Arial;
+  font-family: arial;
 }
 
 #banner {
   width: 100%;
   font-size: 25pt;
+  font-weight: bold;
   text-align: center;
   background: -webkit-gradient(linear, left top, left bottom, from(#CE0002), to(#730C05), color-stop(0.5, #E9190C));
   color: white;
@@ -116,7 +117,7 @@ body {
 
 .account .other-names li, .account .nicknames li {
   font-weight: normal;
-  font-size: 11px;
+  font-size: 8pt;
   display: inline-block;
   margin-left: 5px;
   margin-right: 5px;
@@ -163,6 +164,11 @@ img.portrait {
 
 #accounts .tabs ul {
   display: none;
+}
+
+#accounts .info-pane li {
+  font-size: 8pt;
+  margin-bottom: 5px;
 }
 
 .services {
