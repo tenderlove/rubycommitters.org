@@ -196,7 +196,7 @@ a.big_link {
 }
 #stats {
   float: left;
-  margin-bottom:-5px;
+  margin-top: 16px;
   font-weight: bold;
   color: #444;
   text-shadow: 0 1px 1px white;

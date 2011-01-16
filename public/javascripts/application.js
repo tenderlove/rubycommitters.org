@@ -44,6 +44,7 @@ $(document).ready(function(){
         }
         $('#filter .results').html(data.length == 1 ? data.length+" result" : data.length+" results").fadeIn('fast'); 
         if (data.length == 0) {
+          $('#filter .results').html("No results");
           $('.no_results').fadeIn('fast');
         } else {
           $('.no_results').fadeOut('fast');
