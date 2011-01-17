@@ -5,6 +5,7 @@ class Account < ActiveRecord::Base
   has_many :services
   has_many :portraits
   has_many :books
+  has_many :books_with_titles, :conditions => 'title is not null', :class_name => 'Book'
 
   ###
   # Import +io+ object that contains a YAML representation of the

@@ -4,8 +4,6 @@ require 'net/http'
 class Book < ActiveRecord::Base
   belongs_to :account
 
-  scope :with_titles, where('title is not null')
-
   before_validation :generate_ISBN
 
   def self.import_info_from_google
