@@ -1,3 +1,72 @@
+html {
+  background: #a92014 url(/images/bg.png) no-repeat scroll 100% 0;
+}
+
+body {
+  font-family: "Allerta", Arial, "MS Trebuchet", sans-serif;
+  font-size: 62.5%;
+  line-height: 1.25em;
+  color: #F1F1F1;
+}
+
+a {
+  color: #490311;
+  text-decoration: underline;
+}
+a:hover {
+  color: #490311;
+  text-decoration: none;
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+}
+a:active {
+/*  text-shadow: 0 0 3px #CCC;*/
+}
+
+em { font-style: italic; }
+
+h1, h2, h3, h4, h5, h6, strong { font-weight: bold; }
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0;
+}
+
+h1 { font-size: 160%; }
+h2 { font-size: 150%; }
+h3 { font-size: 140%; }
+h4 { font-size: 130%; }
+h4 { font-size: 130%; }
+h5 { font-size: 120%; }
+h6 { font-size: 110%; }
+
+p, ol, ul, dd, dt {
+  margin: 1em 0;
+}
+
+ol li, ul li {
+  padding: .2em 0;
+  margin-left: .9em;
+}
+ol li {
+  list-style-type: decimal;
+  margin-left: 2.25em;
+}
+
+code {
+  font-size: 1.25em;
+}
+
+
+#wrapper {
+  margin: 0 auto;
+  width: 75%;
+  font-size: 150%;
+}
+
+#header h1 {
+  font-family: 'Cherry Cream Soda', arial, serif;
+  font-size: 400%;
+}
+
 .image-wrapper {
   height: 100px;
 }
