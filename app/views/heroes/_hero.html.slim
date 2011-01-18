@@ -1,10 +1,26 @@
-li
-  hr
-  h2= hero.username
-  table
-    - @attrs.each do |attr|
-      - unless hero.send(attr).empty?
-        tr
-          th= attr.capitalize
-          td
-            ul== partial "heroes/#{attr.chop}", :collection => hero.send(attr)
+tr.person
+  td.list.portraits
+    .person-letter= hero.username[0].capitalize
+    .portraits-holder
+      .portraits-inner-holder
+        ul.portrait== partial "heroes/portrait", :collection => hero.portraits
+  td.list.meta
+    table
+      tr
+        th
+        td.person-headline
+          h2= hero.username
+      - @attrs.each do |attr, label|
+        - unless hero.send(attr).empty?
+          tr
+            th= label.capitalize
+            td
+              ul class=label
+                == partial "heroes/#{attr.chop}", :collection => hero.send(attr)
+  td.list.bios
+    ul.bio-langs
+      li.eng== link_to 'ENG', '#'
+      li.jap== link_to 'JAP', '#'
+    ul.bio-text
+      li.eng== markdownsize hero.bio(:eng)
+      li.jap== markdownsize hero.bio(:jap)

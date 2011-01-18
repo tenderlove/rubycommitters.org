@@ -1,4 +1,5 @@
 class RubyCommitters < Padrino::Application
+  register SassInitializer
   register Padrino::Mailer
   register Padrino::Helpers
 
@@ -7,7 +8,6 @@ class RubyCommitters < Padrino::Application
   ##
   # Application configuration options
   #
-  set :site_name, 'Ruby Committers'
   # set :raise_errors, true     # Show exceptions (default for development)
   # set :public, "foo/bar"      # Location for static assets (default root/public)
   # set :reload, false          # Reload application files (default in development)
@@ -36,4 +36,15 @@ class RubyCommitters < Padrino::Application
   #     render 'errors/404'
   #   end
   #
+
+  ##
+  # site settings
+  #
+  set :site_name, 'Ruby Committers'
+  set :bios, {
+    'matz' => {
+      :eng => %q{**Matz's English bio is coming soon!** Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.},
+      :jap => %q{Matz's Japanese bio is coming soon!},
+    }
+  }
 end

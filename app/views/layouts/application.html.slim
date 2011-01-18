@@ -3,23 +3,35 @@ html
   head
     title= RubyCommitters.site_name
     link rel="canonical" href="http://rubycommitters.org/"
+    == favicon_tag 'favicon.png'
     == stylesheet_link_tag :base
-    == javascript_include_tag :jquery, :application
+    == javascript_include_tag :jquery, :'jquery.nivo.slider.pack', :application
 
   body
-    p
-      == "This fork is running on #{link_to 'Padrino', 'http://www.padrinorb.com/'} and #{link_to 'Slim', 'https://github.com/stonean/slim'}. "
-      == "You may check out the #{link_to 'source code here', 'https://github.com/fredwu/rubycommitters.org'}."
+    #wrapper
+      #header-wrapper
+        #inner-wrapper
+          #header
+            h1#logo= RubyCommitters.site_name
+            p#ruby-link== link_to 'Visit the official Ruby website', 'http://www.ruby-lang.org/'
+        #crowd-header
+      #crowd-header-strip
+      #hero
+        #inner-wrapper
+          h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-    == yield
+      #container
+        #inner-wrapper
+          == yield
 
-    - if Padrino.env == :production
-      javascript:
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-1260604-9']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+      #footer
+        #inner-wrapper
+          #footer-logo
+          p#copyright Copyright &copy; 2010 RubyCommitters.org
+          p
+            == "Website programmed and designed by #{link_to 'Fred Wu', 'http://fredwu.me/'}"
+            == " | Powered by #{link_to 'Padrino', 'http://www.padrinorb.com/'} and #{link_to 'Slim', 'https://github.com/stonean/slim'}"
+          #crowd-footer
+          == render 'layouts/google_analytics' if Padrino.env == :production
+
+      #crowd-footer-strip

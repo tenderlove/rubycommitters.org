@@ -1,4 +1,257 @@
-th {
-    text-align: right;
-    vertical-align: top;
-}
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0; }
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, p {
+  font-family: "Lucida Grande", Lucida, "Helvetica Neue", Helvetica, "Myriad Pro", Verdana, Tahoma;
+  font-size: 14px;
+  color: #392a2a; }
+
+h2 {
+  font-weight: normal;
+  font-size: 18px; }
+
+a {
+  color: #392a2a;
+  text-decoration: none; }
+  a:hover {
+    color: #b01000;
+    text-decoration: underline; }
+
+#inner-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 1000px; }
+
+#crowd-header-strip {
+  width: 100%;
+  height: 5px;
+  background: #b01000; }
+
+#crowd-footer-strip {
+  width: 100%;
+  height: 15px;
+  background: #392a2a; }
+
+body {
+  background: #fffdf8; }
+
+#header-wrapper {
+  background: #ffeed4; }
+  #header-wrapper #header {
+    padding-top: 100px; }
+    #header-wrapper #header h1#logo {
+      position: absolute;
+      top: 60px;
+      text-indent: -9999px;
+      width: 319px;
+      height: 37px;
+      background: url("/images/logo-header.png") no-repeat; }
+    #header-wrapper #header p#ruby-link {
+      position: absolute;
+      top: 15px;
+      right: 0; }
+      #header-wrapper #header p#ruby-link a {
+        padding-left: 22px;
+        background: url("/images/icon-browser.png") no-repeat; }
+  #header-wrapper #crowd-header {
+    margin: 0 auto;
+    width: 1075px;
+    height: 144px;
+    background: url("/images/crowd-header.png") center no-repeat; }
+
+#hero {
+  background: #392a2a; }
+  #hero h2 {
+    color: white;
+    line-height: 22px;
+    padding: 30px 10px; }
+
+#container {
+  padding: 80px 0;
+  background: url("/images/bg-header-gradient.jpg") top repeat-x; }
+  #container table#list {
+    margin: 0 auto;
+    width: 960px; }
+    #container table#list tr.person {
+      position: relative;
+      display: block;
+      background: url("/images/person-container.png") no-repeat; }
+      #container table#list tr.person td.list {
+        padding: 20px 20px 50px 20px; }
+      #container table#list tr.person td.portraits {
+        width: 90px; }
+        #container table#list tr.person td.portraits .person-letter {
+          position: absolute;
+          top: 2px;
+          left: -25px;
+          color: #ece0d0;
+          font-family: "Helvetica Neue", Helvetica;
+          font-size: 24px; }
+        #container table#list tr.person td.portraits .portraits-holder {
+          position: absolute;
+          top: -14px;
+          left: 15px;
+          width: 108px;
+          height: 99px;
+          text-align: center;
+          background: url("/images/portrait-holder.png") no-repeat; }
+          #container table#list tr.person td.portraits .portraits-holder .portraits-inner-holder {
+            margin-top: 10px;
+            padding-left: 14px; }
+            #container table#list tr.person td.portraits .portraits-holder .portraits-inner-holder ul.portrait {
+              width: 80px;
+              height: 80px; }
+              #container table#list tr.person td.portraits .portraits-holder .portraits-inner-holder ul.portrait li img {
+                width: 80px; }
+      #container table#list tr.person td.meta {
+        width: 230px; }
+        #container table#list tr.person td.meta table th {
+          padding-right: 10px;
+          color: #392a2a;
+          font-size: 9px;
+          font-weight: normal;
+          text-transform: uppercase;
+          text-align: right; }
+        #container table#list tr.person td.meta table h2 {
+          font-size: 24px; }
+        #container table#list tr.person td.meta table td.person-headline {
+          padding-bottom: 6px; }
+        #container table#list tr.person td.meta table td ul {
+          width: 180px;
+          white-space: nowrap;
+          overflow: hidden;
+          line-height: 14px; }
+          #container table#list tr.person td.meta table td ul li {
+            font-size: 13px;
+            padding-top: 5px; }
+        #container table#list tr.person td.meta table td ul.social {
+          margin-bottom: -3px; }
+          #container table#list tr.person td.meta table td ul.social li {
+            float: left;
+            margin-right: 5px; }
+            #container table#list tr.person td.meta table td ul.social li a {
+              display: block;
+              width: 16px;
+              height: 16px;
+              text-indent: -9999px; }
+          #container table#list tr.person td.meta table td ul.social li.facebook a {
+            background: url("/images/social-icons/facebook.png") no-repeat; }
+          #container table#list tr.person td.meta table td ul.social li.friendfeed a {
+            background: url("/images/social-icons/friendfeed.png") no-repeat; }
+          #container table#list tr.person td.meta table td ul.social li.github a {
+            background: url("/images/social-icons/github.png") no-repeat; }
+          #container table#list tr.person td.meta table td ul.social li.iddy a {
+            background: url("/images/social-icons/iddy.png") no-repeat; }
+          #container table#list tr.person td.meta table td ul.social li.mixi a {
+            background: url("/images/social-icons/mixi.png") no-repeat; }
+          #container table#list tr.person td.meta table td ul.social li.twitter a {
+            background: url("/images/social-icons/twitter.png") no-repeat; }
+      #container table#list tr.person td.bios {
+        width: 520px;
+        font-size: 15px; }
+        #container table#list tr.person td.bios ul.bio-langs li {
+          position: absolute;
+          right: -5px; }
+          #container table#list tr.person td.bios ul.bio-langs li a {
+            display: block;
+            width: 26px;
+            height: 12px;
+            padding: 3px 0 0 4px;
+            color: white;
+            font-family: "Helvetica Neue", Helvetica;
+            font-size: 9px;
+            text-decoration: none; }
+        #container table#list tr.person td.bios ul.bio-langs li.eng {
+          top: 5px; }
+          #container table#list tr.person td.bios ul.bio-langs li.eng a {
+            background: url("/images/button-brown.png") no-repeat; }
+        #container table#list tr.person td.bios ul.bio-langs li.jap {
+          top: 22px; }
+          #container table#list tr.person td.bios ul.bio-langs li.jap a {
+            background: url("/images/button-red.png") no-repeat; }
+        #container table#list tr.person td.bios ul.bio-text li {
+          line-height: 16px;
+          margin-right: 20px; }
+          #container table#list tr.person td.bios ul.bio-text li.jap {
+            display: none; }
+
+#footer {
+  text-align: center;
+  background: url("/images/bg-footer-gradient.jpg") top repeat-x; }
+  #footer #footer-logo {
+    margin: 0 auto 15px auto;
+    width: 20px;
+    height: 20px;
+    background: url("/images/logo-footer.png") no-repeat; }
+  #footer p {
+    font-size: 12px;
+    padding-bottom: 5px; }
+    #footer p#copyright {
+      font-size: 14px; }
+  #footer #crowd-footer {
+    width: 1000px;
+    height: 114px;
+    margin-top: 20px;
+    background: url("/images/crowd-footer.png") center no-repeat; }
+
+.nivo-controlNav {
+  position: absolute;
+  top: 90px;
+  left: 20px; }
+  .nivo-controlNav a {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    margin-right: -5px;
+    background: url("/images/bullet.png") no-repeat;
+    cursor: pointer; }
+    .nivo-controlNav a.active {
+      background-position: 0 -20px; }

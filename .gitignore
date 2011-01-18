@@ -3,3 +3,4 @@ db/rubycommitters_development.db
 db/rubycommitters_test.db
 log/*.log
 tmp/
+.sass-cache/

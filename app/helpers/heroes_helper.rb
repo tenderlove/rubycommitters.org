@@ -1,6 +1,6 @@
 RubyCommitters.helpers do
   def link_to_service(name, service)
-    _link_to = Proc.new { |url| link_to service.name, url + service.key }
+    _link_to = Proc.new { |url| link_to service.name, url + service.key, :alt => service.name, :title => service.name }
 
     case service.name
       when 'twitter'    then _link_to.call('http://twitter.com/')
@@ -14,5 +14,9 @@ RubyCommitters.helpers do
 
   def link_to_book(isbn)
     link_to isbn, 'http://books.google.com/books?as_isbn=' + isbn
+  end
+
+  def markdownsize(text)
+    RDiscount.new(text, :autolink).to_html
   end
 end
