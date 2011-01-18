@@ -32,6 +32,6 @@ html
             == "Website programmed and designed by #{link_to 'Fred Wu', 'http://fredwu.me/'}"
             == " | Powered by #{link_to 'Padrino', 'http://www.padrinorb.com/'} and #{link_to 'Slim', 'https://github.com/stonean/slim'}"
           #crowd-footer
-          == render 'layouts/google_analytics' if Padrino.env == :production
+          == partial 'layouts/google_analytics' if Padrino.env == :production
 
       #crowd-footer-strip
