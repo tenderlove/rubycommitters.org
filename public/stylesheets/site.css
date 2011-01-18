@@ -61,10 +61,24 @@ code {
   width: 75%;
   font-size: 150%;
 }
+#header {
+  background: #ff0000;
+  background-image:url('/images/header-background.gif');
+  position: relative;
+  padding: 0.75em 1em;
+  border-bottom: 1px solid #444;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  color: #fff;
+}
 
 #header h1 {
   font-family: 'Cherry Cream Soda', arial, serif;
-  font-size: 400%;
+  font-size: 175%;
 }
 
 .image-wrapper {
@@ -73,4 +87,19 @@ code {
 
 .image-wrapper img {
   height: 100%;
+}
+
+#page {
+  position: relative;
+  width: auto;
+  min-height: 100%;
+  font-size: 1.25em;
+  padding: 1.5em 1.5em 9em;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+     -moz-box-shadow: 1px 1px 4px #444;
+  -webkit-box-shadow: 1px 1px 4px #444;
+          box-shadow: 1px 1px 4px #444;
 }
