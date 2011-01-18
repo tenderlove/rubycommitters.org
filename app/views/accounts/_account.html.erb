@@ -14,8 +14,8 @@
     <% unless account.names.empty? %>
           <td>
             <ul>
-              <%= render :partial => 'name', :collection => account.names %>
-              <%= render :partial => 'name', :collection => account.nicks unless account.nicks.empty? %>
+              <%= render :partial => 'name', :collection => account.names, :locals => { :is_nickname => false } %>
+              <%= render :partial => 'name', :collection => account.nicks, :locals => { :is_nickname => true } unless account.nicks.empty? %>
             </ul>
           </td>
       <% end %>

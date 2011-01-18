@@ -1,1 +1,5 @@
-<li class="nickname"><%= '"' + name.value + '"' %></li>
+<%- 
+  list_item_class = is_nickname ? 'nickname' : '' 
+  formatted_name  = is_nickname ? "\"#{name.value}\"" : name.value
+ %>
+<li class=""><%= formatted_name %></li>
