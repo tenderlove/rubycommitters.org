@@ -1,5 +1,3 @@
-<%- 
-  list_item_class = is_nickname ? 'nickname' : '' 
-  formatted_name  = is_nickname ? "\"#{name.value}\"" : name.value
- %>
-<li class=""><%= formatted_name %></li>
+<%- content_tag :li, :class => is_nickname ? 'nickname' : '' do %>
+  <%= is_nickname ? formatted_nickname(name.value) : name.value %>
+<%- end %>

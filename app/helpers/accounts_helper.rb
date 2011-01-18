@@ -19,4 +19,8 @@ module AccountsHelper
       link_to name, 'http://iddy.jp/profile/' + service.key
     end
   end
+  
+  def formatted_nickname(name)
+    '"' + name + '"'
+  end
 end
