@@ -57,8 +57,9 @@ code {
 
 
 #wrapper {
-  margin: 0 auto;
+  position: relative;
   width: 75%;
+  margin: 0 auto;
   font-size: 150%;
 }
 #header {
@@ -79,6 +80,10 @@ code {
 #header h1 {
   font-family: 'Cherry Cream Soda', arial, serif;
   font-size: 175%;
+}
+
+#page { 
+  
 }
 
 .image-wrapper {
@@ -102,4 +107,23 @@ code {
      -moz-box-shadow: 1px 1px 4px #444;
   -webkit-box-shadow: 1px 1px 4px #444;
           box-shadow: 1px 1px 4px #444;
+
+#fork_me {
+  position: absolute;
+  top: -1px;
+  right: 10%;
+  background: #FFF url(/images/octocat_tiny.png) no-repeat scroll 2% 50%;
+  padding: 14px 10px 4px 40px;
+  border: 1px solid #333;
+  -webkit-border-bottom-right-radius: 5px;
+   -webkit-border-bottom-left-radius: 5px;
+      -moz-border-radius-bottomright: 5px;
+       -moz-border-radius-bottomleft: 5px;
+          border-bottom-right-radius: 5px;
+           border-bottom-left-radius: 5px;
+  
+  -webkit-box-shadow: 2px 1px 3px #333;
+     -moz-box-shadow: 2px 1px 3px #333;
+          box-shadow: 2px 1px 3px #333;
+  
 }

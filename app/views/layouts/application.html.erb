@@ -14,15 +14,17 @@
   <div id="header">
     <h1>Ruby Committers</h1>
   </div>
+  
   <div id="page">
     <%= yield %>
   </div>
+  
   <div id="footer">
     
   </div>
-  
-  <%= link_to 'fork me on github', 'http://github.com/tenderlove/rubycommitters.org' %>
 </div>
+
+<%= link_to 'fork me on github', 'http://github.com/tenderlove/rubycommitters.org', :id => 'fork_me' %>
 
 </body>
 </html>
