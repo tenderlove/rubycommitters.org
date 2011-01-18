@@ -1,13 +1,13 @@
 <li class="account">
   <table>
     <tr>
-      <td class="title">Account:</td>
+      <td class="first title">Account:</td>
       <td class="username"><%= account.username %></td>
     </tr>
 
 	<% unless account.portraits.empty? %>
       <tr>
-        <td class="portraits">
+        <td class="first portraits">
           <ul>
             <%= render :partial => 'portrait', :collection => account.portraits %>
           </ul>
@@ -26,7 +26,7 @@
 
     <% unless account.sites.empty? %>
       <tr>
-        <td class="title">Sites:</td>
+        <td class="first title">Sites:</td>
         <td>
           <ul>
             <%= render :partial => 'site', :collection => account.sites %>
@@ -37,7 +37,7 @@
 
     <% unless account.services.empty? %>
       <tr>
-        <td class="title">Services:</td>
+        <td class="first title">Services:</td>
         <td>
           <ul>
             <%= render :partial => 'service', :collection => account.services %>
@@ -49,7 +49,7 @@
 
     <% unless account.books.empty? %>
       <tr>
-        <td class="title">Books:</td>
+        <td class="first title">Books:</td>
         <td>
           <ul>
             <% account.books.each do |book| %>

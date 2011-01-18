@@ -84,9 +84,16 @@ code {
   line-height: 1.25em;
   margin: 0;
   padding: 0 0 0 2%;
-  text-shadow: 2px 2px 3px #333;
+  text-shadow: 1px 1px 3px #333;
   z-index: 200;
 }
+#header h1 span {
+  margin-right: -7px;
+}
+#header h1 .char6 {
+  margin-left: 20px;
+}
+
 
 #page {
   position: relative;
@@ -108,11 +115,13 @@ code {
 }
 
 .image-wrapper {
+  padding: .2em;
   height: 100px;
 }
 
 .image-wrapper img {
   height: 100%;
+  margin: 0 auto;
 }
 
 /* I'd love to fork you ;) */
@@ -165,6 +174,9 @@ code {
 }
 #content table tr.last td {
   border-bottom: none;
+}
+#content table td.first {
+  width: 30%;
 }
 #content #accounts {
   margin: 0;
