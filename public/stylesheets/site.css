@@ -82,7 +82,8 @@ code {
   font-family: 'Cherry Cream Soda', arial, serif;
   font-size: 320%;
   line-height: 1.25em;
-  margin: 0 0 -36px 0;
+  margin: 0;
+  padding: 0 0 0 2%;
   text-shadow: 2px 2px 3px #333;
   z-index: 200;
 }
@@ -95,7 +96,7 @@ code {
   min-height: 100%;
   font-size: 1.25em;
   margin: 0 0 5% 0;
-  padding: 1.5em 1.5em 9em;
+  padding: 0;
   -webkit-background-clip: padding-box;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -119,7 +120,7 @@ code {
   position: absolute;
   top: -1px;
   right: 14%;
-  background: #FFF url(/images/octocat_tiny.png) no-repeat scroll 2% 50%;
+  background: #F1F1F1 url(/images/octocat_tiny.png) no-repeat scroll 2% 50%;
   padding: 14px 10px 4px 40px;
   border: 1px solid #333;
   -webkit-border-bottom-right-radius: 5px;
@@ -128,19 +129,19 @@ code {
        -moz-border-radius-bottomleft: 5px;
           border-bottom-right-radius: 5px;
            border-bottom-left-radius: 5px;
-  
   -webkit-box-shadow: 2px 1px 3px #333;
      -moz-box-shadow: 2px 1px 3px #333;
           box-shadow: 2px 1px 3px #333;
 }
 
 #content {
-	background: transparent;
+  background: transparent;
+  padding: 3em .5em .5em .5em;
 }
 
 #content table {
-  width: 50%;
-  margin: 0 auto;
+  width: 65%;
+  margin: 0 auto 6em auto;
 }
 #content table th {
   font-weight: bold;
@@ -150,11 +151,30 @@ code {
 #content table td {
   border-bottom: 1px solid #AAA;
   padding: 0.3em 0 0.5em 0;
+  background-color: rgba(80,80,80,0.1);
+}
+#content table td.title,
+#content table td.username {
+  padding-top: 1em;
+  background-color: rgba(0,0,0,0.1);
+}
+#content table td.title,
+#content table td.portraits,
+#content table td.username { 
+  padding-left: .8em;
 }
 #content table tr.last td {
   border-bottom: none;
 }
-#content .account li.nickname {
+#content #accounts {
+  margin: 0;
+}
+#content .account {
+  margin: 0;
+}
+#content .account li.nickname,
+#content .account li.service,
+#content .account li.book {
   padding: .25em 0;
   line-height: 1em;
 }

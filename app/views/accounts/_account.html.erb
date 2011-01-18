@@ -1,13 +1,13 @@
 <li class="account">
   <table>
     <tr>
-      <td>Account:</td>
-      <td><%= account.username %></td>
+      <td class="title">Account:</td>
+      <td class="username"><%= account.username %></td>
     </tr>
 
 	<% unless account.portraits.empty? %>
       <tr>
-        <td>
+        <td class="portraits">
           <ul>
             <%= render :partial => 'portrait', :collection => account.portraits %>
           </ul>
@@ -26,7 +26,7 @@
 
     <% unless account.sites.empty? %>
       <tr>
-        <td>Sites:</td>
+        <td class="title">Sites:</td>
         <td>
           <ul>
             <%= render :partial => 'site', :collection => account.sites %>
@@ -37,7 +37,7 @@
 
     <% unless account.services.empty? %>
       <tr>
-        <td>Services:</td>
+        <td class="title">Services:</td>
         <td>
           <ul>
             <%= render :partial => 'service', :collection => account.services %>
@@ -49,11 +49,11 @@
 
     <% unless account.books.empty? %>
       <tr>
-        <td>Books:</td>
+        <td class="title">Books:</td>
         <td>
           <ul>
             <% account.books.each do |book| %>
-              <li><a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= book.key %></a></li>
+              <li class="book"><a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= book.key %></a></li>
             <% end %>
           </ul>
         </td>
