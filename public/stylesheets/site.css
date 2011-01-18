@@ -91,7 +91,7 @@ code {
   position: relative;
   width: auto;
   background: white;
-  opacity: 0.1;
+  background-color: rgba(255,255,255,0.1);
   min-height: 100%;
   font-size: 1.25em;
   margin: 0 0 5% 0;
@@ -135,7 +135,7 @@ code {
 }
 
 #content {
-		
+	background: transparent;
 }
 
 #content table {
