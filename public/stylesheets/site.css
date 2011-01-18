@@ -37,6 +37,10 @@ body{
 }
 
 #footer {
+  -moz-box-shadow: 0 0 8px #000000 inset;
+  -webkit-box-shadow: 0 0 8px #000000 inset;
+  box-shadow: 0 0 8px #000000 inset;
+  border-top: 1px solid #CCCCCC;
   margin: 20px 0 0 0;
 }
 
@@ -83,7 +87,7 @@ li.account {
   -moz-box-shadow: 1px 1px 4px #999999;
   -webkit-box-shadow: 1px 1px 4px #999999;
   box-shadow: 1px 1px 4px #999999;
-  background: url('../images/ruby4.png') no-repeat right bottom #eee;
+  background: url('../images/bg.png') no-repeat right bottom #eee;
   display: block;
   float: left;
   margin: 8px;
