@@ -1,7 +1,249 @@
+body{
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  background: #e4e4ca;
+  padding: 0;
+  margin: 0;
+  background: #DDD url('../images/back.png') repeat;
+}
+#heading, #footer {
+  height: 40px;
+  padding: 20px 0;
+  background: #444;
+}
+
+#heading {
+  position: relative;
+  background: #aa0000;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #666;
+}
+
+#heading a {
+  -moz-border-radius: 0 0 8px 8px;
+  -webkit-border-radius: 0 0 8px 8px;
+  border-radius: 0 0 8px 8px;
+  -moz-box-shadow: -1px 1px 2px #444444, 0 -2px 1px #fdd inset;
+  -webkit-box-shadow: -1px 1px 2px #444444, 0 -2px 1px #fdd inset;
+  box-shadow: -1px 1px 2px #444444, 0 -2px 1px #fdd inset;
+  background: none repeat scroll 0 0 #800;
+  color: #f4f4f4;
+  display: block;
+  padding: 7px 10px;
+  position: absolute;
+  right: 20px;
+  top: -1px;
+  text-shadow: 1px 1px 0 #000000;
+}
+
+#footer {
+  margin: 20px 0 0 0;
+}
+
+h1 {
+  color: #eee;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #e88;
+}
+
+a {
+  color: #999;
+  font-size: 11px;
+}
+a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul.accounts {
+  width: 980px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  overflow: hidden;
+}
+
+li.account {
+  -moz-border-radius: 13px;
+  -webkit-border-radius: 13px;
+  border-radius: 13px;
+  -moz-box-shadow: 1px 1px 4px #999999;
+  -webkit-box-shadow: 1px 1px 4px #999999;
+  box-shadow: 1px 1px 4px #999999;
+  background: url('../images/ruby4.png') no-repeat right bottom #eee;
+  display: block;
+  float: left;
+  margin: 8px;
+  padding: 5px;
+  width: 460px;
+}
+
+.acount a{
+  text-shadow: 1px 0 0 #EEEEEE; /*to keep readability over background image, if collide*/
+}
+
+.label {
+  display: block;
+  float: left;
+}
+
+.details {
+  height: 120px;
+}
+
+.account-name {
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  background: #444;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 5px;
+  text-shadow: 1px 1px 0px #000;
+  text-align: right;
+  border: 1px solid #fff;
+}
+
+.official {
+  font-size: 10px;
+  float: left;
+  margin-left: 119px;
+}
+
+.user-names {
+
+}
+
+.nick-names, .user-names {
+  float: left;
+  margin: 5px 0;
+  text-align: right;
+  width: 336px;
+  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba(210,210,210,0.35);
+  height: 2.4em;
+}
+
+.nick-names li, .user-names li {
+  float: left;
+  margin-right: 10px;
+}
+
+.portraits {
+  margin: -40px 0 0 5px;
+  float: left;
+  height: 108px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.sites {}
+
+.books {}
+
+.books .label, .sites .label {
+  margin-left: 4px;
+  font-size: 11px;
+  width: 36px;
+}
+
+.books li, .sites li {
+  float: left;
+  margin-left: 10px;
+}
+
+.books, .sites {
+  display: block;
+  float: left;
+  width: 460px;
+  overflow: hidden;
+}
+.more {
+  height: 2.4em;
+}
+
+.services, .more {
+  display: block;
+  float: left;
+  width: 460px;
+  overflow: hidden;
+}
+.services {
+  height: 48px;
+  padding: 0;
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+
+}
+.services ul{
+  padding: 0;
+}
+.services ul li{
+  float: left;
+  padding: 0;
+}
+.services li a {
+  height: 48px;
+  width: 48px;
+  background: transparent url('../images/iddy.png') no-repeat top left;
+  float: left;
+  display: block;
+  overflow: hidden;
+
+}
+
+.services li a.github {
+  background: transparent url('../images/git.png') no-repeat top left;
+}
+.services li a.iddy {
+  background: transparent url('../images/iddy.png') no-repeat top left;
+}
+.services li a.mixi {
+  background: transparent url('../images/mixi.png') no-repeat top left;
+}
+
+.services li a.facebook {
+  background: transparent url('../images/facebook.png') no-repeat top left;
+}
+.services li a.friendfeed {
+  background: transparent url('../images/friendfeed.png') no-repeat top left;
+}
+.services li a.twitter {
+  background: transparent url('../images/twitter.png') no-repeat top left;
+}
+
 .image-wrapper {
   height: 100px;
+  width: 100px;
+  padding: 3px;
+  margin-bottom: 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+  -moz-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+.image-wrapper .frame {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
 }
 
 .image-wrapper img {
-  height: 100%;
+  width: 100px;
 }
