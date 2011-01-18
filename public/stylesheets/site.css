@@ -107,7 +107,9 @@ code {
      -moz-box-shadow: 1px 1px 4px #444;
   -webkit-box-shadow: 1px 1px 4px #444;
           box-shadow: 1px 1px 4px #444;
+}
 
+/* I'd love to fork you ;) */
 #fork_me {
   position: absolute;
   top: -1px;
@@ -126,4 +128,21 @@ code {
      -moz-box-shadow: 2px 1px 3px #333;
           box-shadow: 2px 1px 3px #333;
   
+}
+
+#content table {
+ 	width: 50%;
+	margin: 0 auto;
+}
+#content table th {
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #222;
+}
+#content table td {
+  border-bottom: 1px solid #AAA;
+  padding: 0.3em 0 0.5em 0;
+}
+#content table tr.last td {
+  border-bottom: none;
 }

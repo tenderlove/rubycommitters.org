@@ -5,27 +5,26 @@
       <td><%= account.username %></td>
     </tr>
 
-    <% unless account.names.empty? %>
+	<% unless account.portraits.empty? %>
       <tr>
-        <td>Names:</td>
         <td>
           <ul>
-            <%= render :partial => 'name', :collection => account.names %>
+            <%= render :partial => 'portrait', :collection => account.portraits %>
           </ul>
+		<% unless account.names.empty? %>
+	        <td>
+	          <ul>
+	            <%= render :partial => 'name', :collection => account.names %>
+			    <% unless account.nicks.empty? %>
+			           "<%= render :partial => 'name', :collection => account.nicks %>"
+			    <% end %>
+	          </ul>
+	        </td>
+	    <% end %>
         </td>
       </tr>
     <% end %>
 
-    <% unless account.nicks.empty? %>
-      <tr>
-        <td>Nicknames:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.nicks %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
 
     <% unless account.sites.empty? %>
       <tr>
@@ -49,16 +48,6 @@
       </tr>
     <% end %>
 
-    <% unless account.portraits.empty? %>
-      <tr>
-        <td>Portraits:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'portrait', :collection => account.portraits %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
 
     <% unless account.books.empty? %>
       <tr>
