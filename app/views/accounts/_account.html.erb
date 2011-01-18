@@ -1,4 +1,4 @@
-<li>
+<li class="account">
   <table>
     <tr>
       <td>Account:</td>
@@ -11,16 +11,14 @@
           <ul>
             <%= render :partial => 'portrait', :collection => account.portraits %>
           </ul>
-		<% unless account.names.empty? %>
-	        <td>
-	          <ul>
-	            <%= render :partial => 'name', :collection => account.names %>
-			    <% unless account.nicks.empty? %>
-			           "<%= render :partial => 'name', :collection => account.nicks %>"
-			    <% end %>
-	          </ul>
-	        </td>
-	    <% end %>
+    <% unless account.names.empty? %>
+          <td>
+            <ul>
+              <%= render :partial => 'name', :collection => account.names %>
+              <%= render :partial => 'name', :collection => account.nicks unless account.nicks.empty? %>
+            </ul>
+          </td>
+      <% end %>
         </td>
       </tr>
     <% end %>
