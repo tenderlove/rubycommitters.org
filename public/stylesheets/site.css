@@ -90,6 +90,8 @@ code {
 #page {
   position: relative;
   width: auto;
+  background: white;
+  opacity: 0.1;
   min-height: 100%;
   font-size: 1.25em;
   margin: 0 0 5% 0;
@@ -130,6 +132,10 @@ code {
   -webkit-box-shadow: 2px 1px 3px #333;
      -moz-box-shadow: 2px 1px 3px #333;
           box-shadow: 2px 1px 3px #333;
+}
+
+#content {
+		
 }
 
 #content table {
