@@ -1,7 +1,133 @@
-.image-wrapper {
-  height: 100px;
+body {
+  background: #b70606 url('/images/rubies.jpg') no-repeat center top; color: #fff;      
+  font: 14px/1.55 'helvetica neue', helvetica, arial, sans-serif; }   
+
+a {
+  color: #f0d25d; }  
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'adelle-1', 'adelle-2'; }            
+
+h1 {             
+  margin: 40px auto;
+  width: 420px;
+  font-size: 48px;
+  text-align: center;
+  position: relative;
+  text-shadow: 0 1px 0 #bbb, 
+                 0 2px 0 #ccc,
+                 0 3px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1); }  
+h1 a {               
+  display: block;
+  font-size: 11px;
+  position: absolute;
+  right: 40px; bottom: 0;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1); }
+   
+#page {
+  width: 960px; 
+  margin: auto;
+  overflow: hidden; }
+
+#page > ul {
+  width: 990px;
 }
 
-.image-wrapper img {
-  height: 100%;
+#page > ul > li {
+  width: 300px;
+  margin: 0 30px 30px 0;
+  float: left;
+  background: #fff; 
+  color: #444; 
+  -webkit-border-radius: 10px 10px 5px 5px;
+  -moz-border-radius: 10px 10px 5px 5px;
+  border-radius: 10px 10px 5px 5px;
+  -webkit-box-shadow: 0 1px 0 #bbb, 
+                 0 2px 0 #ccc,
+                 0 3px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1);
+ -mox-box-shadow: 0 1px 0 #bbb, 
+                0 2px 0 #ccc,
+                0 3px 1px rgba(0,0,0,.1),
+                0 0 5px rgba(0,0,0,.1);
+  box-shadow: 0 1px 0 #bbb, 
+                 0 2px 0 #ccc,
+                 0 3px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1); }
+
+#page > ul > li:nth-child(3n) {
+  margin-right: 0;
+}   
+
+li a {
+  color: #b70606;
+}               
+
+h2 {
+  background: #000;
+  color: #fff;
+  line-height: 30px;
+  text-align: center; 
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}   
+
+table {
+  width: 100%;
+}
+
+tr {
+  border-top: 1px solid #ccc;
+}         
+
+th, td {
+  padding: 7px 0 5px;
+}     
+
+td {
+  padding-left: 15px;
+}
+
+th {
+  background: #eee; 
+  font-size: 12px;
+  text-align: right;
+  width: 90px;
+  padding-right: 15px; 
+  vertical-align: top;
+} 
+    
+
+tr:first-child {
+  border-top: 0;
+}         
+
+th:last-child {
+  display: none;
+}
+
+div.img {
+  float: left;
+  margin: 0 5px 2px 0;
+  position: relative; }
+
+img {
+  height: 75px; }
+
+div.img:before {         
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0; right: 0;
+  left: 0; bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+div.img:after {      
+  content: '';
+  position: absolute;
+  display: block;
+  top: 1px; right: 1px;
+  left: 1px; bottom: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
