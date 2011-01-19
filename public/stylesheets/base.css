@@ -293,6 +293,7 @@ body {
     text-indent: -9999px;
     margin-right: -5px;
     background: url("/images/bullet.png") no-repeat;
+    border: none;
     cursor: pointer; }
     .nivo-controlNav a.active {
       background-position: 0 -20px; }
