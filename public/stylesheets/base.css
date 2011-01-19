@@ -61,10 +61,11 @@ h2 {
 
 a {
   color: #392a2a;
-  text-decoration: none; }
+  text-decoration: none;
+  border-bottom: 1px dotted #b01000; }
   a:hover {
     color: #b01000;
-    text-decoration: underline; }
+    border-bottom-style: solid; }
 
 /*------------------------------
  *  supporting structures
@@ -201,7 +202,8 @@ body {
               display: block;
               width: 16px;
               height: 16px;
-              text-indent: -9999px; }
+              text-indent: -9999px;
+              border: none; }
           #container table#list tr.person td.meta table td ul.social li.facebook a {
             background: url("/images/social-icons/facebook.png") no-repeat; }
           #container table#list tr.person td.meta table td ul.social li.friendfeed a {

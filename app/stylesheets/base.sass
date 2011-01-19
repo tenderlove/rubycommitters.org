@@ -23,9 +23,10 @@ h2
 a
   color: $secondary-colour
   text-decoration: none
+  border-bottom: 1px dotted $primary-colour
   &:hover
     color: $highlight-colour
-    text-decoration: underline
+    border-bottom-style: solid
 
 /*------------------------------
  *  supporting structures
@@ -168,6 +169,7 @@ body
                   width: 16px
                   height: 16px
                   text-indent: -9999px
+                  border: none
               li.facebook a
                 background: url("/images/social-icons/facebook.png") no-repeat
               li.friendfeed a
