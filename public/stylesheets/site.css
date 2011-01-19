@@ -1,7 +1,316 @@
-.image-wrapper {
-  height: 100px;
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0; }
+
+body {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    background: #EFEFEF url(/images/ricepaper-blueprint.jpg) repeat 50% 0%;
+    color: #2E2E2E;}
+
+a { color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px solid #CCC; }
+
+a:hover {
+    color: #BF2726;
+    border: none;
+    text-decoration: none; }
+a img { border: 0; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { border: none; }
+h1 {font-size: 36px; }
+h2 a { color: #202023; }
+h2 { font-size: 34px; }
+h3 { font-size: 20px; }
+h4 { font-size: 18px; }
+ul { list-style: none;}
+
+.cl {
+    display: block;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -4000px;
+    clear: both; }
+
+.shell {
+    width: 800px;
+    margin: 0 auto;
+    position: relative; }
+
+.ribbon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;}
+
+#header {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 0;}
+#header .shell {
+    margin-top: -15px;
+    border-bottom: 1px solid #CCCCCC; }
+
+h1#logo {
+    float: left;
+    font-size: 22pt;
+    color: #df0024;
+    display: inline;
+    padding: 0 0 0 60px;
+    margin: 0 0 0 -10px;
+    position: absolute;
+    top: 28px;
+    background: url(/images/logo.png) no-repeat 0 0;
+    width: 500px;
+    height: 60px; }
+
+h1#logo a {
+    float: left;
+    line-height: 1;
+    font-size: 25px;
+    color: black;
+    text-decoration: none; }
+
+
+/* Top Navigation List */
+#navigation {
+    float: right;
+    padding-top: 0px;
+    overflow: hidden;
+    padding-right: 20px;
+    margin-top: 30px; }
+#navigation ul {
+    list-style: none;
+    float: right; }
+#navigation li {
+    float: left;
+    display: inline;
+    padding: 2px 0 0 20px;
+    background: transparent url('/images/icon-bump.png') 0 0 no-repeat;
+    margin-right: 20px; }
+#navigation a {
+    position: relative;
+    color: #000;
+    display: block;
+    font-size: 10pt;
+    text-align: left;
+    border: none;
+    float: left; }
+#navigation a:hover {
+    color: #999; }
+
+#main {
+    padding: 0;
+    height: 700px;
+    position: relative; }
+
+#main .headline{
+    padding: 25px 0 25px 0;
+    margin: 35px 0 10px 0;}
+
+#main .headline h1{
+    font-size: 28pt;
+    margin: 0 auto;
+    color: #333;
+    text-align: center;
+    background: url('/images/ruby.png') 255px 5px no-repeat;
+    font-weight: normal;
+    padding: 0 30px 0 0;
+    width: 285px;
+    height: 40px;
+    line-height: 50px;}
+
+#main .tagline{
+    text-align: center;
+    margin-bottom: 40px;}
+
+#main .tagline h2 {
+    color: #444;
+    font-size: 36pt;
+    line-height: 25px;}
+
+#main .accounts{
+    list-style: none;
+    margin-left: 10px;}
+
+.account {
+    margin: 0 15px 10px 0;
+    float: left;
+    width: 245px;}
+
+.portrait {
+    width: 100px;
+    overflow: hidden;
+    padding: 5px 0;
+    float: left;
+    margin-top: 0px;
+    height: 120px;}
+.portrait img{ height: 100%; }
+
+ul.names {
+    float: right;
+    width: 120px;
+    list-style: none;
+    margin-top: 5px;}
+ul.names li{
+    color: #333;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    text-align: right;}
+
+.meishi  {
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+    height: 185px;
+    width: 225px;
+    color: #444444; }
+
+.meishi .ohai h2 {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+    font-size: 11pt;}
+
+.meishi-bottom {
+    height: 15px;
+    background: transparent url("/images/meishi-bottom.png") 0 -4px no-repeat; }
+
+.meishi .details .header {
+    background-color: #999;
+    color: #FFF;
+    font-size: 10pt;
+    padding: 5px 0 5px 0;
+    left: 0;
+    top: 0;
+    width: 235px;
+    height: 55px;
+    padding-left: 10px;
+    position: absolute;
+}
+.meishi .details .header h2{
+    font-size: 12pt;
+    margin-top: 10px; }
+.meishi .details .header ul.names {
+    float: left;
+    height: auto;
+    width: 100%;
+    margin: 0;}
+.meishi .details .header ul.names li {
+    color: #FFF;
+    text-align: left;
+    width: 235px;
+    float: left;
+    padding: 0;
+    margin: 0 0 3px 0; }
+
+.meishi .details ul.navigation{
+    margin: 60px 0 2px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #999;
+    float: left;
+    width: 225px;}
+.meishi .details ul.navigation li{
+    display: inline;
+    float: left;
+    margin-right: 15px;
+    padding-bottom: 13px;}
+.meishi .details ul.navigation li a{
+    color: #000;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px;}
+.meishi .details ul.navigation li.active {
+    background: #FFF url(/images/icon-arrow-down.png) no-repeat 50% 100%;}
+.meishi .details ul.navigation li a:hover{ color: #df0024}
+
+.meishi .content{
+    float: left;
+    width: 235px;}
+
+.meishi ul.nicks {
+    padding: 7px 0 0 10px;
+    width: 100px;
+    text-align: right;
+    font-size: 10pt;
+    float: right;}
+.meishi ul.nicks h3{
+    font-size: 8pt;
+    font-weight: normal;
+    border: none;
+    margin-bottom: 5px;
+    color: #AA2313;}
+
+.meishi ul.services {
+    width: 100%;
+    float: left;
+    list-style: none;
+}
+.meishi ul.services li{
+    float: left;
+    display:inline;
+    margin: 0 10px 0 0;
+    padding: 2px 0 2px 20px;
+    background: transparent url(/images/icon-bump.png) no-repeat 0 0;}
+.meishi ul.services li.github{ background: transparent url(/images/icon-github.png) no-repeat 0 0; }
+.meishi ul.services li.twitter{ background: transparent url(/images/icon-twitter.png) no-repeat 0 0; }
+.meishi ul.services li.facebook{ background: transparent url(/images/icon-facebook.png) no-repeat 0 0; }
+.meishi ul.services li.friendfeed{ background: transparent url(/images/icon-friendfeed.png) no-repeat 0 0; }
+.meishi ul.services li.mixi{ background: transparent url(/images/icon-mixi.png) no-repeat 0 0; }
+.meishi .services a{
+    padding: 0;
+    border: none; }
+
+.meishi ul.sites { width: 100%; list-style: none;}
+.meishi ul.sites li a{ margin-top: 0;}
+.meishi ul.sites li{
+    margin: 5px 10px 10px 0;
+    padding: 2px 0 2px 22px;
+    background: transparent url('/images/icon-vcard.png') 0 0 no-repeat;
 }
 
-.image-wrapper img {
-  height: 100%;
-}
+.meishi ul.services {
+    float: left;
+    list-style: none;
+    width: 100%;}
+.meishi ul.services li{
+    float: left;
+    display:inline;
+    margin: 5px 10px 10px 0;
+    padding: 2px 0 2px 20px;
+    background: transparent url(/images/icon-bump.png) no-repeat 0 0; }
+
+.meishi ul.books {
+    width: 100%;
+    float: left;
+    list-style: none;}
+.meishi ul.books li{
+    margin: 5px 5px 10px 0;
+    padding: 2px 0 2px 20px;
+    float: left;
+    display: inline;
+    background: transparent url('/images/icon-amazon.png') 0 0 no-repeat;}
+
+#footer {
+    height: 110px;
+    font-size: 10pt;
+    font-weight: bold;
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+    color: #BBB;
+    clear: both; }
+#footer .shell {
+    height: 95px;
+    padding-top: 10px;
+    border-top: 1px solid #CCCCCC; }
+#footer a { color: #202023; }

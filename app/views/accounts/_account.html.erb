@@ -1,76 +1,63 @@
-<li>
-  <table>
-    <tr>
-      <td>Account:</td>
-      <td><%= account.username %></td>
-    </tr>
-
-    <% unless account.names.empty? %>
-      <tr>
-        <td>Names:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.names %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.nicks.empty? %>
-      <tr>
-        <td>Nicknames:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.nicks %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.sites.empty? %>
-      <tr>
-        <td>Sites:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'site', :collection => account.sites %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.services.empty? %>
-      <tr>
-        <td>Services:</td>
-        <td>
-          <ul>
+<div class='account'>
+  <div class='meishi'>
+    <div class='ohai'>
+      <div class='portrait'>
+        <% if account.portraits.empty? %>
+          <%= image_tag '/images/icon-avatar.png' %>
+        <% else %>
+          <%= image_tag account.portraits.first.url %>
+        <% end %>
+      </div>
+      <% unless account.names.empty? %>
+        <ul class='names'>
+          <%= render :partial => 'name', :collection => account.names.reverse %>
+        </ul>
+      <% end %>
+      <% unless account.nicks.empty? %>
+        <ul class='nicks'>
+          <h3 class='aka'>A.K.A</h3>
+          <%= render :partial => 'name', :collection => account.nicks %>
+        </ul>
+      <% end %>
+    </div>
+    <div class='details' style='display:none'>
+      <div class='header'>
+        <ul class='names'>
+          <%= render :partial => 'name', :collection => account.names.reverse %>
+        </ul>
+      </div>
+      <ul class='navigation'>
+        <%= content_tag :li do -%>
+          <%= link_to 'Social', '#', :onclick => 'Navigation.tab(this); return false;', :rel => 'services' %>
+        <% end unless account.services.empty? -%>
+        <%= content_tag :li do -%>
+          <%= link_to 'Sites', '#', :onclick =>
+          'Navigation.tab(this); return false;', :rel => 'sites' %>
+        <% end unless account.sites.empty? -%>
+        <%= content_tag :li do -%>
+          <%= link_to 'Books', '#', :onclick => 'Navigation.tab(this); return false;', :rel => 'books' %>
+        <% end unless account.books.empty? -%>
+     </ul>
+      <div class='content'>
+        <% unless account.services.empty? %>
+          <ul class='services' style='display:none;'>
             <%= render :partial => 'service', :collection => account.services %>
           </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.portraits.empty? %>
-      <tr>
-        <td>Portraits:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'portrait', :collection => account.portraits %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.books.empty? %>
-      <tr>
-        <td>Books:</td>
-        <td>
-          <ul>
+        <% end %>
+        <% unless account.sites.empty? %>
+            <ul class='sites external-links' style='display:none;'>
+              <%= render :partial => 'site', :collection => account.sites %>
+            </ul>
+        <% end %>
+        <% unless account.books.empty? %>
+          <ul class='books' style='display:none;'>
             <% account.books.each do |book| %>
               <li><a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= book.key %></a></li>
             <% end %>
           </ul>
-        </td>
-      </tr>
-    <% end %>
-  </table>
-</li>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class='meishi-bottom'></div>
+</div>
