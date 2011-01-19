@@ -24,7 +24,7 @@
 
 <% unless account.nicks.empty? %>
 <div class="nicknames">
-<h3>Nicknames ... </h3>
+<h3>A.K.A ... </h3>
 <ul>
 <%= render :partial => 'name', :collection => account.nicks %>
 </ul>
@@ -37,7 +37,7 @@
 
 <div class="sites">
 <% unless account.sites.empty? %>
-<h3 class="caption">Sites</h3>
+<h3>Sites</h3>
 <ul>
 <%= render :partial => 'site', :collection => account.sites %>
 </ul>
@@ -47,7 +47,7 @@
 
 <div class="books">
 <% unless account.books.empty? %>
-<h3 class="caption">Books</h3>
+<h3>Books</h3>
 <ul>
 <% account.books.each do |book| %>
 <li><%= book.key %></li>
