@@ -47,6 +47,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*------------------------------
+ *  variables
+ *------------------------------ */
+/*------------------------------
+ *  elements
+ *------------------------------ */
 body, p {
   font-family: "Lucida Grande", Lucida, "Helvetica Neue", Helvetica, "Myriad Pro", Verdana, Tahoma;
   font-size: 14px;
@@ -63,6 +69,9 @@ a {
     color: #b01000;
     text-decoration: underline; }
 
+/*------------------------------
+ *  supporting structures
+ *------------------------------ */
 #inner-wrapper {
   position: relative;
   margin: 0 auto;
@@ -78,6 +87,9 @@ a {
   height: 15px;
   background: #392a2a; }
 
+/*------------------------------
+ *  main structures
+ *------------------------------ */
 body {
   background: #fffdf8; }
 
@@ -240,6 +252,9 @@ body {
     margin-top: 20px;
     background: url("/images/crowd-footer.png") center no-repeat; }
 
+/*------------------------------
+ *  portrait slider
+ *------------------------------ */
 .nivo-controlNav {
   position: absolute;
   top: 90px;
@@ -255,3 +270,30 @@ body {
     cursor: pointer; }
     .nivo-controlNav a.active {
       background-position: 0 -20px; }
+
+/*------------------------------
+ *  Fork me on Github :-)
+ *------------------------------ */
+#ribbon {
+  background-color: #aa0000;
+  overflow: hidden;
+  position: fixed;
+  left: -3em;
+  top: 2.5em;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -moz-box-shadow: 0 0 1em #ece0d0;
+  -webkit-box-shadow: 0 0 1em #ece0d0;
+  box-shadow: 0 0 1em #ece0d0;
+  z-index: 999; }
+  #ribbon a {
+    border: 1px solid #ffaaaa;
+    color: white;
+    display: block;
+    font: bold 81.25% "Helvetiva Neue", Helvetica, Arial, sans-serif;
+    margin: 0.05em 0 0.075em 0;
+    padding: 0.5em 3.5em;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 0.5em #444444; }

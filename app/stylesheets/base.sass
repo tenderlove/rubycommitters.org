@@ -1,9 +1,5 @@
 @import "reset"
 
-// --------------------
-  variables
-// --------------------
-
 $primary-colour:   #b01000
 $secondary-colour: #392a2a
 $highlight-colour: #b01000
@@ -11,9 +7,9 @@ $shadow-colour:    #ece0d0
 $bg-header-colour: #ffeed4
 $bg-main-colour:   #fffdf8
 
-// --------------------
-  elements
-// --------------------
+/*------------------------------
+ *  elements
+ *------------------------------
 
 body, p
   font-family: "Lucida Grande", Lucida, "Helvetica Neue", Helvetica, "Myriad Pro", Verdana, Tahoma
@@ -31,9 +27,9 @@ a
     color: $highlight-colour
     text-decoration: underline
 
-// --------------------
-  supporting structures
-// --------------------
+/*------------------------------
+ *  supporting structures
+ *------------------------------
 
 #inner-wrapper
   position: relative
@@ -50,9 +46,9 @@ a
   height: 15px
   background: $secondary-colour
 
-// --------------------
-  main structures
-// --------------------
+/*------------------------------
+ *  main structures
+ *------------------------------
 
 body
   background: $bg-main-colour
@@ -221,9 +217,9 @@ body
     margin-top: 20px
     background: url("/images/crowd-footer.png") center no-repeat
 
-// --------------------
-  portrait slider
-// --------------------
+/*------------------------------
+ *  portrait slider
+ *------------------------------
 
 .nivo-controlNav
   position: absolute
@@ -241,4 +237,30 @@ body
     &.active
       background-position: 0 -20px
 
+/*------------------------------
+ *  Fork me on Github :-)
+ *------------------------------
 
+#ribbon
+  background-color: #a00
+  overflow: hidden
+  position: fixed
+  left: -3em
+  top: 2.5em
+  -moz-transform: rotate(-45deg)
+  -webkit-transform: rotate(-45deg)
+  transform: rotate(-45deg)
+  -moz-box-shadow: 0 0 1em $shadow-colour
+  -webkit-box-shadow: 0 0 1em $shadow-colour
+  box-shadow: 0 0 1em $shadow-colour
+  z-index: 999
+  a
+    border: 1px solid #faa
+    color: #fff
+    display: block
+    font: bold 81.25% 'Helvetiva Neue', Helvetica, Arial, sans-serif
+    margin: 0.05em 0 0.075em 0
+    padding: 0.5em 3.5em
+    text-align: center
+    text-decoration: none
+    text-shadow: 0 0 0.5em #444
