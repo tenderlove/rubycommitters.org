@@ -189,7 +189,7 @@ body {
           width: 180px;
           white-space: nowrap;
           overflow: hidden;
-          line-height: 14px; }
+          line-height: 17px; }
           #container table#list tr.person td.meta table td ul li {
             font-size: 13px;
             padding-top: 5px; }
@@ -230,7 +230,7 @@ body {
             color: white;
             font-family: "Helvetica Neue", Helvetica;
             font-size: 9px;
-            text-decoration: none; }
+            border: none; }
         #container table#list tr.person td.bios ul.bio-langs li.eng {
           top: 5px; }
           #container table#list tr.person td.bios ul.bio-langs li.eng a {
