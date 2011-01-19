@@ -93,12 +93,12 @@ code {
 }
 #header h1 {
   position: relative;
-  background: transparent url(/images/ruby.png) no-repeat scroll 0 58%;
+  background: transparent url(/images/ruby.png) no-repeat scroll 38% 58%;
   font-family: 'Cherry Cream Soda', Arial, serif;
   font-size: 600%;
   line-height: 1.25em;
   margin: 0;
-  padding: 0 0 0 2%;
+  padding: 0 0 0 22%;
   text-shadow: 1px 1px 3px #333;
   z-index: 200;
 }
