@@ -1,7 +1,8 @@
 RubyCommitters.controllers :heroes do
   get :index, :map => '/' do
-    @heroes = Hero.all
-    @attrs  = {
+    @site_name = RubyCommitters.site_name
+    @heroes    = Hero.all
+    @attrs     = {
       'names'    => 'names',
       'nicks'    => 'a.k.a.',
       'sites'    => 'sites',

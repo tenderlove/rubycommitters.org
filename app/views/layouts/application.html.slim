@@ -1,7 +1,7 @@
 ! doctype html
 html
   head
-    title= RubyCommitters.site_name
+    title= @site_name
     link rel="canonical" href="http://rubycommitters.org/"
     == favicon_tag 'favicon.png'
     == stylesheet_link_tag :base
@@ -12,7 +12,7 @@ html
       #header-wrapper
         #inner-wrapper
           #header
-            h1#logo= RubyCommitters.site_name
+            h1#logo= @site_name
             p#ruby-link== link_to 'Visit the official Ruby website', 'http://www.ruby-lang.org/'
         #crowd-header
       #crowd-header-strip
