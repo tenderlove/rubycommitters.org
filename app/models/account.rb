@@ -63,4 +63,12 @@ class Account < ActiveRecord::Base
       end
     end
   end
+  
+  def primary_portrait
+    portraits.first unless portraits.blank?
+  end
+  
+  def secondary_portraits
+    portraits - primary_portrait unless portraits.count < 2
+  end
 end

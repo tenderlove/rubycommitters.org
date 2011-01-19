@@ -14,23 +14,17 @@
   </div>
   
   <div id="page">
-	<div id="content">
-		<li class="account">
-		  <table>
-		    <tr>
-		      <td class="top">Name</td>
-			  <td class="top">Sites</td>
-			  <td class="top">Books</td>
-		      <td class="top">Services</td>
-		    </tr>
-    <%= yield %>
-			  </table>
-			</li>
+    <div id="content">
+      <%= yield %>
     </div>
   </div>
   
   <div id="footer">
-    
+    A creation of 
+    <%= link_to 'Melissa Voegeli', '#' %>
+    and 
+    <%= link_to 'Jared Mehle', '#' %>
+    .
   </div>
 </div>
 

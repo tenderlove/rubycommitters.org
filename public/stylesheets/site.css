@@ -103,26 +103,98 @@ code {
   font-size: 1.25em;
   margin: 0 0 5% 0;
   padding: 0;
-  -webkit-background-clip: padding-box;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-     -moz-box-shadow: 1px 1px 4px #444;
-  -webkit-box-shadow: 1px 1px 4px #444;
-          box-shadow: 1px 1px 4px #444;
+  -webkit-border-bottom-right-radius: 5px;
+   -webkit-border-bottom-left-radius: 5px;
+      -moz-border-radius-bottomright: 5px;
+       -moz-border-radius-bottomleft: 5px;
+          border-bottom-right-radius: 5px;
+           border-bottom-left-radius: 5px;
   z-index: 100;
 }
 
-.image-wrapper {
+#content {
+  background: transparent;
+  padding: 3em .5em .5em .5em;
+}
+
+#content table {
+  width: 100%;
+  border-spacing: 0;
+  -webkit-box-shadow: 2px 1px 2px rgba(40,40,40,0.4);
+     -moz-box-shadow: 2px 1px 2px rgba(40,40,40,0.4);
+          box-shadow: 2px 1px 2px rgba(40,40,40,0.4);
+}
+#content table td {
+  vertical-align: top;
+  border-bottom: 1px solid #AAA;
+  background-color: rgba(80,80,80,0.1);
+}
+#content table td.first { 
+  width: 37%;
+}
+
+#content table tr.last td {
+  border-bottom: none;
+}
+#content li.account {
+  margin: 0 10em 6em 10em;
+}
+.account .container {
+  position: relative;
+  min-height: 104px;
+}
+.account .username {
+  position: relative;
+  background-color: #F1F1F1;
+  top: 3.5em;
+  left: 1.1em;
   padding: .2em;
-  height: 100px;
-  border: white;
+  font-size: 200%;
+  line-height: 1.1em;
+  color: #333;
+  border-top: 1px solid #F1F1F1;
+  border-left: 1px solid #F1F1F1;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 2px 1px 1px rgba(40,40,40,0.1);
+     -moz-box-shadow: 2px 1px 1px rgba(40,40,40,0.1);
+          box-shadow: 2px 1px 1px rgba(40,40,40,0.1);
+  z-index: 400;
+}
+
+
+#content .account li.nickname,
+#content .account li.service,
+#content .account li.book {
+  padding: .25em 0;
+  line-height: 1em;
+}
+
+.account .names {
+  color: #333;
+}
+
+.image-wrapper {
+  position: absolute;
+  top: -4.5em;
+  left: -3em;
+  height: 120px;
+  z-index: 300;
 }
 
 .image-wrapper img {
   height: 100%;
   margin: 0 auto;
+  border: 3px solid #AAA;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 2px 1px 3px rgba(40,40,40,0.2);
+     -moz-box-shadow: 2px 1px 3px rgba(40,40,40,0.2);
+          box-shadow: 2px 1px 3px rgba(40,40,40,0.2);
 }
+
 
 /* I'd love to fork you ;) */
 #fork_me {
@@ -141,36 +213,4 @@ code {
   -webkit-box-shadow: 2px 1px 3px #333;
      -moz-box-shadow: 2px 1px 3px #333;
           box-shadow: 2px 1px 3px #333;
-}
-
-#content {
-  background: transparent;
-  padding: 3em .5em .5em .5em;
-}
-
-#content table {
-  	width: 100%;
-	border-spacing: 0;
-}
-#content table td {
-  border-bottom: 1px solid #AAA;
-  padding: 0.3em 0 0.5em 0;
-  background-color: rgba(80,80,80,0.1);
-  margin: 0 0 48px 0;
-  padding: 12px 0 0 12px;
-}
-#content table td.top {
-  padding-top: 1em;
-  background-color: rgba(0,0,0,0.1);
-}
-
-#content table tr.last td {
-  border-bottom: none;
-}
-
-#content .account li.nickname,
-#content .account li.service,
-#content .account li.book {
-  padding: .25em 0;
-  line-height: 1em;
 }

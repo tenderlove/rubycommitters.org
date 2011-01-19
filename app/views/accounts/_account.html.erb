@@ -1,55 +1,43 @@
-   <tr>
-	
-	<% unless account.portraits.empty? %>
-      
-        <td>
-          <ul>
-            <%= render :partial => 'portrait', :collection => account.portraits %>
-          </ul>
-
-    <% unless account.names.empty? %>
-          <ul>
-			<div class='image-wrapper'>
-           <%= render :partial => 'name', :collection => account.names, :locals => { :is_nickname => false } %>
-           <%= render :partial => 'name', :collection => account.nicks, :locals => { :is_nickname => true } unless account.nicks.empty? %>
+<li class="account">
+  <table>
+    <tr>
+      <td class="first">
+        <strong class="username">
           <%= account.username %>
-			</div>
-</ul>
-    <% end %>
-       </td>
-
-       <td>
-    <% unless account.sites.empty? %>
-	      <ul>
-	       <%= render :partial => 'site', :collection => account.sites %>
-	      </ul>
-    <% end %>
-	   </td> 
-	
-	   <td>
-    <% unless account.books.empty? %>
-	      <ul>
-	        <% account.books.each do |book| %>
-	        <li class="book"><a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= book.key %></a></li>
-	<% end %>
-	       </ul>
-	      
-	      
-	<% end %>
-	 
-	   </td>
-	   <td>
-	<% unless account.services.empty? %>
-	      <ul>
-	        <%= render :partial => 'service', :collection => account.services %>
-	      </ul>
-	<% end %>
-	    </td>
-      </tr>
-    <% end %>
-
-<tr>
-
-</tr>
-
-
+        </strong>
+        
+        <div class="container">
+          <div class='image-wrapper'>
+            <%= image_tag account.primary_portrait ? account.primary_portrait.try(:url) : 'missing_avatar.png' %>
+          </div>
+        </div>
+        
+        <ul class="names">
+          <%= render :partial => 'name', :collection => account.names, :locals => { :is_nickname => false } %>
+          <%= render :partial => 'name', :collection => account.nicks, :locals => { :is_nickname => true } unless account.nicks.empty? %>
+        </ul>
+      </td>
+      <td>
+        <% unless account.sites.empty? %>
+          <ul>
+            <%= render :partial => 'site', :collection => account.sites %>
+          </ul>
+        <% end %>
+        
+        <% unless account.services.empty? %>
+          <ul>
+            <%= render :partial => 'service', :collection => account.services %>
+          </ul>
+        <% end %>
+        
+        <% unless account.books.empty? %>
+          <ul>
+            <% account.books.each do |book| %>
+              <li class="book"><a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= book.key %></a></li>
+            <% end %>
+          </ul>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+</li>
