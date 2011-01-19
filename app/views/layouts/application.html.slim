@@ -30,8 +30,9 @@ html
           #footer-logo
           p#copyright Copyright &copy; 2010 RubyCommitters.org
           p
-            == "Website programmed and designed by #{link_to 'Fred Wu', 'http://fredwu.me/'}"
-            == " | Powered by #{link_to 'Padrino', 'http://www.padrinorb.com/'} and #{link_to 'Slim', 'https://github.com/stonean/slim'}"
+            == "An initiative by #{link_to 'Aaron Patterson', 'http://tenderlovemaking.com/'}"
+            == " | Website programmed and designed by #{link_to 'Fred Wu', 'http://fredwu.me/'}"
+          p== "Powered by #{link_to 'Padrino', 'http://www.padrinorb.com/'}, #{link_to 'Slim', 'https://github.com/stonean/slim'} and #{link_to 'Sass', 'http://sass-lang.com/'}"
           #crowd-footer
           == partial 'layouts/google_analytics' if Padrino.env == :production
 
