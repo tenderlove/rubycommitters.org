@@ -332,23 +332,8 @@ li.committer .body h3 {
 .services li.github a {
 	background-image: url(../images/github.png);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #footer {
-	padding: 30px;
+	padding: 45px;
 	clear: both;
 	background-image: url(../images/footer.gif);
 	background-repeat: repeat-x;
@@ -360,9 +345,9 @@ li.committer .body h3 {
 	font-size: 26px;
 	font-family: 'IM Fell Great Primer', arial, serif;
 	font-weight: 700;
-	text-shadow:#290b05 1px 1px 0px;
+	text-shadow:#66271d 1px 1px 0px;
 	letter-spacing: 0.04em;
-	color: #8b3721;
+	color: #290706;
 	}
 .dialog {
 	margin-top: 50px;
