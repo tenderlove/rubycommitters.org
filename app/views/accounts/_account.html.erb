@@ -17,7 +17,7 @@
           <%= render :partial => 'name', :collection => account.nicks, :locals => { :is_nickname => true } unless account.nicks.empty? %>
         </ul>
       </td>
-      <td>
+      <td class="last">
         <% unless account.sites.empty? %>
           <ul>
             <%= render :partial => 'site', :collection => account.sites %>
