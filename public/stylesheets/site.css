@@ -1,7 +1,20 @@
+body {
+ margin: 0;
+ padding: 0;
+ background-color: #181818;
+  background: #FFF url(/images/header-bg.png);
+ color: #FFF;
+}
 .image-wrapper {
   height: 100px;
 }
 
 .image-wrapper img {
   height: 100%;
+}
+
+#header {
+  background: #FFF url(/images/header-bg.png);
+  height: 383px;
+  margin-bottom: -23px;
 }

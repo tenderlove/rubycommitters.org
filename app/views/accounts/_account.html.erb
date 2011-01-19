@@ -1,4 +1,27 @@
-<li>
+<li class="account" style="width: 900px; background-color: #222; background: url(/images/foo.jpg); margin: 20px; padding: 10px; list-style: none; box-shadow: -5px 5px 0px #555;">
+  <div class="picture" style="float: right;">
+    <div class="image-wrapper">
+      <% if File.exist?(Rails.root.join('public', 'images', 'people', 'lines', "#{account.username}.png").to_s) -%>
+        <%= image_tag "people/lines/#{account.username}.png", :onmouseover => "this.src = this.src.replace(/lines/, 'photos').replace(/png/, 'jpg');", :onmouseout => "this.src = this.src.replace(/photos/, 'lines').replace(/jpg/, 'png');" -%>
+      <% else -%>
+        <%= image_tag "people/lines/fox.png", :onmouseover => "this.src = this.src.replace(/lines/, 'photos')", :onmouseout => "this.src = this.src.replace(/photos/, 'lines')" -%></div>
+      <% end -%>
+    </div>
+  </div>
+  <div style="float: right; clear: right;"></div>
+
+
+  <div class="name" style="font-family: Helvetica, sans-serif; line-height: 1.4em;">
+    <div style="text-transform: uppercase; font-size: 1.3em; padding-bottom: 10px;"><%= account.username -%></div>
+    <% [account.names, account.nicks].flatten.slice(0,3).each do |name| -%>
+      <div style="color: #AAA; font-size: 0.8em;"><small style="font-size: 0.6em;">AKA</small> &ldquo;<%= name.value -%>&rdquo;</div>
+    <% end -%>
+  </div>
+
+  <div style="clear: both;"></div>
+</li>
+
+<% if false -%>
   <table>
     <tr>
       <td>Account:</td>
@@ -74,3 +97,4 @@
     <% end %>
   </table>
 </li>
+<% end -%>
