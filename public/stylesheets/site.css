@@ -240,20 +240,26 @@ li.committer .body {
 	height: 160px;
 }
 
-.section {
-	width: 120px;
+.sites {
+	width: 125px;
 	float: left;
-	padding-right: 15px;
+	padding-right: 10px;
 	padding-left: 15px;
 }
-li.committer .body div.section ul {
+.books {
+	width: 125px;
+	float: left;
+	padding-right: 15px;
+	padding-left: 10px;
+}
+li.committer .body ul {
 	line-height:1.5;
 }
-li.committer .body div.section ul li {
+li.committer .body ul li {
 	display:block;
 	margin-bottom:8px;
 }
-li.committer .body .caption {
+li.committer .body h3 {
 	display: block;
 	margin-bottom: 7px;
 	font-size: 16px;
