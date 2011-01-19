@@ -119,12 +119,12 @@ h1#logo a {
     margin: 0 auto;
     color: #333;
     text-align: center;
-    background: url('/images/ruby.png') 255px 5px no-repeat;
+    background: url('/images/ruby.png') 100% 0 no-repeat;
     font-weight: normal;
-    padding: 0 30px 0 0;
-    width: 285px;
-    height: 40px;
-    line-height: 50px;}
+    padding: 0 50px 0 0;
+    width: 215px;
+    height: 55px;
+    line-height: 55px;}
 
 #main .tagline{
     text-align: center;
