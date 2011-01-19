@@ -5,7 +5,7 @@
         <% if account.portraits.empty? %>
           <%= image_tag '/images/icon-avatar.png' %>
         <% else %>
-          <%= image_tag account.portraits.first.url %>
+          <%= image_tag account.portraits.reverse.first.url %>
         <% end %>
       </div>
       <% unless account.names.empty? %>
