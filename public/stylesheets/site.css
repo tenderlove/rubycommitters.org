@@ -192,8 +192,9 @@ li.committer .header {
 	letter-spacing: 0.04em;
  }
 .portraits {
-	width: 100px;
+	width: 96px;
 	float: left;
+	margin-top: 5px;
 	}
 .portraits li {
 	display: none;
@@ -202,12 +203,11 @@ li.committer .header {
 	display: block;
 	}
 .portraits img {
-	width:100px;
+	width:96px;
 	display: block;
 	-moz-box-shadow:#4d1b11 1px 1px 3px;
 	-webkit-box-shadow:#4d1b11 1px 1px 3px;
 	-o-box-shadow:#4d1b11 1px 1px 3px;
-	margin-top: 5px;
 }
 .nicknames {
 	padding-top: 10px;
@@ -348,6 +348,10 @@ li.committer .body h3 {
 	text-shadow:#66271d 1px 1px 0px;
 	letter-spacing: 0.04em;
 	color: #290706;
+	}
+#footer p.copy span {
+	font-size: 16px;
+	font-weight: 400;
 	}
 .dialog {
 	margin-top: 50px;
