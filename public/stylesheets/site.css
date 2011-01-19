@@ -125,7 +125,12 @@ label {
   position:     absolute;
   list-style:   none;
   border-right: 2px solid #4B4E64;
+  border-top: 2px solid #4B4E64;
   overflow:     hidden;
+  text-shadow: 0 1px #881320;
+  background-color: #E3E3E3;
+  -webkit-border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
 }
 
 .sites-label li {
@@ -157,7 +162,7 @@ label {
   position:         absolute;
   list-style:       none;
   text-align:       center;
-  background-color: #FF2E2E;
+  background-color: #B31C16;
 }
 
 .services li {
@@ -173,10 +178,13 @@ label {
 
 .portrait {
   top:      20px;
-  left:     20px;
+  left:     15px;
   width:    100px;
   height:   auto;
   position: absolute;
+  border: 3px solid #B31C16;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
 }
 
 .books {
@@ -208,7 +216,12 @@ label {
   list-style:   none;
   border-right: 2px solid #4B4E64;
   border-left:  2px solid #4B4E64;
+  border-top:  2px solid #4B4E64;
   overflow:     hidden;
+  text-shadow: 0 1px #881320;
+  background-color: #E3E3E3;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
 }
 
 .books-label li {
@@ -235,7 +248,7 @@ label {
 #ruby-logo {
   top:              0px;
   left:             0px;
-  font:             40px 'MolotRegular', Arial, sans-serif;
+  font:             50px 'MolotRegular', Arial, sans-serif;
   color:            white;
   height:           480px;
   margin:           0;
@@ -244,12 +257,13 @@ label {
   list-style:       none;
   border-bottom:    3px solid white;
   background-color: #B31C16;
+  text-shadow: 3px 3px gray;
 }
 
 #committers-logo {
   top:              0;
   left:             60px;
-  font:             40px 'MolotRegular', Arial, sans-serif;
+  font:             50px 'MolotRegular', Arial, sans-serif;
   color:            white;
   height:           480px;
   margin:           0;
@@ -259,13 +273,17 @@ label {
   border-right:     3px solid white;
   border-bottom:    3px solid white;
   background-color: #B31C16;
+  text-shadow:      3px 3px gray;
+  -webkit-border-radius: 0 0 20px 0;
+  -moz-border-radius: 0 0 20px 0;
+}
+
+#committers-logo li, #ruby-logo li {
+  margin: -10px 0;
+  padding: 0;
 }
 
 #c  { left: 5px; position: relative; }
 #o  { left: 4px; position: relative; }
-#i  { left: 9px; position: relative; }
-#t1 { left: 5px; position: relative; }
-#t2 { left: 5px; position: relative; }
-#e  { left: 5px; position: relative; }
-#r2 { left: 5px; position: relative; }
-#s  { left: 5px; position: relative; }
+#i  { left: 12px; position: relative; }
+#t1, #t2, #e, #r2, #s { left: 8px; position: relative; }
