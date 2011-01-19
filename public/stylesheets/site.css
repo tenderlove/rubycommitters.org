@@ -72,19 +72,24 @@ code {
   border-bottom-left-radius: 4px;
 }
 #header {
-  position: relative;
+  position: fixed;
+  width: 73.75%;
+  margin: 0 auto;
   color: #fff;
   background: rgba(242, 242, 242, 0.3);
   padding: 0 1em 1em 1em;
   -webkit-box-shadow: 2px 1px 2px rgba(40,40,40,0.4);
      -moz-box-shadow: 2px 1px 2px rgba(40,40,40,0.4);
           box-shadow: 2px 1px 2px rgba(40,40,40,0.4);
+  z-index: 1000;
 }
 #header .container {
+  position: relative;
   background: #F1F1F1;
   padding: 1.2em 1em .75em 1em;
   border: 1px solid #CCC;
   border-top: 0;
+  z-index: 1000;
 }
 #header h1 {
   position: relative;
@@ -123,8 +128,10 @@ code {
 }
 
 #content {
+  position: relative;
   background: transparent;
-  padding: 3em .5em .5em .5em;
+  padding: 12em .5em .5em .5em;
+  z-index: 100;
 }
 
 #content table {
@@ -223,7 +230,7 @@ code {
 /* I'd love to fork you ;) */
 #fork_me {
   display: block;
-  position: absolute;
+  position: fixed;
   top: -1px;
   right: 14%;
   background: #5B6966 url(/images/octocat_tiny.png) no-repeat scroll 2% 50%;
