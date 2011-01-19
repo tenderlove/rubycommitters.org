@@ -217,7 +217,7 @@ li.committer .header {
 	font-size: 12px;
 	font-family: 'Coming Soon', arial, serif;
 	display: inline;
-	margin-bottom: 7px;
+	margin-right: 5px;
 }
 .nicknames ul {
 	display: inline !important;
@@ -228,7 +228,7 @@ li.committer .header {
 	font-style: normal;
 	font-weight: 400;
 	display: inline;
-	margin-right: 5px;
+	margin-right: 3px;
 	line-height: 1.3;
   }
 
