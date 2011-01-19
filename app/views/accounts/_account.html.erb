@@ -1,66 +1,68 @@
-<li class="committer">
-	<div class="header">
-		<h2 class="clearfix"><span class="caption">Account</span><span class="account"><%= account.username %></span></h2>
-		 <% unless account.names.empty? %>
-			<div class="names">
-				<h3 class="caption">Names</h3>
-				<ul>
-					<%= render :partial => 'name', :collection => account.names %>
-				</ul>
-			</div>
-		<% end %>
-	</div>
-	<div class="body">
-		<div class="inner">
-	
-			<div class="portraits section">
-				<h3 class="caption">Portraits</h3>
-				<ul>
-					<% unless account.portraits.empty? %>
-					<%= render :partial => 'portrait', :collection => account.portraits %>
-					<% else %>
-						<li class="empty">empty</li>
-					<% end %>	
-				</ul>	
-			</div>
+<li class="committer clearfix">
+<div class="header">
+<div class="account_names">	
+<h2><%= account.username %></h2>
+<% unless account.names.empty? %>
+<div class="names">
+<ul>
+<%= render :partial => 'name', :collection => account.names %>
+</ul>
+</div>
+<% end %>
+</div>
 
-			<div class="sites section">
-				<h3 class="caption">Nicknames</h3>
-				<% unless account.nicks.empty? %>
-					<ul>
-						<%= render :partial => 'name', :collection => account.nicks %>
-					</ul>
-				<% end %>
-			</div>
+<div class="portraits">
+<ul>
+<% unless account.portraits.empty? %>
+<%= render :partial => 'portrait', :collection => account.portraits %>
+<% else %>
+	<li class="empty"><img src="/images/empty.gif" alt="comming soon" /></li>
+<% end %>
+</ul>
 
-			<div class="sites section">
-				<h3 class="caption">Sites</h3>
-				<% unless account.sites.empty? %>
-					<ul>
-						<%= render :partial => 'site', :collection => account.sites %>
-					</ul>
-				<% end %>
-			</div>
+</div>
 
-			<div class="services section">
-				<h3 class="caption">Services</h3>
-				<% unless account.services.empty? %>
-					<ul>
-						<%= render :partial => 'service', :collection => account.services %>
-					</ul>
-				<% end %>
-			</div>
+<% unless account.nicks.empty? %>
+<div class="nicknames">
+<h3>Nicknames ... </h3>
+<ul>
+<%= render :partial => 'name', :collection => account.nicks %>
+</ul>
+</div>
+<% end %>
 
-			<div class="books section">
-				<h3 class="caption">Books</h3>
-				<% unless account.books.empty? %>
- 					<ul>
-						<% account.books.each do |book| %>
-							<li><%= book.key %></li>
-						<% end %>
-					</ul>
-				<% end %>
-			</div>
-		</div>
-	</div>
+</div>
+
+<div class="body">
+
+<div class="sites section">
+<% unless account.sites.empty? %>
+<h3 class="caption">Sites</h3>
+<ul>
+<%= render :partial => 'site', :collection => account.sites %>
+</ul>
+<% end %>
+</div>
+
+
+<div class="books section">
+<% unless account.books.empty? %>
+<h3 class="caption">Books</h3>
+<ul>
+<% account.books.each do |book| %>
+<li><%= book.key %></li>
+<% end %>
+</ul>
+<% end %>
+</div>
+</div>
+
+<div class="services footer">
+<% unless account.services.empty? %>
+<ul>
+<%= render :partial => 'service', :collection => account.services %>
+</ul>
+<% end %>
+</div>
+
 </li>

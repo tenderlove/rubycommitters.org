@@ -1,8 +1,12 @@
-<h1><img src="/images/h1.png" width="450" height="55" alt="Ruby Committers"></h1>
+<div id="header">
+<h1><img src="/images/h1.png" width="291" height="86" alt="Ruby Committers"></h1>
 <p class="github"><%= link_to 'fork me on github', 'http://github.com/tenderlove/rubycommitters.org' %></p>
+</div>
+<div id="main">
 <ul class="committers">
 <%= render :partial => 'account', :collection => @accounts %>
 </ul>
+</div>
 <div id="footer">
 <p class="copy">Ruby comitters</p>
 </div>

@@ -6,7 +6,6 @@ reset.css
 =================================================================== */
 html {
 	font-size: 12px;
-	background-image:url(../images/html.gif);
 	letter-spacing: 0.1ex;
 	line-height: 1;
 }
@@ -42,16 +41,16 @@ q:before,q:after {
 abbr,acronym { border:0;
 }
 a:link {
-	color: #3439ff;
+	color: #feb19e;
 }
 a:visited {
-	color: #0d21e2;
+	color: #e7866e;
 }
 a:hover {
-	color: #CF2E2A;
+	color: #fefb9e;
 }
 a:active {
-	color: #B41409;
+	color: #FF0;
 }
 
 .button a
@@ -104,217 +103,273 @@ blockquote {
 design
 =================================================================== */
 body {
-	background-image:url(../images/body.gif);
-	width: 861px;
+	color: #3e130a;
+	background-color: #9f2707;
+}
+#header {
+	background-image: url(../images/hrader.gif);
+	height: 137px;
+}
+h1 {
+	display:block;
+	padding-top: 20px;
+	text-align: center;
+	}
+p.github {
+	position: absolute;
+	top: 0px;
+	}
+p.github a {
+	position: absolute;
+	top: 0px;
+	background-image: url(../images/github_a.png);
+	text-indent: -9999px;
+	display: block;
+	height: 170px;
+	width: 170px;
+	}
+#main {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #b03413;
+}
+ul.committers {
+	padding-top: 25px;
+	clear: both;
+	width: 990px;
 	margin-right: auto;
 	margin-left: auto;
-	padding-right: 19px;
-	padding-left: 20px;
-	color: #f3f3f3;
 }
 li.committer {
 	display: block;
+	margin-bottom: 25px;
+	float: left;
+	width: 300px;
+	margin-right: 14px;
+	margin-left: 14px;
+	background-image: url(../images/commiter.gif);
 	border-right-width: 1px;
 	border-bottom-width: 1px;
 	border-right-style: solid;
 	border-bottom-style: solid;
-	border-right-color: #585858;
-	border-bottom-color: #585858;
-	margin-bottom: 20px;
-	clear: both;
+	border-right-color: #b03413;
+	border-bottom-color: #b03413;
 }
 li.committer .header {
-	display: block;
 	background-image: url(../images/committer_header.gif);
-	background-repeat: repeat-x;
-	height: 55px;
-	clear: both;
-}
-li.committer .header h2 {
-	display: block;
-	float: left;
-	background-image: url(../images/committer_header_h2.gif);
 	background-repeat: no-repeat;
 	background-position: left top;
-	padding-left: 25px;
-	padding-right: 35px;
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-left: 20px;
+	height: 170px;
 }
-li.committer .header h2 span.account {
+.account_names {
 	display: block;
-	float: left;
-	font-size: 28px;
-	font-family: 'Neuton', arial, serif;
-	height: 40px;
-	padding-bottom: 15px;
-	line-height: 40px;
-	text-shadow:#000 1px 1px 2px;
-	letter-spacing: 0.1em;
+	background-repeat: no-repeat;
+	float: right;
+	width: 170px;
+	text-align: center;
+	background-image: url(../images/account_names.png);
+	background-position: center bottom;
+	padding-bottom: 35px;
 }
-li.committer .header .caption {
-	padding-right: 15px;
-}
-li.committer .header .caption {
-	padding-right: 15px;
-	padding-bottom: 15px;
-	padding-top: 20px;
-	line-height: 20px;
-	height: 20px;
-	float: left;
+.account_names ul li {
+	line-height: 1.4;
 	display: block;
 }
-li.committer .header .names {
+.committer h2 {
 	display: block;
+	background-repeat: no-repeat;
+	font-size: 26px;
+	font-family: 'IM Fell Great Primer', arial, serif;
+	font-weight: 400;
+	background-image: url(../images/h2.png);
+	background-position: center top;
+	padding-top: 30px;
+	margin-bottom: 10px;
+	text-shadow:#d6614c 1px 1px 0px;
+	letter-spacing: 0.04em;
+ }
+.portraits {
+	width: 100px;
 	float: left;
-}
-li.committer .header .names ul {
-	float: left;
-	padding-bottom: 15px;
-	padding-top: 18px;
-	line-height: 20px;
-	height: 22px;
-}
-li.committer .header .names li {
-	display: inline;
-	white-space: nowrap;
-	margin-right: 10px;
-	font-size: 18px;
-}
-
-
-
-
-
-
-li.committer .header .names h3 {
+	}
+.portraits li {
+	display: none;
+	}
+.portraits li:first-child {
 	display: block;
+	}
+.portraits img {
+	width:100px;
+	display: block;
+	-moz-box-shadow:#4d1b11 1px 1px 3px;
+	-webkit-box-shadow:#4d1b11 1px 1px 3px;
+	-o-box-shadow:#4d1b11 1px 1px 3px;
+	margin-top: 5px;
 }
-li.committer .body {
-	background-color: #343434;
+.nicknames {
+	padding-top: 10px;
 	clear: both;
-	background-image: url(../images/commiter_body.gif);
-	background-repeat: repeat-x;
-	background-position: left bottom;
 }
-li.committer .body .inner {
-	background-image: url(../images/commiter_body_inner.gif);
-	background-repeat: repeat-y;
-	background-position: left bottom;
-	padding-left: 24px;
-	padding-bottom: 25px;
+.nicknames h3 {
+	font-size: 12px;
+	font-family: 'Coming Soon', arial, serif;
+	display: inline;
+	margin-bottom: 7px;
 }
-li.committer .body div.section {
-	width: 151px;
+.nicknames ul {
+	display: inline !important;
+}
+.nicknames li {
+	font-size: 12px;
+	font-family: 'Coming Soon', arial, serif;
+	font-style: normal;
+	font-weight: 400;
+	display: inline;
+	margin-right: 5px;
+	line-height: 1.3;
+  }
+
+
+
+li.committer .body {
+	clear: both;
+	padding-top: 20px;
+	height: 160px;
+}
+
+.section {
+	width: 120px;
 	float: left;
 	padding-right: 15px;
 	padding-left: 15px;
 }
 li.committer .body div.section ul {
-	padding-left: 13px;
 	line-height:1.5;
 }
 li.committer .body div.section ul li {
 	display:block;
 	margin-bottom:8px;
 }
-li.committer .body div.portraits ul {
-	padding-left: 0px;
-}
 li.committer .body .caption {
 	display: block;
-	background-color: #222;
-	margin-bottom: 12px;
-	font-size: 10px;
-	padding-top: 4px;
-	padding-right: 8px;
-	padding-bottom: 3px;
-	padding-left: 10px;
-	box-shadow: inset 1px 1px 1px #111;
-	-webkit-box-shadow: inset 1px 1px 1px #111;
-	-moz-box-shadow: inset 1px 1px 1px #111;
-	border-radius: 4px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	text-shadow:#000 1px 1px 1px;
+	margin-bottom: 7px;
+	font-size: 16px;
+	text-shadow:#d6614c 1px 1px 0px;
+	font-family: 'IM Fell Great Primer', arial, serif;
+	font-weight: 400;
+	letter-spacing: 0.04em;
 }
-li.committer .body div.portraits {
-	width: 92px;
-	padding-right: 19px;
-	padding-left: 0px;
-	overflow: hidden;
-	float: left;
-	}
 
-li.committer .body .portraits ul {
-	text-align: center;
-}
-li.committer .body .portraits ul li {
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-top-style: solid;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-top-color: #222;
-	border-right-color: #4c4c4c;
-	border-bottom-color: #4c4c4c;
-	border-left-color: #222;
-	max-height: 105px;
-	overflow: hidden;
-	float: left;
-}
-li.committer .body .portraits img {
-	width:90px;
-	float:left;
-}
-li.committer .body .portraits li.empty {
-	width:90px;
-	float:left;
-	display: block;
-	height: 90px;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-top-style: solid;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-top-color: #222;
-	border-right-color: #4c4c4c;
-	border-bottom-color: #4c4c4c;
-	border-left-color: #222;
-	text-align: left;
-	text-indent: -9999px;
-	background-image: url(../images/empty.gif);
-}
-h1 {
-	float: left;
-	display:block;
-	padding-top: 25px;
 
-	}
-p.github {
-	float: right;
-	}
-p.github a {
-	width: 120px;
-	height:70px;
-	background-image: url(../images/github_a.png);
-	text-indent: -9999px;
+.committer .footer {
 	display: block;
-	}
-ul.committers {
-	padding-top: 15px;
+	background-image: url(../images/committer_footer.gif);
+	background-position: left bottom;
+	clear: both;
+	padding-top: 10px;
+	background-repeat: no-repeat;
+	height: 39px;
+}
+.services {
 	clear: both;
 }
+.services ul {
+	height: 28px;
+	padding-top: 5px;
+	padding-bottom: 6px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.services li {
+	display: inline;
+}
+.services li a {
+	display: block;
+	float: left;
+	height: 28px;
+	width: 40px;
+	text-indent: -9999px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.services li a:link,
+.services li a:visited {
+	display: block;
+}
+.services li a:hover,
+.services li a:active {
+	display: block;
+	background-color: #5b1a0c;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.services li.twitter a {
+	background-image: url(../images/twitter.png);
+}
+.services li.iddy a {
+	background-image: url(../images/iddy.png);
+}
+.services li.facebook a {
+	background-image: url(../images/facebook.png);
+}
+.services li.friendfeed a {
+	background-image: url(../images/friendfeed.png);
+}
+.services li.mixi a {
+	background-image: url(../images/mixi.png);
+}
+.services li.github a {
+	background-image: url(../images/github.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #footer {
 	padding: 30px;
 	clear: both;
+	background-image: url(../images/footer.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
 	}
 #footer p.copy {
 	text-align: center;
 	display: block;
-	text-shadow:#000 1px 1px 1px;
+	font-size: 26px;
+	font-family: 'IM Fell Great Primer', arial, serif;
+	font-weight: 700;
+	text-shadow:#290b05 1px 1px 0px;
+	letter-spacing: 0.04em;
+	color: #8b3721;
 	}
+.dialog {
+	margin-top: 50px;
+	margin-bottom: 400px;
+	padding: 15px;
+	text-align: center;
+}
+.dialog h2 {
+	font-size: 24px;
+	display: block;
+	margin-bottom: 20px;
+	font-family: 'IM Fell Great Primer', arial, serif;
+	font-weight: 400;
+	text-shadow:#d6614c 1px 1px 0px;
+	letter-spacing: 0.04em;
+}
