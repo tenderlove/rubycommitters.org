@@ -313,6 +313,10 @@ li.committer .body h3 {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-o-border-radius: 5px;
+    box-shadow: inset 1px 1px 1px #4a1206;
+    -webkit-box-shadow: inset 1px 1px 1px #4a1206;
+    -moz-box-shadow: inset 1px 1px 1px #4a1206;
+    -o-box-shadow: inset 1px 1px 1px #4a1206;
 }
 .services li.twitter a {
 	background-image: url(../images/twitter.png);
