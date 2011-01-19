@@ -4,8 +4,8 @@ body{
   background: #e4e4ca;
   padding: 0;
   margin: 0;
-  background: #DDD url('../images/back.png') repeat;
 }
+
 #heading, #footer {
   height: 40px;
   padding: 20px 0;
@@ -204,7 +204,7 @@ li.account {
 .services li a {
   height: 48px;
   width: 48px;
-  background: transparent url('../images/iddy.png') no-repeat top left;
+  background: transparent;
   float: left;
   display: block;
   overflow: hidden;
