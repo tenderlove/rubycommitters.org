@@ -1,4 +1,4 @@
-<li class="account">
+<%= content_tag_for :li, account do %>
 
   <div class="name">
     <span class="username"><%= account.username %></span>
@@ -16,7 +16,9 @@
 
   <div class="details">
 
-    <%= image_tag_for_portrait account.portraits.first %>
+    <div class="portraits">
+      <%= image_tag_for_portrait account.portraits.first %>
+    </div>
 
     <div class="tabs">
       <div class="links">
@@ -61,4 +63,4 @@
     <% end %>
   </div>
 
-</li>
+<% end %>

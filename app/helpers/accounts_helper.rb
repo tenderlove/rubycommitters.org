@@ -21,9 +21,10 @@ module AccountsHelper
     link_to label, nil, class: 'tab etched', 'tab-section' => label
   end
 
-  def image_tag_for_portrait(portrait)
+  def image_tag_for_portrait(portrait, options = {})
     image_name = portrait ? portrait.url : 'missing.png'
-    image_tag image_name, class: 'portrait etched'
+    opts = options.merge(class: 'portrait etched')
+    image_tag image_name, opts
   end
 
   def tab_content_id(account)
