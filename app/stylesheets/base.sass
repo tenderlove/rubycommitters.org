@@ -71,11 +71,24 @@ body
       a
         padding-left: 22px
         background: url("/images/icon-browser.png") no-repeat
-  #crowd-header
+  #crowd-header-viewport
+    position: relative
+    overflow: hidden
     margin: 0 auto
-    width: 1075px
-    height: 144px
-    background: url("/images/crowd-header.png") center no-repeat
+    width: 1070px
+    height: 140px
+    #crowd-header, #crowd-header2
+      position: absolute
+    #crowd-header
+      width: 1075px
+      height: 144px
+      background: url("/images/crowd-header.png") center no-repeat
+      z-index: 3
+    #crowd-header2
+      width: 1100px
+      height: 160px
+      background: url("/images/crowd-header2.png") center no-repeat
+      z-index: 2
 
 #hero
   h2
@@ -200,7 +213,7 @@ body
 
 #footer
   text-align: center
-  background: url("/images/bg-footer-gradient.jpg") top repeat-x
+  background: url("/images/bg-footer-gradient.jpg") bottom repeat-x
   #footer-logo
     margin: 0 auto 15px auto
     width: 20px
@@ -211,11 +224,25 @@ body
     padding-bottom: 5px
     &#copyright
       font-size: 14px
-  #crowd-footer
-    width: 1000px
-    height: 114px
+  #crowd-footer-viewport
+    position: relative
+    overflow: hidden
+    width: 1090px
+    height: 116px
     margin-top: 20px
-    background: url("/images/crowd-footer.png") center no-repeat
+    margin-left: -50px
+    #crowd-footer, #crowd-footer2
+      position: absolute
+    #crowd-footer
+      width: 1100px
+      height: 120px
+      background: url("/images/crowd-footer.png") center no-repeat
+      z-index: 3
+    #crowd-footer2
+      width: 1110px
+      height: 125px
+      background: url("/images/crowd-footer2.png") center no-repeat
+      z-index: 2
 
 /*------------------------------
  *  portrait slider

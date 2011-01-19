@@ -5,7 +5,7 @@ html
     link rel="canonical" href="http://rubycommitters.org/"
     == favicon_tag 'favicon.png'
     == stylesheet_link_tag :base
-    == javascript_include_tag :jquery, :'jquery.nivo.slider.pack', :application
+    == javascript_include_tag :jquery, :'jquery.nivo.slider.pack', :'jquery.jparallax.min.js', :application
 
   body
     #ribbon== link_to 'Fork me on GitHub', 'https://github.com/fredwu/rubycommitters.org'
@@ -15,7 +15,9 @@ html
           #header
             h1#logo= @site_name
             p#ruby-link== link_to 'Visit the official Ruby website', 'http://www.ruby-lang.org/'
-        #crowd-header
+        #crowd-header-viewport
+          #crowd-header
+          #crowd-header2
       #crowd-header-strip
       #hero
         #inner-wrapper
@@ -33,7 +35,8 @@ html
             == "An initiative by #{link_to 'Aaron Patterson', 'http://tenderlovemaking.com/'}"
             == " | Website programmed and designed by #{link_to 'Fred Wu', 'http://fredwu.me/'}"
           p== "Powered by #{link_to 'Padrino', 'http://www.padrinorb.com/'}, #{link_to 'Slim', 'https://github.com/stonean/slim'} and #{link_to 'Sass', 'http://sass-lang.com/'}"
-          #crowd-footer
-          == partial 'layouts/google_analytics' if Padrino.env == :production
-
-      #crowd-footer-strip
+          #crowd-footer-viewport
+            #crowd-footer
+            #crowd-footer2
+        #crowd-footer-strip
+    == partial 'layouts/google_analytics' if Padrino.env == :production

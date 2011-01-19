@@ -1,4 +1,13 @@
 $(function() {
+  $("#crowd-header, #crowd-header2").parallax({
+    mouseport: $("#crowd-header-viewport"),
+    decay: 0
+  });
+  $("#crowd-footer, #crowd-footer2").parallax({
+    mouseport: $("#crowd-footer-viewport"),
+    decay: 0
+  });
+
   $("ul.social li a, ul.bio-langs li a").hover(function() {
     $(this).fadeTo(100, 1);
   }, function() {

@@ -108,11 +108,24 @@ body {
       #header-wrapper #header p#ruby-link a {
         padding-left: 22px;
         background: url("/images/icon-browser.png") no-repeat; }
-  #header-wrapper #crowd-header {
+  #header-wrapper #crowd-header-viewport {
+    position: relative;
+    overflow: hidden;
     margin: 0 auto;
-    width: 1075px;
-    height: 144px;
-    background: url("/images/crowd-header.png") center no-repeat; }
+    width: 1070px;
+    height: 140px; }
+    #header-wrapper #crowd-header-viewport #crowd-header, #header-wrapper #crowd-header-viewport #crowd-header2 {
+      position: absolute; }
+    #header-wrapper #crowd-header-viewport #crowd-header {
+      width: 1075px;
+      height: 144px;
+      background: url("/images/crowd-header.png") center no-repeat;
+      z-index: 3; }
+    #header-wrapper #crowd-header-viewport #crowd-header2 {
+      width: 1100px;
+      height: 160px;
+      background: url("/images/crowd-header2.png") center no-repeat;
+      z-index: 2; }
 
 #hero {
   background: #392a2a; }
@@ -232,7 +245,7 @@ body {
 
 #footer {
   text-align: center;
-  background: url("/images/bg-footer-gradient.jpg") top repeat-x; }
+  background: url("/images/bg-footer-gradient.jpg") bottom repeat-x; }
   #footer #footer-logo {
     margin: 0 auto 15px auto;
     width: 20px;
@@ -243,11 +256,25 @@ body {
     padding-bottom: 5px; }
     #footer p#copyright {
       font-size: 14px; }
-  #footer #crowd-footer {
-    width: 1000px;
-    height: 114px;
+  #footer #crowd-footer-viewport {
+    position: relative;
+    overflow: hidden;
+    width: 1090px;
+    height: 116px;
     margin-top: 20px;
-    background: url("/images/crowd-footer.png") center no-repeat; }
+    margin-left: -50px; }
+    #footer #crowd-footer-viewport #crowd-footer, #footer #crowd-footer-viewport #crowd-footer2 {
+      position: absolute; }
+    #footer #crowd-footer-viewport #crowd-footer {
+      width: 1100px;
+      height: 120px;
+      background: url("/images/crowd-footer.png") center no-repeat;
+      z-index: 3; }
+    #footer #crowd-footer-viewport #crowd-footer2 {
+      width: 1110px;
+      height: 125px;
+      background: url("/images/crowd-footer2.png") center no-repeat;
+      z-index: 2; }
 
 /*------------------------------
  *  portrait slider
