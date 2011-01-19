@@ -1,10 +1,10 @@
 html {
-  background: #a92014 url(/images/bg.png) no-repeat scroll 100% 0;
+  background: #ffffff url(/images/bg-white.png) no-repeat scroll 100% 0;
 }
 
 body {
   font-family: "Allerta", Arial, "MS Trebuchet", sans-serif;
-  font-size: 62.5%;
+  font-size: 40.5%;
   line-height: 1.25em;
   color: #F1F1F1;
 }
@@ -65,7 +65,7 @@ code {
 #header {
   background: #ff0000 url('/images/header-background.gif') repeat scroll 0 0;
   position: relative;
-  padding: .5em 1em .75em 1em;
+  padding: 1.2em 1em .75em 1em;
   margin: .6em 0 0 0;
   border-bottom: 1px solid #803130;
   -webkit-border-top-right-radius: 4px;
@@ -80,7 +80,7 @@ code {
 #header h1 {
   position: relative;
   font-family: 'Cherry Cream Soda', arial, serif;
-  font-size: 320%;
+  font-size: 600%;
   line-height: 1.25em;
   margin: 0;
   padding: 0 0 0 2%;
@@ -98,8 +98,7 @@ code {
 #page {
   position: relative;
   width: auto;
-  background: white;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba( 0, 0, 0, 0.1);
   min-height: 100%;
   font-size: 1.25em;
   margin: 0 0 5% 0;
@@ -117,6 +116,7 @@ code {
 .image-wrapper {
   padding: .2em;
   height: 100px;
+  border: white;
 }
 
 .image-wrapper img {
@@ -149,41 +149,25 @@ code {
 }
 
 #content table {
-  width: 65%;
-  margin: 0 auto 6em auto;
-}
-#content table th {
-  font-weight: bold;
-  padding-bottom: 3px;
-  border-bottom: 2px solid #222;
+  	width: 100%;
+	border-spacing: 0;
 }
 #content table td {
   border-bottom: 1px solid #AAA;
   padding: 0.3em 0 0.5em 0;
   background-color: rgba(80,80,80,0.1);
+  margin: 0 0 48px 0;
+  padding: 12px 0 0 12px;
 }
-#content table td.title,
-#content table td.username {
+#content table td.top {
   padding-top: 1em;
   background-color: rgba(0,0,0,0.1);
 }
-#content table td.title,
-#content table td.portraits,
-#content table td.username { 
-  padding-left: .8em;
-}
+
 #content table tr.last td {
   border-bottom: none;
 }
-#content table td.first {
-  width: 30%;
-}
-#content #accounts {
-  margin: 0;
-}
-#content .account {
-  margin: 0;
-}
+
 #content .account li.nickname,
 #content .account li.service,
 #content .account li.book {

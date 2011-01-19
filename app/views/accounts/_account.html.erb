@@ -1,63 +1,55 @@
-<li class="account">
-  <table>
-    <tr>
-      <td class="first title">Account:</td>
-      <td class="username"><%= account.username %></td>
-    </tr>
-
+   <tr>
+	
 	<% unless account.portraits.empty? %>
-      <tr>
-        <td class="first portraits">
+      
+        <td>
           <ul>
             <%= render :partial => 'portrait', :collection => account.portraits %>
           </ul>
+
     <% unless account.names.empty? %>
-          <td>
-            <ul>
-              <%= render :partial => 'name', :collection => account.names, :locals => { :is_nickname => false } %>
-              <%= render :partial => 'name', :collection => account.nicks, :locals => { :is_nickname => true } unless account.nicks.empty? %>
-            </ul>
-          </td>
-      <% end %>
-        </td>
-      </tr>
+          <ul>
+			<div class='image-wrapper'>
+           <%= render :partial => 'name', :collection => account.names, :locals => { :is_nickname => false } %>
+           <%= render :partial => 'name', :collection => account.nicks, :locals => { :is_nickname => true } unless account.nicks.empty? %>
+          <%= account.username %>
+			</div>
+</ul>
     <% end %>
+       </td>
 
-
+       <td>
     <% unless account.sites.empty? %>
-      <tr>
-        <td class="first title">Sites:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'site', :collection => account.sites %>
-          </ul>
-        </td>
-      </tr>
+	      <ul>
+	       <%= render :partial => 'site', :collection => account.sites %>
+	      </ul>
     <% end %>
-
-    <% unless account.services.empty? %>
-      <tr>
-        <td class="first title">Services:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'service', :collection => account.services %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-
+	   </td> 
+	
+	   <td>
     <% unless account.books.empty? %>
-      <tr>
-        <td class="first title">Books:</td>
-        <td>
-          <ul>
-            <% account.books.each do |book| %>
-              <li class="book"><a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= book.key %></a></li>
-            <% end %>
-          </ul>
-        </td>
+	      <ul>
+	        <% account.books.each do |book| %>
+	        <li class="book"><a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= book.key %></a></li>
+	<% end %>
+	       </ul>
+	      
+	      
+	<% end %>
+	 
+	   </td>
+	   <td>
+	<% unless account.services.empty? %>
+	      <ul>
+	        <%= render :partial => 'service', :collection => account.services %>
+	      </ul>
+	<% end %>
+	    </td>
       </tr>
     <% end %>
-  </table>
-</li>
+
+<tr>
+
+</tr>
+
+
