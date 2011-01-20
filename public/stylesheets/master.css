@@ -213,11 +213,7 @@ table.commiters td.commiter .commiter-wrapper {
 dl {
   margin-bottom: 8px;
 }
-/* line 116, ../../app/stylesheets/master.sass */
-dl.nicknames dt {
-  background: url(/images/nicknames_icon.png) no-repeat;
-}
-/* line 121, ../../app/stylesheets/master.sass */
+/* line 115, ../../app/stylesheets/master.sass */
 dl dt {
   color: #bbbbbb;
   font-size: 14px;
@@ -226,19 +222,23 @@ dl dt {
   padding-left: 18px;
   padding-top: 1px;
 }
-/* line 129, ../../app/stylesheets/master.sass */
+/* line 123, ../../app/stylesheets/master.sass */
 dl dd {
   margin-bottom: 15px;
 }
-/* line 134, ../../app/stylesheets/master.sass */
+/* line 127, ../../app/stylesheets/master.sass */
+dl.nicknames dt {
+  background: url(/images/nicknames_icon.png) no-repeat;
+}
+/* line 132, ../../app/stylesheets/master.sass */
 dl.sites dt {
   background: url(/images/sites_icon.png) no-repeat;
 }
-/* line 137, ../../app/stylesheets/master.sass */
+/* line 135, ../../app/stylesheets/master.sass */
 dl.sites ul {
   margin-left: 10px;
 }
-/* line 140, ../../app/stylesheets/master.sass */
+/* line 138, ../../app/stylesheets/master.sass */
 dl.sites ul li {
   margin-bottom: 5px;
   line-height: 18px;
@@ -246,18 +246,22 @@ dl.sites ul li {
   list-style: circle;
   margin-left: 10px;
 }
+/* line 146, ../../app/stylesheets/master.sass */
+dl.services dt {
+  background: url(/images/services_icon.png) no-repeat;
+}
 
-/* line 147, ../../app/stylesheets/master.sass */
+/* line 149, ../../app/stylesheets/master.sass */
 ul.services {
   margin-top: 5px;
 }
-/* line 150, ../../app/stylesheets/master.sass */
+/* line 152, ../../app/stylesheets/master.sass */
 ul.services li {
   float: left;
   margin-right: 8px;
 }
 
-/* line 154, ../../app/stylesheets/master.sass */
+/* line 156, ../../app/stylesheets/master.sass */
 .ruby-powered {
   text-align: center;
   padding: 80px 0;
