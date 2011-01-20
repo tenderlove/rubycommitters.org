@@ -174,7 +174,7 @@ padding-left: 10%;
 }
 
 #content table td.first { 
-  width: 35%;
+  width: 36%;
   vertical-align: top;
   padding: 0;
   text-align: left;
@@ -199,10 +199,11 @@ padding-left: 10%;
   min-height: 58px;
 }
 .account .username {
-  display: inline;
+  display: block;
+  float: left;
   position: relative;
   background-color: #F1F1F1;
-  top: 2.2em;
+  top: 1em;
   left: 1.1em;
   padding: .2em;
   margin: 0;
