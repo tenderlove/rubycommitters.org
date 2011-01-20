@@ -1,6 +1,12 @@
 <li class="account">
   <table>
     <tr>
+      <th></th>
+      <th>Sites</th>
+      <th>Books</th>
+      <th>Services</th>
+    </tr>
+    <tr>
       <td class="first">
         <h2 class="username">
           <%= account.username %>
@@ -17,28 +23,30 @@
           <%= render :partial => 'name', :collection => account.nicks, :locals => { :is_nickname => true } unless account.nicks.empty? %>
         </ul>
       </td>
-      <td class="last">
+      <td class="sites">
         <% unless account.sites.empty? %>
-          <h3>Sites</h3>
-          <ul class="sites">
+          <ul>
             <%= render :partial => 'site', :collection => account.sites %>
           </ul>
         <% end %>
-        
+      </td>
+      <td class="books">
         <% unless account.books.empty? %>
-          <h3>Books</h3>
           <ul class="books">
             <% account.books.each do |book| %>
               <li class="book"><a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= book.key %></a></li>
             <% end %>
           </ul>
         <% end %>
-        
-        <% unless account.services.empty? %>
-          <ul class="services">
-            <%= render :partial => 'service', :collection => account.services %>
-          </ul>
-        <% end %>
+      </td>
+      <td class="services last">
+        <div class="fake_table">
+          <% unless account.services.empty? %>
+            <ul>
+              <%= render :partial => 'service', :collection => account.services %>
+            </ul>
+          <% end %>
+        </div>
       </td>
     </tr>
   </table>

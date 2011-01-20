@@ -10,11 +10,11 @@ body {
 }
 
 a {
-  color: #490311;
+  color: #5B6966;
   text-decoration: underline;
 }
 a:hover {
-  color: #490311;
+  color: #81B3A8;
   text-decoration: none;
   -webkit-transition: all .2s linear;
      -moz-transition: all .2s linear;
@@ -53,6 +53,11 @@ ol li {
 
 code {
   font-size: 1.25em;
+}
+
+.fake_table {
+  display: table;   /* Allow the centering to work */
+  margin: 0 auto;
 }
 
 
@@ -148,13 +153,28 @@ code {
      -moz-box-shadow: 2px 1px 2px rgba(40,40,40,0.4);
           box-shadow: 2px 1px 2px rgba(40,40,40,0.4);
 }
+#content table th,
 #content table td {
-  vertical-align: top;
   border-top: 1px solid #AAA;
   background-color: rgba(255,255,255,0.82);
+  text-align: center;
 }
+#content table th {
+  color: #992B2B;
+  font-size: 150%;
+  line-height: 1.5em;
+  padding-top: .25em;
+}
+
+#content table td {
+  padding: 24px;
+}
+
 #content table td.first { 
   width: 35%;
+  vertical-align: top;
+  padding: 0;
+  text-align: left;
   -webkit-border-bottom-left-radius: 5px;
       -moz-border-radius-bottomleft: 5px;
           border-bottom-left-radius: 5px;
@@ -173,13 +193,13 @@ code {
 }
 .account .container {
   position: relative;
-  min-height: 104px;
+  min-height: 58px;
 }
 .account .username {
   display: inline;
   position: relative;
   background-color: #F1F1F1;
-  top: 3.5em;
+  top: 2.2em;
   left: 1.1em;
   padding: .2em;
   margin: 0;
@@ -199,30 +219,45 @@ code {
 }
 
 
+.account .names {
+  color: #5B6966;
+}
+.account .sites li,
+.account .books li {
+  margin-left: 0;
+}
+.account .sites li a,
+.account .books li a {
+  display: block;
+  line-height: 1.25em;
+}
+
+.account .services ul {
+  min-width: 160px;
+  margin: 0 auto;
+}
+.account .services li {
+  display: inline;
+}
 #content .account li.nickname,
 #content .account li.service,
 #content .account li.book {
   padding: .25em 0;
   line-height: 1em;
 }
+#content .account li.service {
+  padding: 0;
+  display: inline;
+  margin-right: .35em;
+}
+#content .account li.service a:hover {
+  opacity: .70;
+}
 
-.account .names {
-  color: #5B6966;
-}
-.account h3 {
-  color: #5B6966;
-}
-.account ul {
-
-}
-.account .services li {
-  float: left;
-  margin-left: .3em;
-}
 
 .image-wrapper {
   position: absolute;
-  top: -4.5em;
+  top: -6.6em;
   left: -3em;
   height: 120px;
   z-index: 300;
@@ -275,4 +310,7 @@ code {
   color: #B38181;
   font-size: 135%;
   line-height: 1.5em;
+}
+#footer a:hover {
+  color: #FFDEDE;
 }
