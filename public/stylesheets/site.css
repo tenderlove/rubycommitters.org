@@ -73,7 +73,7 @@ body {
 }
 
 .username {
-  font-family: "MunroSmall";
+  font-family: "MunroSmall", Arial, Helvetica, sans-serif;
   font-size: 2em;
 }
 
