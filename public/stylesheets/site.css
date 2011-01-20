@@ -111,8 +111,11 @@ li.account div.name {
 
 #footer {
   margin-left: 20px;
-  height: 77px;
-  background: url(/images/foxes.png) top left no-repeat;);
-  padding: 20px 0 0 70px;
-  color: #000;
+  height: 72px;
+  background: url(/images/foxes.png) bottom left no-repeat;);
+  padding: 65px 0 0 165px;
+  color: #666;
+  font-size: 0.55em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
