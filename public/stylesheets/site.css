@@ -39,6 +39,10 @@ body {
   line-height: 2em;
 }
 
+.services a {
+  border: 0;
+}
+
 .sites a {
   font-size: 0.6em;
   line-height: 3.3em;
@@ -90,6 +94,8 @@ li.account {
   padding: 10px;
   list-style: none;
   box-shadow: -5px 5px 0px #555;
+  -webkit-box-shadow: -5px 5px 0px #555;
+  -moz-box-shadow: -5px 5px 0px #555;
 }
 
 li.account div.picture {
