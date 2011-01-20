@@ -106,6 +106,7 @@ body
     width: 960px
     tr.person
       position: relative
+      float: left
       display: block
       background: url("/images/person-container.png") no-repeat
       td.list
@@ -123,13 +124,12 @@ body
           position: absolute
           top: -14px
           left: 15px
+          padding-left: 14px
           width: 108px
           height: 99px
-          text-align: center
           background: url("/images/portrait-holder.png") no-repeat
           .portraits-inner-holder
             margin-top: 10px
-            padding-left: 14px
             ul.portrait
               width: 80px
               height: 80px
@@ -155,37 +155,38 @@ body
               width: 180px
               white-space: nowrap
               overflow: hidden
-              line-height: 17px
+              line-height: 18px
               li
                 font-size: 13px
                 padding-top: 5px
-            ul.social
-              margin-bottom: -3px
-              li
-                float: left
-                margin-right: 5px
-                a
-                  display: block
-                  width: 16px
-                  height: 16px
-                  text-indent: -9999px
-                  border: none
-              li.facebook a
-                background: url("/images/social-icons/facebook.png") no-repeat
-              li.friendfeed a
-                background: url("/images/social-icons/friendfeed.png") no-repeat
-              li.github a
-                background: url("/images/social-icons/github.png") no-repeat
-              li.iddy a
-                background: url("/images/social-icons/iddy.png") no-repeat
-              li.mixi a
-                background: url("/images/social-icons/mixi.png") no-repeat
-              li.twitter a
-                background: url("/images/social-icons/twitter.png") no-repeat
+              &.social
+                margin-bottom: -3px
+                li
+                  float: left
+                  margin-right: 5px
+                  a
+                    display: block
+                    width: 16px
+                    height: 16px
+                    text-indent: -9999px
+                    border: none
+                li.facebook a
+                  background: url("/images/social-icons/facebook.png") no-repeat
+                li.friendfeed a
+                  background: url("/images/social-icons/friendfeed.png") no-repeat
+                li.github a
+                  background: url("/images/social-icons/github.png") no-repeat
+                li.iddy a
+                  background: url("/images/social-icons/iddy.png") no-repeat
+                li.mixi a
+                  background: url("/images/social-icons/mixi.png") no-repeat
+                li.twitter a
+                  background: url("/images/social-icons/twitter.png") no-repeat
       td.bios
         width: 520px
         font-size: 15px
         ul.bio-langs
+          float: left
           li
             position: absolute
             right: -5px
@@ -198,20 +199,22 @@ body
               font-family: "Helvetica Neue", Helvetica
               font-size: 9px
               border: none
-          li.eng
-            top: 5px
-            a
-              background: url("/images/button-brown.png") no-repeat
-          li.jap
-            top: 22px
-            a
-              background: url("/images/button-red.png") no-repeat
-        ul.bio-text
-          li
-            line-height: 16px
-            margin-right: 20px
+            &.eng
+              top: 5px
+              a
+                background: url("/images/button-brown.png") no-repeat
             &.jap
-              display: none
+              top: 22px
+              a
+                background: url("/images/button-red.png") no-repeat
+        ul.bio-text
+          margin-right: 20px
+          line-height: 16px
+          li.jap
+            display: none
+
+*+html td.meta table
+  float: left
 
 #footer
   text-align: center
@@ -271,26 +274,9 @@ body
  *  Fork me on Github :-)
  *------------------------------
 
-#ribbon
-  background-color: $primary-colour
-  overflow: hidden
+a#ribbon
   position: fixed
-  left: -3em
-  top: 2.5em
-  -moz-transform: rotate(-45deg)
-  -webkit-transform: rotate(-45deg)
-  transform: rotate(-45deg)
-  -moz-box-shadow: 0 0 1em $shadow-colour
-  -webkit-box-shadow: 0 0 1em $shadow-colour
-  box-shadow: 0 0 1em $shadow-colour
   z-index: 999
-  a
-    border: 1px solid #faa
-    color: #fff
-    display: block
-    font: bold 81.25% 'Helvetiva Neue', Helvetica, Arial, sans-serif
-    margin: 0.05em 0 0.075em 0
-    padding: 0.5em 3.5em
-    text-align: center
-    text-decoration: none
-    text-shadow: 0 0 0.5em #444
+  border: none
+
+

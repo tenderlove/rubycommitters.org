@@ -5,10 +5,10 @@ html
     link rel="canonical" href="http://rubycommitters.org/"
     == favicon_tag 'favicon.png'
     == stylesheet_link_tag :base
-    == javascript_include_tag :jquery, :'jquery.nivo.slider.pack', :'jquery.jparallax.min.js', :application
+    == javascript_include_tag :jquery, :'jquery.nivo.slider.pack', :'jquery.jparallax.pack', :application
 
   body
-    #ribbon== link_to 'Fork me on GitHub', 'https://github.com/fredwu/rubycommitters.org'
+    == link_to image_tag('ribbon-github.png'), 'https://github.com/fredwu/rubycommitters.org', :id => 'ribbon'
     #wrapper
       #header-wrapper
         #inner-wrapper

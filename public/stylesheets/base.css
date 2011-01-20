@@ -143,6 +143,7 @@ body {
     width: 960px; }
     #container table#list tr.person {
       position: relative;
+      float: left;
       display: block;
       background: url("/images/person-container.png") no-repeat; }
       #container table#list tr.person td.list {
@@ -160,13 +161,12 @@ body {
           position: absolute;
           top: -14px;
           left: 15px;
+          padding-left: 14px;
           width: 108px;
           height: 99px;
-          text-align: center;
           background: url("/images/portrait-holder.png") no-repeat; }
           #container table#list tr.person td.portraits .portraits-holder .portraits-inner-holder {
-            margin-top: 10px;
-            padding-left: 14px; }
+            margin-top: 10px; }
             #container table#list tr.person td.portraits .portraits-holder .portraits-inner-holder ul.portrait {
               width: 80px;
               height: 80px; }
@@ -189,61 +189,66 @@ body {
           width: 180px;
           white-space: nowrap;
           overflow: hidden;
-          line-height: 17px; }
+          line-height: 18px; }
           #container table#list tr.person td.meta table td ul li {
             font-size: 13px;
             padding-top: 5px; }
-        #container table#list tr.person td.meta table td ul.social {
-          margin-bottom: -3px; }
-          #container table#list tr.person td.meta table td ul.social li {
-            float: left;
-            margin-right: 5px; }
-            #container table#list tr.person td.meta table td ul.social li a {
-              display: block;
-              width: 16px;
-              height: 16px;
-              text-indent: -9999px;
-              border: none; }
-          #container table#list tr.person td.meta table td ul.social li.facebook a {
-            background: url("/images/social-icons/facebook.png") no-repeat; }
-          #container table#list tr.person td.meta table td ul.social li.friendfeed a {
-            background: url("/images/social-icons/friendfeed.png") no-repeat; }
-          #container table#list tr.person td.meta table td ul.social li.github a {
-            background: url("/images/social-icons/github.png") no-repeat; }
-          #container table#list tr.person td.meta table td ul.social li.iddy a {
-            background: url("/images/social-icons/iddy.png") no-repeat; }
-          #container table#list tr.person td.meta table td ul.social li.mixi a {
-            background: url("/images/social-icons/mixi.png") no-repeat; }
-          #container table#list tr.person td.meta table td ul.social li.twitter a {
-            background: url("/images/social-icons/twitter.png") no-repeat; }
+          #container table#list tr.person td.meta table td ul.social {
+            margin-bottom: -3px; }
+            #container table#list tr.person td.meta table td ul.social li {
+              float: left;
+              margin-right: 5px; }
+              #container table#list tr.person td.meta table td ul.social li a {
+                display: block;
+                width: 16px;
+                height: 18px;
+                text-indent: -9999px;
+                border: none; }
+            #container table#list tr.person td.meta table td ul.social li.facebook a {
+              background: url("/images/social-icons/facebook.png") no-repeat; }
+            #container table#list tr.person td.meta table td ul.social li.friendfeed a {
+              background: url("/images/social-icons/friendfeed.png") no-repeat; }
+            #container table#list tr.person td.meta table td ul.social li.github a {
+              background: url("/images/social-icons/github.png") no-repeat; }
+            #container table#list tr.person td.meta table td ul.social li.iddy a {
+              background: url("/images/social-icons/iddy.png") no-repeat; }
+            #container table#list tr.person td.meta table td ul.social li.mixi a {
+              background: url("/images/social-icons/mixi.png") no-repeat; }
+            #container table#list tr.person td.meta table td ul.social li.twitter a {
+              background: url("/images/social-icons/twitter.png") no-repeat; }
       #container table#list tr.person td.bios {
         width: 520px;
         font-size: 15px; }
-        #container table#list tr.person td.bios ul.bio-langs li {
-          position: absolute;
-          right: -5px; }
-          #container table#list tr.person td.bios ul.bio-langs li a {
-            display: block;
-            width: 26px;
-            height: 12px;
-            padding: 3px 0 0 4px;
-            color: white;
-            font-family: "Helvetica Neue", Helvetica;
-            font-size: 9px;
-            border: none; }
-        #container table#list tr.person td.bios ul.bio-langs li.eng {
-          top: 5px; }
-          #container table#list tr.person td.bios ul.bio-langs li.eng a {
-            background: url("/images/button-brown.png") no-repeat; }
-        #container table#list tr.person td.bios ul.bio-langs li.jap {
-          top: 22px; }
-          #container table#list tr.person td.bios ul.bio-langs li.jap a {
-            background: url("/images/button-red.png") no-repeat; }
-        #container table#list tr.person td.bios ul.bio-text li {
-          line-height: 16px;
-          margin-right: 20px; }
+        #container table#list tr.person td.bios ul.bio-langs {
+          float: left; }
+          #container table#list tr.person td.bios ul.bio-langs li {
+            position: absolute;
+            right: -5px; }
+            #container table#list tr.person td.bios ul.bio-langs li a {
+              display: block;
+              width: 26px;
+              height: 12px;
+              padding: 3px 0 0 4px;
+              color: white;
+              font-family: "Helvetica Neue", Helvetica;
+              font-size: 9px;
+              border: none; }
+            #container table#list tr.person td.bios ul.bio-langs li.eng {
+              top: 5px; }
+              #container table#list tr.person td.bios ul.bio-langs li.eng a {
+                background: url("/images/button-brown.png") no-repeat; }
+            #container table#list tr.person td.bios ul.bio-langs li.jap {
+              top: 22px; }
+              #container table#list tr.person td.bios ul.bio-langs li.jap a {
+                background: url("/images/button-red.png") no-repeat; }
+        #container table#list tr.person td.bios ul.bio-text {
+          margin-right: 20px;
+          line-height: 16px; }
           #container table#list tr.person td.bios ul.bio-text li.jap {
             display: none; }
+
+* + html td.meta table {
+  float: left; }
 
 #footer {
   text-align: center;
@@ -301,26 +306,7 @@ body {
 /*------------------------------
  *  Fork me on Github :-)
  *------------------------------ */
-#ribbon {
-  background-color: #b01000;
-  overflow: hidden;
+a#ribbon {
   position: fixed;
-  left: -3em;
-  top: 2.5em;
-  -moz-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -moz-box-shadow: 0 0 1em #ece0d0;
-  -webkit-box-shadow: 0 0 1em #ece0d0;
-  box-shadow: 0 0 1em #ece0d0;
-  z-index: 999; }
-  #ribbon a {
-    border: 1px solid #ffaaaa;
-    color: white;
-    display: block;
-    font: bold 81.25% "Helvetiva Neue", Helvetica, Arial, sans-serif;
-    margin: 0.05em 0 0.075em 0;
-    padding: 0.5em 3.5em;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 0 0 0.5em #444444; }
+  z-index: 999;
+  border: none; }
