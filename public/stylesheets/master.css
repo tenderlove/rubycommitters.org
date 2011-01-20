@@ -212,42 +212,43 @@ table.commiters td.commiter .commiter-wrapper {
 dl {
   margin-bottom: 8px;
 }
-/* line 114, ../../app/stylesheets/master.sass */
-dl.nicknames dt, dl.nicknames dd {
-  display: inline-block;
-}
 /* line 120, ../../app/stylesheets/master.sass */
 dl dt {
   color: #aaaaaa;
   font-size: 15px;
   font-family: Cuprum, Sans;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 /* line 126, ../../app/stylesheets/master.sass */
+dl dd {
+  margin-bottom: 15px;
+}
+/* line 129, ../../app/stylesheets/master.sass */
 dl ul {
   margin-left: 10px;
-  padding: 4px 0;
 }
-/* line 130, ../../app/stylesheets/master.sass */
+/* line 132, ../../app/stylesheets/master.sass */
 dl ul li {
   margin-bottom: 5px;
+  line-height: 18px;
+  font-size: 14px;
   list-style: circle;
   margin-left: 10px;
 }
 
-/* line 135, ../../app/stylesheets/master.sass */
+/* line 139, ../../app/stylesheets/master.sass */
 ul.services {
   margin-bottom: 15px;
   border-top: 1px dotted #fbd0dc;
   padding-top: 10px;
 }
-/* line 140, ../../app/stylesheets/master.sass */
+/* line 144, ../../app/stylesheets/master.sass */
 ul.services li {
   float: left;
   margin-right: 8px;
 }
 
-/* line 144, ../../app/stylesheets/master.sass */
+/* line 148, ../../app/stylesheets/master.sass */
 .ruby-powered {
   text-align: center;
   padding: 80px 0;
