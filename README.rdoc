@@ -1,6 +1,7 @@
 = rubycommitters.org
 
 Contest entry for https://github.com/tenderlove/rubycommitters.org
+Preview at http://ruby-comms.heroku.com/
 
     $ bundle install
     $ rake import
