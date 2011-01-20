@@ -1,22 +1,23 @@
 module AccountsHelper
   def link_to_service name, service
-    case service.name
+    url = case service.name
     when 'twitter'
-      link_to name, 'http://twitter.com/' + service.key
+      'http://twitter.com/'
     when 'friendfeed'
-      link_to name, 'http://friendfeed.com/' + service.key
+      'http://friendfeed.com/'
     when 'mixi'
-      link_to name, 'http://mixi.jp/show_friend.pl?id=' + service.key
+      'http://mixi.jp/show_friend.pl?id='
     when 'github'
-      link_to name, 'http://github.com/' + service.key
+      'http://github.com/'
     when 'facebook'
       if service.key =~ /^\s*\d+$/
-        link_to name, 'http://www.facebook.com/profile.php?id=' + service.key
+        'http://www.facebook.com/profile.php?id='
       else
-        link_to name, 'http://www.facebook.com/' + service.key
+       'http://www.facebook.com/'
       end
     when 'iddy'
-      link_to name, 'http://iddy.jp/profile/' + service.key
+      'http://iddy.jp/profile/'
     end
+    link_to name, url + service.key, :class => name
   end
 end

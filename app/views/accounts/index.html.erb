@@ -1,5 +1,13 @@
-<h1>Ruby Committers</h1>
-<%= link_to 'fork me on github', 'http://github.com/tenderlove/rubycommitters.org' %>
-<ul>
-<%= render :partial => 'account', :collection => @accounts %>
-</ul>
+<div id="header">
+  <h1><span>Ruby</span>Committers</h1>
+</div>
+
+<div id="team">
+  <div id="team_header">
+   <h2>Team</h2>
+  </div>
+
+  <%= render :partial => 'account', :collection => @accounts %>
+  
+  <div id="credits"><p>Design by <a href="http://maximeblaise.fr/" title="Maxime Blaise - Webdesigner">Maxime Blaise</a></p></div>
+</div>

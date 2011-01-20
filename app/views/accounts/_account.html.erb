@@ -1,76 +1,49 @@
-<li>
-  <table>
-    <tr>
-      <td>Account:</td>
-      <td><%= account.username %></td>
-    </tr>
-
+<div class="member">
+  <dl>
+    <dt><%= account.username %></dt>
     <% unless account.names.empty? %>
-      <tr>
-        <td>Names:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.names %>
-          </ul>
-        </td>
-      </tr>
+      <dd>
+        <strong>Names: </strong>
+        <%= account.names.map(&:value).join(" &bull; ").html_safe %>
+      </dd>
     <% end %>
-
     <% unless account.nicks.empty? %>
-      <tr>
-        <td>Nicknames:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.nicks %>
-          </ul>
-        </td>
-      </tr>
+      <dd>
+        <strong>Nickname: </strong>
+        <%= account.nicks.map(&:value).join(" &bull; ").html_safe %>
+      </dd>
     <% end %>
-
     <% unless account.sites.empty? %>
-      <tr>
-        <td>Sites:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'site', :collection => account.sites %>
-          </ul>
-        </td>
-      </tr>
+      <dd>
+        <strong>Sites: </strong>
+        <%= account.sites.map do |site| %>
+          <% link_to site.title, site.url %>
+        <% end.join(' &bull; ').html_safe %>
+      </dd>
     <% end %>
-
-    <% unless account.services.empty? %>
-      <tr>
-        <td>Services:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'service', :collection => account.services %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.portraits.empty? %>
-      <tr>
-        <td>Portraits:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'portrait', :collection => account.portraits %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
     <% unless account.books.empty? %>
-      <tr>
-        <td>Books:</td>
-        <td>
-          <ul>
-            <% account.books.each do |book| %>
-              <li><a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= book.key %></a></li>
-            <% end %>
-          </ul>
-        </td>
-      </tr>
+      <dd>
+        <strong>Books: </strong>
+        <%= account.books.map do |book| %>
+          <% link_to book.key, 'http://www.amazon.' + (book.isbn.match(/^4/) ? "co.jp":"com") + '/dp/' + book.isbn %>
+        <% end.join(" &bull; ").html_safe %>
+      </dd>
     <% end %>
-  </table>
-</li>
+    <% unless account.services.empty? %>
+      <dd class="services">
+        <%= account.services.map do |service| %>
+          <% link_to_service service.name, service %>
+        <% end.join(' ').html_safe %>
+      </dd>
+    <% end %>
+  </dl>
+  <% if account.portraits.empty? %>
+    <%= image_tag "default.jpg" %>
+  <% else %>
+    <div <%= "class='slideshow'" if account.portraits.count > 1 %> >
+      <% account.portraits.each do |portrait| %>
+        <%= image_tag portrait.url %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
