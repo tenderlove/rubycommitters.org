@@ -1,76 +1,51 @@
-<li>
-  <table>
-    <tr>
-      <td>Account:</td>
-      <td><%= account.username %></td>
-    </tr>
+<li class="account">
+  <% unless account.portraits.empty? %>
+    <%= render :partial => 'portrait', :collection => account.portraits %>
+  <% end %>
+  
+  <h3><%= account.username %></h3>
+  <% unless account.names.empty? %>
+    <ul class="full-names names">
+      <%= render :partial => 'name', :collection => account.names, :locals => { :last_count => account.names.size } %>
+    </ul>
+  <% end %>
 
-    <% unless account.names.empty? %>
-      <tr>
-        <td>Names:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.names %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
+  <% unless account.nicks.empty? %>
+    <span class="aka">Nicknames:</span>
+    <ul class="nick-names names">
+      <%= render :partial => 'name', :collection => account.nicks, :locals => { :last_count => account.nicks.size } %>
+    </ul>
+  <% end %>
+  
+  <p class="bio">Placeholder for bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut tellus at sem tincidunt commodo. Duis volutpat turpis cursus velit facilisis iaculis. Donec sed orci eros. In ut leo sapien. Quisque mattis ultrices eros, sed tempus massa euismod nec. Vivamus sollicitudin, lorem ac vehicula ornare, enim lacus sagittis lorem, quis posuere massa augue quis velit. </p>
 
-    <% unless account.nicks.empty? %>
-      <tr>
-        <td>Nicknames:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.nicks %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
+  <% unless account.sites.empty? %>
+    <div class="sites">
+      <h4>Sites:</h4>
+      <ul>
+        <%= render :partial => 'site', :collection => account.sites %>
+      </ul>
+    </div>
+  <% end %>
 
-    <% unless account.sites.empty? %>
-      <tr>
-        <td>Sites:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'site', :collection => account.sites %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.services.empty? %>
-      <tr>
-        <td>Services:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'service', :collection => account.services %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.portraits.empty? %>
-      <tr>
-        <td>Portraits:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'portrait', :collection => account.portraits %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.books.empty? %>
-      <tr>
-        <td>Books:</td>
-        <td>
-          <ul>
-            <% account.books.each do |book| %>
-              <li><a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= book.key %></a></li>
-            <% end %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-  </table>
+  <% unless account.books.empty? %>
+    <div class="books">
+      <h4>Books:</h4>
+      <ul>
+        <% account.books.each do |book| %>
+          <li><a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= book.key %></a></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <% unless account.services.empty? %>
+    <div class="services">
+      <span class="find-on">Find <%= account.username %> on:</span>
+      <ul>
+        <%= render :partial => 'service', :collection => account.services %>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  <% end %>
 </li>

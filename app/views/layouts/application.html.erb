@@ -8,8 +8,33 @@
   <%= analytics_tag %>
 </head>
 <body>
+  <div id="page-container">
+    <div id="page-container-content">
+      <div id="page">
+        <div id="page-header">
+          <h1>Ruby Committers</h1>
+          <h2>
+            Meet the Ruby-Core team - The generous folk that <br /> donate their 
+            time and energy to improve the <a href="http://ruby-lang.org"> <br />
+            Ruby Programming Language</a>.
+          </h2>
+        </div>
 
-<%= yield %>
+        <div id="page-content">
+          <%= yield %>
+        </div>
 
+        <div id="page-footer">
+          <p>
+            RubyCommitters.com
+            <span class="seperator"> | </span>
+            Design by: <a href="http://twitter.com/fixie">@fixie</a>
+            <span class="seperator"> | </span>
+            <%= link_to 'Fork me on Github', 'http://github.com/tenderlove/rubycommitters.org' %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

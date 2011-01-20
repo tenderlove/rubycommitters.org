@@ -1,7 +1,205 @@
-.image-wrapper {
-  height: 100px;
+body {
+  background: #213449 url(/images/background-body.png);
+  color: #434343;
+  text-shadow: 1px 1px 1px #FFF;
+  text-align: center;
+  font-size: 75%;
+  font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
 }
 
-.image-wrapper img {
+a:link, a:hover {
+  color: #C61A1A;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #800303; 
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  font-family: Georgia,Palatino,"Times New Roman",Times,serif;
+  font-weight: normal;
+}
+
+#page-container {
+  width: 785px;
+  background: url(/images/background-page-container.png) repeat-y 0 0;
+  margin: auto;
+}
+
+#page-container-content {
+  width: 698px;
+  margin: auto;
+  background: url(/images/background-page-container-content.png) repeat-x top center;
+}
+
+#page {
+  background: url(/images/background-page.png) no-repeat top center;
+  padding: 40px 85px;
+}
+
+#page-header h1 {
+  margin: 0;
+  font-size: 300%;
+  text-indent: -5000px;
+  overflow: hidden;
+  height: 100px;
+  background: url(/images/branding.png) no-repeat top center;
+}
+
+#page-header h2 {
+  width: 325px;
+  margin: 15px auto 0; 
+  font-size: 116%;
+  line-height: 1.5em;
+}
+
+#page-header h2 a:link, #page-header h2 a:visited, #page-header h2 a:hover {
+  color: #434343;
+  text-decoration: underline;
+}
+
+#page-header h2 a:hover {
+  color: #C61A1A;
+  text-decoration: none;
+}
+
+#page-header {
+  padding-bottom: 55px;
+  border-bottom: 1px solid #E6E8DF;
+}
+
+#page-content {
+  text-align: left;
+}
+
+ul#accounts, #accounts ul, #accounts li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#accounts li.account {
+  background: url(/images/background-account.png) no-repeat bottom left;
+  border-bottom: 1px solid #E6E8DF;
+  border-top: 1px solid #FFF;
+  padding: 25px 0 30px;
+}
+
+#accounts li.account h3 {
+  font-size: 182%;
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+#accounts li.account ul.names {
+  margin-bottom: 3px;
+}
+
+#accounts li.account p.bio {
+  margin: 15px 0;
+  clear: left;
+}
+
+#accounts li.account ul.nick-names {
+  display: inline;
+}
+
+#accounts li.account ul.names li {
+  display: inline;
+}
+
+#accounts p {
+  line-height: 1.5em;
+}
+
+#accounts h4 {
+  margin-top: 15px;
+  margin-bottom: 3px;
+}
+
+#accounts .sites li, #accounts .books li {
+  margin-bottom: 3px;
+}
+
+#accounts .services {
+  margin-top: 20px;
+  font-size: 93%;
+}
+
+#accounts .services span {
+  float: left; 
+  margin-right: 5px;
+}
+
+#accounts .services li a {
+  float: left;
+  margin-right: 5px;
+  background: url(/images/services-sprite.png) no-repeat;
+  height: 20px;
+  width: 20px;
+  text-indent: -5000px;
+  overflow: hidden;
+}
+
+#accounts .services li.facebook a {
+  background-position: 0 0;
+}
+
+#accounts .services li.friendfeed a {
+  background-position: -27px 0;  
+}
+
+#accounts .services li.github a {
+  background-position: -53px 0;  
+}
+
+#accounts .services li.iddy a {
+  background-position: -80px 0;   
+}
+
+#accounts .services li.mixi a {
+  background-position: -108px 0; 
+}
+
+#accounts .services li.twitter a {
+  background-position: -135px 0;
+}
+
+#accounts .image-wrapper {
+  height: 75px;
+  float: left;
+  margin-right: 10px;
+}
+
+#accounts .image-wrapper img {
   height: 100%;
+}
+
+#page-footer {
+  border-top: 1px solid #FFF;
+  font-size: 85%;
+  padding-top: 20px;
+}
+
+#page-footer a:link, #page-footer a:visited {
+  text-decoration: underline;
+}
+
+.seperator {
+  color: #CED1BE;
+}
+
+.aka {
+  font-size: 73%;
+  text-transform: uppercase;
+}
+
+.clear {
+  clear: both;
 }
