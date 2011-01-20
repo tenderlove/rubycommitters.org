@@ -51,4 +51,5 @@ h1:first-child, h2:first-child { margin-top: 0; }
 .meta, .meta a {color: #333;text-shadow:1px 1px #FFF;}
 .meta a {color: #ab0d00;text-decoration:none;}
 .meta a:hover {color: #ab0d00;text-decoration:underline;}
-.footer .credits .ejc.words a	{color: #111;text-shadow: 1px 1px #555;text-decoration: none;font-weight:550;font-size:1.1em; }
+.footer .credits a	{color: #111;text-shadow: 1px 1px #555;text-decoration: none;font-weight:550;font-size:1.1em; }
+.footer .credits .wallpaper a {font-size: 10px;}
