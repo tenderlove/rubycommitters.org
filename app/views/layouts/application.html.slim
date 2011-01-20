@@ -39,4 +39,5 @@ html
             #crowd-footer
             #crowd-footer2
         #crowd-footer-strip
-    == partial 'layouts/google_analytics' if Padrino.env == :production
+    - if Padrino.env == :production
+      == partial 'layouts/google_analytics'
