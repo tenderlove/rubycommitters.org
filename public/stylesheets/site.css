@@ -8,7 +8,7 @@ body {
 }
 
 #wrap {
-	background:url(../images/ruby.png) no-repeat 120px right;
+	background:url(../images/ruby.png) no-repeat right 120px;
 	width:770px;
 	padding-left:30px;
 	margin:0 auto;
