@@ -201,7 +201,7 @@ body {
               #container table#list tr.person td.meta table td ul.social li a {
                 display: block;
                 width: 16px;
-                height: 18px;
+                height: 16px;
                 text-indent: -9999px;
                 border: none; }
             #container table#list tr.person td.meta table td ul.social li.facebook a {
@@ -246,9 +246,6 @@ body {
           line-height: 16px; }
           #container table#list tr.person td.bios ul.bio-text li.jap {
             display: none; }
-
-* + html td.meta table {
-  float: left; }
 
 #footer {
   text-align: center;
@@ -310,3 +307,11 @@ a#ribbon {
   position: fixed;
   z-index: 999;
   border: none; }
+
+/*------------------------------
+ *  IE Hacks
+ *------------------------------ */
+* + html td.meta table {
+  float: left; }
+  * + html td.meta table ul.social li a {
+    padding-bottom: 3px; }

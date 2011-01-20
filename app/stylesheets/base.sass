@@ -213,9 +213,6 @@ body
           li.jap
             display: none
 
-*+html td.meta table
-  float: left
-
 #footer
   text-align: center
   background: url("/images/bg-footer-gradient.jpg") bottom repeat-x
@@ -279,4 +276,12 @@ a#ribbon
   z-index: 999
   border: none
 
+/*------------------------------
+ *  IE Hacks
+ *------------------------------
+
+*+html td.meta table
+  float: left
+  ul.social li a
+    padding-bottom: 3px
 
