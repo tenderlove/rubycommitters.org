@@ -1,9 +1,12 @@
 @import "compass/reset"
 @import "compass/css3"
 
+$base = #6B5153
+
 body
   background: url(/images/ruby_pattern.png)
   font-family: Sans
+  color: $base
 
 h1, h2, h3
   font-family: Cuprum, Sans
@@ -37,12 +40,21 @@ h2
   color: #7f3129
 
 h3
-  color: #8f7375
+  color: $base
   font-size: 16px
   line-height: 20px
+  font-family: Sans
+
+  span
+    font-size: 15px
+    display: block
+    color: #aaa
+    font-family: Cuprum, Sans
+    margin-bottom: 3px
 
 a
-  color: #54272a
+  color: $base
+
   &:hover
     color: #dda9ad
     text-decoration: none
@@ -101,7 +113,9 @@ dl
 
 
   dt
-    color: #A3A099
+    color: #aaa
+    font-size: 15px
+    font-family: Cuprum, Sans
     margin-bottom: 2px
 
   ul

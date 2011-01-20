@@ -58,23 +58,24 @@ a img {
   border: none;
 }
 
-/* line 4, ../../app/stylesheets/master.sass */
+/* line 6, ../../app/stylesheets/master.sass */
 body {
   background: url(/images/ruby_pattern.png);
   font-family: Sans;
+  color: #6b5153;
 }
 
-/* line 8, ../../app/stylesheets/master.sass */
+/* line 11, ../../app/stylesheets/master.sass */
 h1, h2, h3 {
   font-family: Cuprum, Sans;
 }
 
-/* line 11, ../../app/stylesheets/master.sass */
+/* line 14, ../../app/stylesheets/master.sass */
 h1, h2 {
   font-weight: bold;
 }
 
-/* line 14, ../../app/stylesheets/master.sass */
+/* line 17, ../../app/stylesheets/master.sass */
 h1 {
   font-size: 60px;
   text-align: center;
@@ -83,58 +84,67 @@ h1 {
   margin-left: -90px;
   text-shadow: #3e0f10 -1px 1px 1px;
 }
-/* line 22, ../../app/stylesheets/master.sass */
+/* line 25, ../../app/stylesheets/master.sass */
 h1 a {
   text-decoration: none;
   color: #aa0000;
 }
-/* line 26, ../../app/stylesheets/master.sass */
+/* line 29, ../../app/stylesheets/master.sass */
 h1 a img {
   opacity: 0;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 }
-/* line 29, ../../app/stylesheets/master.sass */
+/* line 32, ../../app/stylesheets/master.sass */
 h1 a:hover {
   color: #880000;
 }
-/* line 31, ../../app/stylesheets/master.sass */
+/* line 34, ../../app/stylesheets/master.sass */
 h1 a:hover img {
   opacity: 1;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
-/* line 34, ../../app/stylesheets/master.sass */
+/* line 37, ../../app/stylesheets/master.sass */
 h2 {
   font-size: 30px;
   padding-bottom: 3px;
   color: #7f3129;
 }
 
-/* line 39, ../../app/stylesheets/master.sass */
+/* line 42, ../../app/stylesheets/master.sass */
 h3 {
-  color: #8f7375;
+  color: #6b5153;
   font-size: 16px;
   line-height: 20px;
+  font-family: Sans;
+}
+/* line 48, ../../app/stylesheets/master.sass */
+h3 span {
+  font-size: 15px;
+  display: block;
+  color: #aaaaaa;
+  font-family: Cuprum, Sans;
+  margin-bottom: 3px;
 }
 
-/* line 44, ../../app/stylesheets/master.sass */
+/* line 55, ../../app/stylesheets/master.sass */
 a {
-  color: #54272a;
+  color: #6b5153;
 }
-/* line 46, ../../app/stylesheets/master.sass */
+/* line 58, ../../app/stylesheets/master.sass */
 a:hover {
   color: #dda9ad;
   text-decoration: none;
 }
 
-/* line 50, ../../app/stylesheets/master.sass */
+/* line 62, ../../app/stylesheets/master.sass */
 table.commiters {
   width: 100%;
   border-spacing: 20px;
 }
-/* line 54, ../../app/stylesheets/master.sass */
+/* line 66, ../../app/stylesheets/master.sass */
 table.commiters td.commiter {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -147,37 +157,37 @@ table.commiters td.commiter {
   border: 3px solid #fbd0dc;
   background: #fefefe;
 }
-/* line 61, ../../app/stylesheets/master.sass */
+/* line 73, ../../app/stylesheets/master.sass */
 table.commiters td.commiter .commiter-wrapper {
   padding: 15px 20px;
 }
 
-/* line 64, ../../app/stylesheets/master.sass */
+/* line 76, ../../app/stylesheets/master.sass */
 .portraits {
   float: left;
   margin-right: 30px;
   width: 1px;
   position: relative;
 }
-/* line 70, ../../app/stylesheets/master.sass */
+/* line 82, ../../app/stylesheets/master.sass */
 .portraits li {
   top: 0;
   position: absolute;
 }
-/* line 74, ../../app/stylesheets/master.sass */
+/* line 86, ../../app/stylesheets/master.sass */
 .portraits .image-wrapper {
   opacity: 0;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   width: 70px;
 }
-/* line 78, ../../app/stylesheets/master.sass */
+/* line 90, ../../app/stylesheets/master.sass */
 .portraits .image-wrapper:first-child {
   opacity: 1;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
-/* line 81, ../../app/stylesheets/master.sass */
+/* line 93, ../../app/stylesheets/master.sass */
 .portraits img {
   width: 100%;
   padding: 5px;
@@ -188,52 +198,54 @@ table.commiters td.commiter .commiter-wrapper {
   box-shadow: #c2c2c2 0 0 5px 0;
 }
 
-/* line 87, ../../app/stylesheets/master.sass */
+/* line 99, ../../app/stylesheets/master.sass */
 .commiter-data {
   padding-left: 95px;
 }
 
-/* line 90, ../../app/stylesheets/master.sass */
+/* line 102, ../../app/stylesheets/master.sass */
 .commiter-data-extra {
   margin-top: 15px;
 }
 
-/* line 93, ../../app/stylesheets/master.sass */
+/* line 105, ../../app/stylesheets/master.sass */
 dl {
   margin-bottom: 8px;
 }
-/* line 97, ../../app/stylesheets/master.sass */
+/* line 109, ../../app/stylesheets/master.sass */
 dl.nicknames dt, dl.nicknames dd {
   display: inline-block;
 }
-/* line 103, ../../app/stylesheets/master.sass */
+/* line 115, ../../app/stylesheets/master.sass */
 dl dt {
-  color: #a3a099;
+  color: #aaaaaa;
+  font-size: 15px;
+  font-family: Cuprum, Sans;
   margin-bottom: 2px;
 }
-/* line 107, ../../app/stylesheets/master.sass */
+/* line 121, ../../app/stylesheets/master.sass */
 dl ul {
   margin-left: 10px;
   padding: 4px 0;
 }
-/* line 111, ../../app/stylesheets/master.sass */
+/* line 125, ../../app/stylesheets/master.sass */
 dl ul li {
   margin-bottom: 5px;
 }
 
-/* line 114, ../../app/stylesheets/master.sass */
+/* line 128, ../../app/stylesheets/master.sass */
 ul.services {
   margin-bottom: 15px;
   border-top: 1px dotted #fbd0dc;
   padding-top: 10px;
 }
-/* line 119, ../../app/stylesheets/master.sass */
+/* line 133, ../../app/stylesheets/master.sass */
 ul.services li {
   float: left;
   margin-right: 8px;
 }
 
-/* line 123, ../../app/stylesheets/master.sass */
+/* line 137, ../../app/stylesheets/master.sass */
 .ruby-powered {
   text-align: center;
   padding: 80px 0;

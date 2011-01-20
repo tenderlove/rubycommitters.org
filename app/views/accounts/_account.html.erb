@@ -15,7 +15,8 @@
 
       <% unless account.names.empty? %>
         <h3>
-          Other accounts: <%= account.names.map(&:value).join(', ') %>
+          <span>Other accounts:</span>
+          <%= account.names.map(&:value).join(', ') %>
         </h3>
       <% end %>
 
