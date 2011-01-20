@@ -34,18 +34,14 @@ body {
   text-indent: -10000px;
 }
 
-.sites a {
-  color: #EEE;
-  font-size: 0.6em;
-  line-height: 3.3em;
-}
-
 .services {
   padding-top: 5px;
   line-height: 2em;
 }
 
 .sites a {
+  font-size: 0.6em;
+  line-height: 3.3em;
   background-color: #EEE;
   color: #000;
   padding: 3px 6px;
@@ -57,6 +53,11 @@ body {
   font-weight: bold;
 }
 
+.sites a:hover {
+  color: #FFF;
+  background-color: #562e8b;
+}
+
 .sites .books {
   text-transform: uppercase;
   font-size: 0.8em;
@@ -64,7 +65,6 @@ body {
 }
 
 .sites .books a {
-  color: #000;
   text-decoration: none;
 }
 
