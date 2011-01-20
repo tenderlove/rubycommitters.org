@@ -41,7 +41,7 @@ h3
   font-family: Sans
 
   span
-    font-size: 15px
+    font-size: 14px
     display: block
     color: #aaa
     font-family: Cuprum, Sans
@@ -70,6 +70,7 @@ table.commiters
 
   td.commiter
     @include border-radius(10px)
+    padding-bottom: 10px
     vertical-align: top
     width: 33.333%
     border: 3px solid #fbd0dc
@@ -114,32 +115,29 @@ dl
     dt, dd
       //display: inline-block
 
-  &.sites
-
-
   dt
     color: #aaa
-    font-size: 15px
+    font-size: 14px
     font-family: Cuprum, Sans
     margin-bottom: 3px
 
   dd
     margin-bottom: 15px
 
-  ul
-    margin-left: 10px
+  &.sites
 
-    li
-      margin-bottom: 5px
-      line-height: 18px
-      font-size: 14px
-      list-style: circle
+    ul
       margin-left: 10px
 
+      li
+        margin-bottom: 5px
+        line-height: 18px
+        font-size: 14px
+        list-style: circle
+        margin-left: 10px
+
 ul.services
-  margin-bottom: 15px
-  border-top: 1px dotted #FBD0DC
-  padding-top: 10px
+  margin-top: 5px
 
   li
     float: left

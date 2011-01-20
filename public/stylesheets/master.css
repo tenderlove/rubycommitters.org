@@ -110,7 +110,7 @@ h3 {
 }
 /* line 43, ../../app/stylesheets/master.sass */
 h3 span {
-  font-size: 15px;
+  font-size: 14px;
   display: block;
   color: #aaaaaa;
   font-family: Cuprum, Sans;
@@ -152,42 +152,43 @@ table.commiters td.commiter {
   -ms-border-radius: 10px;
   -khtml-border-radius: 10px;
   border-radius: 10px;
+  padding-bottom: 10px;
   vertical-align: top;
   width: 33.333%;
   border: 3px solid #fbd0dc;
   background: #fefefe;
 }
-/* line 78, ../../app/stylesheets/master.sass */
+/* line 79, ../../app/stylesheets/master.sass */
 table.commiters td.commiter .commiter-wrapper {
   padding: 15px 20px;
 }
 
-/* line 81, ../../app/stylesheets/master.sass */
+/* line 82, ../../app/stylesheets/master.sass */
 .portraits {
   float: left;
   margin-right: 30px;
   width: 1px;
   position: relative;
 }
-/* line 87, ../../app/stylesheets/master.sass */
+/* line 88, ../../app/stylesheets/master.sass */
 .portraits li {
   top: 0;
   position: absolute;
 }
-/* line 91, ../../app/stylesheets/master.sass */
+/* line 92, ../../app/stylesheets/master.sass */
 .portraits .image-wrapper {
   opacity: 0;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   width: 70px;
 }
-/* line 95, ../../app/stylesheets/master.sass */
+/* line 96, ../../app/stylesheets/master.sass */
 .portraits .image-wrapper:first-child {
   opacity: 1;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
-/* line 98, ../../app/stylesheets/master.sass */
+/* line 99, ../../app/stylesheets/master.sass */
 .portraits img {
   width: 100%;
   padding: 5px;
@@ -198,37 +199,37 @@ table.commiters td.commiter .commiter-wrapper {
   box-shadow: #c2c2c2 0 0 5px 0;
 }
 
-/* line 104, ../../app/stylesheets/master.sass */
+/* line 105, ../../app/stylesheets/master.sass */
 .commiter-data {
   padding-left: 95px;
 }
 
-/* line 107, ../../app/stylesheets/master.sass */
+/* line 108, ../../app/stylesheets/master.sass */
 .commiter-data-extra {
   margin-top: 15px;
 }
 
-/* line 110, ../../app/stylesheets/master.sass */
+/* line 111, ../../app/stylesheets/master.sass */
 dl {
   margin-bottom: 8px;
 }
-/* line 120, ../../app/stylesheets/master.sass */
+/* line 118, ../../app/stylesheets/master.sass */
 dl dt {
   color: #aaaaaa;
-  font-size: 15px;
+  font-size: 14px;
   font-family: Cuprum, Sans;
   margin-bottom: 3px;
 }
-/* line 126, ../../app/stylesheets/master.sass */
+/* line 124, ../../app/stylesheets/master.sass */
 dl dd {
   margin-bottom: 15px;
 }
 /* line 129, ../../app/stylesheets/master.sass */
-dl ul {
+dl.sites ul {
   margin-left: 10px;
 }
 /* line 132, ../../app/stylesheets/master.sass */
-dl ul li {
+dl.sites ul li {
   margin-bottom: 5px;
   line-height: 18px;
   font-size: 14px;
@@ -238,17 +239,15 @@ dl ul li {
 
 /* line 139, ../../app/stylesheets/master.sass */
 ul.services {
-  margin-bottom: 15px;
-  border-top: 1px dotted #fbd0dc;
-  padding-top: 10px;
+  margin-top: 5px;
 }
-/* line 144, ../../app/stylesheets/master.sass */
+/* line 142, ../../app/stylesheets/master.sass */
 ul.services li {
   float: left;
   margin-right: 8px;
 }
 
-/* line 148, ../../app/stylesheets/master.sass */
+/* line 146, ../../app/stylesheets/master.sass */
 .ruby-powered {
   text-align: center;
   padding: 80px 0;
