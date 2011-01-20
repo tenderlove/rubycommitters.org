@@ -16,23 +16,17 @@ h1, h2
 
 h1
   font-size: 60px
-  text-align: center
   padding: 50px 0 30px
   color: #a00
-  margin-left: -90px
+  margin-left: 30px
   @include text-shadow(#3e0f10, -1px, 1px, 1px)
 
   a
     text-decoration: none
     color: #a00
 
-    img
-      @include opacity(0.0)
-
     &:hover
       color: #800
-      img
-        @include opacity(1.0)
 
 h2
   font-size: 30px
@@ -58,6 +52,16 @@ a
   &:hover
     color: #dda9ad
     text-decoration: none
+
+p.intro
+  position: absolute
+  font-size: 18px
+  font-family: Cuprum, Sans
+  width: 300px
+  line-height: 22px
+  top: 58px
+  left: 520px
+  color: #A87175
 
 table.commiters
   width: 100%
@@ -124,6 +128,8 @@ dl
 
     li
       margin-bottom: 5px
+      list-style: circle
+      margin-left: 10px
 
 ul.services
   margin-bottom: 15px

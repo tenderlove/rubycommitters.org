@@ -78,49 +78,36 @@ h1, h2 {
 /* line 17, ../../app/stylesheets/master.sass */
 h1 {
   font-size: 60px;
-  text-align: center;
   padding: 50px 0 30px;
   color: #aa0000;
-  margin-left: -90px;
+  margin-left: 30px;
   text-shadow: #3e0f10 -1px 1px 1px;
 }
-/* line 25, ../../app/stylesheets/master.sass */
+/* line 24, ../../app/stylesheets/master.sass */
 h1 a {
   text-decoration: none;
   color: #aa0000;
 }
-/* line 29, ../../app/stylesheets/master.sass */
-h1 a img {
-  opacity: 0;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-}
-/* line 32, ../../app/stylesheets/master.sass */
+/* line 31, ../../app/stylesheets/master.sass */
 h1 a:hover {
   color: #880000;
 }
-/* line 34, ../../app/stylesheets/master.sass */
-h1 a:hover img {
-  opacity: 1;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-}
 
-/* line 37, ../../app/stylesheets/master.sass */
+/* line 36, ../../app/stylesheets/master.sass */
 h2 {
   font-size: 30px;
   padding-bottom: 3px;
   color: #7f3129;
 }
 
-/* line 42, ../../app/stylesheets/master.sass */
+/* line 41, ../../app/stylesheets/master.sass */
 h3 {
   color: #6b5153;
   font-size: 16px;
   line-height: 20px;
   font-family: Sans;
 }
-/* line 48, ../../app/stylesheets/master.sass */
+/* line 47, ../../app/stylesheets/master.sass */
 h3 span {
   font-size: 15px;
   display: block;
@@ -129,22 +116,34 @@ h3 span {
   margin-bottom: 3px;
 }
 
-/* line 55, ../../app/stylesheets/master.sass */
+/* line 54, ../../app/stylesheets/master.sass */
 a {
   color: #6b5153;
 }
-/* line 58, ../../app/stylesheets/master.sass */
+/* line 57, ../../app/stylesheets/master.sass */
 a:hover {
   color: #dda9ad;
   text-decoration: none;
 }
 
-/* line 62, ../../app/stylesheets/master.sass */
+/* line 61, ../../app/stylesheets/master.sass */
+p.intro {
+  position: absolute;
+  font-size: 18px;
+  font-family: Cuprum, Sans;
+  width: 300px;
+  line-height: 22px;
+  top: 58px;
+  left: 520px;
+  color: #a87175;
+}
+
+/* line 71, ../../app/stylesheets/master.sass */
 table.commiters {
   width: 100%;
   border-spacing: 20px;
 }
-/* line 66, ../../app/stylesheets/master.sass */
+/* line 75, ../../app/stylesheets/master.sass */
 table.commiters td.commiter {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -157,37 +156,37 @@ table.commiters td.commiter {
   border: 3px solid #fbd0dc;
   background: #fefefe;
 }
-/* line 73, ../../app/stylesheets/master.sass */
+/* line 82, ../../app/stylesheets/master.sass */
 table.commiters td.commiter .commiter-wrapper {
   padding: 15px 20px;
 }
 
-/* line 76, ../../app/stylesheets/master.sass */
+/* line 85, ../../app/stylesheets/master.sass */
 .portraits {
   float: left;
   margin-right: 30px;
   width: 1px;
   position: relative;
 }
-/* line 82, ../../app/stylesheets/master.sass */
+/* line 91, ../../app/stylesheets/master.sass */
 .portraits li {
   top: 0;
   position: absolute;
 }
-/* line 86, ../../app/stylesheets/master.sass */
+/* line 95, ../../app/stylesheets/master.sass */
 .portraits .image-wrapper {
   opacity: 0;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   width: 70px;
 }
-/* line 90, ../../app/stylesheets/master.sass */
+/* line 99, ../../app/stylesheets/master.sass */
 .portraits .image-wrapper:first-child {
   opacity: 1;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
-/* line 93, ../../app/stylesheets/master.sass */
+/* line 102, ../../app/stylesheets/master.sass */
 .portraits img {
   width: 100%;
   padding: 5px;
@@ -198,54 +197,56 @@ table.commiters td.commiter .commiter-wrapper {
   box-shadow: #c2c2c2 0 0 5px 0;
 }
 
-/* line 99, ../../app/stylesheets/master.sass */
+/* line 108, ../../app/stylesheets/master.sass */
 .commiter-data {
   padding-left: 95px;
 }
 
-/* line 102, ../../app/stylesheets/master.sass */
+/* line 111, ../../app/stylesheets/master.sass */
 .commiter-data-extra {
   margin-top: 15px;
 }
 
-/* line 105, ../../app/stylesheets/master.sass */
+/* line 114, ../../app/stylesheets/master.sass */
 dl {
   margin-bottom: 8px;
 }
-/* line 109, ../../app/stylesheets/master.sass */
+/* line 118, ../../app/stylesheets/master.sass */
 dl.nicknames dt, dl.nicknames dd {
   display: inline-block;
 }
-/* line 115, ../../app/stylesheets/master.sass */
+/* line 124, ../../app/stylesheets/master.sass */
 dl dt {
   color: #aaaaaa;
   font-size: 15px;
   font-family: Cuprum, Sans;
   margin-bottom: 2px;
 }
-/* line 121, ../../app/stylesheets/master.sass */
+/* line 130, ../../app/stylesheets/master.sass */
 dl ul {
   margin-left: 10px;
   padding: 4px 0;
 }
-/* line 125, ../../app/stylesheets/master.sass */
+/* line 134, ../../app/stylesheets/master.sass */
 dl ul li {
   margin-bottom: 5px;
+  list-style: circle;
+  margin-left: 10px;
 }
 
-/* line 128, ../../app/stylesheets/master.sass */
+/* line 139, ../../app/stylesheets/master.sass */
 ul.services {
   margin-bottom: 15px;
   border-top: 1px dotted #fbd0dc;
   padding-top: 10px;
 }
-/* line 133, ../../app/stylesheets/master.sass */
+/* line 144, ../../app/stylesheets/master.sass */
 ul.services li {
   float: left;
   margin-right: 8px;
 }
 
-/* line 137, ../../app/stylesheets/master.sass */
+/* line 148, ../../app/stylesheets/master.sass */
 .ruby-powered {
   text-align: center;
   padding: 80px 0;
