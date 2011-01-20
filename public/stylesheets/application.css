@@ -1,0 +1,194 @@
+body {
+	background: #dedfe3 url(../images/bg.jpg) top center;
+	border-top: 8px solid #242424;
+	font-family: Arial, FreeSans, sans-serif;
+	font-size: 12px;
+}
+
+@font-face {
+	font-family: 'LeagueGothicRegular';
+	src: url('polices/league_gothic-webfont.eot');
+	src: local('‚ò∫'), url('../polices/league_gothic-webfont.woff') format('woff'), url('../polices/league_gothic-webfont.ttf') format('truetype'), url('../polices/league_gothic-webfont.svg#webfontqYhw1YCT') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+a, a:visited {
+	color: #bc0100;
+	text-decoration: none;
+	border: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 20px auto;
+}
+
+#header {
+	width: 960px;
+	height: 125px;
+	line-height: 125px;
+}
+
+#header h1 {
+	font-size: 80px;
+	font-family: 'LeagueGothicRegular', sans-serif;
+	text-transform: uppercase;
+	color: #303030;
+	text-align: center;
+	text-shadow: 1px 1px 0 #f0f0f0;
+
+}
+
+#header h1 span {
+	color: #bc0100;
+}
+
+#team {
+	width: 960px;
+}
+
+#team_header {
+	background-color: #850308;
+	width: 950px;
+	height: 83px;
+	padding-left: 10px;
+	line-height: 83px;
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+}
+#team_header h2 {
+	font-size: 60px;
+	color: #ededed;
+	font-family: 'LeagueGothicRegular', sans-serif;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0 #242424;
+}
+
+.member {
+	margin-top: 10px;
+	background-color: #242424;
+	width: 960px;
+	height: 155px;
+	clear: left;
+	border-top-left-radius: 5px 5px;
+	border-bottom-left-radius: 5px 5px;
+}
+
+.member img {
+	float: right;
+	width: 230px;
+	height: 155px;
+	border-top-left-radius: 5px 5px;
+	border-bottom-left-radius: 5px 5px;
+}
+
+.member dl {
+	width: 730px;
+	float: right;
+}
+
+.member dt {
+	display: block;
+	float: right;
+	height: 155px;
+	background: #95040b url(../images/arrow.jpg) top left no-repeat;
+	padding: 0 20px 0 40px;
+	line-height: 155px;
+	font-size: 60px;
+	font-family: 'LeagueGothicRegular', sans-serif;
+	color: #ededed;
+}
+
+.member dd {
+	padding-left: 20px;
+	padding-top: 10px;
+	color: #ededed;
+}
+
+.member dd strong {
+	color: #fff;
+}
+
+.member dd.services a {
+	display: block;
+	float: left;
+	width: 23px;
+	height: 22px;
+	text-indent: -100000px;
+	margin-right: 5px;
+}
+
+.member dd a.mixi {
+	background: transparent url(../images/icons.jpg) 0 0 no-repeat;
+}
+
+.member dd a:hover.mixi {
+	background: transparent url(../images/icons.jpg) 0 -22px no-repeat;
+}
+
+.member dd a.friendfeed {
+	background: transparent url(../images/icons.jpg) -28px 0 no-repeat;
+}
+
+.member dd a.friendfeed:hover {
+	background: transparent url(../images/icons.jpg) -28px -22px no-repeat;
+}
+
+.member dd a.twitter {
+	background: transparent url(../images/icons.jpg) -57px 0 no-repeat;
+}
+
+.member dd a.twitter:hover {
+	background: transparent url(../images/icons.jpg) -57px -22px no-repeat;
+}
+
+.member dd a.facebook {
+	background: transparent url(../images/icons.jpg) -85px 0 no-repeat;
+}
+
+.member dd a.facebook:hover {
+	background: transparent url(../images/icons.jpg) -85px -22px no-repeat;
+}
+
+.member dd a.iddy {
+	background: transparent url(../images/icons.jpg) -113px 0 no-repeat;
+}
+
+.member dd a.iddy:hover {
+	background: transparent url(../images/icons.jpg) -113px -22px no-repeat;
+}
+
+.member dd a.github {
+	background: transparent url(../images/icons.jpg) -142px 0 no-repeat;
+}
+
+.member dd a.github:hover {
+	background: transparent url(../images/icons.jpg) -142px -22px no-repeat;
+}
+
+
+
+#credits {
+	width: 940px;
+	height: 37px;
+	line-height: 37px;
+	padding-right: 20px;
+	background: #242424;
+	border-bottom-left-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+
+}
+
+#credits p {
+	text-align: right;
+	font-family: 'LeagueGothicRegular', sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-top: 10px;
+	color: #d9dade;
+}
