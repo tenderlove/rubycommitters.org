@@ -13,7 +13,7 @@ RubyCommitters.helpers do
   end
 
   def link_to_book(isbn)
-    link_to isbn, 'http://books.google.com/books?as_isbn=' + isbn
+    link_to isbn, 'http://www.google.com/search?tbs=bks:1&tbo=1&q=isbn:' + isbn
   end
 
   def markdownsize(text)

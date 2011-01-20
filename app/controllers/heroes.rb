@@ -6,6 +6,7 @@ RubyCommitters.controllers :heroes do
       'names'    => 'names',
       'nicks'    => 'a.k.a.',
       'sites'    => 'sites',
+      'books'    => 'books',
       'services' => 'social',
     }
 

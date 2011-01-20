@@ -193,29 +193,31 @@ body {
           #container table#list tr.person td.meta table td ul li {
             font-size: 13px;
             padding-top: 5px; }
-          #container table#list tr.person td.meta table td ul.social {
+          #container table#list tr.person td.meta table td ul.social, #container table#list tr.person td.meta table td ul.books {
             margin-bottom: -3px; }
-            #container table#list tr.person td.meta table td ul.social li {
+            #container table#list tr.person td.meta table td ul.social li, #container table#list tr.person td.meta table td ul.books li {
               float: left;
-              margin-right: 5px; }
-              #container table#list tr.person td.meta table td ul.social li a {
+              margin-right: 3px; }
+              #container table#list tr.person td.meta table td ul.social li a, #container table#list tr.person td.meta table td ul.books li a {
                 display: block;
                 width: 16px;
                 height: 16px;
                 text-indent: -9999px;
                 border: none; }
-            #container table#list tr.person td.meta table td ul.social li.facebook a {
+            #container table#list tr.person td.meta table td ul.social li.facebook a, #container table#list tr.person td.meta table td ul.books li.facebook a {
               background: url("/images/social-icons/facebook.png") no-repeat; }
-            #container table#list tr.person td.meta table td ul.social li.friendfeed a {
+            #container table#list tr.person td.meta table td ul.social li.friendfeed a, #container table#list tr.person td.meta table td ul.books li.friendfeed a {
               background: url("/images/social-icons/friendfeed.png") no-repeat; }
-            #container table#list tr.person td.meta table td ul.social li.github a {
+            #container table#list tr.person td.meta table td ul.social li.github a, #container table#list tr.person td.meta table td ul.books li.github a {
               background: url("/images/social-icons/github.png") no-repeat; }
-            #container table#list tr.person td.meta table td ul.social li.iddy a {
+            #container table#list tr.person td.meta table td ul.social li.iddy a, #container table#list tr.person td.meta table td ul.books li.iddy a {
               background: url("/images/social-icons/iddy.png") no-repeat; }
-            #container table#list tr.person td.meta table td ul.social li.mixi a {
+            #container table#list tr.person td.meta table td ul.social li.mixi a, #container table#list tr.person td.meta table td ul.books li.mixi a {
               background: url("/images/social-icons/mixi.png") no-repeat; }
-            #container table#list tr.person td.meta table td ul.social li.twitter a {
+            #container table#list tr.person td.meta table td ul.social li.twitter a, #container table#list tr.person td.meta table td ul.books li.twitter a {
               background: url("/images/social-icons/twitter.png") no-repeat; }
+          #container table#list tr.person td.meta table td ul.books li a {
+            background: url("/images/social-icons/book.png") no-repeat; }
       #container table#list tr.person td.bios {
         width: 520px;
         font-size: 15px; }
