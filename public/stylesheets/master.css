@@ -58,7 +58,7 @@ a img {
   border: none;
 }
 
-/* line 6, ../../app/stylesheets/master.sass */
+/* line 7, ../../app/stylesheets/master.sass */
 body {
   background: url(/images/ruby_pattern.png);
   font-family: Sans;
@@ -66,17 +66,17 @@ body {
   padding: 0 40px;
 }
 
-/* line 12, ../../app/stylesheets/master.sass */
+/* line 13, ../../app/stylesheets/master.sass */
 h1, h2, h3 {
   font-family: Cuprum, Sans;
 }
 
-/* line 15, ../../app/stylesheets/master.sass */
+/* line 16, ../../app/stylesheets/master.sass */
 h1, h2 {
   font-weight: bold;
 }
 
-/* line 18, ../../app/stylesheets/master.sass */
+/* line 19, ../../app/stylesheets/master.sass */
 h1 {
   font-size: 60px;
   padding: 80px 0 60px;
@@ -84,50 +84,50 @@ h1 {
   margin-left: 30px;
   text-shadow: #3e0f10 -1px 1px 1px;
 }
-/* line 25, ../../app/stylesheets/master.sass */
+/* line 26, ../../app/stylesheets/master.sass */
 h1 a {
   text-decoration: none;
   color: #aa0000;
 }
-/* line 29, ../../app/stylesheets/master.sass */
+/* line 30, ../../app/stylesheets/master.sass */
 h1 a:hover {
   color: #880000;
 }
 
-/* line 32, ../../app/stylesheets/master.sass */
+/* line 33, ../../app/stylesheets/master.sass */
 h2 {
   font-size: 30px;
   padding-bottom: 3px;
   color: #7f3129;
 }
 
-/* line 37, ../../app/stylesheets/master.sass */
+/* line 38, ../../app/stylesheets/master.sass */
 h3 {
   color: #6b5153;
   font-size: 16px;
   line-height: 20px;
   font-family: Sans;
 }
-/* line 43, ../../app/stylesheets/master.sass */
+/* line 44, ../../app/stylesheets/master.sass */
 h3 span {
   font-size: 14px;
   display: block;
-  color: #aaaaaa;
+  color: #bbbbbb;
   font-family: Cuprum, Sans;
   margin-bottom: 3px;
 }
 
-/* line 50, ../../app/stylesheets/master.sass */
+/* line 51, ../../app/stylesheets/master.sass */
 a {
   color: #6b5153;
 }
-/* line 53, ../../app/stylesheets/master.sass */
+/* line 54, ../../app/stylesheets/master.sass */
 a:hover {
   color: #dda9ad;
   text-decoration: none;
 }
 
-/* line 57, ../../app/stylesheets/master.sass */
+/* line 58, ../../app/stylesheets/master.sass */
 p.intro {
   position: absolute;
   font-size: 18px;
@@ -139,12 +139,12 @@ p.intro {
   color: #a87175;
 }
 
-/* line 67, ../../app/stylesheets/master.sass */
+/* line 68, ../../app/stylesheets/master.sass */
 table.commiters {
   width: 100%;
   border-spacing: 20px;
 }
-/* line 71, ../../app/stylesheets/master.sass */
+/* line 72, ../../app/stylesheets/master.sass */
 table.commiters td.commiter {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -158,37 +158,37 @@ table.commiters td.commiter {
   border: 3px solid #fbd0dc;
   background: #fefefe;
 }
-/* line 79, ../../app/stylesheets/master.sass */
+/* line 80, ../../app/stylesheets/master.sass */
 table.commiters td.commiter .commiter-wrapper {
   padding: 15px 20px;
 }
 
-/* line 82, ../../app/stylesheets/master.sass */
+/* line 83, ../../app/stylesheets/master.sass */
 .portraits {
   float: left;
   margin-right: 30px;
   width: 1px;
   position: relative;
 }
-/* line 88, ../../app/stylesheets/master.sass */
+/* line 89, ../../app/stylesheets/master.sass */
 .portraits li {
   top: 0;
   position: absolute;
 }
-/* line 92, ../../app/stylesheets/master.sass */
+/* line 93, ../../app/stylesheets/master.sass */
 .portraits .image-wrapper {
   opacity: 0;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   width: 70px;
 }
-/* line 96, ../../app/stylesheets/master.sass */
+/* line 97, ../../app/stylesheets/master.sass */
 .portraits .image-wrapper:first-child {
   opacity: 1;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
-/* line 99, ../../app/stylesheets/master.sass */
+/* line 100, ../../app/stylesheets/master.sass */
 .portraits img {
   width: 100%;
   padding: 5px;
@@ -199,36 +199,36 @@ table.commiters td.commiter .commiter-wrapper {
   box-shadow: #c2c2c2 0 0 5px 0;
 }
 
-/* line 105, ../../app/stylesheets/master.sass */
+/* line 106, ../../app/stylesheets/master.sass */
 .commiter-data {
   padding-left: 95px;
 }
 
-/* line 108, ../../app/stylesheets/master.sass */
+/* line 109, ../../app/stylesheets/master.sass */
 .commiter-data-extra {
   margin-top: 15px;
 }
 
-/* line 111, ../../app/stylesheets/master.sass */
+/* line 112, ../../app/stylesheets/master.sass */
 dl {
   margin-bottom: 8px;
 }
-/* line 118, ../../app/stylesheets/master.sass */
+/* line 119, ../../app/stylesheets/master.sass */
 dl dt {
-  color: #aaaaaa;
+  color: #bbbbbb;
   font-size: 14px;
   font-family: Cuprum, Sans;
   margin-bottom: 3px;
 }
-/* line 124, ../../app/stylesheets/master.sass */
+/* line 125, ../../app/stylesheets/master.sass */
 dl dd {
   margin-bottom: 15px;
 }
-/* line 129, ../../app/stylesheets/master.sass */
+/* line 130, ../../app/stylesheets/master.sass */
 dl.sites ul {
   margin-left: 10px;
 }
-/* line 132, ../../app/stylesheets/master.sass */
+/* line 133, ../../app/stylesheets/master.sass */
 dl.sites ul li {
   margin-bottom: 5px;
   line-height: 18px;
@@ -237,17 +237,17 @@ dl.sites ul li {
   margin-left: 10px;
 }
 
-/* line 139, ../../app/stylesheets/master.sass */
+/* line 140, ../../app/stylesheets/master.sass */
 ul.services {
   margin-top: 5px;
 }
-/* line 142, ../../app/stylesheets/master.sass */
+/* line 143, ../../app/stylesheets/master.sass */
 ul.services li {
   float: left;
   margin-right: 8px;
 }
 
-/* line 146, ../../app/stylesheets/master.sass */
+/* line 147, ../../app/stylesheets/master.sass */
 .ruby-powered {
   text-align: center;
   padding: 80px 0;
