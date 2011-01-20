@@ -93,13 +93,14 @@ code {
 }
 #header h1 {
   position: relative;
-  background: transparent url(/images/ruby.png) no-repeat scroll 38% 58%;
+  background: transparent url(/images/ruby.png) no-repeat scroll 42% 58%;
   font-family: 'Cherry Cream Soda', Arial, serif;
   font-size: 600%;
   line-height: 1.25em;
   margin: 0;
-  padding: 0 0 0 22%;
+  padding: 0;
   text-shadow: 1px 1px 3px #333;
+  text-align: center;
   z-index: 200;
 }
 #header h1 span {
@@ -226,30 +227,28 @@ code {
           box-shadow: 2px 1px 3px rgba(40,40,40,0.2);
 }
 
-
-/* I'd love to fork you ;) */
-#fork_me {
-  display: block;
-  position: fixed;
-  top: -1px;
-  right: 14%;
-  background: #5B6966 url(/images/octocat_tiny.png) no-repeat scroll 2% 50%;
-  padding: 14px 10px 4px 40px;
-  border: 1px solid #222;
-  color: #81B3A8;
-  -webkit-border-bottom-right-radius: 5px;
-   -webkit-border-bottom-left-radius: 5px;
-      -moz-border-radius-bottomright: 5px;
-       -moz-border-radius-bottomleft: 5px;
-          border-bottom-right-radius: 5px;
-           border-bottom-left-radius: 5px;
-  -webkit-box-shadow: 2px 1px 3px #333;
-     -moz-box-shadow: 2px 1px 3px #333;
-          box-shadow: 2px 1px 3px #333;
+.ribbon {
+  background-color: #a00;
+  overflow: hidden;
+  position: absolute;
+  left: -5em;
+  top: 3.4em;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-box-shadow: 0 0 1em #888;
+  -webkit-box-shadow: 0 0 1em #888;
   z-index: 1000;
 }
-#fork_me:hover {
-  padding-top: 18px;
+.ribbon a {
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font: bold 175% 'Helvetiva Neue', Helvetica, Arial, sans-serif;
+  margin: .05em 0 .075em 0;
+  padding: .5em 3.5em;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 .5em #444;
 }
 
 
