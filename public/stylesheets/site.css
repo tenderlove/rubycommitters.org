@@ -85,7 +85,7 @@ code {
 }
 #header .container {
   position: relative;
-  background: #F1F1F1;
+  background: #F1F1F1 url(/images/header_bg.jpg) repeat scroll 0 0;
   padding: 1.2em 1em .75em 1em;
   border: 1px solid #CCC;
   border-top: 0;
@@ -154,7 +154,7 @@ code {
   background-color: rgba(255,255,255,0.82);
 }
 #content table td.first { 
-  width: 37%;
+  width: 35%;
   -webkit-border-bottom-left-radius: 5px;
       -moz-border-radius-bottomleft: 5px;
           border-bottom-left-radius: 5px;
@@ -176,22 +176,25 @@ code {
   min-height: 104px;
 }
 .account .username {
+  display: inline;
   position: relative;
   background-color: #F1F1F1;
   top: 3.5em;
   left: 1.1em;
   padding: .2em;
+  margin: 0;
   font-size: 200%;
   line-height: 1.1em;
-  color: #333;
+  color: #5B6966;
   border-top: 1px solid #F1F1F1;
   border-left: 1px solid #F1F1F1;
+  text-shadow: -1px 1px solid #AAA;
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
-  -webkit-box-shadow: 2px 1px 1px rgba(40,40,40,0.1);
-     -moz-box-shadow: 2px 1px 1px rgba(40,40,40,0.1);
-          box-shadow: 2px 1px 1px rgba(40,40,40,0.1);
+  -webkit-box-shadow: 2px 1px 3px rgba(40,40,40,0.2);
+     -moz-box-shadow: 2px 1px 3px rgba(40,40,40,0.2);
+          box-shadow: 2px 1px 3px rgba(40,40,40,0.2);
   z-index: 400;
 }
 
@@ -204,7 +207,17 @@ code {
 }
 
 .account .names {
-  color: #333;
+  color: #5B6966;
+}
+.account h3 {
+  color: #5B6966;
+}
+.account ul {
+
+}
+.account .services li {
+  float: left;
+  margin-left: .3em;
 }
 
 .image-wrapper {
@@ -230,7 +243,7 @@ code {
 .ribbon {
   background-color: #a00;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   left: -5em;
   top: 3.4em;
   -moz-transform: rotate(-45deg);
