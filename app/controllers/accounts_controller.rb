@@ -1,5 +1,5 @@
 class AccountsController < ApplicationController
   def index
-    @accounts = Account.find :all
+    @accounts = Account.includes([:names, :nicks, :sites, :services, :portraits]).all
   end
 end

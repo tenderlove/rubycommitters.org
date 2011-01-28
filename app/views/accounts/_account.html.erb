@@ -1,76 +1,44 @@
-<li>
-  <table>
-    <tr>
-      <td>Account:</td>
-      <td><%= account.username %></td>
-    </tr>
+<li class="account">
+  <div class="picture">
+    <div class="image-wrapper">
+      <% if File.exist?(Rails.root.join('public', 'images', 'people', 'lines', "#{account.username}.png").to_s) -%>
+        <%= image_tag "people/lines/#{account.username}.png", :onmouseover => "this.src = this.src.replace(/lines/, 'photos').replace(/png/, 'jpg');", :onmouseout => "this.src = this.src.replace(/photos/, 'lines').replace(/jpg/, 'png');" -%>
+      <% else -%>
+        <%= image_tag "people/lines/fox#{@fox_count}.png", :onmouseover => "this.src = this.src.replace(/lines/, 'photos')", :onmouseout => "this.src = this.src.replace(/photos/, 'lines')" -%>
+        <% @fox_count = @fox_count % 3 + 1 -%>
+      <% end -%>
+    </div>
+  </div>
 
-    <% unless account.names.empty? %>
-      <tr>
-        <td>Names:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.names %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
+  <div class="name">
+      <span class="username"><%= account.username -%></span>
 
-    <% unless account.nicks.empty? %>
-      <tr>
-        <td>Nicknames:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'name', :collection => account.nicks %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
+      <span class="nicknames">
+        <% [account.names, account.nicks].flatten.slice(0,5).each do |name| -%>
+          <span class="nick">
+            <small>AKA</small>
+            &ldquo;<%= name.value -%>&rdquo;
+          </span>
+        <% end -%>
+      </span>
+    </div>
+  </div>
 
-    <% unless account.sites.empty? %>
-      <tr>
-        <td>Sites:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'site', :collection => account.sites %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
+  <div class="sites">
+    <%= render :partial => 'site', :collection => account.sites -%>
+    <span class="books">
+      <% if account.books.present? -%>
+        Books: &nbsp;
+        <% account.books.each_with_index do |book, i| %>
+          <a href="http://www.amazon.<%= book.key.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.key %>"><%= i + 1 -%></a> &nbsp;
+        <% end %>
+      <% end -%>
+    </span>
+  </div>
 
-    <% unless account.services.empty? %>
-      <tr>
-        <td>Services:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'service', :collection => account.services %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
+  <div class="services">
+    <%= render :partial => 'service', :collection => account.services -%>
+  </div>
 
-    <% unless account.portraits.empty? %>
-      <tr>
-        <td>Portraits:</td>
-        <td>
-          <ul>
-            <%= render :partial => 'portrait', :collection => account.portraits %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-
-    <% unless account.books.empty? %>
-      <tr>
-        <td>Books:</td>
-        <td>
-          <ul>
-            <% account.books.each do |book| %>
-              <li><a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= book.key %></a></li>
-            <% end %>
-          </ul>
-        </td>
-      </tr>
-    <% end %>
-  </table>
+  <div style="clear: both;"></div>
 </li>
