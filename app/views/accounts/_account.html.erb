@@ -30,7 +30,7 @@
       <% if account.books.present? -%>
         Books: &nbsp;
         <% account.books.each_with_index do |book, i| %>
-          <a href="http://www.amazon.<%= book.key.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.key %>"><%= i + 1 -%></a> &nbsp;
+          <a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= i + 1 -%></a> &nbsp;
         <% end %>
       <% end -%>
     </span>
