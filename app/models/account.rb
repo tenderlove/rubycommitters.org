@@ -1,11 +1,4 @@
 class Account
-  #has_many :names
-  #has_many :nicks
-  #has_many :sites
-  #has_many :services
-  #has_many :portraits
-  #has_many :books
-
   attr_accessor :username
   attr_reader :names, :nicks, :sites, :portraits, :services, :books
 
@@ -16,8 +9,8 @@ class Account
   Service  = Struct.new :name, :key
   Book     = Struct.new :key, :isbn
 
-  def initialize
-    @username  = nil
+  def initialize username
+    @username  = username
     @names     = []
     @nicks     = []
     @sites     = []
@@ -40,8 +33,7 @@ class Account
 
     list = yamler.load io
     list.map do |record|
-      account = Account.new
-      account.username = record['account']
+      account = Account.new record['account']
 
       (record['name'] || []).each do |name|
         account.names << Name.new(name)
