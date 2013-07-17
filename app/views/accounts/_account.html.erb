@@ -1,11 +1,13 @@
 <li class="account">
   <div class="picture">
     <div class="image-wrapper">
+      <% $stderr.puts Rails.root.join('public', 'images', 'people', 'lines', "#{account.username}.png").to_s %>
+
       <% if File.exist?(Rails.root.join('public', 'images', 'people', 'lines', "#{account.username}.png").to_s) -%>
         <%= image_tag "people/lines/#{account.username}.png", :onmouseover => "this.src = this.src.replace(/lines/, 'photos').replace(/png/, 'jpg');", :onmouseout => "this.src = this.src.replace(/photos/, 'lines').replace(/jpg/, 'png');" -%>
       <% else -%>
-        <%= image_tag "people/lines/fox#{@fox_count}.png", :onmouseover => "this.src = this.src.replace(/lines/, 'photos')", :onmouseout => "this.src = this.src.replace(/photos/, 'lines')" -%>
-        <% @fox_count = @fox_count % 3 + 1 -%>
+        <%= image_tag "people/lines/fox#{fox_count}.png", :onmouseover => "this.src = this.src.replace(/lines/, 'photos')", :onmouseout => "this.src = this.src.replace(/photos/, 'lines')" -%>
+        <% self.fox_count = fox_count % 3 + 1 -%>
       <% end -%>
     </div>
   </div>
@@ -27,7 +29,7 @@
   <div class="sites">
     <%= render :partial => 'site', :collection => account.sites -%>
     <span class="books">
-      <% if account.books.present? -%>
+      <% if account.books.any? -%>
         Books: &nbsp;
         <% account.books.each_with_index do |book, i| %>
           <a href="http://www.amazon.<%= book.isbn.match(/^4/) ? "co.jp":"com" %>/dp/<%= book.isbn %>"><%= i + 1 -%></a> &nbsp;

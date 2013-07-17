@@ -1,6 +1,6 @@
 @font-face {
     font-family: "MunroSmall";
-    src: url(/fonts/munro_small.ttf);
+    src: url(fonts/munro_small.ttf);
     font-weight:400;
 }
 
@@ -8,7 +8,7 @@ body {
  margin: 0;
  padding: 0;
  background-color: #181818;
- background: #FFF url(/images/header-bg.png);
+ background: #FFF url(images/header-bg.png);
  color: #FFF;
  font-family: Helvetica, Arial, sans-serif;
 }
@@ -22,13 +22,13 @@ body {
 }
 
 #header {
-  background: #FFF url(/images/header-bg.png);
+  background: #FFF url(images/header-bg.png);
   height: 383px;
   margin-bottom: -13px;
 }
 
 #title {
-  background: url(/images/header2.jpg) top left no-repeat;
+  background: url(images/header2.jpg) top left no-repeat;
   width: 957px;
   height: 413px;
   text-indent: -10000px;
@@ -89,7 +89,7 @@ body {
 li.account {
   max-width: 900px;
   background-color: #222;
-  background: url(/images/foo.jpg);
+  background: url(images/foo.jpg);
   margin: 20px;
   padding: 10px;
   list-style: none;
@@ -112,7 +112,7 @@ li.account div.name {
 #footer {
   margin-left: 20px;
   height: 72px;
-  background: url(/images/foxes.png) bottom left no-repeat;);
+  background: url(images/foxes.png) bottom left no-repeat;);
   padding: 65px 0 0 165px;
   color: #666;
   font-size: 0.55em;

@@ -2,8 +2,8 @@
 <%= link_to 'fork me on github',
     'http://github.com/tenderlove/rubycommitters.org' %> -->
 
-<% @fox_count = 1 -%>
+<% self.fox_count = 1 %>
 
 <ul style="list-style: none; margin: 0; padding: 0; z-index: 10; position: relative;">
-<%= render :partial => 'account', :collection => @accounts %>
+<%= render :partial => 'account', :collection => accounts %>
 </ul>
