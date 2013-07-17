@@ -60,7 +60,7 @@ class WEBSITE
 
     collection.map { |object|
       @locals[partial.to_s] = object
-      filename = "app/views/accounts/_#{partial}.html.erb"
+      filename = "views/accounts/_#{partial}.html.erb"
       erb = ERB.new File.read(filename), 0, '<>-'
       erb.filename = filename
       erb.result binding
@@ -99,10 +99,10 @@ end
 require 'net/http'
 
 def make_website
-  erb = ERB.new File.read('app/views/layouts/application.html.erb'), 0, '<>-'
+  erb = ERB.new File.read('views/layouts/application.html.erb'), 0, '<>-'
   ws = WEBSITE.new
   binding = ws.get_binding do
-    fn = 'app/views/accounts/index.html.erb'
+    fn = 'views/accounts/index.html.erb'
     inner = ERB.new File.read(fn), 0, '<>-'
     inner.filename = fn
     inner.result(ws.get_binding)
@@ -118,6 +118,10 @@ end
 
 file 'public/index.html' => 'ruby-committers.yml' do
   File.open('public/index.html', 'wb') { |f| f.write make_website }
+end
+
+task :clobber do
+  rm "public/index.html"
 end
 
 task :default => 'public/index.html'
