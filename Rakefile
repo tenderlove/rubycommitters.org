@@ -1,12 +1,8 @@
+$: << "lib"
+
 require 'erb'
 require 'account'
 require 'pathname'
-
-module Rails
-  def self.root
-    Pathname.new File.dirname __FILE__
-  end
-end
 
 class WEBSITE
   attr_accessor :fox_count
@@ -14,6 +10,10 @@ class WEBSITE
   def initialize
     @fox_count = 0
     @locals = {}
+  end
+
+  def root
+    Pathname.new File.dirname __FILE__
   end
 
   def accounts
@@ -38,7 +38,6 @@ class WEBSITE
     if string.tainted?
       string = ERB::Util.h string
     end
-
     string.untaint
   end
 
@@ -97,14 +96,28 @@ class WEBSITE
   end
 end
 
-task :website do
-  erb = ERB.new File.read('app/views/layouts/application.html.erb')
+require 'net/http'
+
+def make_website
+  erb = ERB.new File.read('app/views/layouts/application.html.erb'), 0, '<>-'
   ws = WEBSITE.new
   binding = ws.get_binding do
     fn = 'app/views/accounts/index.html.erb'
-    inner = ERB.new File.read(fn)
+    inner = ERB.new File.read(fn), 0, '<>-'
     inner.filename = fn
     inner.result(ws.get_binding)
   end
-  puts erb.result(binding)
+  erb.result(binding)
 end
+
+file 'ruby-committers.yml' do
+  url = URI.parse 'https://raw.github.com/yugui/rubycommitters/master/ruby-committers.yml'
+  res = Net::HTTP.get_response(url)
+  File.open('ruby-committers.yml', 'wb') { |f| f.write res.body }
+end
+
+file 'public/index.html' => 'ruby-committers.yml' do
+  File.open('public/index.html', 'wb') { |f| f.write make_website }
+end
+
+task :default => 'public/index.html'

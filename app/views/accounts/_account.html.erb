@@ -1,7 +1,7 @@
 <li class="account">
   <div class="picture">
     <div class="image-wrapper">
-      <% if File.exist?(Rails.root.join('public', 'images', 'people', 'lines', "#{account.username}.png").to_s) -%>
+      <% if File.exist?(root.join('public', 'images', 'people', 'lines', "#{account.username}.png").to_s) -%>
         <%= image_tag "people/lines/#{account.username}.png", :onmouseover => "this.src = this.src.replace(/lines/, 'photos').replace(/png/, 'jpg');", :onmouseout => "this.src = this.src.replace(/photos/, 'lines').replace(/jpg/, 'png');" -%>
       <% else -%>
         <%= image_tag "people/lines/fox#{fox_count}.png", :onmouseover => "this.src = this.src.replace(/lines/, 'photos')", :onmouseout => "this.src = this.src.replace(/photos/, 'lines')" -%>
