@@ -1,5 +1,5 @@
 class AccountsController < ApplicationController
   def index
-    @accounts = Account.includes([:names, :nicks, :sites, :services, :portraits, :books]).all
+    @accounts = Account.import File.open File.join(Rails.root, 'ruby-committers.yml')
   end
 end

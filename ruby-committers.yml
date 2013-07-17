@@ -1,0 +1,1253 @@
+- account: matz
+  name:
+    - 松本行弘
+    - まつもとゆきひろ
+    - Yukihiro Matsumoto
+  nick:
+    - Matz
+  sites:
+    - title: Matzにっき
+      url: 'http://www.rubyist.net/~matz/'
+      feed: 'http://www.rubyist.net/~matz/comments.rdf'
+      lang: ja
+  services:
+    twitter: yukihiro_matz
+    friendfeed: matz
+    facebook: 650036336
+    mixi: 1653
+    github: matz
+    google: 104511308184997405918
+  portraits: 
+    - 'http://upload.wikimedia.org/wikipedia/commons/7/76/Yukihiro_Matsumoto.JPG'
+  ruby-books:
+    - '9780596516178'
+    - '9780596002145'
+    - '9784756132543'
+    - '9784274064616'
+    - '9784873110233'
+- account: H_Konishi
+  name:
+    - 小西弘将
+    - KONISHI Hiromasa
+  sites:
+    - title: '小西の物置'
+      url: 'http://www001.upp.so-net.ne.jp/konishi/'
+- account: aamine
+  name:
+    - 青木峰郎
+    - Minero Aoki
+  nick:
+    - 青木さん
+  sites:
+    - title: LoveRubyNet
+      url: 'http://i.loveruby.net/'
+    - title: 青木日記
+      url: 'http://i.loveruby.net/d/'
+      lang: ja
+      feed: 'http://i.loveruby.net/d/index.rdf'
+  portraits:
+    - 'http://jp.rubyist.net/magazine/?c=plugin;plugin=attach_download;p=0017-Hotlinks;file_name=aoki1.jpg'
+  ruby-books:
+    - '9784844317210'
+    - '9784797340044'
+    - '9784756137098'
+    - '9784797324297'
+    - '9784839923204'
+- account: akira
+  name:
+    - やまだあきら
+    - akira yamada
+  nick:
+    - ay
+    - やまださん
+  sites:
+    - title: やまだあきらのサイト
+      url: 'http://arika.org/'
+      lang: ja
+    - title: '\ay diary'
+      url: 'http://arika.org/diary/'
+      lang: ja
+      feed: 'http://arika.org/diary/articles.rss'
+  portraits:
+    - 'http://iddy.jp/userphoto/5baa27c3da176d038ce96ca4baacc7b1c2a66a0f/me96x96s.jpg'
+  services:
+    twitter: arika
+    friendfeed: arika
+    iddy: arika
+    mixi: 1549
+    google: 118268804931300846351
+  ruby-books:
+    - '9784274064616'
+    - '9784900813250'
+- account: akiyoshi
+  name:
+    - 秋吉
+    - Akiyoshi, Masamichi
+- account: akr
+  name:
+    - 田中哲
+    - Tanaka Akira
+  nick:
+    - akr
+    - 髪の毛の長い人
+    - The long-haired man
+  sites:
+    - title: 天泣記
+      url: 'http://cvs.m17n.org/~akr/diary/'
+      lang: ja
+    - title: "akr's site"
+      url: 'http://www.a-k-r.org/'
+      lang: en
+  portraits:
+    - 'http://jp.rubyist.net/magazine/?c=plugin;plugin=attach_download;p=0008-Hotlinks;file_name=akr01.jpg'
+  services:
+    github: akr
+    twitter: tanaka_akr
+- account: arai
+  name:
+    - 新井康司
+    - Koji Arai
+- account: arton
+  name:
+    - 田島暁雄
+    - Akio Tajima
+  nick:
+    - arton
+  portraits:
+    - 'http://jp.rubyist.net/magazine/?c=plugin;plugin=attach_download;p=0015-Hotlinks;file_name=arton0.jpg'
+    - 'http://www.ogis-ri.co.jp/otc/hiroba/others/OORing/img/pic41_1.jpg'
+  sites:
+    - title: 'EMMÈNE-MOI AU BOUT DU MONDE'
+      url: 'http://www.artonx.org/'
+      lang: en
+    - title: "L'eclat des jours"
+      url: 'http://www.artonx.org/diary/'
+      feed: 'http://www.artonx.org/diary/index.rdf'
+      lang: ja
+    - title: 'COM Meets Ruby'
+      url: 'http://arton.hp.infoseek.co.jp'
+      lang: en
+    - title: 'COM Meets Ruby'
+      url: 'http://www.geocities.co.jp/SiliconValley-PaloAlto/9251/'
+      lang: ja
+  services:
+    twitter: arton
+    friendfeed: arton
+    mixi: 14049
+    github: arton
+    facebook: akio.tajima
+    google: 104500176666894445400
+- account: ayumin
+  name:
+    - 相澤歩
+    - Ayumu AIZAWA
+  nick:
+    - ayumin
+    - あゆみん
+  portraits:
+    - 'http://www.gravatar.com/avatar/2e9a2dbe335e0111e4879a9d65dcbae0.png'
+  services:
+    facebook: ayumu.aizawa
+    github: ayumin
+    twitter: ayumin
+- account: azav
+  name:
+    - Alexander Zavorine
+  portraits:
+    - 'http://a0.twimg.com/profile_images/1119678926/tweeter-photo-1.jpg'
+  services:
+    twitter: alzavorine
+- account: charliesome
+  name:
+    - Charlie Somerville
+  sites:
+    - title: 'Charlie Somerville'
+      url: 'http://charlie.bz/'
+      lang: en
+    - title: 'Blog - Charlie Somerville'
+      url: 'http://charlie.bz/blog'
+      lang: en
+      feed: 'http://charlie.bz/blog.rss'
+  services:
+    twitter: charliesome
+    github: charliesome
+- account: dave
+  name:
+    - Dave Thomas
+  nick:
+    - The pragmatic programmer
+  sites:
+    - title: PragDave
+      url: 'http://pragdave.pragprog.com/'
+      lang: en
+      feed: 'http://pragdave.blogs.pragprog.com/pragdave/index.rdf'
+  portraits:
+    - 'http://pragdave.blogs.pragprog.com/.a/6a00d83451c41c69e200e55005ede28834-150wi'
+  services:
+    twitter: pragdave
+    github: pragdave
+    google: 110308012753237149122
+  ruby-books:
+    - '9781934356081'
+    - '9781934356166'
+- account: davidflanagan
+  name:
+    - David Flanagan
+  sites:
+    - title: davidflanagan.com
+      url: 'http://www.davidflanagan.com/'
+      lang: en
+      feed: 'http://www.davidflanagan.com/atom.xml'
+  portraits:
+    - 'http://www.oreillynet.com/javascript/2001/12/04/graphics/david_flanagan_1201.jpg'
+  ruby-books:
+    - '9780596516178'
+- account: dblack
+  name:
+    - David A. Black
+  sites:
+    - title: DABlog
+      url: 'http://dablog.rubypal.com/'
+      lang: en
+      feed: 'http://dablog.rubypal.com/feed/atom.xml'
+  portraits:
+    - 'http://www.infoq.com/resource/articles/coming-from-ruby/en/smallimage/davidblack.jpg'
+  ruby-books:
+    - '9780321509246'
+    - '9781932394696'
+    - '9781933988474'
+    - '9781933988658'
+  services:
+    twitter: david_a_black
+    facebook: 759419899
+    github: dblack
+- account: drbrain
+  name:
+    - Eric R. Hodel
+  nick:
+    - drbrain
+  sites:
+    - title: Segment7
+      url: 'http://segment7.net/'
+      lang: en
+    - title: Segment7
+      url: 'http://blog.segment7.net/'
+      lang: en
+      feed: 'http://blog.segment7.net/xml/rss'
+  portraits:
+    - 'http://www.infoq.com/resource/interviews/eric-hodel-on-rubygems-and-the-ruby-community/en/smallimage/ErikHodel.jpg'
+  services:
+    twitter: drbrain
+    facebook: 564481279
+    github: drbrain
+    google: 113229407566879480853
+- account: duerst
+  name:
+    - Martin J. Dürst
+  nick:
+    - Martin先生
+    - Prof. Martin
+  portraits:
+    - 'http://www.w3.org/2006/11/W3C10/Images/MartinDuerst.jpg'
+  sites:
+    - url: 'http://www.w3.org/People/D%C3%BCrst/'
+      lang: en
+      title: 'Martin Dürst '
+    - url: 'http://www.sw.it.aoyama.ac.jp/D%C3%BCrst/'
+      lang: en
+      title: 'Martin J. Dürst'
+- account: eban
+  name:
+    - わたなべひろふみ
+    - WATANABE, Hirofumi
+  nick:
+    - eban
+  sites:
+    - url: 'http://jarp.does.notwork.org/'
+      lang: ja
+      title: 'Just another Ruby porter,'
+    - title: 'Just another Ruby porter,'
+      url: 'http://jarp.does.notwork.org/diary/'
+      lang: ja
+      feed: 'http://jarp.does.notwork.org/diary/index.rdf'
+  services:
+    github: eban
+    twitter: eban
+    friendfeed: eban
+    google: 108418156943781140634
+- account: emboss
+  name:
+    - Martin Boßlet
+  nick:
+    - emboss
+  sites:
+    - title: Martin Boßlet
+      url: 'http://emboss.github.io/de/'
+      lang: de
+    - title: Martin Boßlet
+      url: 'http://emboss.github.io/en/'
+      lang: en
+    - title: 'Blog Archive - Martin Boßlet'
+      url: 'http://emboss.github.io/blog/archives/'
+      lang: en
+      feed: 'http://emboss.github.io/atom.xml'
+  portraits:
+    - 'http://emboss.github.io/images/me.jpg'
+  services:
+    twitter: _emboss_
+    github: emboss
+- account: eregon
+  name:
+    - Benoit Daloze
+  portraits:
+    - 'http://eregon.me/ruby/portrait.jpg'
+  services:
+    github: eregon
+    twitter: eregontp
+- account: evan
+  name:
+    - Evan Phoenix
+  sites:
+    - title: 'evan.musing << current'
+      url: 'http://blog.fallingsnow.net/'
+      lang: en
+      feed: 'http://blog.fallingsnow.net/feed/'
+  portraits:
+    - 'https://secure.gravatar.com/avatar/540cb3b3712ffe045113cb03bab616a2?s=400'
+  services:
+    facebook: evanphx
+    twitter: evanphx
+    github: evanphx
+    google: 102658220803785626644
+- account: glass
+  name:
+    - Masaki Matsushita
+  nick:
+    - Glass_saga
+  sites:
+    - title: 'Glass_saga'
+      url: 'http://glasssaga.dip.jp/'
+      lang: ja
+    - title: 'Glass_saga'
+      url: 'http://d.hatena.ne.jp/Glass_saga/'
+      lang: ja
+      feed: 'http://d.hatena.ne.jp/Glass_saga/rss'
+  services:
+    twitter: Glass_saga
+    github: Glasssaga
+    google: 117527526156424280526
+    facebook: masaki.matsushita
+- account: gotoken
+  name:
+    - 後藤謙太郎
+    - GOTOU, Kentaro
+  nick:
+    - ごとけん
+    - 兄者
+  sites:
+    - title: '帰ってきただらだら日記--'
+      url: 'http://d.hatena.ne.jp/g5n/'
+      lang: ja
+      feed: 'http://d.hatena.ne.jp/g5n/rss'
+  portraits:
+    - 'http://jp.rubyist.net/magazine/?c=plugin;plugin=attach_download;p=0011-Hotlinks;file_name=gotoken.jpg'
+  services:
+    twitter: gotoken
+    friendfeed: gotoken
+    github: gotoken
+- account: gotoyuzo
+  name:
+    - 後藤裕蔵
+    - GOTOU, Yuuzou
+  nick:
+    - ゆうぞうさん
+    - ゆぞさん
+  sites:
+    - title: AD-HOCKERY DIARY
+      url: 'http://diary.does.notwork.org/gotoyuzo/'
+      lang: ja
+      feed: 'http://diary.does.notwork.org/gotoyuzo/index.rdf'
+  portraits:
+    - 'http://jp.rubyist.net/magazine/?c=plugin;plugin=attach_download;p=0011-Hotlinks;file_name=gotoyuzo.jpg'
+  services:
+    twitter: gotoyuzo
+    friendfeed: gotoyuzo
+    github: gotoyuzo
+- account: gsinclair
+  name:
+    - Gavin Sinclair
+- account: headius
+  name:
+    - Charles Oliver Nutter
+  nick:
+    - headius
+  sites:
+    - title: Headius
+      url: 'http://blog.headius.com/'
+      lang: en
+      feed: 'http://blog.headius.com/feeds/posts/default'
+  portraits:
+    - 'http://softwaregr.org/wp-content/uploads/2010/03/nutter.jpg'
+    - 'https://si0.twimg.com/profile_images/409585603/charles.jpg'
+  ruby-books:
+    - '9781934356654'
+  services:
+    google: 101599370339210456684
+    twitter: headius
+    gihtub: headius
+    facebook: headius
+- account: hsbt
+  name:
+    - 柴田博志
+    - SHIBATA Hiroshi
+  nick:
+    - hsbt
+  sites:
+    - title: 'HsbtDiary'
+      url: 'http://www.hsbt.org/diary/'
+      lang: ja
+      feed: 'http://www.hsbt.org/diary/index.rdf'
+  portraits:
+    - 'https://si0.twimg.com/profile_images/1759902618/profile1_300.png'
+  services:
+    twitter: hsbt
+    github: hsbt
+    facebook: shibata.hiroshi
+    google: 112081278845276361745
+- account: iwamatsu
+  name:
+    - 岩松信洋
+    - Nobuhiro Iwamatsu
+  sites:
+    - title: 'Nobuhiro Iwamatsu home page'
+      url: 'http://www.nigauri.org/~iwamatsu/'
+      lang: en
+    - title: '毎日が反省会'
+      url: 'http://www.nigauri.org/~iwamatsu/d/'
+      lang: ja
+      feed: 'http://www.nigauri.org/~iwamatsu/d/index.rdf'
+  portraits:
+    - 'https://secure.gravatar.com/avatar/1cc1edaac4baeabf9cfe4a81c3d85825?s=200'
+  services:
+    twitter: iwamatsu
+    github: iwamatsu
+    facebook: nobuhiro.iwamatsu.3
+    google: 117238843562417038207
+    mixi: 105898
+- account: jeg2
+  name:
+    - James Edward Gray II
+  nick:
+    - jeg2
+  sites:
+    - title: Shades of Gray
+      url: 'http://blog.grayproductions.net/'
+      lang: en
+      feed: 'http://blog.grayproductions.net/index.rss'
+  portraits:
+    - 'http://grayproductions.net/images/james_headshot_square.jpg'
+  ruby-books:
+    - '9780976694076'
+  services:
+    twitter: JEG2
+    github: JEG2
+- account: jim
+  name:
+    - Jim Weirich
+  sites:
+    - title: '{ |one, step, back| }'
+      url: 'http://onestepback.org/'
+      lang: en
+      feed: 'http://onestepback.org/index.cgi/index.rss'
+  portraits:
+    - 'http://2009.larubyconf.com/images/speakers/jim-weirich.jpg'
+    - 'http://a2.twimg.com/profile_images/984421290/IMG_0155_reasonably_small.JPG'
+  services:
+    twitter: jimweirich
+    github: jimweirich
+    google: 110460163480277199414
+- account: kanemoto
+  name:
+    - Yutaka KANEMOTO
+  sites:
+    - title: 'きっかけは29216'
+      url: 'http://d.hatena.ne.jp/kinpoco/'
+      feed: 'http://d.hatena.ne.jp/kinpoco/rss'
+      lang: ja
+- account: katsu
+  name:
+    - うえのかつひろ
+    - UENO, Katsuhiro
+  sites:
+    - title: BLUE SKY
+      url: 'http://www.blue.sky.or.jp/'
+    - title: 'Garage uenoB'
+      url: 'http://d.hatena.ne.jp/uenoB/'
+      lang: ja
+      feed: 'http://d.hatena.ne.jp/uenoB/rss'
+- account: kazu
+  name:
+    - 西山和広
+    - Kazuhiro NISHIYAMA
+  nick:
+    - znz
+  sites:
+    - title: '%!zt! diary'
+      url: 'http://znz.s1.xrea.com/t/'
+      lang: ja
+      feed: 'http://znz.s1.xrea.com/t/index.rdf'
+  services:
+    twitter: znz
+    github: znz
+    google: 116753324956247178702
+- account: keiju 
+  name:
+    - 石塚圭樹
+    - KEIJU Ishitsuka
+  portraits:
+    - 'http://jp.rubyist.net/magazine/?c=plugin;plugin=attach_download;p=0021-Hotlinks;file_name=ishitsuka1.jpg'
+  ruby-books:
+    - '9784756132543'
+- account: knu
+  name:
+    - 武者晶紀
+    - Akinori MUSHA
+  sites:
+    - title: 'Akinori MUSHA / knu'
+      url: 'http://akinori.org/'
+    - title: '工夫と趣向と分別と。'
+      url: 'http://d.akinori.org/'
+      lang: ja
+      feed: 'http://d.akinori.org/index.rdf'
+  portraits:
+    - 'http://m.friendfeed-media.com/p-e589cafafb2311dcaa19003048343a40-large-1005'
+  services:
+    twitter: knu
+    friendfeed: knu
+    github: knu
+    mixi: 5906
+    google: 108878246803331852253
+- account: ko1
+  name:
+    - 笹田耕一
+    - ささだこういち
+    - Koichi Sasada
+  nick:
+    - ささやん
+  sites:
+    - title: 'www.atdot.net'
+      url: 'http://atdot.net/'
+      lang: ja
+    - title: DA
+      url: 'http://atdot.net/~ko1/diary/'
+      lang: ja
+      feed: 'http://atdot.net/~ko1/diary/diary.rss'
+  portraits:
+    - 'http://www.ogis-ri.co.jp/otc/hiroba/others/OORing/img/pic38_1.jpg'
+  services:
+    twitter: _ko1
+    mixi: 21711
+- account: kosaki
+  name:
+    - 小崎資広
+    - KOSAKI Motohiro
+  nick:
+    - kosaki
+    - がちゃぴん先生
+    - The green monster
+  sites:
+    - title: 革命の日々！
+      url: 'http://mkosaki.blog46.fc2.com'
+      feed: 'http://feeds.fc2.com/fc2/xml?host=mkosaki.blog46'
+      lang: ja
+    - title: kosakiの日記
+      url: 'http://d.hatena.ne.jp/kosaki/'
+      feed: 'http://d.hatena.ne.jp/kosaki/rss'
+      lang: ja
+  portraits:
+    - 'http://japan.zdnet.com/story_media/20390054/090317tomoyo-linux_ozaki_200x281.jpg'
+  services:
+    twitter: kosaki55tea
+    friendfeed: kosaki
+    github: kosaki
+    facebook: 1353311811
+    google: 113301538411990519144
+- account: kosako
+  name:
+    - 小迫清美
+    - K. Kosako
+  sites:
+    - title: 'Kosako'
+      url: 'http://www.geocities.jp/kosako3/'
+    - title: 報國挺身日記
+      url: 'http://d.hatena.ne.jp/kkos/'
+      lang: ja
+      feed: 'http://d.hatena.ne.jp/kkos/rss'
+- account: kou
+  name:
+    - 須藤功平
+    - Kouhei Sutou
+  sites:
+    - url: 'http://pub.cozmixng.org/~kou/archives/'
+      title: '~kou'
+  portraits:
+    - 'http://www.ogis-ri.co.jp/otc/hiroba/others/OORing/img/pic39_1.jpg'
+  ruby-books:
+    - '9784274065002'
+  services:
+    twitter: ktou
+    google: 109659312087155549351
+- account: kouji
+  name:
+    - 高尾宏治
+    - Kouji Takao
+  sites:
+    - title: '高尾宏治日記 on はてな'
+      url: 'http://d.hatena.ne.jp/kouji0625/'
+      lang: ja
+      feed: 'http://d.hatena.ne.jp/kouji0625/rss'
+  portraits:
+    - 'http://www.hatena.ne.jp/users/ko/kouji0625/user.jpg'
+  services:
+    twitter: takaokouji
+    friendfeed: takaokouji
+- account: ksaito
+  name:
+    - Kazuo Saito
+- account: ktsj
+  name:
+    - 辻本和樹
+    - Kazuki Tsujimoto
+  sites:
+    - title: '継続にっき'
+      url: 'http://www.callcc.net/diary/'
+      lang: ja
+      feed: 'http://www.callcc.net/diary/index.rdf'
+  portraits:
+    - 'http://www.gravatar.com/avatar/303dd57f37d64288bb4f0336332a8882.png'
+  services:
+    twitter: k_tsj
+    github: k-tsj
+- account: luislavena
+  name:
+    - Luis Lavena
+  nick:
+    - luislavena
+  sites:
+    - title: DEV_MEM.dump_to(:blog)
+      url: 'http://blog.mmediasys.com'
+      lang: en
+      feed: 'http://blog.mmediasys.com/feed/'
+    - title: RubyInstaller
+      url: 'http://rubyinstaller.org'
+      lang: en
+  services:
+    twitter: luislavena
+    facebook: luislavena
+    github: luislavena
+    google: 112486488668073241617
+  portraits:
+    - 'http://a0.twimg.com/profile_images/62596265/IMG_0231_CROP.png'
+    - 'http://www.gravatar.com/avatar/e7cff3cfd41c495e1012227d7dc24202?s=200'
+- account: mame
+  name:
+    - 遠藤侑介
+    - Yusuke Endoh
+  nick:
+    - まめ
+    - mame
+  sites:
+    - title: まめめも
+      url: 'http://d.hatena.ne.jp/ku-ma-me/'
+      lang: ja
+      feed: 'http://d.hatena.ne.jp/ku-ma-me/rss'
+    - title: mamememo
+      url: 'http://mamememo.blogspot.com'
+      feed: 'http://mamememo.blogspot.com/feeds/posts/default'
+      lang: en
+  services:
+    twitter: mametter
+    google: 113620476275587917063
+  portraits:
+    - 'http://dame.dyndns.org/misc/misc/mame2.png'
+- account: marcandre
+  name:
+    - Marc-André Lafortune
+  nick:
+    - marcandre
+    - malafortune
+  sites:
+    - title: '# hash'
+      url: 'http://blog.marc-andre.ca'
+      lang: en
+      feed: 'http://feeds2.feedburner.com/marc-andre/hash'
+  portraits:
+    - 'http://www.gravatar.com/avatar/d4758ccc3cc586f01e740733f3fd8b7e?s=200&d=identicon&r=PG'
+  services:
+    twitter: malafortune
+    github: marcandre
+    facebook: 648811055
+- account: michal
+  name:
+    - Michal Rokos
+- account: mneumann
+  name:
+    - Michael Neumann
+  sites:
+    - title: 'Ntecs.de'
+      url: 'http://www.ntecs.de/'
+      lang: en
+    - title: 'Ntecs.de'
+      url: 'http://www.ntecs.de/blog/'
+      lang: en
+      feed: 'http://www.ntecs.de/blog/index.rdf'
+  services:
+    github: mneumann
+- account: mrkn
+  name:
+    - 村田 賢太
+    - Kenta MURATA
+  nick:
+    - mrkn
+    - むらけん
+  sites:
+    - title: ドレッシングのような
+      url: 'http://d.hatena.ne.jp/mrkn/'
+      feed: 'http://d.hatena.ne.jp/mrkn/rss'
+      lang: ja
+    - title: MRKN
+      url: 'http://mrkn20.tumblr.com/rss'
+      feed: 'http://mrkn20.tumblr.com/rss'
+      lang: 'ja'
+    - title: Anything
+      url: 'http://blog.mrkn.jp'
+      feed: 'http://blog.mrkn.jp/feeds/posts/default'
+      lang: en
+  portraits:
+    - 'http://iddy.jp/userphoto/cca9444e87ff0fb035541cc290345e79ea424f96/mrkn-by-takai-96x96s.jpg'
+  services:
+    twitter: mrkn
+    friendfeed: mrkn
+    facebook: 1408914688
+    github: mrkn
+    mixi: 90794
+    google: 116374388189354104106
+- account: nagachika
+  name:
+    - 近永智之
+    - Tomoyuki Chikanaga
+  nick:
+    - nagachika
+  sites:
+    - title: 'PB memo'
+      url: 'http://d.hatena.ne.jp/nagachika/'
+      lang: ja
+      feed: 'http://d.hatena.ne.jp/nagachika/rss'
+    - title: 'Primitive Broth'
+      url: 'http://rucila.s43.xrea.com/PB/'
+      lang: ja
+  services:
+    google: 112418348753906123431
+    github: nagachika
+    twitter: nagachika
+    facebook: 'tomoyuki.chikanaga'
+  portraits:
+    - 'http://magazine.rubyist.net/?c=plugin;plugin=attach_download;p=0039-MinatoRubyKaigi01Report;file_name=nagachika.jpg'
+- account: nagai
+  name:
+    - 永井秀利
+    - Hidetoshi NAGAI 
+  sites:
+    - title: 'Personal Introduction Page'
+      url: 'http://www.dumbo.ai.kyutech.ac.jp/~nagai/'
+      lang: ja
+  ruby-books:
+    - '9784274064616'
+    - '9784756139931'
+- account: nahi
+  name:
+    - 中村浩士
+    - NAKAMURA, Hiroshi
+  nick:
+    - なひ
+    - nahi
+  sites:
+    - title: dev.ctor.org
+      url: 'http://dev.ctor.org/'
+    - title: soap4r
+      url: 'http://soap4r.blogspot.com/'
+      feed: 'http://soap4r.blogspot.com/feeds/posts/default?alt=rss'
+  services:
+    twitter: nahi
+    friendfeed: nahi
+    github: nahi
+    google: 115625967573239196767
+- account: ngoto
+  name:
+    - 後藤直久
+    - Naohisa Goto
+  sites:
+    - title: '後藤直久のページ'
+      url: 'http://www.gen-info.osaka-u.ac.jp/~ngoto/'
+      lang: ja
+  services:
+    twitter: ngotogenome
+    github: ngoto
+    google: 100765003726045594572
+- account: nari
+  name:
+    - 中村成洋
+    - Narihiro Nakamura
+  nick:
+    - authorNari
+  sites:
+    - title: 'I am Cruby!'
+      url: 'http://d.hatena.ne.jp/authorNari/'
+      lang: ja
+      feed: 'http://d.hatena.ne.jp/authorNari/rss'
+    - title: 'narihiro.info'
+      url: 'http://www.narihiro.info'
+      lang: ja, en
+  services:
+    twitter: nari3
+    github: authorNari
+- account: naruse
+  nick:
+    - 成瀬ゆい
+    - Yui NARUSE
+    - naruse
+    - nurse
+    - nalsh
+  sites:
+    - title: nalsh.jp
+      url: 'http://nalsh.jp'
+    - title: ': Airemix :'
+      url: 'http://airemix.com'
+    - title: はてなるせだいあり
+      url: 'http://d.hatena.ne.jp/nurse/'
+      lang: ja
+      feed: 'http://d.hatena.ne.jp/nurse/rss'
+  services:
+    mixi: 102799
+    twitter: nalsh
+    friendfeed: naruse
+    google: 116016815634254413806
+- account: nobu
+  name:
+    - 中田伸悦
+    - Nobuyoshi Nakada
+  nick:
+    - nobu
+    - n0kada
+    - パッチモンスター
+    - パチモン
+    - The patch monster
+  sites:
+    - title: '~nobu'
+      url: 'http://www.rubyist.net/~nobu/'
+    - title: 'A Strolling Programmer'
+      url: 'http://www.rubyist.net/~nobu/t/'
+      lang: ja
+      feed: 'http://www.rubyist.net/~nobu/t/index.rdf'
+  portraits:
+    - 'http://jp.rubyist.net/magazine/?c=plugin;plugin=attach_download;p=0009-Hotlinks;file_name=nakada0.jpg'
+  services:
+    mixi: 271283
+    friendfeed: n0kada
+    twitter: n0kada
+- account: ntalbott
+  name:
+    - Nathaniel Talbott
+  sites:
+    - title: 'blog.talbott.ws » 1 on the front, 2 on the back'
+      url: 'http://blog.talbott.ws/'
+      feed: 'http://feeds.feedburner.com/talbott-blog'
+  services:
+    twitter: ntalbott
+    friendfeed: ntalbott
+    github: ntalbott
+- account: ocean
+  name:
+    - Hirokazu Yamamoto
+- account: okkez
+  nick:
+    - okkez
+  sites:
+    - title: 'Under constructing!'
+      url: 'http://typo.okkez.net/'
+      lang: en
+  portraits:
+    - 'http://magazine.rubyist.net/?c=plugin;plugin=attach_download;p=0030-Hotlinks;file_name=okkez01.jpg'
+  services:
+    twitter: okkez
+    github: okkez
+- account: ryan
+  name:
+    - Ryan Davis
+  nick:
+    - zenspider
+  sites:
+    - title: 'Zen Spider Website'
+      url: 'http://www.zenspider.com/'
+    - title: 'Polishing Ruby'
+      url: 'http://blog.zenspider.com/'
+      feed: 'http://blog.zenspider.com/rss.xml'
+  services:
+    github: zenspider
+    facebook: zenspider
+    google: 117890682890497769422
+- account: seki
+  name:
+    - 関将俊
+    - Masatoshi SEKI
+  nick:
+    - 咳
+  sites:
+    - title: '咳のページ'
+      url: 'http://www2a.biglobe.ne.jp/~seki/'
+      lang: 'ja'
+    - title: 'D is for distributed'
+      url: 'http://www.druby.org'
+      lang: 'ja'
+    - title: 'I like Ruby too.'
+      url: 'http://d.hatena.ne.jp/m_seki'
+      feed: 'http://d.hatena.ne.jp/m_seki/rss'
+      lang: 'ja'
+    - title: '+b'
+      url: 'http://d.hatena.ne.jp/m_seki+b'
+      feed: 'http://d.hatena.ne.jp/m_seki+b/rss'
+      lang: 'ja'
+  portraits:
+    - 'http://www.ogis-ri.co.jp/otc/hiroba/others/OORing/img/pic40_2.jpg'
+  ruby-books:
+    - '9784756139610'
+    - '9784274066092'
+  services:
+    mixi: 1566
+    google: 103328050644570295448
+- account: ser
+  name:
+    - Sean Russell
+  sites:
+    - title: "Sean Russell's Homepage"
+      url: 'http://www.germane-software.com/~ser/'
+      lang: en
+- account: shigek
+  name:
+    - 小林茂雄
+    - Shigeo Kobayashi
+  sites:
+    - title: 'Office Kobayashi'
+      url: 'http://www.tinyforest.gr.jp/'
+      lang: ja
+- account: shugo
+  name:
+    - 前田修吾
+  sites:
+    - title: 'shugo.net'
+      url: 'http://shugo.net/'
+      lang: 'ja'
+    - title: 'Journal InTime'
+      url: 'http://shugo.net/jit/'
+      lang: 'ja'
+      feed: 'http://shugo.net/jit/index.rdf'
+  ruby-books:
+    - '9784274064616'
+  portraits:
+    - 'http://jp.rubyist.net/magazine/?c=plugin;plugin=attach_download;p=0002-Hotlinks;file_name=shugo_top.jpg'
+  services:
+    mixi: 1672
+    twitter: shugomaeda
+    friendfeed: shugomaeda
+    google: 117230883599260590395
+- account: shyouhei
+  name:
+    - 卜部昌平
+    - Urabe Shyouhei
+  nick:
+    - mput
+    - shyouhei
+  sites:
+    - title: '卜部昌平のあまりreblogしないtumblr'
+      url: 'http://shyouhei.tumblr.com/'
+      feed: 'http://shyouhei.tumblr.com/rss'
+  portraits:
+    - 'http://www.web-career.com/kawai/%E5%8D%9C%E9%83%A8%E6%98%8C%E5%B9%B3.JPG'
+  services:
+    twitter: shyouhei
+    mixi: 22533
+    github: shyouhei
+    google: 114316253275409329707
+- account: siena
+  nick:
+    - しーな
+    - しえな
+  sites:
+    - title: 'すきまかぜ、ぴぅぴぅ'
+      url: 'http://homepage2.nifty.com/siena/'
+      lang: ja
+    - title: 'Siena.の日記'
+      url: 'http://d.hatena.ne.jp/nsiena/'
+      lang: ja
+      feed: 'http://d.hatena.ne.jp/nsiena/rss'
+  services:
+    twitter: nsiena
+- account: sorah
+  name:
+    - Shota Fukumori
+  nick:
+    - sora_h
+    - sora
+  sites:
+    - title: Shota Fukumori (sora_h)
+      url: 'http://sorah.cosmio.net'
+      lang: en
+    - title: a junk
+      url: 'http://ajunk.org'
+      lang: en, ja
+    - title: cod.note
+      url: 'http://codnote.net'
+      lang: en, ja
+      feed: 'http://codnote.net/feed/'
+  services:
+    twitter: sora_h
+    facebook: 710749930
+    github: sorah 
+    google: 110739055786952226237
+  portraits:
+    - 'http://dl.dropbox.com/u/261861/img/headshot.png'
+- account: suke
+  name:
+    - 助田雅紀
+    - Masaki Suketa
+  sites:
+    - title: 雑記帳
+      url: 'http://homepage1.nifty.com/markey/'
+      lang: ja
+    - title: '遠回りするかな'
+      url: 'http://suke.cocolog-nifty.com/blog/'
+      lang: ja
+      feed: 'http://suke.cocolog-nifty.com/blog/index.rdf'
+  services:
+    twitter: m_suketa
+  ruby-books:
+    - '9784756136879'
+- account: takano32
+  name:
+    - 高野光弘
+    - TAKANO Mitsuhiro
+  sites:
+    - title: 32nd Diary
+      url: 'http://taka.no32.tk/diary/'
+      feed: 'http://taka.no32.tk/diary/index.rdf'
+      lang: ja
+  services:
+    twitter: takano32
+    friendfeed: takano32
+    facebook: takano32
+    mixi: 1233682
+    github: takano32
+    google: 112648168967537398795
+  portraits: 
+    - 'http://www.atmarkit.co.jp/news/200909/07/takano.jpg'
+- account: tadf
+  name:
+    - 舟迫忠佳
+    - ふなばただよし
+    - Tadayoshi Funaba
+  nick:
+    - ふなばさん
+  sites:
+    - title: 'hebdomeros'
+      url: 'http://www.funaba.org/'
+- account: tarui
+  name: 
+    - 樽家昌也
+    - Masaya TARUI
+  nick:
+    - tal
+    - taru
+    - taruru
+    - tarui
+  sites:
+    - title: tarte記録
+      url: 'http://d.hatena.ne.jp/tarte/'
+      feed: 'http://d.hatena.ne.jp/tarte/rss'
+      lang: ja
+  services:
+    twitter: taru
+    google: 114409948025099087730
+- account: technorama
+  name:
+    - Technorama Ltd.
+  sites:
+    - title: 'Technorama Ltd. - Home'
+      url: 'http://www.technorama.net/'
+      lang: en
+- account: tenderlove
+  name:
+    - Aaron Patterson
+  nick:
+    - aaron
+    - tenderlove
+    - ひげの山男
+    - たこ焼き仮面
+    - Takoyaki mask
+  portraits:
+    - 'http://farm1.static.flickr.com/155/360075889_8c555ab1c9_m.jpg'
+  sites:
+    - title: Tender Lovemaking
+      url: 'http://tenderlovemaking.com/'
+      feed: 'http://tenderlovemaking.com/feed/atom/'
+      lang: en
+  services:
+    twitter: tenderlove
+    facebook: tenderlove
+    mixi: 13683140
+    github: tenderlove
+    google: 117847179642773850013
+- account: ts
+  name:
+    - Guy Decoux
+- account: ttate
+  name:
+    - 立石孝彰
+    - Takaaki Tateishi
+  sites:
+    - title: 'Takaaki Tateishi'
+      url: 'http://www.trl.ibm.com/people/tate/'
+    - title: ttate
+      url: 'http://ttsky.net/'
+    - title: メモ
+      url: 'http://log.ttsky.net/'
+      lang: ja
+      feed: 'http://log.ttsky.net/index.rdf'
+- account: uema2
+  name:
+    - Takaaki Uematsu
+  sites:
+    - title: 'ruby-mswince'
+      url: 'http://uema2.s8.xrea.com/ruby-mswince/'
+- account: usa
+  name:
+    - 中村宇作
+    - NAKAMURA Usaku
+  nick:
+    - なかむら(う)
+    - うさ
+    - unak
+  sites:
+    - title: '丁稚な日々'
+      url: 'http://www.garbagecollect.jp/~usa/d/'
+      lang: ja
+      feed: 'http://www.garbagecollect.jp/~usa/d/index.rdf'
+  services:
+    twitter: unak
+    friendfeed: unak
+    mixi: 1030657
+    github: unak
+    google: 103794861829604167718
+- account: wanabe
+  nick:
+    - ワナベ
+    - wanabe
+  sites:
+    - title: 'ワナビーとたわごと'
+      url: 'http://www1.atword.jp/wannabe/'
+      feed: 'http://www1.atword.jp/wannabe/feed/'
+      lang: ja
+    - title: "Wanabe's Blog"
+      url: 'http://wannabe53.wordpress.com'
+      feed: 'http://wannabe53.wordpress.com/feed/'
+      lang: ja
+  services:
+    github: wanabe
+    twitter: wannabe53
+- account: wakou
+  name:
+    - Wakou Aoyama
+    - 青山和光
+- account: wew
+  name:
+    - William Webber
+  sites:
+    - title: "William Webber's Home Page"
+      url: 'http://www.williamwebber.com/'
+      lang: en
+  portraits:
+    - 'http://www.williamwebber.com/mt_buff.jpg'
+- account: why
+  nick:
+    - why the lucky stiff
+    - why
+    - _why
+  sites:
+    - title: "_why's Estate"
+      url: 'http://viewsourcecode.org/why/'
+      lang: en
+    - title: 'why the lucky stiff'
+      url: 'http://en.wikipedia.org/wiki/Why_the_lucky_stiff'
+  portraits:
+    - 'http://upload.wikimedia.org/wikipedia/commons/5/51/Whytheluckystiff.jpg'
+  services:
+    twitter: _why
+    github: why
+- account: wyhaines
+  name:
+    - Kirk Haines
+  services:
+    twitter: wyhaines
+    github: wyhaines
+- account: xibbar
+  name:
+    - 藤岡岳之
+    - Takeyuki FUJIOKA
+  nick:
+    - xibbar
+    - ジバー
+    - サイバー
+  sites:
+    - title: '福島Rails日記ほか'
+      url: 'http://d.hatena.ne.jp/xibbar/'
+      lang: ja
+      feed: 'http://d.hatena.ne.jp/xibbar/rss'
+  services:
+    twitter: xibbar
+    github: xibbar
+- account: yugui
+  name:
+    - 園田裕貴
+    - Yuki Sonoda
+  nick:
+    - yugui
+  sites:
+    - title: 'IDM - I divide me'
+      url: 'http://idm.s9.xrea.com'
+      lang: ja
+    - title: 世界線航跡蔵
+      url: 'http://yugui.jp'
+      lang: ja
+      feed: 'http://yugui.jp/articles/recent.rss'
+  portraits:
+    - 'http://yugui.jp/images/yugui-photo-2011-09-05.jpg'
+  services:
+    twitter: yugui
+    friendfeed: yugui
+    github: yugui
+    mixi: 1705181
+    facebook: 665074729
+    google: 113187117752842431448
+  ruby-books:
+    - '9784873113678'
+- account: zsombor
+  name:
+    - Dee Zsombor
+  sites:
+    - title: "zsombor's lair"
+      url: 'http://deezsombor.com/'
+      feed: 'http://deezsombor.com/feed/atom.xml'
+      lang: en
+  portraits:
+    - 'http://primalgrasp.com/imgs/zsombor.jpg'
+  services:
+    github: zsombor

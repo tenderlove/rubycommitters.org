@@ -1,10 +1,30 @@
-class Account < ActiveRecord::Base
-  has_many :names
-  has_many :nicks
-  has_many :sites
-  has_many :services
-  has_many :portraits
-  has_many :books
+class Account
+  #has_many :names
+  #has_many :nicks
+  #has_many :sites
+  #has_many :services
+  #has_many :portraits
+  #has_many :books
+
+  attr_accessor :username
+  attr_reader :names, :nicks, :sites, :portraits, :services, :books
+
+  Name     = Struct.new :value
+  Nick     = Struct.new :value
+  Site     = Struct.new :title, :url, :lang, :feed
+  Portrait = Struct.new :url
+  Service  = Struct.new :name, :key
+  Book     = Struct.new :key, :isbn
+
+  def initialize
+    @username  = nil
+    @names     = []
+    @nicks     = []
+    @sites     = []
+    @portraits = []
+    @services  = []
+    @books  = []
+  end
 
   ###
   # Import +io+ object that contains a YAML representation of the
@@ -18,32 +38,33 @@ class Account < ActiveRecord::Base
       yamler = YAML
     end
 
-    doc = yamler.load io
-    doc.each do |record|
-      account = Account.create!(:username => record['account'])
+    list = yamler.load io
+    list.map do |record|
+      account = Account.new
+      account.username = record['account']
+
       (record['name'] || []).each do |name|
-        account.names.create!(:value => name)
+        account.names << Name.new(name)
       end
 
       (record['nick'] || []).each do |name|
-        account.nicks.create!(:value => name)
+        account.nicks << Nick.new(name)
       end
 
       (record['sites'] || []).each do |site|
-        account.sites.create!(
-          :title => site['title'],
-          :url   => site['url'],
-          :lang  => site['lang'],
-          :feed  => site['feed']
-        )
+        account.sites << Site.new(
+          site['title'],
+          site['url'],
+          site['lang'],
+          site['feed'])
       end
 
       (record['portraits'] || []).each do |portrait|
-        account.portraits.create!(:url => portrait)
+        account.portraits << Portrait.new(portrait)
       end
 
       (record['services'] || []).each do |name, key|
-        account.services.create!(:name => name, :key => key)
+        account.services << Service.new(name, key)
       end
 
       (record['ruby-books'] || []).each do |key|
@@ -59,8 +80,10 @@ class Account < ActiveRecord::Base
                       else;    check_digit
                       end
         isbn10 = "#{isbn10}#{check_digit}"
-        account.books.create!(:key => key, :isbn => isbn10)
+        account.books << Book.new(key, isbn10)
       end
+
+      account
     end
   end
 end

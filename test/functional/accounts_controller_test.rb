@@ -1,11 +1,10 @@
 require 'test_helper'
 
 class AccountsControllerTest < ActionController::TestCase
-  fixtures :accounts
-
   def test_get_index
     get :index
     assert_response :success
-    assert_equal Account.find(:all), assigns(:accounts)
+    assert assigns(:accounts)
+    assert_operator assigns(:accounts).length, :>, 0
   end
 end
