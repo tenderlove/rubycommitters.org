@@ -124,4 +124,14 @@ task :clobber do
   rm "public/index.html"
 end
 
+task "missing-images" do
+  need = Dir.entries('public/images/people/photos').sort.map { |x|
+    x.sub(/\..*$/, '')
+  }
+  have = Dir.entries('public/images/people/lines').sort.map { |x|
+    x.sub(/\..*$/, '')
+  }
+  p need - have
+end
+
 task :default => 'public/index.html'
